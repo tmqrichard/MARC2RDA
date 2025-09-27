@@ -445,48 +445,48 @@
         </xsl:if>
     </xsl:template>
 
-    <!--856 Electronic Location and Access-->
+       <!--856 Electronic Location and Access-->
     <xsl:template match="marc:datafield[@tag = '856'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '856']" mode="man" 
         expand-text="yes">
         <xsl:if test="@ind2 = '0'">
             <xsl:choose>
                 <xsl:when test="marc:subfield[@code = '3']">
-                    <xsl:for-each select="marc:subfield[@code = 'u']">
+                    <xsl:for-each select="marc:subfield[@code = 'u'][not(contains(., ' '))]">
                         <rdamd:P30137>
-                            <xsl:text>[{../marc:subfield[@code = '3']}] at: {normalize-space(.)}</xsl:text>
+                                <xsl:text>[{../marc:subfield[@code = '3']}] at: {normalize-space(.)}</xsl:text>
                         </rdamd:P30137>
                     </xsl:for-each>
                 </xsl:when>
                 <xsl:otherwise>
-                    <xsl:for-each select="marc:subfield[@code = 'u']">
+                    <xsl:for-each select="marc:subfield[@code = 'u'][not(contains(., ' '))]">
                         <rdam:P30154 rdf:resource="{normalize-space(.)}"/>
                     </xsl:for-each>
                 </xsl:otherwise>
             </xsl:choose>
         </xsl:if>
-        <xsl:if test="@ind2 = '2' or ' ' or '8'">
-            <xsl:for-each select="marc:subfield[@code = 'u']">
+        <xsl:if test="@ind2 = '2' or @ind2 = ' ' or @ind2 = '8'">
+            <xsl:for-each select="marc:subfield[@code = 'u'][not(contains(., ' '))]">
                 <rdamd:P30137>
                     <xsl:text>Related resource at: {normalize-space(.)}</xsl:text>
                 </rdamd:P30137>
             </xsl:for-each>
         </xsl:if>
         <xsl:if test="@ind2 = '1'">
-            <xsl:for-each select="marc:subfield[@code = 'u']">
+            <xsl:for-each select="marc:subfield[@code = 'u'][not(contains(., ' '))]">
                 <rdamd:P30137>
                     <xsl:text>Version of resource at: {normalize-space(.)}</xsl:text>
                 </rdamd:P30137>
             </xsl:for-each>
         </xsl:if>
         <xsl:if test="@ind2 = '3'">
-            <xsl:for-each select="marc:subfield[@code = 'u']">
+            <xsl:for-each select="marc:subfield[@code = 'u'][not(contains(., ' '))]">
                 <rdamd:P30137>
                     <xsl:text>Component part(s) of resource at: {normalize-space(.)}</xsl:text>
                 </rdamd:P30137>
             </xsl:for-each>
         </xsl:if>
         <xsl:if test="@ind2 = '4'">
-            <xsl:for-each select="marc:subfield[@code = 'u']">
+            <xsl:for-each select="marc:subfield[@code = 'u'][not(contains(., ' '))]">
                 <rdamd:P30137>
                     <xsl:text>Version of component part(s) of resource at: {normalize-space(.)}</xsl:text>
                 </rdamd:P30137>
