@@ -1,5 +1,5 @@
 # MARC2RDA
-Mapping and transformation between MARC21 Bibliographic and LRM/RDA/RDF. Project landing page is .
+Mapping and transformation between MARC21 Bibliographic and LRM/RDA/RDF.
 ## About
 This is an independent, volunteer-based project initiated in 2021 at the University of Washington Libraries' Cataloging and Metadata Services Department to create an open source, robust mapping between the MARC21 bibliographic format and RDA-RDF and a corresponding conversion tool. Authority data is out of scope for this mapping. This project builds on the work of the RDA/MARC 21 Alignment Task Force within the RSC Technical Working Group, specifically the mapping available [here.](http://www.rdaregistry.info/Maps/mapRDA2M21B.html)
 ## Navigating Project Deliverables
