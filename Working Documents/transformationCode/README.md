@@ -174,6 +174,5 @@ Once the transformation has been run and RDF/XML data has been produced, the out
 To run serialize.py, be prepared with:
 - The full path to the file you wish to serialize (must have the extension .rdf, .ttl, .jsonld, or .nt)
 - The formats you wish to serialize to. The options are Turtle (ttl), N-triples (nt), JSON-LD (jsonld), and RDF (rdf). You will be prompted to enter the serializations you want as space separated values i.e. `ttl nt` to output both Turtle and N-triple versions of the file
-- Here is the GitHub directory path to serialize.py: Working Documents/Non-Mapping Documents/serialize.py
 
 The script will produce the various serializations in the same folder that the original file is located in. 
