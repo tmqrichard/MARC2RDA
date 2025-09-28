@@ -3,10 +3,10 @@
 * CSV Files for MARC21 Bibliographic Fields
 * List of fields not mapped
 ## Transformation Code
-* XSL Stylesheets
-* Running the Transform
-* Lookup Tables
-* Post-Processing Transform Output
+* [XSL Stylesheets](https://github.com/crystalyragui/MARC2RDA/tree/main/Working%20Documents/transformationCode)
+* [Running the Transform](https://github.com/crystalyragui/MARC2RDA/wiki/Transform-Guidance)
+* [Lookup Tables](https://github.com/crystalyragui/MARC2RDA/tree/main/Working%20Documents/transformationCode/lookup)
+* [Post-Processing Transform Output](https://github.com/crystalyragui/MARC2RDA/wiki/Transform-Guidance#serializing-the-output)
 ## Output Data
 * Output Tools
 ## Topical Documentation
