@@ -308,7 +308,7 @@
                 <rdand:P80068>
                     <xsl:value-of select="$apWor"/>
                 </rdand:P80068>
-                <xsl:copy-of select="m2r:s2Nomen(marc:subfield[@code = '2'])"/>
+                <xsl:copy-of select="m2r:s2Nomen(marc:subfield[@code = '2'][1])"/>
                 <xsl:if test="@tag != '880' and marc:subfield[@code = '6']">
                     <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                     <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
@@ -335,7 +335,7 @@
                 <rdand:P80068>
                     <xsl:value-of select="$apAgent"/>
                 </rdand:P80068>
-                <xsl:copy-of select="m2r:s2Nomen(marc:subfield[@code = '2'])"/>
+                <xsl:copy-of select="m2r:s2Nomen(marc:subfield[@code = '2'][1])"/>
                 <xsl:if test="@tag != '880' and marc:subfield[@code = '6']">
                     <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                     <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
@@ -432,7 +432,7 @@
                 <rdand:P80068>
                     <xsl:value-of select="m2r:relWorkAccessPoint(.)"/>
                 </rdand:P80068>
-                <xsl:copy-of select="m2r:s2Nomen(marc:subfield[@code = '2'])"/>
+                <xsl:copy-of select="m2r:s2Nomen(marc:subfield[@code = '2'][1])"/>
                 <xsl:if test="@tag != '880' and marc:subfield[@code = '6']">
                     <xsl:variable name="occNum" select="concat(@tag, '-', substring(marc:subfield[@code = '6'], 5, 6))"/>
                     <xsl:for-each select="../marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = $occNum]">
