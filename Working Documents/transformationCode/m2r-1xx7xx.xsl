@@ -353,7 +353,9 @@
                 <rdaid:P40001>{concat('ite#',$baseID, $genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{$manIRI}"/>
                 <xsl:if test="marc:subfield[@code = '5']">
-                    <xsl:copy-of select="m2r:s5Lookup(marc:subfield[@code = '5'])"/>
+                    <xsl:for-each select="marc:subfield[@code='5']">
+                        <xsl:copy-of select="m2r:s5Lookup(.)"/>
+                    </xsl:for-each>
                 </xsl:if>
                 <xsl:copy-of select="$testItem"/>
             </rdf:Description>
@@ -1043,7 +1045,6 @@
     <xsl:template match="marc:datafield[@tag = '740'] | marc:datafield[@tag = '740'][substring(marc:subfield[@code = '6'], 1, 6) = '740-00']" mode="ite">
         <xsl:param name="baseID"/>
         <xsl:param name="manIRI"/>
-        <xsl:variable name="s5" select="marc:subfield[@code = '5']"/>
         <xsl:variable name="genID" select="generate-id(.)"/>
         <xsl:variable name="leader" select="ancestor::marc:record/marc:leader"/>
         <xsl:variable name="ldr06" select="substring($leader, 7, 1)"/>
@@ -1063,7 +1064,9 @@
                         <!--mint manifestation and associate with item-->
                         <rdaio:P40049 rdf:resource="{$manIRI}"/>
                         <!--mint manifestationcollectionIRI-->
-                        <xsl:copy-of select="m2r:s5Lookup(marc:subfield[@code = '5'])"/>                    
+                        <xsl:for-each select="marc:subfield[@code='5']">
+                            <xsl:copy-of select="m2r:s5Lookup(.)"/>       
+                        </xsl:for-each>             
                         <rdaid:P40086>
                             <xsl:value-of select="string-join(marc:subfield[@code = ('a','n','p')], ' ')"/>
                         </rdaid:P40086>
@@ -1076,7 +1079,9 @@
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                         <rdaid:P40001><xsl:value-of select="concat('ite#', $baseID, $genID)"/></rdaid:P40001>
                         <rdaio:P40049 rdf:resource="{$manIRI}"/>
-                        <xsl:copy-of select="m2r:s5Lookup(marc:subfield[@code = '5'])"/>   
+                        <xsl:for-each select="marc:subfield[@code='5']">
+                            <xsl:copy-of select="m2r:s5Lookup(.)"/>  
+                        </xsl:for-each> 
                         <xsl:call-template name="F740-xx-ldrtestite"/>
                     </rdf:Description>
                 </xsl:if>
@@ -1087,7 +1092,9 @@
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                         <rdaid:P40001><xsl:value-of select="concat('ite#', $baseID, $genID)"/></rdaid:P40001>
                         <rdaio:P40049 rdf:resource="{$manIRI}"/>
-                        <xsl:copy-of select="m2r:s5Lookup(marc:subfield[@code = '5'])"/>                    
+                        <xsl:for-each select="marc:subfield[@code='5']">
+                            <xsl:copy-of select="m2r:s5Lookup(.)"/>         
+                        </xsl:for-each>           
                         <rdaid:P40069>
                             <xsl:value-of select="string-join(marc:subfield[@code = ('a','n','p')], ' ')"/>
                         </rdaid:P40069>
@@ -1560,9 +1567,9 @@
     <!-- 753 System Details Access to Computer Files -->  
     <xsl:template match="marc:datafield[@tag = '753'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '753']"
         mode="man">
-        <rdam:P30384>
+        <rdamd:P30384>
             <xsl:call-template name="F753-xx-abc12"/>
-        </rdam:P30384>
+        </rdamd:P30384>
     </xsl:template>
      
     <!-- 754 Added Entry-Taxonomic Identification -->  
@@ -1615,54 +1622,54 @@
     <xsl:template
         match="marc:datafield[@tag = '760'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '760-00']"
         mode="man">
-        <rdam:P30137>
+        <rdamd:P30137>
             <xsl:call-template name="F760-xx-abcdefghjklmnopqrstuvwxyz"/>
-        </rdam:P30137>
+        </rdamd:P30137>
     </xsl:template>
     
     <!-- 762 Subseries Entry -->
     <xsl:template
         match="marc:datafield[@tag = '762'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '762-00']"
         mode="man">
-        <rdam:P30137>
+        <rdamd:P30137>
             <xsl:call-template name="F762-xx-abcdefghjklmnopqrstuvwxyz"/>
-        </rdam:P30137>
+        </rdamd:P30137>
     </xsl:template>
 
     <!-- 765 Original Language Entry -->
     <xsl:template
         match="marc:datafield[@tag = '765'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '765-00']"
         mode="man">
-        <rdam:P30137>
+        <rdamd:P30137>
             <xsl:call-template name="F765-xx-abcdefghjklmnopqrstuvwxyz"/>
-        </rdam:P30137>
+        </rdamd:P30137>
     </xsl:template>
     
     <!-- 767 Translation Entry -->
     <xsl:template
         match="marc:datafield[@tag = '767'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '767-00']"
         mode="man">
-        <rdam:P30137>
+        <rdamd:P30137>
             <xsl:call-template name="F767-xx-abcdefghjklmnopqrstuvwxyz"/>
-        </rdam:P30137>
+        </rdamd:P30137>
     </xsl:template>
     
     <!-- 770 Supplement/Special Issue Entry -->
     <xsl:template
         match="marc:datafield[@tag = '770'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '770-00']"
         mode="man">
-        <rdam:P30137>
+        <rdamd:P30137>
             <xsl:call-template name="F770-xx-abcdefghjklmnopqrstuvwxyz"/>
-        </rdam:P30137>
+        </rdamd:P30137>
     </xsl:template>
     
     <!-- 772 Supplement Parent Entry: manifestation-level -->
     <xsl:template 
         match="marc:datafield[@tag = '772'][not(marc:subfield[@code = '5'])] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '772-00' and not(marc:subfield[@code = '5'])]"
         mode="man">
-        <rdam:P30137>
+        <rdamd:P30137>
             <xsl:call-template name="F772-xx-abcdefghijklmnpqrstuvwxyz"/>
-        </rdam:P30137>
+        </rdamd:P30137>
     </xsl:template>
     
     <!-- 773 Host Item Entry: item-level -->    
@@ -1732,7 +1739,9 @@
                 </xsl:for-each>
             </xsl:if>
             <!-- relationship to $5 institution collection manifestation -->
-            <xsl:copy-of select="m2r:s5Lookup(marc:subfield[@code = '5'])"/>
+            <xsl:for-each select="marc:subfield[@code='5']">
+                <xsl:copy-of select="m2r:s5Lookup(.)"/>
+            </xsl:for-each>
         </rdf:Description>
     </xsl:template>
     
@@ -1740,72 +1749,72 @@
     <xsl:template
         match="marc:datafield[@tag = '774'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '774-00']"
         mode="man">
-        <rdam:P30137>
+        <rdamd:P30137>
             <xsl:call-template name="F774-xx-abcdefghjklmnopqrstuvwxyz"/>
-        </rdam:P30137>
+        </rdamd:P30137>
     </xsl:template>   
 
     <!-- 775 Other Edition Entry -->
     <xsl:template
         match="marc:datafield[@tag = '775'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '775-00']"
         mode="man">
-        <rdam:P30137>
+        <rdamd:P30137>
             <xsl:call-template name="F775-xx-abcdefghjklmnopqrstuvwxyz"/>
-        </rdam:P30137>
+        </rdamd:P30137>
     </xsl:template>
 
     <!-- 776 Additional Physical Form Entry -->
     <xsl:template
         match="marc:datafield[@tag = '776'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '776-00']"
         mode="man">
-        <rdam:P30137>
+        <rdamd:P30137>
             <xsl:call-template name="F776-xx-abcdefghjklmnopqrstuvwxyz"/>
-        </rdam:P30137>
+        </rdamd:P30137>
     </xsl:template>
     
     <!-- 777 Issued with Entry -->
     <xsl:template
         match="marc:datafield[@tag = '777'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '777-00']"
         mode="man">
-        <rdam:P30137>
+        <rdamd:P30137>
             <xsl:call-template name="F777-xx-abcdefghjklmnopqrstuvwxyz"/>
-        </rdam:P30137>
+        </rdamd:P30137>
     </xsl:template>
     
     <!-- 780 Preceding Entry -->
     <xsl:template
         match="marc:datafield[@tag = '780'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '780-00']"
         mode="man">
-        <rdam:P30137>
+        <rdamd:P30137>
             <xsl:call-template name="F780-x0-abcdefghjklmnopqrstuvwxyz"/>
-        </rdam:P30137>
+        </rdamd:P30137>
     </xsl:template>   
     
     <!-- 785 Succeeding Entry -->
     <xsl:template
         match="marc:datafield[@tag = '785'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '785-00']"
         mode="man">
-        <rdam:P30137>
+        <rdamd:P30137>
             <xsl:call-template name="F785-x0-abcdefghjklmnopqrstuvwxyz"/>
-        </rdam:P30137>
+        </rdamd:P30137>
     </xsl:template>
     
    <!-- 786 Data Source Entry -->
     <xsl:template
         match="marc:datafield[@tag = '786'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '786-00']"
         mode="man">
-        <rdam:P30137>
+        <rdamd:P30137>
             <xsl:call-template name="F786-xx-abcdefghjklmnopqrstuvwxyz"/>
-        </rdam:P30137>
+        </rdamd:P30137>
     </xsl:template>   
     
    <!-- 787 Other Relationship Entry -->
     <xsl:template
         match="marc:datafield[@tag = '787'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 6) = '787-00']"
         mode="man">
-        <rdam:P30137>
+        <rdamd:P30137>
             <xsl:call-template name="F787-xx-abcdefghjklmnopqrstuvwxyz"/>
-        </rdam:P30137>
+        </rdamd:P30137>
     </xsl:template>
     
 </xsl:stylesheet>

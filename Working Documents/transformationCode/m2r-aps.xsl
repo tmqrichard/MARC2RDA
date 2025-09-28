@@ -1029,7 +1029,12 @@
                 <xsl:value-of select="m2r:stripEndPunctuation($ap)"/>
             </xsl:when>
             <xsl:when test="$field/@tag = '720' or ($field/@tag = '880' and contains($field/marc:subfield[@code = '6'], '720'))">
-                <xsl:value-of select="m2r:stripEndPunctuation($field/marc:subfield[@code = 'a'])"/>
+                <xsl:for-each select="$field/marc:subfield[@code='a']">
+                    <xsl:value-of select="m2r:stripEndPunctuation(.)"/>
+                    <xsl:if test="position() != last()">
+                        <xsl:text> </xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
             </xsl:when>
             <xsl:when test="$field/@tag = '110' or $field/@tag = '610' or $field/@tag = '710' or $field/@tag = '810'
                 or ($field/@tag = '880' and matches($field/marc:subfield[@code = '6'], '[1678]10'))">

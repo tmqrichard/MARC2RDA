@@ -525,9 +525,6 @@
                     <xsl:when test="position() != last()">
                         <xsl:text>; </xsl:text>
                     </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text>: </xsl:text>
-                    </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
         </xsl:if>
@@ -553,9 +550,6 @@
                     <xsl:when test="position() != last()">
                         <xsl:text>; </xsl:text>
                     </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text>: </xsl:text>
-                    </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
         </xsl:if>
@@ -574,16 +568,13 @@
             @code = 'y' or @code = 'z']" />
         
         <xsl:if test="$subfields">
-            <xsl:text>[Is translation of]: </xsl:text>
+            <xsl:text>Is translation of: </xsl:text>
             <xsl:for-each select="$subfields">
                 <xsl:value-of select="."/>
                 <xsl:choose>
                     <xsl:when test="position() != last()">
                         <xsl:text>; </xsl:text>
                     </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text>: </xsl:text>
-                    </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
         </xsl:if>
@@ -602,16 +593,13 @@
             @code = 'y' or @code = 'z']" />
         
         <xsl:if test="$subfields">
-            <xsl:text>[Is translation as]: </xsl:text>
+            <xsl:text>Is translation as: </xsl:text>
             <xsl:for-each select="$subfields">
                 <xsl:value-of select="."/>
                 <xsl:choose>
                     <xsl:when test="position() != last()">
                         <xsl:text>; </xsl:text>
                     </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text>: </xsl:text>
-                    </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
         </xsl:if>
@@ -630,16 +618,13 @@
             @code = 'y' or @code = 'z']" />
         
         <xsl:if test="$subfields">
-            <xsl:text>[Has supplement]: </xsl:text>
+            <xsl:text>Has supplement: </xsl:text>
             <xsl:for-each select="$subfields">
                 <xsl:value-of select="."/>
                 <xsl:choose>
                     <xsl:when test="position() != last()">
                         <xsl:text>; </xsl:text>
                     </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text>: </xsl:text>
-                    </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
         </xsl:if>
@@ -658,16 +643,13 @@
             @code = 'y' or @code = 'z']" />
         
         <xsl:if test="$subfields">
-            <xsl:text>[Is supplement to]: </xsl:text>
+            <xsl:text>Is supplement to: </xsl:text>
             <xsl:for-each select="$subfields">
                 <xsl:value-of select="."/>
                 <xsl:choose>
                     <xsl:when test="position() != last()">
                         <xsl:text>; </xsl:text>
                     </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text>: </xsl:text>
-                    </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
         </xsl:if>
@@ -701,14 +683,24 @@
             </xsl:choose>
             <xsl:if test="marc:subfield[@code = '3']">
                 <xsl:text> Applies to: </xsl:text>
-                <xsl:value-of select="normalize-space(marc:subfield[@code = '3'])"/>
+                <xsl:for-each select="marc:subfield[@code='3']">
+                    <xsl:value-of select="normalize-space(.)"/>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
                 <xsl:text>.</xsl:text>
             </xsl:if>
             
             <!-- Add $4 sentence if present -->
             <xsl:if test="marc:subfield[@code = '4']">
                 <xsl:text> Relationship code or URI: </xsl:text>
-                <xsl:value-of select="normalize-space(marc:subfield[@code = '4'])"/>
+                <xsl:for-each select="marc:subfield[@code='4']">
+                    <xsl:value-of select="normalize-space(.)"/>
+                    <xsl:if test="position() != last()">
+                        <xsl:text>; </xsl:text>
+                    </xsl:if>
+                </xsl:for-each>
                 <xsl:text>.</xsl:text>
             </xsl:if>
         </xsl:if>
@@ -728,16 +720,13 @@
             @code = 'y' or @code = 'z']" />
         
         <xsl:if test="$subfields">
-            <xsl:text>[Has part]: </xsl:text>
+            <xsl:text>Has part: </xsl:text>
             <xsl:for-each select="$subfields">
                 <xsl:value-of select="."/>
                 <xsl:choose>
                     <xsl:when test="position() != last()">
                         <xsl:text>; </xsl:text>
                     </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text>: </xsl:text>
-                    </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
         </xsl:if>
@@ -756,16 +745,13 @@
             @code = 'y' or @code = 'z']" />
         
         <xsl:if test="$subfields">
-            <xsl:text>[Other edition available]: </xsl:text>
+            <xsl:text>Other edition available: </xsl:text>
             <xsl:for-each select="$subfields">
                 <xsl:value-of select="."/>
                 <xsl:choose>
                     <xsl:when test="position() != last()">
                         <xsl:text>; </xsl:text>
                     </xsl:when>
-                    <xsl:otherwise>
-                        <xsl:text>: </xsl:text>
-                    </xsl:otherwise>
                 </xsl:choose>
             </xsl:for-each>
         </xsl:if>
