@@ -1,6 +1,8 @@
-# Running the transformation code
+# About the transform
 
 The transform is written in XSLT in order to be free and open-source.
+
+It is highly recommended to validate your input MARC before running it through the transform. The transform performs basic validation and will not process MARC that contains major errors, such as repeated 1XX or 245 fields. More minor errors are handled by the transform, and newer iterations of the transformation code will be able to handle more errors as updates to the code are made. If an error occurs while running the transformation, please submit a new GitHub issue by selecting 'New issue' and 'Bug report'. A coder from the MARC2RDA team will address the issue as soon as possible.
 
 For testing purposes, the code was developed using Oxygen XML.
 

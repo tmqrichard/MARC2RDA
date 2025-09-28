@@ -1,9 +1,9 @@
 # MARC2RDA
 Mapping and transformation between MARC21 and RDA-RDF
 ## About
-This is a project of the Metadata and Cataloging Initiatives Unit of the Cataloging and Metadata Services Department at the University of Washington Libraries initiated in 2021 to create an open source, robust mapping between the MARC21 bibliographic format and RDA-RDF and a corresponding conversion tool. Authority data is out of scope for this mapping. This project builds on the work of the RDA/MARC 21 Alignment Task Force within the RSC Technical Working Group, specifically the mapping available [here.](http://www.rdaregistry.info/Maps/mapRDA2M21B.html)
-## More information and resources for participants available [on the wiki](https://github.com/uwlib-cams/MARC2RDA/wiki).
-## To get in touch, email Crystal Yragui at cec23@uw.edu.
+This is an independent, volunteer-based project initiated in 2021 at the University of Washington Libraries' Cataloging and Metadata Services Department to create an open source, robust mapping between the MARC21 bibliographic format and RDA-RDF and a corresponding conversion tool. Authority data is out of scope for this mapping. This project builds on the work of the RDA/MARC 21 Alignment Task Force within the RSC Technical Working Group, specifically the mapping available [here.](http://www.rdaregistry.info/Maps/mapRDA2M21B.html)
+## More information and resources for participants available [on the wiki](https://github.com/crystalyragui/MARC2RDA/wiki).
+## To get in touch, email Crystal Yragui at crystalyragui@gmail.com.
 # Project Roster
 **-Laura Akerman, [lake44me](https://github.com/lake44me), Mapping Contributor**<br>
 _Laura Akerman is a Librarian and Product Manager at Emory University Libraries, where she leads and contributes to technology projects and oversight, including work on multiple discovery systems.  She has served as Chair and is currently a member of the IGELU-ELUNA Linked Open Data Community of Practice Working Group, working with vendor Ex Libris on its plans to incorporate linked data features into products, and has written and presented on linked data topics including BIBFRAME and RDA.  In the past, she led the ALA Catalog Form and Function Interest Group and ALA Library Linked Data Interest Group Tools and Resources Subgroup, and contributed to the SAC Subcommittee on FAST._
@@ -44,9 +44,6 @@ _Junghae Lee is an Electronic Resources Metadata Librarian and Co-Interim Head o
 **-Cypress Payne [cspayne](https://github.com/cspayne), Transformation Project Manager**<br>
 _Cypress Payne (she/her/hers) is the Metadata and Cataloging Librarian at West Virginia University. She earned her Master of Library and Information Science at the University of Washington-Seattle and holds a bachelor's degree in computer science. She leads the transformation in the MARC21 to RDA project._
 <br><br>
-**-Abhignya Rajapu [arajapu](https://github.com/arajapu), Transformation Contributor**<br>
-_Abhignya Rajapu (she/her/hers) is a graduate student in the Master of Science in Information Management program at the University of Washington. She contributes to the MARC2RDA project as a Linked Metadata Student Specialist, where she works on transforming traditional bibliographic data into RDA-RDF formats. With a background in data engineering and enterprise systems, she is passionate about the intersection of data, strategy, and meaningful transformation in information systems._
-<br><br>
 **-Adam Schiff [AdamSchiff](https://github.com/AdamSchiff), Mapping Contributor**<br>
 _Adam L. Schiff is Principal Cataloger at the University of Washington Libraries (UWL), in Seattle, USA. He served as a lead advisor for the UWL’s participation in the Program for Cooperative Cataloging’s (PCC) Wikidata Pilot Project. Adam has been a member of the PCC Standing Committee on Standards, and served on a number of PCC task groups, including the Task Group on Linked Data Best Practices, the Task Group on URIs in MARC, the Linked Data Advisory Committee/Identity Management Advisory Committee URIs Guidance Subgroup, and coordinator of the UW Libraries’ participation in the PCC URIs in MARC Pilot Project. He is currently a consultant on Wikidata for the Task Group on Linked Data Training. He is one of two American Library Association representatives on the North American RDA Committee, and a former member of the Core Subject Analysis Committee, and the MARC Advisory Committee. Adam has an A.B. in biology from Cornell University, and an M.L.I.S. from the University of California, Berkeley._
 <br><br>
@@ -74,6 +71,9 @@ _Sara Hruska (she/her/hers) earned her Master of Library and Information Science
 <br><br>
 **-Ying-Hsiang Huang [hinxcode](https://github.com/hinxcode), Mapping Contributor, Transformation Contributor**<br>
 _Ying-Hsiang Huang (he/him) earned his Master of Library and Information Science student at the University of Washington-Seattle. He was formerly a Library Linked Data Metadata Student Specialist at the University of Washington Libraries from 2024 to 2025, where he contributed to mapping MARC21 to RDA among other linked data projects. With a robust background in software engineering, he is committed to enhancing library services through digital transformation initiatives._
+<br><br>
+**-Abhignya Rajapu [arajapu](https://github.com/arajapu), Transformation Contributor**<br>
+_Abhignya Rajapu (she/her/hers) is a graduate student in the Master of Science in Information Management program at the University of Washington. She contributes to the MARC2RDA project as a Linked Metadata Student Specialist, where she works on transforming traditional bibliographic data into RDA-RDF formats. With a background in data engineering and enterprise systems, she is passionate about the intersection of data, strategy, and meaningful transformation in information systems._
 <br><br>
 **-Erin Grant [ErinGrant](https://github.com/ErinMGrant), Project Supervisor**<br>
 _Erin Grant is the Head of Cataloging and Metadata Services at the University of Washington Libraries in Seattle. She acted as interim supervisor for the MARC to RDA Project in 2024._
