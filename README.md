@@ -1,10 +1,13 @@
 # MARC2RDA
-Mapping and transformation between MARC21 and RDA-RDF
+Mapping and transformation between MARC21 Bibliographic and LRM/RDA/RDF. Project landing page is .
 ## About
 This is an independent, volunteer-based project initiated in 2021 at the University of Washington Libraries' Cataloging and Metadata Services Department to create an open source, robust mapping between the MARC21 bibliographic format and RDA-RDF and a corresponding conversion tool. Authority data is out of scope for this mapping. This project builds on the work of the RDA/MARC 21 Alignment Task Force within the RSC Technical Working Group, specifically the mapping available [here.](http://www.rdaregistry.info/Maps/mapRDA2M21B.html)
-## More information and resources for participants available [on the wiki](https://github.com/crystalyragui/MARC2RDA/wiki).
+## Navigating Project Deliverables
+The Project's landing page is [here](https://marc2rda.info/wiki/doku.php?id=start). This landing page provides a high-level overview of project outputs, along with links to those outputs.
+## More information and resources for participants 
+Meeting minutes, guidelines for participation, and more are available [on the wiki](https://github.com/crystalyragui/MARC2RDA/wiki). The Wiki is open, but primarily geared towards project participants.
 ## To get in touch, email Crystal Yragui at crystalyragui@gmail.com.
-# Project Roster
+# Project Roster (We are recruiting for Phase II. If you have knowledge of MARC21, Official RDA, or XSLT, please reach out to volunteer!)
 **-Laura Akerman, [lake44me](https://github.com/lake44me), Mapping Contributor**<br>
 _Laura Akerman is a Librarian and Product Manager at Emory University Libraries, where she leads and contributes to technology projects and oversight, including work on multiple discovery systems.  She has served as Chair and is currently a member of the IGELU-ELUNA Linked Open Data Community of Practice Working Group, working with vendor Ex Libris on its plans to incorporate linked data features into products, and has written and presented on linked data topics including BIBFRAME and RDA.  In the past, she led the ALA Catalog Form and Function Interest Group and ALA Library Linked Data Interest Group Tools and Resources Subgroup, and contributed to the SAC Subcommittee on FAST._
 <br><br>
