@@ -46,22 +46,40 @@
                     <xsl:when test="$conditionMet = '588'">
                         <xsl:if test="$type = 'reproduction'">
                             <rdamd:P30182>
-                                <xsl:value-of select="
-                                        marc:subfield[@code = '3'] | marc:subfield[@code = 'a']
+                                <xsl:value-of select="marc:subfield[@code = 'a']
                                         | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e']
                                         | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']"
                                     separator=" "/>
+                                <xsl:if test="marc:subfield[@code='3']">
+                                    <xsl:text>(Applies to: </xsl:text>
+                                    <xsl:for-each select="marc:subfield[@code='3']">
+                                        <xsl:value-of select="."/>
+                                        <xsl:if test="position() != last()">
+                                            <xsl:text>; </xsl:text>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                    <xsl:text>)</xsl:text>
+                                </xsl:if>
                             </rdamd:P30182>
                         </xsl:if>
                     </xsl:when>
                     <xsl:when test="$conditionMet = '533'">
                         <xsl:if test="$type = 'origMan'">
                             <rdamd:P30182>
-                                <xsl:value-of select="
-                                        marc:subfield[@code = '3'] | marc:subfield[@code = 'a']
+                                <xsl:value-of select="marc:subfield[@code = 'a']
                                         | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e']
                                         | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']"
                                     separator=" "/>
+                                <xsl:if test="marc:subfield[@code='3']">
+                                    <xsl:text>(Applies to: </xsl:text>
+                                    <xsl:for-each select="marc:subfield[@code='3']">
+                                        <xsl:value-of select="."/>
+                                        <xsl:if test="position() != last()">
+                                            <xsl:text>; </xsl:text>
+                                        </xsl:if>
+                                    </xsl:for-each>
+                                    <xsl:text>)</xsl:text>
+                                </xsl:if>
                             </rdamd:P30182>
                         </xsl:if>
                     </xsl:when>
@@ -69,11 +87,20 @@
             </xsl:when>
             <xsl:otherwise>
                 <rdamd:P30182>
-                    <xsl:value-of select="
-                            marc:subfield[@code = '3'] | marc:subfield[@code = 'a']
+                    <xsl:value-of select="marc:subfield[@code = 'a']
                             | marc:subfield[@code = 'b'] | marc:subfield[@code = 'c'] | marc:subfield[@code = 'e']
                             | marc:subfield[@code = 'f'] | marc:subfield[@code = 'g']"
                         separator=" "/>
+                    <xsl:if test="marc:subfield[@code='3']">
+                        <xsl:text>(Applies to: </xsl:text>
+                        <xsl:for-each select="marc:subfield[@code='3']">
+                            <xsl:value-of select="."/>
+                            <xsl:if test="position() != last()">
+                                <xsl:text>; </xsl:text>
+                            </xsl:if>
+                        </xsl:for-each>
+                        <xsl:text>)</xsl:text>
+                    </xsl:if>
                 </rdamd:P30182>
             </xsl:otherwise>
         </xsl:choose>
@@ -861,32 +888,64 @@
         mode="man" expand-text="yes">
 
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdam:P30455><xsl:value-of select="."/></rdam:P30455>
+            <xsl:variable name="subA" select="."/>
+            <rdamd:P30455>
+                <xsl:value-of select="."/>
+            </rdamd:P30455>
+            <xsl:for-each select="../marc:subfield[@code = '3']">
+                <rdamd:P30137>
+                    <xsl:text>{$subA} applies to: {.}</xsl:text>
+                </rdamd:P30137>
+            </xsl:for-each>
         </xsl:for-each>
 
-        <xsl:if test="marc:subfield[@code='b'] or marc:subfield[@code='2']">
-            <rdam:P30455>
-                <xsl:for-each select="marc:subfield[@code='b'] | marc:subfield[@code='2']">
+        <xsl:if test="marc:subfield[@code='b']">
+            <xsl:variable name="subB" select="."/>
+            <xsl:for-each select="marc:subfield[@code='b']">
+                <rdamd:P30455>
                     <xsl:value-of select="."/>
-                    <xsl:if test="position() != last()">
-                        <xsl:text>; </xsl:text>
+                    <xsl:if test="marc:subfield[@code='2']">
+                        <xsl:text>; Source: {marc:subfield[@code='2'][1]}</xsl:text>
                     </xsl:if>
-                </xsl:for-each>
-            </rdam:P30455>
+                </rdamd:P30455>
+            </xsl:for-each>
+            <xsl:for-each select="../marc:subfield[@code = '3']">
+                <rdamd:P30137>
+                    <xsl:text>{$subB} applies to: {.}</xsl:text>
+                </rdamd:P30137>
+            </xsl:for-each>
         </xsl:if>
 
         <xsl:for-each select="marc:subfield[@code = '0']">
-            <rdam:P30455><xsl:value-of select="."/></rdam:P30455>
-        </xsl:for-each>
-
-        <xsl:for-each select="marc:subfield[@code = '3']">
-            <rdam:P30137>applies to: <xsl:value-of select="."/></rdam:P30137>
+            <xsl:variable name="sub0" select="."/>
+            <xsl:choose>
+                <xsl:when test="contains(., 'http') and not(contains(., ' '))">
+                    <rdam:P30455 rdf:resource="{.}"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <rdamd:P30455>
+                        <xsl:value-of select="."/>
+                    </rdamd:P30455>
+                </xsl:otherwise>
+            </xsl:choose>
+            <xsl:for-each select="../marc:subfield[@code = '3']">
+                <rdamd:P30137>
+                    <xsl:text>{$sub0} applies to: {.}</xsl:text>
+                </rdamd:P30137>
+            </xsl:for-each>
         </xsl:for-each>
         
         <xsl:for-each select="marc:subfield[@code = '1']">
-            <rdam:P30455 rdf:resource="{.}"/>
+            <xsl:variable name="sub1" select="."/>
+            <xsl:if test="not(contains(., ' '))">
+                <rdam:P30455 rdf:resource="{.}"/>
+                <xsl:for-each select="../marc:subfield[@code = '3']">
+                    <rdamd:P30137>
+                        <xsl:text>{$sub1} applies to: {.}</xsl:text>
+                    </rdamd:P30137>
+                </xsl:for-each>
+            </xsl:if>
         </xsl:for-each>
- 
     </xsl:template>
 
 
@@ -1103,47 +1162,88 @@
 <!-- 384 Key Type -->
 <xsl:template
     match="marc:datafield[@tag = '384'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '384']"
-    mode="exp">
+    mode="exp" expand-text="yes">
     <xsl:if test="@ind1 = ' ' or @ind1 = '0' or @ind1 = '1'">
-        <xsl:for-each
-            select="marc:subfield[@code = 'a']">
-            <rdaed:P20326><xsl:value-of select="."/></rdaed:P20326>
+        <xsl:for-each select="marc:subfield[@code = 'a']">
+            <xsl:variable name="subA" select="."/>
+            <rdaed:P20326>
+                <xsl:value-of select="."/>
+            </rdaed:P20326>
+            <xsl:for-each select="../marc:subfield[@code = '3']">
+                <rdaed:P20071>
+                    <xsl:text>{$subA} applies to: {.}</xsl:text>
+                </rdaed:P20071>
+            </xsl:for-each>
         </xsl:for-each>      
         <xsl:for-each select=" marc:subfield[@code = '0']">
-            <rdaed:P20326><xsl:value-of select="."/></rdaed:P20326>
+            <xsl:variable name="sub0" select="."/>
+            <rdaed:P20326>
+                <xsl:value-of select="."/>
+            </rdaed:P20326>
+            <xsl:for-each select="../marc:subfield[@code = '3']">
+                <rdaed:P20071>
+                    <xsl:text>{$sub0} applies to: {.}</xsl:text>
+                </rdaed:P20071>
+            </xsl:for-each>
         </xsl:for-each>
         <xsl:for-each
             select="marc:subfield[@code = '1']">
-                <rdaeo:P20326 rdf:resource="{.}"/>
-        </xsl:for-each>
-        <xsl:for-each select="marc:subfield[@code = '3']">
-            <rdaeo:P20071>applies to: <xsl:value-of select="."/></rdaeo:P20071>
+            <xsl:if test="not(contains(., ' '))">
+                <xsl:variable name="sub1" select="."/>
+                <rdae:P20326 rdf:resource="{.}"/>
+                <xsl:for-each select="../marc:subfield[@code = '3']">
+                    <rdaed:P20071>
+                        <xsl:text>{$sub1} applies to: {.}</xsl:text>
+                    </rdaed:P20071>
+                </xsl:for-each>
+            </xsl:if>
         </xsl:for-each>
     </xsl:if>
 </xsl:template>
 
 <xsl:template
     match="marc:datafield[@tag = '384'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '384']"
-    mode="wor">
+    mode="wor" expand-text="yes">
     <xsl:if test="@ind1 = '2'">
         <xsl:for-each
             select="marc:subfield[@code = 'a']">
-            <rdawd:P10221><xsl:value-of select="."/></rdawd:P10221>
+            <xsl:variable name="subA" select="."/>
+            <rdawd:P10221>
+                <xsl:value-of select="."/>
+            </rdawd:P10221>
+            <xsl:for-each select="../marc:subfield[@code = '3']">
+                <rdaed:P20071>
+                    <xsl:text>{$subA} applies to: {.}</xsl:text>
+                </rdaed:P20071>
+            </xsl:for-each>
         </xsl:for-each>
         <xsl:for-each select=" marc:subfield[@code = '0']">
-            <rdawd:P10221><xsl:value-of select="."/></rdawd:P10221>
-        </xsl:for-each>
-        <xsl:for-each select="marc:subfield[@code = '3']">
-            <rdawd:P10330>applies to: <xsl:value-of select="."/></rdawd:P10330>
+            <xsl:variable name="sub0" select="."/>
+            <rdawd:P10221>
+                <xsl:value-of select="."/>
+            </rdawd:P10221>
+            <xsl:for-each select="../marc:subfield[@code = '3']">
+                <rdaed:P20071>
+                    <xsl:text>{$sub0} applies to: {.}</xsl:text>
+                </rdaed:P20071>
+            </xsl:for-each>
         </xsl:for-each>
         <xsl:for-each
             select="marc:subfield[@code = '1']">
-                <rdawo:P10221 rdf:resource="{.}"/>
+            <xsl:if test="not(contains(., ' '))">
+                <xsl:variable name="sub1" select="."/>
+                <rdaw:P10221 rdf:resource="{.}"/>
+                <xsl:for-each select="../marc:subfield[@code = '3']">
+                    <rdaed:P20071>
+                        <xsl:text>{$sub1} applies to: {.}</xsl:text>
+                    </rdaed:P20071>
+                </xsl:for-each>
+            </xsl:if>
         </xsl:for-each>
     </xsl:if>
 </xsl:template>
-    <!-- 385 - Intended Audience -->
     
+    <!-- 385 - Intended Audience -->
     <xsl:template
         match="marc:datafield[@tag = '385'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '385']"
         mode="exp">
@@ -1176,24 +1276,43 @@
         <xsl:param name="baseID"/>
         <!--<xsl:call-template name="getmarc"/>-->  
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdawo:P10317 rdf:resource="{m2r:timespanIRI($baseID, .., .)}"/>         
+            <xsl:variable name="subAIRI" select="m2r:timespanIRI($baseID, .., .)"/>
+            <rdawo:P10317 rdf:resource="{$subAIRI}"/>   
+            <xsl:for-each select="../marc:subfield[@code = '3']">
+                <rdawd:P10330>
+                    <xsl:text>Timespan related to work </xsl:text>
+                    <xsl:value-of select="$subAIRI"/>
+                    <xsl:text> applies to </xsl:text>
+                    <xsl:value-of select="."/>
+                </rdawd:P10330>
+            </xsl:for-each>
         </xsl:for-each> 
         <xsl:for-each select="marc:subfield[@code = '0']">
-            <xsl:if test="starts-with(., 'http://')">
+            <xsl:if test="starts-with(., 'http') and not(contains(., ' '))">
+                <xsl:variable name="sub0" select="."/>
                 <rdawo:P10317 rdf:resource="{.}"/>
+                <xsl:for-each select="../marc:subfield[@code = '3']">
+                    <rdawd:P10330>
+                        <xsl:text>Timespan related to work </xsl:text>
+                        <xsl:value-of select="$sub0"/>
+                        <xsl:text> applies to </xsl:text>
+                        <xsl:value-of select="."/>
+                    </rdawd:P10330>
+                </xsl:for-each>
             </xsl:if>
         </xsl:for-each>
-        <xsl:for-each select="marc:subfield[@code = '1']">
+        <xsl:for-each select="marc:subfield[@code = '1'][not(contains(., ' '))]">
+            <xsl:variable name="sub1" select="."/>
             <rdawo:P10317 rdf:resource="{.}"/>
+            <xsl:for-each select="../marc:subfield[@code = '3']">
+                <rdawd:P10330>
+                    <xsl:text>Timespan related to work </xsl:text>
+                    <xsl:value-of select="$sub1"/>
+                    <xsl:text> applies to </xsl:text>
+                    <xsl:value-of select="."/>
+                </rdawd:P10330>
+            </xsl:for-each>
         </xsl:for-each> 
-        <xsl:if test="marc:subfield[@code = '3']">
-            <rdawd:P10330>
-                <xsl:text>Timespan related to work </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'a'] [1]"/>
-                <xsl:text> applies to </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = '3']"/>
-            </rdawd:P10330>
-        </xsl:if>
     </xsl:template>    
     
     <xsl:template match="marc:datafield[@tag = '388'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '388']" mode="tim">

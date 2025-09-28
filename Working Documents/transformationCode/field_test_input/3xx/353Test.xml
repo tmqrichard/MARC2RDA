@@ -49,13 +49,13 @@
         </marc:datafield>
         
         <marc:datafield tag="353" ind1=" " ind2=" ">
-            <marc:subfield code="0">http://Authority record control number or standard number (R) </marc:subfield>
+            <marc:subfield code="0">http://Authorityrecordcontrolnumberorstandardnumber(R)</marc:subfield>
             <marc:subfield code="0">Authority record control number or standard number (R) </marc:subfield>
         </marc:datafield>
         
         <marc:datafield tag="353" ind1=" " ind2=" ">
-            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
-            <marc:subfield code="1">Real World Object URI (R) </marc:subfield>
+            <marc:subfield code="1">RealWorldObjectURI(R)</marc:subfield>
+            <marc:subfield code="1">RealWorldObjectURI(R)</marc:subfield>
         </marc:datafield>
         
     </marc:record>

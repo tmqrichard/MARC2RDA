@@ -2950,13 +2950,15 @@
         
         <!-- Case 1: $1 present (RWO IRI) -->
         <xsl:for-each select="marc:subfield[@code='1']">
-            <rdaeo:P20322 rdf:resource="{.}"/>
+            <xsl:if test="not(contains(., ' '))">
+                <rdae:P20322 rdf:resource="{.}"/>
+            </xsl:if>
         </xsl:for-each>
         
         <!-- Case 2: $0 contains http IRI and $1 absent -->
         <xsl:if test="not(marc:subfield[@code='1'])">
-            <xsl:for-each select="marc:subfield[@code='0'][contains(., 'http')]">
-                <rdaeo:P20322 rdf:resource="{.}"/>
+            <xsl:for-each select="marc:subfield[@code='0'][contains(., 'http')][not(contains(., ' '))]">
+                <rdae:P20322 rdf:resource="{.}"/>
             </xsl:for-each>
         </xsl:if>
         
@@ -2983,8 +2985,8 @@
     <xsl:template name="F385-xx-a_b-manifestation">
         <xsl:variable name="code2" select="marc:subfield[@code='2'][1]"/>
         <!-- Case 1: $1 present -->
-        <xsl:for-each select="marc:subfield[@code='1']">
-            <rdamo:P30305 rdf:resource="{.}"/>
+        <xsl:for-each select="marc:subfield[@code='1'][not(contains(., ' '))]">
+            <rdam:P30305 rdf:resource="{.}"/>
             <xsl:if test="../marc:subfield[@code = '3']">
                 <rdamd:P30276>
                     <xsl:text>Intended audience </xsl:text>
@@ -2997,8 +2999,8 @@
         
         <!-- Case 2: $0 with http and $1 not present -->
         <xsl:if test="not(marc:subfield[@code='1'])">
-            <xsl:for-each select="marc:subfield[@code='0'][contains(., 'http')]">
-                <rdamo:P30305 rdf:resource="{.}"/>
+            <xsl:for-each select="marc:subfield[@code='0'][contains(., 'http')][not(contains(., ' '))]">
+                <rdam:P30305 rdf:resource="{.}"/>
                 <xsl:if test="../marc:subfield[@code = '3']">
                     <rdamd:P30276>
                         <xsl:text>Intended audience </xsl:text>
