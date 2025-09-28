@@ -1,0 +1,55 @@
+Source ,Type,Type URI,Comments (GD),RDA range,Approved?
+BBC Things,cwork:CreativeWork,https://www.bbc.co.uk/ontologies/creativework/CreativeWork,"Properties overlap with RDA Work, Expression, and possibly Manifestation. This is similar to ISBD Resource.",,N
+BBC Things,core:Organisation,https://www.bbc.co.uk/ontologies/coreconcepts/Organisation,,Corporate Body,Y
+CERL Thesaurus,FRBR:Person,http://metadataregistry.org/schemaprop/show/id/799.html,"FRAD Person includes fictitious, etc. entities. This is one of the major changes between FR family and LRM.",Person,Y
+CERL Thesaurus,FRBR:Corporate Body,http://metadataregistry.org/schemaprop/show/id/800.html,FRDA Corporate Body includes fictitious entities.,Corporate Body,Y
+CERL Thesaurus,FRBR:Place,http://metadataregistry.org/schemaprop/show/id/863.html,,Place,Y
+DBpedia,dbo:Organization,https://dbpedia.org/ontology/Organisation,Equivalent class in schema and WikiData is equivalent to RDA Corporate Body.,Corporate Body,Y
+DBpedia,dbo:Family,https://dbpedia.org/ontology/Family,,Family,Y
+DBpedia,dbo:Place,https://dbpedia.org/ontology/place,,Place,Y
+FAST,schema:CreativeWork,https://schema.org/CreativeWork,"Properties overlap with RDA Work, Expression, and possibly Manifestation. This is similar to ISBD Resource.",,N
+FAST,schema:Organization,https://schema.org/Organization,,Corporate Body,Y
+GeoNames  (Need recheck),gn:GeonamesFeature,"http://www.geonames.org/ontology#GeonamesFeature
+","GeoNames distinguishes authority/document from concept/rwo IRIs. Attributes are for geospatial characteristics, included latitude and longitude.",Place,Y
+GND,Family,https://d-nb.info/standards/elementset/gnd#Family,Declares RDA Family as supertype.,Family,Y
+HMML Authority File,CreativeWork,https://hmml.org/ontology/#CreativeWork,,Work,Y
+HMML Authority File,Organization,https://hmml.org/ontology/#Organization,,Corporate Body,Y
+HMML Authority File,Family,https://hmml.org/ontology/#Family,,Family,Y
+HMML Authority File,Expression,https://hmml.org/ontology/#Expression,,Expression,Y
+ISNI,schema:Organization,https://schema.org/Organization,,Corporate Body,Y
+LC Children's Subject Headings,madsrdf:Geographic,http://www.loc.gov/mads/rdf/v1#Geographic,,Place,Y
+LC/NACO Authority File,madsrdf:NameTitle,http://www.loc.gov/mads/rdf/v1#NameTitle,"Not sure that this always references a work. In legacy practice, yes, but the definition can apply to any entity with a title; e.g. Manifestation, Expression.",Work?,N
+LC/NACO Authority File,BF Organization,http://id.loc.gov/ontologies/bibframe/Organization,,Corporate Body,Y
+LC/NACO Authority File,BF Family,http://id.loc.gov/ontologies/bibframe/Family,,Family,Y
+LC/NACO Authority File,madsrdf:Geographic,http://www.loc.gov/mads/rdf/v1#Geographic,,Place,Y
+LC/NACO Authority File,FOAF Organization,"http://xmlns.com/foaf/0.1/Organization
+",,Corporate Body,Y
+LCSH,madsrdf:Geographic,http://www.loc.gov/mads/rdf/v1#Geographic,,Place,Y
+MusicBrainz,work,https://musicbrainz.org/doc/Work,,,Y
+MusicBrainz,Area,https://musicbrainz.org/doc/Area,,Work,Y
+ORCID (can't find type uri),person, ,"Evidence shows this may include fictitious names. If approved, the assumption is that Donald Duck is a pseudonym and a rwo person may have more than one ORCID.",Person,Y
+PeriodO (can't find type uri),time,https://perio.do/technical-overview/,"Definitions, etc. indicate equivalence with RDA Timespan.",Timespan,Y
+RISM online (can't find type uri),institution, ,,Corporate Body,Y
+SNAC (can't find type uri),corpname, ,,Corporate Body,Y
+SNAC (can't find type uri),family,,,Family,Y
+VIAF,schema:CreativeWork,https://schema.org/CreativeWork,"Properties overlap with RDA Work, Expression, and possibly Manifestation. This is similar to ISBD Resource.",,N
+VIAF,schema:Organization,https://schema.org/Organization,,Corporate Body,Y
+Web NDL Authorities,frbrent: Work,http://metadataregistry.org/schema/show/id/14.html,,Work,Y
+Web NDL Authorities,foaf:Organization,"http://xmlns.com/foaf/0.1/Organization
+",,Corporate Body,Y
+Web NDL Authorities,frbrent:Family,http://metadataregistry.org/schemaprop/show/id/801.html,,Family,Y
+Wikidata,human (Q5),"https://www.wikidata.org/wiki/Q5
+","Defined as: any member of Homo sapiens, unique extant species of the genus Homo, from embryo to adult. One of the aliases for it is nonfictional human.  I think this item is limited to actual humans.",Person,N
+Wikidata,organization (Q43229),"https://www.wikidata.org/wiki/Q43229
+",No link to WD Corporate body. Equivalent to LRM Collective Agent.,Collective Agent,N
+Wikidata,family (Q8436),"https://www.wikidata.org/wiki/Q8436
+",,Family,N
+Wikidata,geographic entity (Q27096213),"https://www.wikidata.org/wiki/Q27096213
+",,Place,N
+Wikidata,time interval (Q186081),"https://www.wikidata.org/wiki/Q186081
+",,Timespan,N
+Wikidata,corporate body (Q106668099),https://www.wikidata.org/wiki/Q106668099,No link to WD Organization.,Corporate Body,N
+WorldCat Entities,wco:Organization,https://id.oclc.org/worldcat/ontology/Organization,Equivalent to schema:Organization.,Corporate Body,Y
+WorldCat Entities,wco:Family,https://id.oclc.org/worldcat/ontology/Family,,Family,Y
+WorldCat Entities,wco:Place,"https://id.oclc.org/worldcat/ontology/Place
+",,Place,Y
