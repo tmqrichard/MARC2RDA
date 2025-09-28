@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#marc6XXduplicates-test">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>6XXduplicates-test</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>wor#marc6XXduplicates-test</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.info/testing/man#marc6XXduplicates-test"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.info/testing/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.info/testing/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.info/testing/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc6XXduplicates-test">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc6XXduplicates-test"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>man#marc6XXduplicates-test</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 6XXduplicates-test
+F600 17 $9 SUBJECT ADDED ENTRY-\-PERSONAL NAME (R)  $a Personal name (NR)  $2 Source of heading or term (NR)  $2 Source of heading or term (NR) 
+F610 #7 $9 SUBJECT ADDED ENTRY-\-CORPORATE NAME (R)  $a Corporate name or jurisdiction name as entry element (NR)  $2 Source of heading or term (NR)  $2 Source of heading or term (NR) 
+F611 07 $9 SUBJECT ADDED ENTRY-\-MEETING NAME (R)  $a Meeting name or jurisdiction name as entry element (NR)  $2 Source of heading or term (NR)  $2 Source of heading or term (NR) 
+F630 07 $9 SUBJECT ADDED ENTRY-\-UNIFORM TITLE (R)  $a Uniform title (NR)  $2 Source of heading or term (NR)  $2 Source of heading or term (NR) 
+F647 #0 $9 SUBJECT ADDED ENTRY-\-NAMED EVENT (R)  $a Named event (NR)  $a Named event (NR)  $c Location of named event (R)  $c Location of named event (R)  $d Date of named event (NR)  $d Date of named event (NR)  $e Relator term (R)  $e Relator term (R)  $g Miscellaneous information (R)  $g Miscellaneous information (R)  $v Form subdivision (R)  $v Form subdivision (R)  $x General subdivision (R)  $x General subdivision (R)  $y Chronological subdivision (R)  $y Chronological subdivision (R)  $z Geographic subdivision (R)  $z Geographic subdivision (R)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $2 Source of heading or term (NR)  $2 Source of heading or term (NR)  $3 Materials specified (NR)  $3 Materials specified (NR)  $4 Relationship (R)  $4 Relationship (R) 
+F648 #0 $9 SUBJECT ADDED ENTRY-\-CHRONOLOGICAL TERM (R)  $a Chronological term (NR)  $a Chronological term (NR)  $e Relator term (R)  $e Relator term (R)  $v Form subdivision (R)  $v Form subdivision (R)  $x General subdivision (R)  $x General subdivision (R)  $y Chronological subdivision (R)  $y Chronological subdivision (R)  $z Geographic subdivision (R)  $z Geographic subdivision (R)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $2 Source of heading or term (NR)  $2 Source of heading or term (NR)  $3 Materials specified (NR)  $3 Materials specified (NR)  $4 Relationship (R)  $4 Relationship (R) 
+F650 #0 $9 SUBJECT ADDED ENTRY-\-TOPICAL TERM (R)  $a Topical term or geographic name as entry element (NR)  $a Topical term or geographic name as entry element (NR)  $b Topical term following geographic name as entry element (NR)  $b Topical term following geographic name as entry element (NR)  $c Location of event (NR)  $c Location of event (NR)  $d Active dates (NR)  $d Active dates (NR)  $e Relator term (NR)  $e Relator term (NR)  $g Miscellaneous information (R)  $g Miscellaneous information (R)  $v Form subdivision (R)  $v Form subdivision (R)  $x General subdivision (R)  $x General subdivision (R)  $y Chronological subdivision (R)  $y Chronological subdivision (R)  $z Geographic subdivision (R)  $z Geographic subdivision (R)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $2 Source of heading or term (NR)  $2 Source of heading or term (NR)  $3 Materials specified (NR)  $3 Materials specified (NR)  $4 Relationship (R)  $4 Relationship (R) 
+F651 #0 $9 SUBJECT ADDED ENTRY-\-GEOGRAPHIC NAME (R)  $a Geographic name (NR)  $a Geographic name (NR)  $b Geographic name following place entry element (R) [OBSOLETE]  $b Geographic name following place entry element (R) [OBSOLETE]  $e Relator term (R)  $e Relator term (R)  $g Miscellaneous information (R)  $g Miscellaneous information (R)  $v Form subdivision (R)  $v Form subdivision (R)  $x General subdivision (R)  $x General subdivision (R)  $y Chronological subdivision (R)  $y Chronological subdivision (R)  $z Geographic subdivision (R)  $z Geographic subdivision (R)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $2 Source of heading or term (NR)  $2 Source of heading or term (NR)  $3 Materials specified (NR)  $3 Materials specified (NR)  $4 Relationship (R)  $4 Relationship (R) 
+F652 ## $9 SUBJECT ADDED ENTRY-\-REVERSED GEOGRAPHIC (BK MP SE) [OBSOLETE]  $a Geographic name of place element (NR)  $a Geographic name of place element (NR)  $x General subdivision (R)  $x General subdivision (R)  $y Chronological subdivision (R)  $y Chronological subdivision (R)  $z Geographic subdivision (R) $z Geographic subdivision (R)
+F653 ## $9 INDEX TERM-\-UNCONTROLLED (R)  $a Uncontrolled term (R)  $a Uncontrolled term (R)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $5 Institution to which field applies (NR)  $5 Institution to which field applies (NR) 
+F654 ## $9 SUBJECT ADDED ENTRY-\-FACETED TOPICAL TERMS (R)  $a Focus term (R)  $a Focus term (R)  $b Non-focus term (R)  $b Non-focus term (R)  $c Facet/hierarchy designation (R)  $c Facet/hierarchy designation (R)  $e Relator term (R)  $e Relator term (R)  $v Form subdivision (R)  $v Form subdivision (R)  $y Chronological subdivision (R)  $y Chronological subdivision (R)  $z Geographic subdivision (R)  $z Geographic subdivision (R)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $2 Source of heading or term (NR)  $2 Source of heading or term (NR)  $3 Materials specified (NR)  $3 Materials specified (NR)  $4 Relationship (R)  $4 Relationship (R) 
+F655 #0 $9 INDEX TERM-\-GENRE/FORM (R)  $a Genre/form data or focus term (NR)  $a Genre/form data or focus term (NR)  $b Non-focus term (R)  $b Non-focus term (R)  $c Facet/hierarchy designation (R)  $c Facet/hierarchy designation (R)  $v Form subdivision (R)  $v Form subdivision (R)  $x General subdivision (R)  $x General subdivision (R)  $y Chronological subdivision (R)  $y Chronological subdivision (R)  $z Geographic subdivision (R)  $z Geographic subdivision (R)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $2 Source of term (NR)  $2 Source of term (NR)  $3 Materials specified (NR)  $3 Materials specified (NR)  $5 Institution to which field applies (NR)  $5 Institution to which field applies (NR) 
+F656 ## $9 INDEX TERM-\-OCCUPATION (R)  $a Occupation (NR)  $a Occupation (NR)  $k Form (NR)  $k Form (NR)  $v Form subdivision (R)  $v Form subdivision (R)  $x General subdivision (R)  $x General subdivision (R)  $y Chronological subdivision (R)  $y Chronological subdivision (R)  $z Geographic subdivision (R)  $z Geographic subdivision (R)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $2 Source of term (NR)  $2 Source of term (NR)  $3 Materials specified (NR)  $3 Materials specified (NR) 
+F657 ## $9 INDEX TERM-\-FUNCTION (R)  $a Function (NR)  $a Function (NR)  $v Form subdivision (R)  $v Form subdivision (R)  $x General subdivision (R)  $x General subdivision (R)  $y Chronological subdivision (R)  $y Chronological subdivision (R)  $z Geographic subdivision (R)  $z Geographic subdivision (R)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $2 Source of term (NR)  $2 Source of term (NR)  $3 Materials specified (NR)  $3 Materials specified (NR) 
+F658 ## $9 INDEX TERM-\-CURRICULUM OBJECTIVE (R)  $a Main curriculum objective (NR)  $a Main curriculum objective (NR)  $b Subordinate curriculum objective (R)  $b Subordinate curriculum objective (R)  $c Curriculum code (NR)  $c Curriculum code (NR)  $d Correlation factor (NR)  $d Correlation factor (NR)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $2 Source of term or code (NR)  $2 Source of term or code (NR) 
+F662 ## $9 SUBJECT ADDED ENTRY-\-HIERARCHICAL PLACE NAME (R)  $a Country or larger entity (R)  $a Country or larger entity (R)  $b First-order political jurisdiction (NR)  $b First-order political jurisdiction (NR)  $c Intermediate political jurisdiction (R)  $c Intermediate political jurisdiction (R)  $d City (NR)  $d City (NR)  $e Relator term (R)  $e Relator term (R)  $f City subsection (R)  $f City subsection (R)  $g Other nonjurisdictional geographic region and feature (R)  $g Other nonjurisdictional geographic region and feature (R)  $h Extraterrestrial area (R)  $h Extraterrestrial area (R)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $2 Source of heading or term (NR)  $2 Source of heading or term (NR)  $4 Relationship (R)  $4 Relationship (R) 
+F688 ## $9 SUBJECT ADDED ENTRY-\-TYPE OF ENTITY UNSPECIFIED (R)  $a Name, title, or term (NR)  $a Name, title, or term (NR)  $e Relator term (R)  $e Relator term (R)  $g Miscellaneous information (R)  $g Miscellaneous information (R)  $0 Authority record control number or standard number (R)  $0 Authority record control number or standard number (R)  $1 Real World Object URI (R)  $1 Real World Object URI (R)  $2 Source of name, title, or term (NR)  $2 Source of name, title, or term (NR)  $3 Materials specified (NR)  $3 Materials specified (NR)  $4 Relationship (R)  $4 Relationship (R) 
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.info/testing/wor#marc6XXduplicates-test"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.info/testing/exp#"/><!--rdawo:P10078 = has expression of work-->
+      <rdawo:P10261 rdf:resource="http://marc2rda.info/testing/sourceofheadingorterm%28nr%29/age#personalnamenr"/><!--rdawo:P10261 = has subject person-->
+      <rdawo:P10263 rdf:resource="http://marc2rda.info/testing/sourceofheadingorterm%28nr%29/age#corporatenameorjurisdictionnameasentryelementnr"/><!--rdawo:P10263 = has subject corporate body-->
+      <rdawo:P10263 rdf:resource="http://marc2rda.info/testing/sourceofheadingorterm%28nr%29/age#meetingnameorjurisdictionnameasentryelementnr"/><!--rdawo:P10263 = has subject corporate body-->
+      <rdawo:P10257 rdf:resource="http://marc2rda.info/testing/sourceofheadingorterm%28nr%29/wor#uniformtitlenr"/><!--rdawo:P10257 = has subject work-->
+      <rdaw:P10256 rdf:resource="Real World Object URI (R) "/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.info/testing/lcsh/con#formsubdivisionr"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.info/testing/lcsh/con#formsubdivisionr"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="Real World Object URI (R) "/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.info/testing/lcsh/con#formsubdivisionr"/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10004 rdf:resource="http://marc2rda.info/testing/lcsh/con#formsubdivisionr"/><!--rdaw:P10004 = has category of work-->
+      <rdawo:P10322 rdf:resource="http://marc2rda.info/testing/lcsh/tim#chronologicaltermnr"/><!--rdawo:P10322 = has subject timespan-->
+      <rdaw:P10256 rdf:resource="Real World Object URI (R) "/><!--rdaw:P10256 = has subject-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.info/testing/lcsh/pla#geographicnamenrgeographicnamenrmiscellaneousinformationrmiscellaneousinformationr"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="Real World Object URI (R) "/><!--rdaw:P10256 = has subject-->
+      <rdawd:P10256>Uncontrolled term (R) Uncontrolled term (R)</rdawd:P10256><!--rdawd:P10256 = has subject-->
+      <rdaw:P10256 rdf:resource="Real World Object URI (R) "/><!--rdaw:P10256 = has subject-->
+      <rdaw:P10004 rdf:resource="Real World Object URI (R) "/><!--rdaw:P10004 = has category of work-->
+      <rdaw:P10256 rdf:resource="Real World Object URI (R) "/><!--rdaw:P10256 = has subject-->
+      <rdawd:P10330>Function: Function (NR) --Function (NR) --Form subdivision (R) --Form subdivision (R) --General subdivision (R) --General subdivision (R) --Chronological subdivision (R) --Chronological subdivision (R) --Geographic subdivision (R) --Geographic subdivision (R); Authority record control number or standard number: Authority record control number or standard number (R) ; Authority record control number or standard number: Authority record control number or standard number (R) ; Real World Object URI: Real World Object URI (R) ; Real World Object URI: Real World Object URI (R)  (Source: Source of term (NR) ) (Applies to: Materials specified (NR)  Materials specified (NR) )</rdawd:P10330><!--rdawd:P10330 = has note on work-->
+      <rdawd:P10330>Main curriculum objective: Main curriculum objective (NR) ; Main curriculum objective: Main curriculum objective (NR) ; Subordinate curriculum objective: Subordinate curriculum objective (R) ; Subordinate curriculum objective: Subordinate curriculum objective (R) ; Curriculum code: Curriculum code (NR) ; Curriculum code: Curriculum code (NR) ; Correlation factor: Correlation factor (NR) ; Correlation factor: Correlation factor (NR) ; Authority record control number or standard number: Authority record control number or standard number (R) ; Authority record control number or standard number: Authority record control number or standard number (R) ; Real World Object URI: Real World Object URI (R) ; Real World Object URI: Real World Object URI (R)  (Source: Source of term or code (NR)  Source of term or code (NR) )</rdawd:P10330><!--rdawd:P10330 = has note on work-->
+      <rdawo:P10321 rdf:resource="http://marc2rda.info/testing/sourceofheadingorterm%28nr%29/pla#countryorlargerentityr--countryorlargerentityr--first-orderpoliticaljurisdictionnr--first-orderpoliticaljurisdictionnr--intermediatepoliticaljurisdictionr--intermediatepoliticaljurisdictionr--citynr--citynr--citysubsectionr--citysubsectionr--othernonjurisdictionalgeographicregionandfeaturer--othernonjurisdictionalgeographicregionandfeaturer--extraterrestrialarear--extraterrestrialarear"/><!--rdawo:P10321 = has subject place-->
+      <rdaw:P10256 rdf:resource="Real World Object URI (R) "/><!--rdaw:P10256 = has subject-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.info/testing/wor#marc6XXduplicates-test"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.info/testing/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.info/testing/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.info/testing/wor#marc6XXduplicates-test"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.info/testing/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/ageNom#2025-09-28t1419426803816-0400d31e5">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Personal name (NR)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <!--IRI could not be found for Source of heading or term (NR) -->
+      <rdand:P80069>Source of heading or term (NR) </rdand:P80069><!--rdand:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/ageNom#2025-09-28t1419426803816-0400d31e14">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Corporate name or jurisdiction name as entry element (NR)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <!--IRI could not be found for Source of heading or term (NR) -->
+      <rdand:P80069>Source of heading or term (NR) </rdand:P80069><!--rdand:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/ageNom#2025-09-28t1419426803816-0400d31e23">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Meeting name or jurisdiction name as entry element (NR)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <!--IRI could not be found for Source of heading or term (NR) -->
+      <rdand:P80069>Source of heading or term (NR) </rdand:P80069><!--rdand:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/worNom#2025-09-28t1419426803816-0400d31e32">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Uniform title (NR)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <!--IRI could not be found for Source of heading or term (NR) -->
+      <rdand:P80069>Source of heading or term (NR) </rdand:P80069><!--rdand:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/timNom#2025-09-28t1419426803816-0400d31e102">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Chronological term (NR)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/lcsh/plaNom#geographicnamenrgeographicnamenrmiscellaneousinformationrmiscellaneousinformationr">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Geographic name (NR) Geographic name (NR) (Miscellaneous information (R) Miscellaneous information (R) )</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/><!--rdan:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/plaNom#2025-09-28t1419426803816-0400d31e534">
+      <rdf:type rdf:resource="httsp://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Country or larger entity (R) --Country or larger entity (R) --First-order political jurisdiction (NR) --First-order political jurisdiction (NR) --Intermediate political jurisdiction (R) --Intermediate political jurisdiction (R) --City (NR) --City (NR) --City subsection (R) --City subsection (R) --Other nonjurisdictional geographic region and feature (R) --Other nonjurisdictional geographic region and feature (R) --Extraterrestrial area (R) --Extraterrestrial area (R)</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <!--IRI could not be found for Source of heading or term (NR) -->
+      <rdand:P80069>Source of heading or term (NR) </rdand:P80069><!--rdand:P80069 = has scheme of nomen-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/sourceofheadingorterm%28nr%29/age#personalnamenr">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaao:P50377 rdf:resource="http://marc2rda.info/testing/ageNom#2025-09-28t1419426803816-0400d31e5"/><!--rdaao:P50377 = has access point for person-->
+      <rdaad:P50111>Personal name (NR)</rdaad:P50111><!--rdaad:P50111 = has name of person-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/sourceofheadingorterm%28nr%29/age#corporatenameorjurisdictionnameasentryelementnr">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaao:P50375 rdf:resource="http://marc2rda.info/testing/ageNom#2025-09-28t1419426803816-0400d31e14"/><!--rdaao:P50375 = has access point for corporate body-->
+      <rdaad:P50032>Corporate name or jurisdiction name as entry element (NR)</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/sourceofheadingorterm%28nr%29/age#meetingnameorjurisdictionnameasentryelementnr">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaao:P50375 rdf:resource="http://marc2rda.info/testing/ageNom#2025-09-28t1419426803816-0400d31e23"/><!--rdaao:P50375 = has access point for corporate body-->
+      <rdaad:P50237>Meeting</rdaad:P50237><!--rdaad:P50237 = has category of corporate body-->
+      <rdaad:P50032>Meeting name or jurisdiction name as entry element (NR)</rdaad:P50032><!--rdaad:P50032 = has name of corporate body-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/sourceofheadingorterm%28nr%29/wor#uniformtitlenr">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10328 rdf:resource="http://marc2rda.info/testing/worNom#2025-09-28t1419426803816-0400d31e32"/><!--rdawo:P10328 = has access point for work-->
+      <rdawd:P10088>Uniform title (NR)</rdawd:P10088><!--rdawd:P10088 = has title of work-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/lcsh/pla#geographicnamenrgeographicnamenrmiscellaneousinformationrmiscellaneousinformationr">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70045 rdf:resource="http://marc2rda.info/testing/lcsh/plaNom#geographicnamenrgeographicnamenrmiscellaneousinformationrmiscellaneousinformationr"/><!--rdapo:P70045 = has authorized access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/sourceofheadingorterm%28nr%29/pla#countryorlargerentityr--countryorlargerentityr--first-orderpoliticaljurisdictionnr--first-orderpoliticaljurisdictionnr--intermediatepoliticaljurisdictionr--intermediatepoliticaljurisdictionr--citynr--citynr--citysubsectionr--citysubsectionr--othernonjurisdictionalgeographicregionandfeaturer--othernonjurisdictionalgeographicregionandfeaturer--extraterrestrialarear--extraterrestrialarear">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70018 rdf:resource="http://marc2rda.info/testing/plaNom#2025-09-28t1419426803816-0400d31e534"/><!--rdapo:P70018 = has access point for place-->
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.info/testing/lcsh/tim#chronologicaltermnr">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10010"/>
+      <rdato:P70015 rdf:resource="http://marc2rda.info/testing/timNom#2025-09-28t1419426803816-0400d31e102"/><!--rdato:P70015 = has access point for timespan-->
+   </rdf:Description>
+</rdf:RDF>
