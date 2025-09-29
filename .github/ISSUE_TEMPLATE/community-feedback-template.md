@@ -10,6 +10,5 @@ assignees: CECSpecialistI
 
 **MARC21 Bibliographic Tag(s)**
 **RDA Element(s)**
-**XSL Stylesheet(s)**
 **Feedback Description:**
 **Desired Outcome:**
