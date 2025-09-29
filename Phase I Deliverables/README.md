@@ -1,5 +1,5 @@
 # MARC2RDA Project Phase I Deliverables
-[Landing Page](https://marc2rda.info/wiki/doku.php?id=start)
+[Phase I Landing Page](https://marc2rda.info/wiki/doku.php?id=start)
 ## [GitHub Repository](https://github.com/crystalyragui/MARC2RDA/)
 ### Mapping between MARC21 Bibliographic (for Phase I resource types) and LRM/RDA/RDF
 * .csv files for mapping spreadsheets
