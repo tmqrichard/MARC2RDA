@@ -1719,9 +1719,9 @@
             and
             exists(
                 marc:datafield[@tag='500'][
-                    not(matches(marc:subfield[@code='a'], '[A-Z][a-z]+ and [A-Z][a-z]'))
+                    not(some $a in marc:subfield[@code='a'] satisfies matches($a, '[A-Z][a-z]+ and [A-Z][a-z]'))
                     and
-                    (some $item in $ListInvertedEtcTerms satisfies contains(lower-case(marc:subfield[@code='a']), lower-case($item)))
+                    (some $item in $ListInvertedEtcTerms satisfies some $a in marc:subfield[@code='a'] satisfies contains(lower-case($a), lower-case($item)))
                 ]
             )
             and
