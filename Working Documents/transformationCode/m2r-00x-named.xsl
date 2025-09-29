@@ -1033,7 +1033,7 @@
         <xsl:if test="$char04 = 'l'">
             <xsl:choose>
                 <xsl:when test="$char00 = 'd' or $char00 = 'a' or $char00 = 'k'">
-            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1042 '}"/>
+            <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1042'}"/>
                 </xsl:when>
             <xsl:when test = "$char00 = 'h'">
                 <rdamd:P30169>
