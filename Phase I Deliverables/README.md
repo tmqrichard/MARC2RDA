@@ -18,7 +18,6 @@
 ### Transformed MARC21 Bibliographic Records Output as LRM/RDA/RDF, including:
 * Subsets of records from the Library of Congress, University of Washington Libraries, and National Library of New Zealand
     * The full set of transformed records is available as a [triplestore](http://marc2rda.info:7200/)
-    * A subset of records is available for testing and editing in a Wikibase Cloud Instance (LINK)
 * A [web-based transformation tool](https://marc2rda.info/x/m2r-online.html) for use with small sets of test records, which does not require users to download or run the full XSLT transform on their own
 
 ### Feedback
