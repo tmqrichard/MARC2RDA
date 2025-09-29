@@ -1,0 +1,14 @@
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,done,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,$0,,,,is a uri and no $1,,,,http://rdaregistry.info/Elements/w/P10256,has subject,IRI,,"<work> rdaw:P10256 <$0>
+",,coded - CP 2024-08-13
+1,done,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,$0,,,,is a identifier and no $1,,,,http://rdaregistry.info/Elements/w/P10256,has subject,IRI,,"<work> rdaw:P10256 <convert $0 into an IRI >
+",,coded for FAST - CP 2024-08-13
+2,done,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,$1,,,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,IRI,,<work> rdaw:P10256 <$1>,,coded - CP 2024-08-13
+3,done,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,"$a, $k, $v, $x, $y, $z", , , ,no $1|$0, ,,,http://rdaregistry.info/Elements/w/P10256,has subject,IRI,,"<work> rdawo:P10256 <tConcept(field)> . // has subject; complete heading
+<tConcept(field)> skos:prefLabel “stripEndStop(concatenateOA($a, $k, $v, $x, $y, $z))” .
+<tConcept(field)> skos:inScheme <tScheme($2)> .",,coded - CP 2024-08-13
+4,done,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,$v,,,,,, ,,https://www.rdaregistry.info/Elements/w/#P10004,has category of work,IRI,,"<work> rdaw:P10004 <tConcept(field)> . // has category of work
+<tConcept(field)> skos:prefLabel “$v” .
+<tConcept(field)> skos:inScheme <tScheme($2)>
+",,coded - CP 2024-08-29
+5,done,656,INDEX TERM--OCCUPATION (R),Undefined,#,Undefined,Source of term,7,Source specified in subfield $2,,,6,Linkage (NR),,,,,,,,,,,https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-6,,

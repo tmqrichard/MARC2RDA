@@ -1,0 +1,110 @@
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,done,46,SPECIAL CODED DATES (R),Type of entity,*, ,Undefined,*,,,,"b|c, d|e",,,,$a,q, ,,https://www.rdaregistry.info/Elements/m/object/#P30273,has related timespan of manifestation,IRI,"When $a=q, it is questionable date ranging from date 1 to date 2","[Manifestation] rdamo:P30273 [timespanIRI]
+[timespanIRI] rdatd:P70016 [value of $b|$c - $d|$e, add ""B.C.E"" after $b and $d]
+[timespanIRI] rdatd:P70045 ""Questionable date"" 
+[timespanIRI]  rdatd:P70039  [value of $b|$c] which is present. Add ""B.C.E"" after $b.
+[timespanIRI] rdatd:P70040  [value of $d|$e] which is present. Add ""B.C.E"" after $d.", ,
+1,done,46,SPECIAL CODED DATES (R),Type of entity,*, ,Undefined,*,,,,"b|c, d|e",,,,$a,i, ,,https://www.rdaregistry.info/Elements/m/object/#P30273,has related timespan of manifestation,IRI,"When $a=i, date 1 and date 2 are inclusive dates applicable to a collection","[Manifestation] rdamo:P30273 [timespanIRI]
+[timespanIRI] rdatd:P70016 [value of $b|$c - $d|$e, add ""B.C.E"" after $b and $d]
+[timespanIRI] rdatd:P70045 ""Collection inclusive dates"" 
+[timespanIRI]  rdatd:P70039  [value of $b|$c] which is present. Add ""B.C.E"" after $b.
+[timespanIRI] rdatd:P70040  [value of $d|$e] which is present. Add ""B.C.E"" after $d.",,
+2,done,46,SPECIAL CODED DATES (R),Type of entity,*, ,Undefined,*,,,,"b|c, d|e",,,,$a,k, ,,https://www.rdaregistry.info/Elements/m/object/#P30273,has related timespan of manifestation,IRI,"When $a=k, date 1 and date 2 are range of years of bulk of collection ","[Manifestation] rdamo:P30273 [timespanIRI]
+[timespanIRI] rdatd:P70016 [value of $b|$c - $d|$e, add ""B.C.E"" after $b and $d]
+[timespanIRI] rdatd:P70045 ""Range of years of bulk of collection"" 
+[timespanIRI]  rdatd:P70039  [value of $b|$c] which is present. Add ""B.C.E"" after $b.
+[timespanIRI] rdatd:P70040  [value of $d|$e] which is present. Add ""B.C.E"" after $d.", ,
+3,done,46,SPECIAL CODED DATES (R),Type of entity,*, ,Undefined,*,,,,"b|c, d|e",,,,$a,m,,,https://www.rdaregistry.info/Elements/m/object/#P30273,has related timespan of manifestation,IRI,"When $a=m, date 1 and date 2 contain the range of years of publication of a multipart item. The code is also used for a single part unpublished item that has been executed over a period of time, such as a painting.","[Manifestation] rdamo:P30273 [timespanIRI]
+[timespanIRI] rdatd:P70016 [value of $b|$c - $d|$e, add ""B.C.E"" after $b and $d]
+[timespanIRI] rdatd:P70045 ""Range of years of publication"" 
+[timespanIRI]  rdatd:P70039 [value of $b|$c] which is present. Add ""B.C.E"" after $b.
+[timespanIRI] rdatd:P70040  [value of $d|$e] which is present. Add ""B.C.E"" after $d.",,
+4,done,46,SPECIAL CODED DATES (R),Type of entity,#,No information provided,Undefined,*,,,,"j, 2",,,,,,,,https://www.rdaregistry.info/Elements/m/object/#P30278,has date of manifestation,IRI,"Date of last update, usually for Web pages/electronic media","[Manifestation] rdamo:P30278 [timespanIRI]
+[timespanIRI] rdato:P70016 has appellation of timespan [nomen]
+[nomen] rdand:P80068 has nomen string [value of $j]
+[nomen] rdand:P80069 has scheme of nomen [Representations of Dates and Times (ISO 8601) or value of $2]",,
+5,done,46,SPECIAL CODED DATES (R),Type of entity,1,Work,Undefined,*,,,,"j, 2",,,,,,,,https://www.rdaregistry.info/Elements/w/object/#P10219,has date of work,IRI,"Date of last update, usually for Web pages/electronic media","[work] rdawo:P10219 [timespanIRI]
+[timespanIRI] rdato:P70016 has appellation of timespan [nomen]
+[nomen] rdand:P80068 has nomen string [value of $j]
+[nomen] rdand:P80069 has scheme of nomen [Representations of Dates and Times (ISO 8601) or value of $2]",,
+6,done,46,SPECIAL CODED DATES (R),Type of entity,2,Expression,Undefined,*,,,,"j, 2",,,,,,,,https://www.rdaregistry.info/Elements/e/object/#P20214,has date of expression,IRI,"Date of last update, usually for Web pages/electronic media","[Expression] rdaeo:P20214 [timespanIRI]
+[timespanIRI] rdato:P70016 has appellation of timespan [nomen]
+[nomen] rdand:P80068 has nomen string [value of $j]
+[nomen] rdand:P80069 has scheme of nomen [Representations of Dates and Times (ISO 8601) or value of $2]",,
+7,done,46,SPECIAL CODED DATES (R),Type of entity,3,Manifestation,Undefined,*,,,,"j, 2",,,,,,,,https://www.rdaregistry.info/Elements/m/object/#P30278,has date of manifestation,IRI,"Date of last update, usually for Web pages/electronic media","[Manifestation] rdamo:P30278 [timespanIRI]
+[timespanIRI] rdato:P70016 has appellation of timespan [nomen]
+[nomen] rdand:P80068 has nomen string [value of $j]
+[nomen] rdand:P80069 has scheme of nomen [Representations of Dates and Times (ISO 8601) or value of $2]",,
+8,done,46,SPECIAL CODED DATES (R),Type of entity,*, ,Undefined,*,,,,"k,l",,,,,,,,https://www.rdaregistry.info/Elements/w/object/#P10317,has related timespan of work,IRI,,"[Work] rdawo:P10317 [timespanIRI]
+[timespanIRI] rdatd:P70016 [value of $k - $l]
+[timespanIRI] rdatd:P70045 ""Range on which a resource has been created: "" 
+[timespanIRI]  rdatd:P70039  [value of $k]
+[timespanIRI] rdatd:P70040  [value of $l]",,
+9,done,46,SPECIAL CODED DATES (R),Type of entity,#,No information provided,Undefined,*,,,,"m,n",,,,,,,,https://www.rdaregistry.info/Elements/m/object/#P30273,has related timespan of manifestation,IRI,,"[Manifestation] rdamo:P30273 [timespanIRI]
+[timespanIRI] rdatd:P70016 [value of $m - $n]
+[timespanIRI] rdatd:P70045 ""Date span for the validity of a resource"" 
+[timespanIRI]  rdatd:P70039  [value of $m]
+[timespanIRI] rdatd:P70040  [value of $n]",, 
+10,done,46,SPECIAL CODED DATES (R),Type of entity,1,Work,Undefined,*,,,,"m,n",,,,,,,,https://www.rdaregistry.info/Elements/w/object/#P10317,has related timespan of work,IRI,,"[Work] rdawo:P10317 [timespanIRI]
+[timespanIRI] rdatd:P70016 [value of $m - $n]
+[timespanIRI] rdatd:P70045 ""Date span for the validity of a resource"" 
+[timespanIRI]  rdatd:P70039  [value of $m]
+[timespanIRI] rdatd:P70040  [value of $n]",,
+11,done,46,SPECIAL CODED DATES (R),Type of entity,2,Expression,Undefined,*,,,,"m,n",,,,,,,,https://www.rdaregistry.info/Elements/e/object/#P20307,has related timespan of expression,IRI,,"[Express] rdaeo:P20307 [timespanIRI]
+[timespanIRI] rdatd:P70016 [value of $m - $n]
+[timespanIRI] rdatd:P70045 ""Date span for the validity of a resource"" 
+[timespanIRI]  rdatd:P70039  [value of $m]
+[timespanIRI] rdatd:P70040  [value of $n]",,
+12,done,46,SPECIAL CODED DATES (R),Type of entity,3,Manifestation,Undefined,*,,,,"m,n",,,,,,,,https://www.rdaregistry.info/Elements/m/object/#P30273,has related timespan of manifestation,IRI,,"[Manifestation] rdamo:P30273 [timespanIRI]
+[timespanIRI] rdatd:P70016 [value of $m - $n]
+[timespanIRI] rdatd:P70045 ""Date span for the validity of a resource"" 
+[timespanIRI]  rdatd:P70039  [value of $m]
+[timespanIRI] rdatd:P70040  [value of $n]",,
+13,done,46,SPECIAL CODED DATES (R),Type of entity,*, ,Undefined,*,,,,"o,p",,,,,,,,https://www.rdaregistry.info/Elements/w/object/#P10317,has related timespan of work,IRI,,"[Work] rdawo:P10317 [timespanIRI]
+[timespanIRI] rdatd:P70016 [value of $o - $p]
+[timespanIRI] rdatd:P70045 ""Date span of original release of the contents of a collection/aggregation"" 
+[timespanIRI]  rdatd:P70039  [value of $o]
+[timespanIRI] rdatd:P70040  [value of $p]",,
+14,done,46,SPECIAL CODED DATES (R),Type of entity,2,Expression,Undefined,*,,,,"b, c, d, e, k, l, o, p",Type of date code (NR),*,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,structured description,,,,
+15,done,46,SPECIAL CODED DATES (R),Type of entity,3,Manifestation,Undefined,*,,,,"k, l, o, p",Type of date code (NR),*,,,,,,http://rdaregistry.info/Elements/m/P30273,has related timespan of manifestation,structured description,,,,"Original RDA Registry mapping had this go to P30273 ""related timespan of manifestation"", but it's not a date, it's a code -MCM 2021-12-15
+
+- Row 12 already creates the manifestation property for b|c, d|e, so removing from this condition"
+16,done,46,SPECIAL CODED DATES (R),Type of entity,*,,Undefined,*,,,,"d, e",,,,$a,t,,,https://www.rdaregistry.info/Elements/m/datatype/#P30007,has copyright date,structured description,"When $a=t, date 1 is date of publication/release/production/execution and date 2 is copyright date",,, 
+17,done,46,SPECIAL CODED DATES (R),Type of entity,1,Work,Undefined,*,,,,"b, c, d, e",Type of date code (NR),*,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,structured description,,,,"- Row 35 already creates the work property when k and l are present, so we can remove form here. TC 8.14.25
+
+- Row 37 creates the work property when m and n are present"
+18,done,46,SPECIAL CODED DATES (R),Type of entity,#,No information provided,Undefined,*,,,,"x, z",,,,,,,,http://rdaregistry.info/Elements/t/P70045,has note on timespan,unstructured description,,[value of $x + $z],,
+19,done,46,SPECIAL CODED DATES (R),Type of entity,*,,Undefined,*,,,,"b, c",,,,$a,r, ,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured description,"When $a=r, date 1 date of reproduction or reissue; date 2 is original date","""Reprint/reissue date: "" + [value of b] + ""B.C.E."" or [value of $c] which is present", , 
+20,done,46,SPECIAL CODED DATES (R),Type of entity,*, ,Undefined,*,,,,"d, e",,,,$a,r,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured description,"When $a=r, date 1 date of reproduction or reissue; date 2 is original date","""Original date: "" + [value of d] + ""B.C.E."" or [value of $e] which is present", ,
+21,done,46,SPECIAL CODED DATES (R),Type of entity,*, ,Undefined,*,,,,"b, c",,,,$a,s, ,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured description,"When $a=s, date 1 is single date of distribution, publication, release, production, execution, writing, or a probable date that can be represented by four digits.","""Single date of distribution, publication, release, production, execution, writing, or a probable date: "" + [value of b] + ""B.C.E."" or [value of $c] which is present",, 
+22,done,46,SPECIAL CODED DATES (R),Type of entity,*,,Undefined,*,,,,"b, c",,,,$a,p,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured description,"When $a=p, date 1 is  date of distribution/release/issue and date 2 is production/recording","""Date of distribution/release/issue: "" + [value of b] + ""B.C.E."" or [value of $c] which is present",, 
+23,done,46,SPECIAL CODED DATES (R),Type of entity,*,,Undefined,*,,,,"d, e",,,,$a,p,,,https://www.rdaregistry.info/Elements/m/datatype/#P30009,has date of production,unstructured description,"When $a=p, date 1 is  date of distribution/release/issue and date 2 is production/recording","[value of d] + ""B.C.E."" or [value of $e] which is present",, 
+24,done,46,SPECIAL CODED DATES (R),Type of entity,*,,Undefined,*,,,,"b, c",,,,$a,t,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured description,"When $a=t, date 1 is date of publication/release/production/execution and date 2 is copyright date","""Date of publication/release/production/execution: "" + [value of b] + ""B.C.E."" or [value of $c] which is present",, 
+25,done,46,SPECIAL CODED DATES (R),Type of entity,*, ,Undefined,*,,,,c,,,,$a,x, ,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured description,"When $a=x, date 1 is incorrect date","""Incorrect date 1: "" + [value of $c]", ,
+26,done,46,SPECIAL CODED DATES (R),Type of entity,*, ,Undefined,*,,,,e,,,,$a,x, ,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured description,"When $a=x, date 2  is incorrect date","""Incorrect date 2: "" + [value of $e]", ,
+27,done,46,SPECIAL CODED DATES (R),Type of entity,*, ,Undefined,*,,,,"b|c, d|e",,,,$a,n, ,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured description,"When $a=n, date 1 and date 2 are unknown dates","""Dates unknown"" ",,
+28,done,46,SPECIAL CODED DATES (R),Type of entity,*, ,Undefined,*,,,,k,,,,,,,,https://www.rdaregistry.info/Elements/w/datatype/#P10330,has note on work,unstructured description, ,"""Beginning or single date created: "" + [value of $k]",,
+29,done,46,SPECIAL CODED DATES (R),Type of entity,*, ,Undefined,*,,,,l,,,,,,,,https://www.rdaregistry.info/Elements/w/datatype/#P10330,has note on work,unstructured description, ,"""Ending date created: "" + [value of $l]",,
+30,done,46,SPECIAL CODED DATES (R),Type of entity,#,No information provided,Undefined,*,,,,m,,,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured description, ,"""Beginning of date valid: "" + [value of $m]",,
+31,done,46,SPECIAL CODED DATES (R),Type of entity,1,Work,Undefined,*,,,,m,,,,,,,,https://www.rdaregistry.info/Elements/w/datatype/#P10330,has note on work,unstructured description, ,"""Beginning of date valid: "" + [value of $m]",,
+32,done,46,SPECIAL CODED DATES (R),Type of entity,2,Expression,Undefined,*,,,,m,,,,,,,,https://www.rdaregistry.info/Elements/e/datatype/#P20071,has note on expression,unstructured description, ,"""Beginning of date valid: "" + [value of $m]",,
+33,done,46,SPECIAL CODED DATES (R),Type of entity,3,Manifestation,Undefined,*,,,,m,,,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured description, ,"""Beginning of date valid: "" + [value of $m]",,
+34,done,46,SPECIAL CODED DATES (R),Type of entity,#,No information provided,Undefined,*,,,,n,,,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured description, ,"""End of date valid: "" + [value of $n]",,
+35,done,46,SPECIAL CODED DATES (R),Type of entity,1,Work,Undefined,*,,,,n,,,,,,,,https://www.rdaregistry.info/Elements/w/datatype/#P10330,has note on work,unstructured description, ,"""End of date valid: "" + [value of $n]",,
+36,done,46,SPECIAL CODED DATES (R),Type of entity,2,Expression,Undefined,*,,,,n,,,,,,,,https://www.rdaregistry.info/Elements/e/datatype/#P20071,has note on expression,unstructured description, ,"""End of date valid: "" + [value of $n]",,
+37,done,46,SPECIAL CODED DATES (R),Type of entity,3,Manifestation,Undefined,*,,,,n,,,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,unstructured description, ,"""End of date valid: "" + [value of $n]",,
+38,done,46,SPECIAL CODED DATES (R),Type of entity,*, ,Undefined,*,,,,o,,,,,,,,https://www.rdaregistry.info/Elements/w/datatype/#P10330,has note on work,unstructured description, ,"""Single or starting date for aggregated content: "" + [value of $o]",,
+39,done,46,SPECIAL CODED DATES (R),Type of entity,*, ,Undefined,*,,,,p,,,,,,,,https://www.rdaregistry.info/Elements/w/datatype/#P10330,has note on work,unstructured description, ,"""Ending date for aggregated content: "" + [value of $p]",,
+40,done,46,SPECIAL CODED DATES (R),Type of entity,#,No information provided,Undefined,*,,,,x,,,,,,,,http://rdaregistry.info/Elements/t/P70045,has note on timespan,unstructured description,,[value of $x],,
+41,done,46,SPECIAL CODED DATES (R),Type of entity,1,Work,Undefined,*,,,,x,,,,,,,,http://rdaregistry.info/Elements/t/P70045,has note on timespan,unstructured description,,[value of $x],,
+42,done,46,SPECIAL CODED DATES (R),Type of entity,2,Expression,Undefined,*,,,,x,,,,,,,,http://rdaregistry.info/Elements/t/P70045,has note on timespan,unstructured description,,[value of $x],,
+43,done,46,SPECIAL CODED DATES (R),Type of entity,3,Manifestation,Undefined,*,,,,x,,,,,,,,http://rdaregistry.info/Elements/t/P70045,has note on timespan,unstructured description,,[value of $x],,
+44,done,46,SPECIAL CODED DATES (R),Type of entity,#,No information provided,Undefined,*,,,,z,,,,,,,,http://rdaregistry.info/Elements/t/P70045,has note on timespan,unstructured description,,[value of $z],,
+45,done,46,SPECIAL CODED DATES (R),Type of entity,1,Work,Undefined,*,,,,z,,,,,,,,http://rdaregistry.info/Elements/t/P70045,has note on timespan,unstructured description,,[value of $z],,
+46,done,46,SPECIAL CODED DATES (R),Type of entity,2,Expression,Undefined,*,,,,z,,,,,,,,http://rdaregistry.info/Elements/t/P70045,has note on timespan,unstructured description,,[value of $z],,
+47,done,46,SPECIAL CODED DATES (R),Type of entity,3,Manifestation,Undefined,*,,,,z,,,,,,,,http://rdaregistry.info/Elements/t/P70045,has note on timespan,unstructured description,,[value of $z],,
+48,done,46,SPECIAL CODED DATES (R),Type of entity,#,No information provided,Undefined,*,,,,3,,,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"""applies to: "" + [value of $3]",,
+49,done,46,SPECIAL CODED DATES (R),Type of entity,1,Work,Undefined,*,,,,3,,,,,,,,http://rdaregistry.info/Elements/w/P10403,has scope of validity,unstructured description,,"""applies to: "" + [value of $3]",,
+50,done,46,SPECIAL CODED DATES (R),Type of entity,2,Expression,Undefined,*,,,,3,,,,,,,,http://rdaregistry.info/Elements/t/P70045,has note on timespan,unstructured description,,"""applies to: "" + [value of $3]",,
+51,done,46,SPECIAL CODED DATES (R),Type of entity,3,Manifestation,Undefined,*,,,,3,,,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"""applies to: "" + [value of $3]",,
+52,done,46,SPECIAL CODED DATES (R),Type of entity,*,,Undefined,*,,,,6,Linkage (NR),,,,,,,,,,,https://github.com/crystalyragui/MARC2RDA/wiki/Decisions-Index#iig-6,,

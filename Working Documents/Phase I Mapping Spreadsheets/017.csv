@@ -1,0 +1,24 @@
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,done,17,COPYRIGHT OR LEGAL DEPOSIT NUMBER (R),Undefined,#,Undefined,Display constant controller,*,Copyright or legal deposit number,,,"a, b, d, i, 2",Copyright or legal deposit number (R),,,,,,,https://www.rdaregistry.info/Elements/m/object/#P30004,has identifier for manifestation,"""IRI (minted Nomen) with Nomen properties
+- has nomen string https://www.rdaregistry.info/Elements/n/#P80068 
+- assigned by agent http://rdaregistry.info/Elements/n/P80073  ($b and $2)
+- date of usage http://rdaregistry.info/Elements/n/P80166 ($d)  
+- has note on nomen (if $i) https://www.rdaregistry.info/Elements/n/#P80071
+- has context of use http://rdaregistry.info/Elements/n/P80067 ""Copyright or legal deposit number""
+",Treat as identifier for manifestation in context of the copyright registration of a copy deposited with an agency.,"[Manifestation]-->rdamo:P30004-->[Nomen]-->rdand:P80068-->($a)
+[Nomen]-->rdand P30004-->$b (string) 
+if $2 containing ""rocgpt:is present (only one valid code)
+[Nomen}-->rdand P30004-->""R.O.C. Government Publications Catalogue (Taipei: Research, Development and Evaluation Commission, Executive Yuan)""
+[Nomen]-->rdand P80166-->date in $d expressed as beginning of open timespan using whatever date structure is used for 008 or other date timespans. 
+[Nomen]-->rdand:P80071-->($i)
+[Nomen]-->rdand--> """"Copyright or legal deposit number""
+LNA 2/16/2025",,
+1,done,17,COPYRIGHT OR LEGAL DEPOSIT NUMBER (R),Undefined,#,Undefined,Display constant controller,*,Copyright or legal deposit number,,,"a, b, z",Copyright or legal deposit number (R),,,$z,,,,https://www.rdaregistry.info/Elements/m/object/#P30004,has identifier for manifestation,"""IRI (minted Nomen) with Nomen properties
+- has nomen string https://www.rdaregistry.info/Elements/n/#P80068 
+- assigned by agent http://rdaregistry.info/Elements/n/P80073     
+- has context of use http://rdaregistry.info/Elements/n/P80067 ""Copyright or legal deposit number""
+"" status of identification (if $z) http://rdaregistry.info/Elements/n/P80168","Treat as separate nomen, invalid identifier for manifestation in context of its copyright registration","[Manifestation]-->rdamo:P30004-->[Nomen]-->rdan:P80068-->($z)
+[Nomen]-->rdand P30004-->$b (string) 
+[Nomen]==>rdamoP80168<http://id.loc.gov/vocabulary/mstatus/cancinv>
+[Nomen]-->rdand--> """"Copyright or legal deposit number"" 
+LNA 2/16/2025",,

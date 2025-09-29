@@ -1,0 +1,74 @@
+,s,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,reviewed,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,"a, b, c, d, f, g, h, 1, 2, 4",,,,not($4),,$e,"contains(manifestation) OR not contains(work, expression, item)",http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,IRI,,"[manifestationIRI] rdam:P30272 [placeIRI]
+
+If approved $1: placeIRI is the value of subfield $1 and no place nomen is created
+If not approved($1): placeIRI is minted
+
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [values of a, b, c, d, f, g, in order of appearance, with -- between each subfield. OR value of h (or multiple h subfields in order of appearance with -- between each subfield)]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]",,
+1,reviewed,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,"a, b, c, d, f, g, h, 1, 2, 4",,,,4,starts with 'http://www.rdaregistry.info/Elements/w/' | 'http://www.rdaregistry.info/Elements/e/' | 'http://www.rdaregistry.info/Elements/m/' | 'http://www.rdaregistry.info/Elements/i/',,,value of $4,,IRI,,"[entityIRI] [value of $4] [placeIRI]
+
+If approved $1: placeIRI is the value of subfield $1 and no place nomen is created
+If not approved ($1): placeIRI is minted
+
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [values of a, b, c, d, f, g, in order of appearance, with -- between each subfield. OR value of h (or multiple h subfields in order of appearance with -- between each subfield)]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]",,
+2,reviewed,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,"a, b, c, d, f, g, h, 1, 2, 4",,,,4|e,"""dbp""|distribution",,,http://rdaregistry.info/Elements/m/P30085,has place of distribution,IRI,,"""[manifestationIRI] rdam:P30085 [placeIRI]
+
+If approved $1: placeIRI is the value of subfield $1 and no place nomen is created
+If not approved ($1): placeIRI is minted
+
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [values of a, b, c, d, f, g, in order of appearance, with -- between each subfield. OR value of h (or multiple h subfields in order of appearance with -- between each subfield)]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]""",,
+3,reviewed,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,"a, b, c, d, f, g, h, 1, 2, 4",,,,4|e,"""mfp""|manufacture",,,http://rdaregistry.info/Elements/m/P30087,has place of manufacture,IRI,,"[manifestationIRI] rdam:P30087 [placeIRI]
+
+If approved $1: placeIRI is the value of subfield $1 and no place nomen is created
+If not approved ($1): placeIRI is minted
+
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [values of a, b, c, d, f, g, in order of appearance, with -- between each subfield. OR value of h (or multiple h subfields in order of appearance with -- between each subfield)]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]",,
+4,reviewed,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,"a, b, c, d, f, g, h, 1, 2, 4",,,,4|e,"""prp""|production",,,http://rdaregistry.info/Elements/m/P30086,has place of production,IRI,,"[manifestationIRI] rdam:P30086 [placeIRI]
+
+If approved $1: placeIRI is the value of subfield $1 and no place nomen is created
+If not approved ($1): placeIRI is minted
+
+
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [values of a, b, c, d, f, g, in order of appearance, with -- between each subfield. OR value of h (or multiple h subfields in order of appearance with -- between each subfield)]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]",,
+5,reviewed,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,"a, b, c, d, f, g, h, 1, 2, 4",,,,4|e,"""pup""|publication",,,http://rdaregistry.info/Elements/m/P30088,has place of publication,IRI,,"[manifestationIRI] rdam:P30088 [placeIRI]
+
+If approved $1: placeIRI is the value of subfield $1 and no place nomen is created
+If not approved ($1): placeIRI is minted
+
+
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [values of a, b, c, d, f, g, in order of appearance, with -- between each subfield. OR value of h (or multiple h subfields in order of appearance with -- between each subfield)]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]",,
+6,reviewed,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,*,,Undefined,*,,,,"a, b, c, d, f, g, h, 1, 2, 4",,,,4|e,not contains(dbp|distribution|mfp|manufacture|prp|production|pup|publication),,,http://rdaregistry.info/Elements/m/P30272,has related place of manifestation,IRI,,"[manifestationIRI] rdam:P30272 [placeIRI]
+
+If approved $1: placeIRI is the value of subfield $1 and no place nomen is created
+If not approved ($1): placeIRI is minted
+
+[placeIRI] rdap:P70019 has appellation of place [placeNomen]
+
+[placeNomen] rdan:P80068 has nomen string [values of a, b, c, d, f, g, in order of appearance, with -- between each subfield. OR value of h (or multiple h subfields in order of appearance with -- between each subfield)]
+
+if $2: [placeNomen] rdan:P80069 has scheme of nomen [value of $2]",,
+7,reviewed,752,ADDED ENTRY--HIERARCHICAL PLACE NAME (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-6,,

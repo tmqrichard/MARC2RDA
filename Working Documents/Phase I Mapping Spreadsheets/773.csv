@@ -1,0 +1,15 @@
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,Done,773,HOST ITEM ENTRY (R),Note controller,*,,Display constant controller,*,,,,"a, b, d, g, h, i, k, l, m, n, o, p, q, r, s,t, u, w, x, y, z, 3, 4", ,,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"Use ""Is part of"" as a Prefix to the note. Include values from all subfields listed in the MARC Subfield column in a single string in the order given in the field, retaining capitalization and punctuation. Separate subfield values with "";"". Follow final subfield value with ""."" unless the value ends with ""."" already.  
+If $3 is present, follow this sentence with ""Applies to:  "" + ($3) "".""   
+if $4 is present, follow with this sentence ""Relationship code or URI:  "" + ($4)  LNA 2025-2-28 (amended 3/12/25)",,"Following practice for other 760-787 linking fields for Phase I, per Ebe Kartus, with some changes to reflect additional fields and omitted fields for this tag.
+
+Transformation notes changed per meeting 7/2/2025 .  LNA "
+1,Done,773,HOST ITEM ENTRY (R),Note controller,*,,Display constant controller,*,,,,"a, b, d, g, h, i, k, l, m, n, o, p, q, r, s,t, u, w, x, y, z, 3, 4, 5",Institution to which field applies (NR),,,5.0,,,,http://rdaregistry.info/Elements/i/P40028,has note on item,unstructured description,"If $5 is present, generate item IRI and treat note as note on item (see $5 mapping)","Mint an IRI for an item, associate it with the manifestation using rdamo:P30103, then apply this property for all subfields as described in ""has note on manifestation"" mapping, (along with mapping the same item to a collection as indicated for subfield 5).
+LNA 2025-2-28  ","Association of the note string with its ""authoring institution"" is indirect (the institution is associated with the same minted item IRI).  ","Discussion at https://github.com/uwlib-cams/MARC2RDA/discussions/361 
+"
+2,Done,773,HOST ITEM ENTRY (R),Note controller,*,,Display constant controller,*,,,,6,Linkage (NR),,,,,,,,,,,https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-6,,
+3,Phase 2,773,HOST ITEM ENTRY (R),Note controller,*,,Display constant controller,*,,,,7,"Control subfield (NR)
+     /0 - Type of main entry heading
+     /1 - Form of name
+     /2 - Type of record
+     /3 - Bibliographic level",,,,,,,,,,,"Since our decision is not to create entities for objects of linking fields for Phase 1, retaining these ""mini-fixed-field"" MARC characteristics for those entities, which may not relate well to RDA entities anyway, in the description somewhere, is not needed  ",,

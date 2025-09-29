@@ -1,0 +1,61 @@
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,MARCTagCondition3,MARCTagCondition4,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,done,110,MAIN ENTRY--CORPORATE NAME (NR),Type of corporate name entry element,*,,Undefined,*,,,,$0, ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,$0 type is right and no $1,,$2,,RDA URI in table,RDA element in table,IRI, ,"<entity> RDA property <$0>
+<$0> nomen property <nomenIRI>
+<nomenIRI> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” .// has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+
+If $2 is approved source, use rdaao:P50407 .// has authorized access point for corporate body. If unapproved use rdaao:P50375 .// has access point for corporate body
+- CP 2024-12-13",,
+1,done,110,MAIN ENTRY--CORPORATE NAME (NR),Type of corporate name entry element,*,,Undefined,,,,,"a, b, c, d, g, n, u", ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,no $1 and $0 that can be converted into a rwo uri,,$2,,RDA URI in table,RDA element in table,structured , ,"<entity> RDA property <corpBodyIRI>
+<corpBodyIRI> nomen property <nomenIRI>
+<nomenIRI> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” .// has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+
+If $2 is approved source, use rdaao:P50407 .// has authorized access point for corporate body. If unapproved use rdaao:P50375 .// has access point for corporate body
+- CP 2024-12-13",,
+2,done,110,MAIN ENTRY--CORPORATE NAME (NR),Type of corporate name entry element,*,,Undefined,,,,,"a, b, c, d, g, n, u", ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,no $1 and $0 that can be converted into a rwo uri,,no $2,,RDA URI in table,RDA element in table,structured , ,"<entity> RDA property <corpBodyIRI>
+<corpBodyIRI> rdaad:P50375 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has access point for corporate body",,
+3,done,110,MAIN ENTRY--CORPORATE NAME (NR),Type of corporate name entry element,*,,Undefined,,,,,"a, b, c, d, g, n, u",,,,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,no $1 and $0 that can be converted into a rwo uri,,no $2,,https://www.rdaregistry.info/Elements/w/object/#P10314,has related corporate body of work,structured ,"If we do not have a Relator value that maps to an RDA URI (see the bullet point above), we cannot assume that the agent described by an Agent Main entry field is related to a work; it could be related to an expression (e.g., a performer); it should not be related to a manifestation or an item. Therefore, we can use a Work relationship (A related agent of expression is also a related agent of the work that is realized by the expression as a shortcut that ignores the expression) ","<work> rdawo:P10314 <corpBodyIRI> . // has related corporate body of work
+<corpBodyIRI> rdaad:P50375 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has access point for corporate body",,
+4,done,110,MAIN ENTRY--CORPORATE NAME (NR),Type of corporate name entry element,*,,Undefined,,,,,"$c, $d",,,,,,,,,,,,,,follow Headings Fields Attribute Mapping table for relationships to corporate body - CP 2024-12-13,,
+5,done,110,MAIN ENTRY--CORPORATE NAME (NR),Type of corporate name entry element,*,,Undefined,,,,,"a, b, c, d, g, n, u", ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,no $1 and $0 that can be converted into a rwo uri,,$2,,https://www.rdaregistry.info/Elements/w/object/#P10314,has related corporate body of work,structured , ,"<work> rdawo:P10314 <corpBodyIRI> .// has related corporate body of work
+<corpBodyIRI> nomen property <nomenIRI>
+<nomenIRI> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” .// has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdaao:P50407 .// has authorized access point for corporate body. If unapproved use rdaao:P50375 .// has access point for corporate body
+- CP 2024-12-13",,
+6,done,110,MAIN ENTRY--CORPORATE NAME (NR),Type of corporate name entry element,*,,,,,,,$0|$1,,,,$0 or $1 type is unapproved,,,,,,http://rdaregistry.info/Elements/a/P50006,has identifier for corporate body,structured description,,"<corporateIRI> rdawd:P50006 ""$0 or $1 value"". // has identifier for corporate body",what if both are unapproved?,
+7,done,110,MAIN ENTRY--CORPORATE NAME (NR),Type of corporate name entry element,*,,Undefined,*,,,,$1, ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,$1 is approved,,$2,,RDA URI in table,RDA element in table,IRI,"An Agent Main entry field was originally supposed to tell us who is responsible for the Work described by the record, except in special situations (e.g., music albums). But, especially now that we are adding multiple Agent Relator values to Agent main entry fields (in $e or $4), any of those values can be for any WEMI relationship. Fortunately (when the MARC record is describing a single-part work) as long as a Relator value maps to an RDA URI, it will relate the agent to the appropriate WEMI.","<entity> RDA property <$1>
+<$1> nomen property <nomenIRI>
+<nomenIRI> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” .// has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+
+If $2 is approved source, use rdaao:P50407 .// has authorized access point for corporate body. If unapproved use rdaao:P50375 .// has access point for corporate body
+- CP 2024-12-13",,
+8,done,110,MAIN ENTRY--CORPORATE NAME (NR),Type of corporate name entry element,*,,Undefined,*,,,,$1, ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,$1 is approved,,no $2,,RDA URI in table,RDA element in table,IRI, ,"<entity> RDA property <$1>
+<$1> rdaad:P50375 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has access point for corporate body",,
+9,done,110,MAIN ENTRY--CORPORATE NAME (NR),Type of corporate name entry element,*,,Undefined,,,,,$1,,,,$e and $4 are not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table, ,$1 is approved,,$2,,https://www.rdaregistry.info/Elements/w/object/#P10314,has related corporate body of work,IRI,"If we do not have a Relator value that maps to an RDA URI (see the bullet point above), we cannot assume that the agent described by an Agent Main entry field is related to a work; it could be related to an expression (e.g., a performer); it should not be related to a manifestation or an item. Therefore, we can use a Work relationship (A related agent of expression is also a related agent of the work that is realized by the expression as a shortcut that ignores the expression) ","<work> rdawo:P10314 <$1> .// has related corporate body of work
+<$1> nomen property <nomenIRI>
+<nomenIRI> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” .// has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdaao:P50407 .// has authorized access point for corporate body. If unapproved use rdaao:P50375 .// has access point for corporate body
+- CP 2024-12-13",,
+10,done,110,MAIN ENTRY--CORPORATE NAME (NR),Type of corporate name entry element,*,,Undefined,,,,,$1,,,,$e and $4 are not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table, ,$1 is approved,,no $2,,https://www.rdaregistry.info/Elements/w/object/#P10314,has related corporate body of work,IRI,,"<work> rdawo:P10314 <$1> . // has related corporate body of work
+<$1> rdaad:P50375 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has access point for corporate body",,
+11,done,110,MAIN ENTRY--CORPORATE NAME (NR),Type of corporate name entry element,*,,Undefined,*,,,,$0, ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,$0 type is right and no $1,,no $2,,RDA URI in table,RDA element in table,IRI, ,"<entity> RDA property <$0>
+<$0> rdaad:P50375 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has access point for corporate body",,
+12,done,110,MAIN ENTRY--CORPORATE NAME (NR),Type of corporate name entry element,*,,Undefined,,,,,$0,,,,$e and $4 are not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table, ,$0 type is right and no $1,,$2,,https://www.rdaregistry.info/Elements/w/object/#P10314,has related corporate body of work,IRI, ,"<work> rdawo:P10314 <$0> .// has related corporate body of work
+<$0> nomen property <nomenIRI>
+<nomenIRI> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” .// has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdaao:P50407 .// has authorized access point for corporate body. If unapproved use rdaao:P50375 .// has access point for corporate body
+- CP 2024-12-13",,
+13,done,110,MAIN ENTRY--CORPORATE NAME (NR),Type of corporate name entry element,*,,Undefined,,,,,$0,,,,$e and $4 are not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table, ,$0 type is right and no $1,,no $2,,https://www.rdaregistry.info/Elements/w/object/#P10314,has related corporate body of work,IRI, ,"<work> rdawo:P10314 <$0> . // has related corporate body of work
+<$0> rdaad:P50375 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has access point for corporate body",,
+14,done,110,MAIN ENTRY--CORPORATE NAME (NR),Type of corporate name entry element,*,,Undefined,,,,,6,,,,,,,,,,,,,,https://github.com/crystalyragui/MARC2RDA/wiki/Decisions-Index#iig-6,,

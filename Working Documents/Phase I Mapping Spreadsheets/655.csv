@@ -1,0 +1,17 @@
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,done,655,INDEX TERM--GENRE/FORM (R),Type of heading,#,*,Thesaurus,*,,,,$0,,,,is a uri and no $1,,,,https://www.rdaregistry.info/Elements/w/#P10004,has category of work,IRI,,"<work> rdawo:P10004 <$0>
+",,coded - CP 2024-08-13
+1,done,655,INDEX TERM--GENRE/FORM (R),Type of heading,#,*,Thesaurus,*,,,,$0,,,,is a identifier and no $1,,,,https://www.rdaregistry.info/Elements/w/#P10004,has category of work,IRI,,"<work> rdawo:P10004 <convert $0 into an IRI >
+",,coded for FAST - CP 2024-08-13
+2,done,655,INDEX TERM--GENRE/FORM (R),Type of heading,#,*,Thesaurus,*,,,,$1,,,,,,,,https://www.rdaregistry.info/Elements/w/#P10004,has category of work,IRI,,<work> rdawo:P10004 <$1>,,coded - CP 2024-08-13
+3,done,655,INDEX TERM--GENRE/FORM (R),Type of heading,#,*,Thesaurus,not 4, ,,,"$a, $b, $v, $x, $y, $z", ,,,no $0 or $1,,,,https://www.rdaregistry.info/Elements/w/#P10004,has category of work,IRI,"I think subfield $b can be mapped into the heading along with $a, $v, $x, $y, and $z (in order of appearance). Subfield $b seems to precede $a and acts as an adjectival qualifier for the form/genre in subfield $a, so there is no added punctuation (just a space between values).
+
+I assume that the intention is to index under subfield $a, followed by the subfield $b qualifiers, because the MARC 21 manual talks about focus and non-focus terms, so it doesn't seem logical to not follow the same order in the heading, but the examples clearly show the reverse: 'Laminated marblewood bust' is coded in that order, not as 'Bust, laminated marblewood', which is what I expect from an index heading. That's partly why I left it out of the subject headings discussion document. I don't think the transform should 'fix' the encoding order.
+
+Subfield $c is a facet indicator from the scheme of the heading terms. We don't know what the values mean without checking each scheme and developing a distinct transform for each, so my advice is to ignore the subfield.
+
+All of this pertains to indicator 1 = 0 (Faceted). The field history says that field 755 (physical characteristic) was merged into field 655 around 1993. I guess that field 755 originally pertained to manifestation, but the distinction has been lost and our default is to category of work.","<work> rdawo:P10004 <tConcept(field)> . // has category of work
+<tConcept(field)> skos:prefLabel “stripEndStop($a, $b, $v, $x, $y, $z)” .
+<tConcept(field)> skos:inScheme <tScheme(2nd indicator or $2)> .",,coded - CP 2024-08-13
+4,done,655,INDEX TERM--GENRE/FORM (R),Type of heading,#,*,Thesaurus,4, ,,,"$a, $b, $v, $x, $y, $z", ,,,no $0 or $1,,,,https://www.rdaregistry.info/Elements/w/datatype/#P10004,has category of work,unstructured description,,"<work> rdawd:P10004 “stripEndStop($a, $b, $v, $x, $y, $z)” ",,coded - CP 2024-08-13
+5,done,655,INDEX TERM--GENRE/FORM (R),Type of heading,*,,Thesaurus,*,,,,6,Linkage (NR),,,,,,,,,,,https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-6,,

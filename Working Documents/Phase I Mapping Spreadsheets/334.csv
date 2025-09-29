@@ -1,0 +1,18 @@
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,done,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,, , ,IRI,,"[Manifestation] rdam:P30003 [[value of $1]
+PS 2024-7-11",,
+1,done,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,0,starts with 'http',not($1),, , ,IRI,,"[Manifestation] rdam:P30003 [[value of $0]
+PS 2024-7-11",, 
+2,done,334,MODE OF ISSUANCE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-6,,
+3,done,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,"a, b",Mode of issuance term (NR),,,2,not rdami,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,IRI,,"[Manifestation] rdamo:P30003 skos:Concept(mintedIRI)
+skos:Concept skos:prefLabel <$a or $b if no $a>
+skos:Concept skos:notation <$b>^^datatypeIRI
+skos:Concept skos:inScheme <$2>
+
+only include $b as skos:notation when pattern is $a$b$a$b
+mint a concept for each $a value present in the field, or in the case that it is all $b, for each $b value
+PS 2024-7-11",, 
+4,done,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,a,Mode of issuance term (NR),,,2,rdami,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,IRI,,"[Manifestation] rdam:P30003 [look up IRI at https://www.rdaregistry.info/termList/ModeIssue/ ]
+PS 2024-7-11",, 
+5,done,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,a,Mode of issuance term (NR),,,not($2), ,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,unstructured description,,[Manifestation] rdamd:P30003 [value of $a],, 
+6,done,334,MODE OF ISSUANCE (R),Undefined,*,,Undefined,*,,,,b,Mode of issuance code (NR),,,not($2),,"not($1, or $0 begnning with http)",,http://rdaregistry.info/Elements/m/P30003,has mode of issuance,unstructured description,,[Manifestation] rdamd:P30003 [value of $b],, 

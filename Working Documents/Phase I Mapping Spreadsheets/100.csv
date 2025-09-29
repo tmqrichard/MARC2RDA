@@ -1,0 +1,133 @@
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,MARCTagCondition3,Condition3Values,MARCTagCondition4,RDA Registry URI,RDA Registry Label, ,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,0|1,,Undefined,*,,,,$1, ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,approved $1,,$2,,,RDA URI in table,RDA element in table,IRI,"An Agent Main entry field was originally supposed to tell us who is responsible for the Work described by the record, except in special situations (e.g., music albums). But, especially now that we are adding multiple Agent Relator values to Agent main entry fields (in $e or $4), any of those values can be for any WEMI relationship. Fortunately (when the MARC record is describing a single-part work) as long as a Relator value maps to an RDA URI, it will relate the agent to the appropriate WEMI.","<entity> property from table <$1>
+<$1> nomen property <nomenIRI>
+<nomenIRI> rdan:P80068 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdaao:P50411 .// has authorized access point for person. If unapproved use rdaao:P50377 .// has access point for person
+- CP 2024-12-13", ,"We will record an external IRI in a subfield $1 from a headings field as the object of a triple with a relationship property. 
+
+Range is associated with the RDA relationship properties; the range essentially types the object of the triple, so in this case it types the IRI (what class of entity the IRI represents).
+
+We will not make statements about the IRI in subfield $1 except for adding an authorized access point triple with the heading as the object. 
+
+If the source of the heading is given, the heading object will be a minted nomen; 
+
+if not, the object will be a literal string. If a nomen is minted, we will make statements about the nomen that include the nomen string and the scheme/source of the nomen.
+
+We will develop a preference list of subfield $1 sources if the field contains multiple $1 values.--Gordon (https://github.com/uwlib-cams/MARC2RDA/discussions/450)"
+1,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,0|1,,Undefined,*,,,,$1, ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,approved $1,,no $2, ,,RDA URI in table,RDA element in table,IRI, ,"<entity> property from table <$1>
+<$1> rdaad:P50377 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has access point for person
+- CP 2024-12-13", , 
+2,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,0|1,,Undefined,*,,,,$1,,,,$e and $4 are not provided or are provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,approved $1,,$2,,,https://www.rdaregistry.info/Elements/w/object/#P10312,has related person of work ,IRI,"If we do not have a Relator value that maps to an RDA URI (see the bullet point above), we cannot assume that the agent described by an Agent Main entry field is related to a work; it could be related to an expression (e.g., a performer); it should not be related to a manifestation or an item. Therefore, we can use a Work relationship (A related agent of expression is also a related agent of the work that is realized by the expression as a shortcut that ignores the expression) ","<work> rdawo:P10312 <$1> .// has related person of work
+<$1> nomen property <nomenIRI>
+<nomenIRI> rdan:P80068 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdaao:P50411 .// has authorized access point for person. If unapproved use rdaao:P50377 .// has access point for person
+- CP 2024-12-13",,
+3,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,0|1,,Undefined,*,,,,$1,,,,$e and $4 are not provided or are provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,approved $1,,no $2,,,https://www.rdaregistry.info/Elements/w/object/#P10312,has related person of work ,IRI, ,"<work> rdawo:P10312 <$1> .// has related person of work
+<$1> rdaad:P50377 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has access point for person
+- CP 2024-12-13",,
+4,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,0|1,,Undefined,*,,,,$0, ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,$0 type is right and no $1,,$2, ,,RDA URI in table,RDA element in table,IRI, ,"<entity> property from table <converted $0> 
+<converted $0> nomen property <nomenIRI>
+<nomenIRI> rdan:P80068 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdaao:P50411 .// has authorized access point for person. If unapproved use rdaao:P50377 .// has access point for person
+- CP 2024-12-13", , 
+5,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,0|1,,Undefined,*,,,,$0, ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,$0 type is right and no $1,,no $2, ,,RDA URI in table,RDA element in table,IRI, ,"<entity> property from table <converted $0>
+<converted $0> rdaad:P50377 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has access point for person
+- CP 2024-12-13", , 
+6,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,0|1,,Undefined,*,,,,$0,,,,$e and $4 are not provided or are provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,approved $1,,$2,,,https://www.rdaregistry.info/Elements/w/object/#P10312,has related person of work ,IRI, ,"<work> rdawo:P10312 <converted $0> . // has related person of work
+<converted $0> nomen property <nomenIRI>
+<nomenIRI> rdan:P80068 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdaao:P50411 .// has authorized access point for person. If unapproved use rdaao:P50377 .// has access point for person
+- CP 2024-12-12",,
+7,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,0|1,,Undefined,*,,,,$0,,,,$e and $4 are not provided or are provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,approved $1,,no $2,,,https://www.rdaregistry.info/Elements/w/object/#P10312,has related person of work ,IRI, ,"<work> rdawo:P10312 <converted $0> . // has related person of work
+<converted $0> rdaad:P50377 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has access point for person
+- CP 2024-12-12",,
+8,done,100,,,0|1,,,,,,,$0|$1,,,,$0 and $1 type are unapproved,,,,,,,http://rdaregistry.info/Elements/a/P50094,has identifier for person,structured description,,"<personIRI> rdawd:P50094 ""$0 or $1 value"". // has identifier for person",,
+9,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,3,,Undefined,*,,,,$1, ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,approved $1,,$2, ,,RDA URI in table,RDA element in table,IRI, ,"<entity> property from table <$1>
+<$1> nomen property <nomenIRI>
+<nomenIRI> rdan:P80068 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdaao:P50409 .// has authorized access point for family. If unapproved use rdaao:P50376 .// has access point for family
+- CP 2024-12-12",, 
+10,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,3,,Undefined,*,,,,$1, ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,approved $1,,no $2, ,,RDA URI in table,RDA element in table,IRI, ,"<entity> property from table <$1>
+<$1> rdaad:P50376 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has access point for family
+- CP 2024-12-12",, 
+11,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,3,,Undefined,*,,,,$1,,,,$e and $4 are not provided or are provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,approved $1,,$2,,,https://www.rdaregistry.info/Elements/w/object/#P10313,has related family of work ,IRI, ,"<work> rdawo:P10313 <$1> . // has related family of work
+<$1> nomen property <nomenIRI>
+<nomenIRI> rdan:P80068 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdaao:P50409 .// has authorized access point for family. If unapproved use rdaao:P50376 .// has access point for family
+- CP 2024-12-12",,
+12,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,3,,Undefined,*,,,,$1,,,,$e and $4 are not provided or are provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,approved $1,,no $2,,,https://www.rdaregistry.info/Elements/w/object/#P10313,has related family of work ,IRI, ,"<work> rdawo:P10313 <$1> . // has related family of work
+<$1> rdaad:P50376 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has access point for family
+- CP 2024-12-12",,
+13,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,3,,Undefined,*,,,,$0, ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,$0 type is right and no $1,,$2, ,,RDA URI in table,RDA element in table,IRI, ,"<entity> property from table <converted $0>
+<converted $0> nomen property <nomenIRI>
+<nomenIRI> rdan:P80068 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdaao:P50409 .// has authorized access point for family. If unapproved use rdaao:P50376 .// has access point for family
+- CP 2024-12-12",, 
+14,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,3,,Undefined,*,,,,$0, ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,$0 type is right and no $1,,no $2, ,,RDA URI in table,RDA element in table,IRI, ,"<entity> property from table <converted $0>
+<converted $0> rdaad:P50376 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has access point for family
+- CP 2024-12-12",, 
+15,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,3,,Undefined,*,,,,$0,,,,$e and $4 are not provided or are provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,$0 type is right and no $1,,$2,,,https://www.rdaregistry.info/Elements/w/object/#P10313,has related family of work ,IRI, ,"<work> rdawo:P10313 <converted $0> . // has related family of work
+<converted $0> nomen property <nomenIRI>
+<nomenIRI> rdan:P80068 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdaao:P50409 .// has authorized access point for family. If unapproved use rdaao:P50376 .// has access point for family
+- CP 2024-12-12",,
+16,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,3,,Undefined,*,,,,$0,,,,$e and $4 are not provided or are provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,$0 type is right and no $1,,no $2,,,https://www.rdaregistry.info/Elements/w/object/#P10313,has related family of work ,IRI, ,"<work> rdawo:P10313 <converted $0> . //has related family of work
+<converted $0> rdaad:P50376 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has access point for family
+- CP 2024-12-12",,
+17,done,100,,,3,,,,,,,$0|$1,,,,$0 and $1 type is unapproved,,,,,,,http://rdaregistry.info/Elements/a/P50052,has identifier for family,structured description,,"<familyIRI> rdawd:P50052 ""$0 or $1 value"". // has identifier for family",,
+18,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,0|1,,Undefined,*,,,,"a, b, c, d, g, q, u", ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,no $1 or $0 that can be converted into a rwo uri,,$2,,,RDA URI in table,RDA element in table,structured , ,"<entity> property from table <personIRI>
+<personIRI> nomen property <nomenP>
+<nomenP> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has nomen string; OA = in order of appearance
+<nomenP> rdano:P80069 <tScheme(2nd indicator or $2)> . // has scheme of nomen
+
+If $2 is approved source, use rdaao:P50411 .// has authorized access point for person. If unapproved use rdaao:P50377 .// has access point for person
+- CP 2024-12-12", , 
+19,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,0|1,,Undefined,*,,,,"a, b, c, d, g, q, u", ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,no $1 or $0 that can be converted into a rwo uri,,no $2,,,RDA URI in table,RDA element in table,structured , ,"<entity> property from table <personIRI>
+<personIRI> rdaad:P50377 ""stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))"" . // has access point for person",, 
+20,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,0|1,,Undefined,*,,,,"a, b, c, d, g, q, u",,,,$e and $4 are not provided or are provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,no $1 or $0 that can be converted into a rwo uri,,$2,,,https://www.rdaregistry.info/Elements/w/object/#P10312,has related person of work ,structured ,"If we do not have a Relator value that maps to an RDA URI (see the bullet point above), we cannot assume that the agent described by an Agent Main entry field is related to a work; it could be related to an expression (e.g., a performer); it should not be related to a manifestation or an item. Therefore, we can use a Work relationship (A related agent of expression is also a related agent of the work that is realized by the expression as a shortcut that ignores the expression) ","<work> rdawo:P10312 <personIRI> .// has related person of work
+<personIRI> nomen property <nomenP>
+<nomenP> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has nomen string; OA = in order of appearance
+<nomenP> rdano:P80069 <tScheme(2nd indicator or $2)> . // has scheme of nomen
+
+If $2 is approved source, use rdaao:P50411 .// has authorized access point for person. If unapproved use rdaao:P50377 .// has access point for person
+- CP 2024-12-12",,
+21,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,0|1,,Undefined,*,,,,"a, b, c, d, g, q, u",,,,$e and $4 are not provided or are provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,no $1 or $0 that can be converted into a rwo uri,,no $2,,,https://www.rdaregistry.info/Elements/w/object/#P10312,has related person of work ,structured ,,"<work> rdawo:P10312 <personIRI> .// has related person of work
+<personIRI> rdaad:P50377 ""stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))"" . // has access point for person",,
+22,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,3,,Undefined,*,,,,"a, b, c, d, g, q, u", ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,no $1 or $0 that can be converted into a rwo uri,,$2,,,RDA URI in table,RDA element in table,structured , ,"<entity> property from table <familyIRI> . // has subject family
+<familyIRI> nomen property <nomenIRI>
+<nomenIRI> rdan:P80068 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdaao:P50409 .// has authorized access point for family. If unapproved use rdaao:P50376 .// has access point for family
+- CP 2024-12-12",, 
+23,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,3,,Undefined,*,,,,"a, b, c, d, g, q, u", ,,,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table,Agent Relator Table,no $1 or $0 that can be converted into a rwo uri,,no $2,,,RDA URI in table,RDA element in table,structured , ,"<entity> property from table <familyIRI>
+<familyIRI> rdaad:P50376 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has access point for family
+- CP 2024-12-12",, 
+24,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,3,,Undefined,*,,,,"a, b, c, d, g, q, u",,,,$e and $4 are not provided or are provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,no $1 or $0 that can be converted into a rwo uri,,$2,,,https://www.rdaregistry.info/Elements/w/object/#P10313,has related family of work ,structured , ,"<work> rdawo:P10313 <familyIRI> .// has related family of work
+<familyIRI> nomen property <nomenIRI>
+<nomenIRI> rdan:P80068 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has nomen string
+<nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
+
+If $2 is approved source, use rdaao:P50409 .// has authorized access point for family. If unapproved use rdaao:P50376 .// has access point for family
+- CP 2024-12-12",,
+25,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,3,,Undefined,*,,,,"a, b, c, d, g, q, u",,,,$e and $4 are not provided or are provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,no $1 or $0 that can be converted into a rwo uri,,no $2,,,https://www.rdaregistry.info/Elements/w/object/#P10313,has related family of work ,structured , ,"<work> rdawo:P10313 <familyIRI> .// has related family of work
+<familyIRI> rdaad:P50376 stripEndStop(concatenateOA($a, $b, $c, $d, $g, $j, $q $u))” . // has access point for family
+- CP 2024-12-12",,
+26,done,100,MAIN ENTRY--PERSONAL NAME (NR),Type of personal name entry element,*,,Undefined,*,,,,"a, b, c, d, g, q, u",,,,, ,,,,,,,,,,follow Headings Mapping table for relationships to person or family - CP 2024-12-12,,
+27,done,100,MAIN ENTRY--CORPORATE NAME (NR),Type of corporate name entry element,*,,Undefined,,,,,6,,,,,,,,,,,,,,https://github.com/crystalyragui/MARC2RDA/wiki/Decisions-Index#iig-6,,,

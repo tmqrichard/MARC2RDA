@@ -1,0 +1,8 @@
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,done,521,TARGET AUDIENCE NOTE (R),Display constant controller,*,,,,,,,"a, b, 3","Target audience note (R), Source (NR), Materials specified (NR) ",,,,,,,https://www.rdaregistry.info/Elements/m/datatype/#P30137,has note on manifestation,Unstructured description,,"[Manifestation] rdamd:P30137 [""indicator 1 label: "" + {$a} + ""according to: "" + {$b} + (""applies to "" + {$3}).
+If the first indicator is 8, lable is the same as # - Audience",,"https://github.com/uwlib-cams/MARC2RDA/issues/198
+
+I do not think it is appropriate to use ""has intended audience of manifestation"" (unstructured description) because the semantics imply intention (by the publisher or producer), and the example data indicate that the values are cataloguer judgement about the audience, not the intention.--Gordon
+My understanding is that entering MARC 521 info into Expression descriptions sets is not feasible.--Theo"
+1,done,521,TARGET AUDIENCE NOTE (R),Display constant controller,*,*,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,"Decision $6  https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iih-6 
+lna 10/19/2022",,

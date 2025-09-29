@@ -1,0 +1,26 @@
+,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
+0,done,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*, ,,,2,Source of term (NR),,,,,,,http://rdaregistry.info/Elements/n/P80069,has scheme of nomen,structured,"The codes used here should be represented in a list, https://www.loc.gov/standards/sourcelist/temporal.html This is on the LC website, but appears not to have been maintained (only one source, periodO, https://perio.do/en/ ,  is defined).  A review of records retrieved by MARC Field Search (WSU VE Sandbox) shows subfield 2 populated  by either lcsh, fast, or no subfield 2 but a $0 with a wikidata URI.  We assume the intent is to use schemes from an approved list and that  list will eventually catch up with practice.  Where we can use a URI for the scheme, we should do so.   LNA 12/31/2024","[nomen} (see $a) -- P20307--> URI based on code in $2 if available
+lookup in http://id.loc.gov/vocabulary/subjectSchemes 
+use datatype property and quote string if it is not foumd at this list.",,
+1,done,388,TIME PERIOD OF CREATION (R),Type of time period,*, ,Undefined,*, ,,,3,Materials specified (NR),,,,,,,http://rdaregistry.info/Elements/w/P10330,note on work,unstructured,"When a property applies to only a portion of a work (or expression), our general aprroach is to create a note showing what part the property applies to..  LNA 12/31/2024","""Timespan related to work"" + $a + ""applies to "" + $3",,"See decision on $3 in 3xx fields:  https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iir-3xx-with-3-present .
+
+We are mapping to a Work property but follow the pattern "
+2,done,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,varies,,"If $0 contains an IRI (begins with http://), add  mapping (separately from $a mapping).  
+",Cannot add $0 as identifier for $a because $0 and $a are repeatable - CP 2025-09-23,
+3,done,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,IRI,,,,
+4,done,388,TIME PERIOD OF CREATION (R),Type of time period,*, ,Undefined,*, ,,,6,Linkage (NR),,,,,,,,,,,https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iih-6,,$6 is used to link alternative graphic representations to rromanized content tags and is not mapped
+5,phase II,388,TIME PERIOD OF CREATION (R),Type of time period,2,Creation of aggregate work,Undefined,#,Undefined,,,2,Source of term (NR),,,,,,,,,,,,,
+6,phase II,388,TIME PERIOD OF CREATION (R),Type of time period,2,Creation of aggregate work,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,,,,,,,
+7,phase II,388,TIME PERIOD OF CREATION (R),Type of time period,2,Creation of aggregate work,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
+8,phase II,388,TIME PERIOD OF CREATION (R),Type of time period,2,Creation of aggregate work,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+9,phase II,388,TIME PERIOD OF CREATION (R),Type of time period,*,,Undefined,*,,,,a,Time period of creation term (R),,,,,,,"http://rdaregistry.info/Elements/w/P10317 
+http://rdaregistry.info/Elements/t/P70009 
+http://rdaregistry.info/Elements/n/P80068  
+","has related timespan of work
+has related nomen of timespan
+has nomen string",unstructured*,"Field gives no data for other properties.
+Subfield may be structured if associated with a source, but this would need to be analyzed.  For this mapping, treat all $a the same.
+Create nomen for timespan so that it can be associated with source and identifiers if needed.  LNA 12/31/2024","[work]--P10317--> mint IRI for timespannomen for timespan[
+[timespan} -- P70009 --> mint IRI for related nomen
+TimespNomen]  -- P80068==> ($a) 
+*This could be a text string, a range of dates, or a single date.  Date format is not specified, but might be controlled by a source vocabulary (e.g. fast, Period0), or not. If there is time/capacity to detect dates in this field, could/should they be handled as dates rather than text strings?  LNA 12/31/2024",,
