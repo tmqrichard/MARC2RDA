@@ -2,8 +2,8 @@
 [Phase I Landing Page](https://marc2rda.info/wiki/doku.php?id=start)
 ## [GitHub Repository](https://github.com/crystalyragui/MARC2RDA/)
 ### Mapping between MARC21 Bibliographic (for Phase I resource types) and LRM/RDA/RDF
-* .csv files for mapping spreadsheets
-* List of MARC21 fields and subfields excluded from the mapping
+* [.csv files for mapping spreadsheets](https://github.com/crystalyragui/MARC2RDA/tree/main/Phase%20I%20Deliverables/Phase%20I%20Mapping%20Spreadsheets)
+* [List of MARC21 fields and subfields excluded from the mapping](https://github.com/crystalyragui/MARC2RDA/blob/main/Phase%20I%20Deliverables/Not%20Mapped.csv)
 ### Transformation Code 
 * [XSLT stylesheets](https://github.com/crystalyragui/MARC2RDA/tree/main/Working%20Documents/transformationCode) containing transformation code based on mapping spreadsheets
 
