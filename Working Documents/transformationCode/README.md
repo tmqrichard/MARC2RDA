@@ -2,41 +2,40 @@
 
 The transform is written in XSLT in order to be free and open-source.
 
-It is highly recommended to validate your input MARC before running it through the transform. The transform performs basic validation and will not process MARC that contains major errors, such as repeated 1XX or 245 fields. More minor errors are handled by the transform, and newer iterations of the transformation code will be able to handle more errors as updates to the code are made. If an error occurs while running the transformation, please submit a new GitHub issue by selecting 'New issue' and 'Bug report'. A coder from the MARC2RDA team will address the issue as soon as possible.
+It is highly recommended to validate your input MARC before running it through the transform. The transform performs basic validation and will not process MARC that contains major errors, such as repeated 1XX or 245 fields. More minor errors are handled by the transform, and newer iterations of the transformation code will be able to handle more errors as updates to the code are made. If an error occurs while running the transformation, please submit a [new GitHub issue](https://github.com/crystalyragui/MARC2RDA/issues) by selecting 'New issue' and 'Bug report'. A coder from the MARC2RDA team will address the issue as soon as possible. 
 
 For testing purposes, the code was developed using Oxygen XML.
 
-Instructions are included for running the code using Oxygen or using Saxon HE (open source), either in command line or through a Python script using Java.
+Instructions are included for running the code using Oxygen or using Saxon HE (open source), either in command line or through a Python script using Java. To run the transform, you will need to clone the MARC2RDA GitHub repository, so that you have a local version of the code. 
 
 ## Option 1: Oxygen for development
 *For transforming 1 MARC/XML file or 1 folder containing MARC/XML files with no subfolders*
 
-1. Clone the MARC2RDA GitHub repository
-2. In Oxygen, create a project and select the entire MARC2RDA repository to be included, along with the folder containing the MARC/XML file(s) to be transformed.
-3. If this is the first time running the transform, see [setting up lookup files](#setting_up_lookup_files) and follow instructions before proceeding. This step may also need to be repeated if LC or RDA have updated their vocabularies since the last transformation was run. 
-4. Once you have confirmed that the 'lookup' folder in the repository contain 'lc' and 'rda' subfolders, open a MARC/XML file to be transformed. 
-5. In the toolbar at the top of Oxygen, select the Configure Transformation Scenario(s) button, which looks like a wrench. 
-6. Select “New” at the bottom of the pop-up menu and select "XML transformation with XSLT".
-7. Name the transformation scenario.
-8. In the XML URL box, ensure the value is ${currentFileURL}
-9. In the XSL URL box, select m2r.xsl from files.
-10. Select the "Parameters" and edit the BASE value to the base IRI you would like to be used when the transform mints IRIs. Ensure the IRI ends in / to avoid malformed IRIs. 
-11. Navigate to the Output tab
-12. In the Output tab, find the Save as option.
+1. In Oxygen, create a project and select the entire MARC2RDA repository to be included, along with the folder containing the MARC/XML file(s) to be transformed.
+2. If this is the first time running the transform, see [setting up lookup files](#setting_up_lookup_files) and follow instructions before proceeding. This step may also need to be repeated if LC or RDA have updated their vocabularies since the last transformation was run. 
+3. Once you have confirmed that the 'lookup' folder in the repository contain 'lc' and 'rda' subfolders, open a MARC/XML file to be transformed. 
+4. In the toolbar at the top of Oxygen, select the Configure Transformation Scenario(s) button, which looks like a wrench. 
+5. Select “New” at the bottom of the pop-up menu and select "XML transformation with XSLT".
+6. Name the transformation scenario.
+7. In the XML URL box, ensure the value is ${currentFileURL}
+8. In the XSL URL box, select m2r.xsl from files.
+9. Select the "Parameters" and edit the BASE value to the base IRI you would like to be used when the transform mints IRIs. Ensure the IRI ends in / to avoid malformed IRIs. 
+10. Navigate to the Output tab
+11. In the Output tab, find the Save as option.
     
     a. If transforming one file, enter the location and name for the output file. The file name should end in `.rdf` Press okay.
     
     b. If transforming a folder of files, enter the location of a folder for the output, and end the folder name in `/${cfn}.rdf` This saves each file within the folder with the same name as the input file but as an rdf file. Press okay.
     
-13. Transform the file(s)
+12. Transform the file(s)
     
     a. *If transforming 1 file*: Ensuring that the file you want to transform is open in the window, press "Apply associated".
     
     b. *If transforming a folder of files*: Close the transformation scenario pop-up box. In the navigation pane on the left, right click on the folder containing the files you want to transform. Select "Transform" and then "Transform with...". Select the transformation scenario you just set up and press "Apply selected scenarios".
     
-14. The transformation scenario should run and output RDF/XML from the MARC/XML
+13. The transformation scenario should run and output RDF/XML from the MARC/XML
 
-15. (Optional) Add human-readable labels to output files for review
+14. (Optional) Add comments containing human-readable labels to output files for review
     
     a. Open the RDF/XML output file just created.
     
@@ -169,7 +168,7 @@ During running process.py, you will be prompted to respond 'y' or 'n' to whether
 
 ### Running serialize.py
 
-Once the transformation has been run and RDF/XML data has been produced, the output file can be serialized into additional formats. 
+Once the transformation has been run and RDF/XML data has been produced, the output file can be serialized into additional formats.
 
 To run serialize.py, be prepared with:
 - The full path to the file you wish to serialize (must have the extension .rdf, .ttl, .jsonld, or .nt)
