@@ -13,7 +13,7 @@
 * Decisions Indexes detailing the Project's choices regarding:
     * [Workflows](https://github.com/crystalyragui/MARC2RDA/wiki/Decisions-Index:-Workflow), and
     * [Mapping & Transformation](https://github.com/crystalyragui/MARC2RDA/wiki/Decisions-Index:-Mapping-&-Transformation)
-* A comprehensive write-up of Phase I
+* [A comprehensive write-up of Phase I](https://github.com/crystalyragui/MARC2RDA/blob/main/Phase%20I%20Deliverables/Phase%20I%20Write-Up.pdf)
 
 ### Transformed MARC21 Bibliographic Records Output as LRM/RDA/RDF, including:
 * Subsets of records from the Library of Congress, University of Washington Libraries, and National Library of New Zealand
