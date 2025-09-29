@@ -3,4 +3,5 @@
 
 coded --TG, 2022-11-13",,
 1,done,490,SERIES STATEMENT (R),Series tracing policy,*,,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,nas note on manifestation,unstructured description,$3 becomes a note,"coded --TG, 2022-11-13",,See: https://github.com/uwlib-cams/MARC2RDA/discussions/353
-2,?,490,SERIES STATEMENT (R),,,,,,,,,7,Data provenance,,,,,,,,,,,,,"$7 is a new addition in 2022, needs further discussion --SH 2025-02-11"
+2,done,490,SERIES STATEMENT (R),Series tracing policy,*,,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,See: https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iih-6 
+3,phase II,490,SERIES STATEMENT (R),,,,,,,,,7,Data provenance,,,,,,,,,,,,,"$7 is a new addition in 2022, needs further discussion --SH 2025-02-11"

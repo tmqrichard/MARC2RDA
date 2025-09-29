@@ -14,4 +14,5 @@
 [metadataIRI] rdf:predicate [rdai:p40028 has note on item]
 [metadataIRI] rdf:object [unstructured description - all subfields in order listed as [subfield label]: [subfield value].]
 [metadataIRI] has category of work ""private""",,
-4,?,583,ACTION NOTE (R),,,,,,,,,7,Data provenance,,,,,,,,,,,,,"$7 is a new addition in 2023, needs further discussion --SH 2025-01-29"
+4,done,583,ACTION NOTE (R),Privacy,*,,Undefined,*,,,,6,,,,,,,,,,,,https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-6,,
+5,phase II,583,ACTION NOTE (R),,,,,,,,,7,Data provenance,,,,,,,,,,,,,"$7 is a new addition in 2023, needs further discussion --SH 2025-01-29"

@@ -15,5 +15,4 @@
 13,done,881,MANIFESTATION STATEMENTS (R),Undefined,*,,Undefined,*,,,,m,Manifestation dissertation statement (R),,,,,,,http://rdaregistry.info/Elements/m/P30282,has manifestation dissertation statement,unstructured description,,[Manifestation]-->rdam:P30282-->[value of $m] -- ZP 4/12/2022,,
 14,done,881,MANIFESTATION STATEMENTS (R),Undefined,*,,Undefined,*,,,,n,Manifestation regional encoding statement (R),,,,,,,http://rdaregistry.info/Elements/m/P30290,has manifestation regional encoding statement,unstructured description,,[Manifestation]-->rdam:P30290-->[value of $n] -- ZP 4/12/2022,,
 15,done,881,MANIFESTATION STATEMENTS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,3,Materials specified (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"""Manifestation [...] statement ""{$a, b, c, ...}"" applies to {$3}."" -- ZP 5/8/2023",,
-16,not mapped,881,MANIFESTATION STATEMENTS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-17,not mapped,881,MANIFESTATION STATEMENTS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+16,done,881,MANIFESTATION STATEMENTS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-6,,

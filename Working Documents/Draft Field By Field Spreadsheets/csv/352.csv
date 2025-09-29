@@ -16,3 +16,4 @@ Remove punctuation in subfield value - DC 2024/09/20",,
 4,done,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,*,,Undefined,*,,,,q,Format of the digital image (R),,,,,,,http://rdaregistry.info/Elements/m/P30102,has digital representation of cartographic content,unstructured description,no more specific element,"""Format of the digital image: "" + [value of $q]
 
 Remove punctuation in subfield value - DC 2024/09/20",,
+5,done,352,DIGITAL GRAPHIC REPRESENTATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-6,,

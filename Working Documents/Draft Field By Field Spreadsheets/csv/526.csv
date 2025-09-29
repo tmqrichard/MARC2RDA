@@ -8,3 +8,5 @@ If $5 is present, append note with (Applies to:  + [value of $5])",,$5 discussed
 [metadataIRI] rdf:predicate [rdam:p30137 has note on manifestation]
 [metadataIRI] rdf:object [value of $x]+(Applies to: [$value of $5]) if $5
 [metadataIRI] has category of work ""private""",,
+2,done,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,0,Reading program,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-6,,
+3,done,526,STUDY PROGRAM INFORMATION NOTE (R),Display constant controller,8,No display constant generated,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-6,,

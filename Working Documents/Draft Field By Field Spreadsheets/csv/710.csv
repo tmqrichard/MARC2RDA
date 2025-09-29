@@ -1,5 +1,5 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,MARCTagCondition3,MARCTagCondition4,MARCTagCondition5,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$0,,,,no $t,only name portion,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table.,Agent Relator Table,$0 type is right and no $1,$2,,RDA URI in table,RDA element in table,IRI,,"<entity> RDA property <$0> 
+0,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$0,,,,no $t,only name portion,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table.,Agent Relator Table,$0 type is right and no $1,$2,,RDA URI in table,RDA element in table,IRI,,"<entity> RDA property <$0> 
 <$0> nomen property <nomenIRI>
 <nomenIRI> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has authorized access point for corporate body .// has scheme of nomen
 
@@ -8,11 +8,11 @@ If $2 is approved source, use rdaao:P50407 .// has authorized access point for c
 - CP 2024-12-13;
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-1,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$0,,,,no $t,only name portion,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table.,Agent Relator Table,$0 type is right and no $1,no $2,,RDA URI in table,RDA element in table,IRI,,"<entity> RDA property <$0>
+1,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$0,,,,no $t,only name portion,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table.,Agent Relator Table,$0 type is right and no $1,no $2,,RDA URI in table,RDA element in table,IRI,,"<entity> RDA property <$0>
 <$0> rdaad:P50375 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has access point for corporate body
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-2,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$0,,,,no $t,only name portion,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,$0 type is right and no $1,2,no $5,https://www.rdaregistry.info/Elements/m/object/#P30270,has related corporate body of manifestation,IRI, ,"<manIRI> related corporate body of manifestation <$0> 
+2,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$0,,,,no $t,only name portion,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,$0 type is right and no $1,2,no $5,https://www.rdaregistry.info/Elements/m/object/#P30270,has related corporate body of manifestation,IRI, ,"<manIRI> related corporate body of manifestation <$0> 
 <$0> nomen property <nomenIRI>
 <nomenIRI> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has authorized access point for corporate body 
 <nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
@@ -21,11 +21,11 @@ If $2 is approved source, use rdaao:P50407 .// has authorized access point for c
 - CP 2024-12-13
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-3,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$0,,,,no $t,only name portion,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,$0 type is right and no $1,no $2,no $5,https://www.rdaregistry.info/Elements/m/object/#P30270,has related corporate body of manifestation,IRI, ,"<manIRI> related corporate body of manifestation <$0>
+3,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$0,,,,no $t,only name portion,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,$0 type is right and no $1,no $2,no $5,https://www.rdaregistry.info/Elements/m/object/#P30270,has related corporate body of manifestation,IRI, ,"<manIRI> related corporate body of manifestation <$0>
 <$0> rdaad:P50375 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has access point for corporate body
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-4,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$0,,,,no $t,only name portion,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,$0 type is right and no $1,2,5,https://www.rdaregistry.info/Elements/i/object/#P40075,has related corporate body of item,IRI,,"<itemIRI> related corporate body of item <$0> 
+4,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$0,,,,no $t,only name portion,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,$0 type is right and no $1,2,5,https://www.rdaregistry.info/Elements/i/object/#P40075,has related corporate body of item,IRI,,"<itemIRI> related corporate body of item <$0> 
 <$0> nomen property <nomenIRI>
 <nomenIRI> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has authorized access point for corporate body
 <nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
@@ -34,12 +34,12 @@ If $2 is approved source, use rdaao:P50407 .// has authorized access point for c
 - CP 2024-12-13
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-5,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$0,,,,no $t,only name portion,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,$0 type is right and no $1,no $2,5,https://www.rdaregistry.info/Elements/i/object/#P40075,has related corporate body of item,IRI,,"<itemIRI> related corporate body of item <$0>
+5,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$0,,,,no $t,only name portion,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,$0 type is right and no $1,no $2,5,https://www.rdaregistry.info/Elements/i/object/#P40075,has related corporate body of item,IRI,,"<itemIRI> related corporate body of item <$0>
 <$0> rdaad:P50375 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has access point for corporate body
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-6,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),,,,,not(2),,,,$0|$1,,,,no $t,only name portion,unapproved $0 or $1,,,,,http://rdaregistry.info/Elements/a/P50006,has identifier for corporate body,structured description,,"<corporateIRI> rdawd:P50006 ""$0 or $1 value"". // has identifier for corporate body",,
-7,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, g, q, u",,,,no $t,only name portion,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table.,Agent Relator Table,no $1 or $0 that can be converted into a rwo uri,$2,,RDA URI in table,RDA element in table,structured ,,"<entity> RDA property <corpBodyIRI> 
+6,done,710,ADDED ENTRY--CORPORATE NAME (R),,,,,not(2),,,,$0|$1,,,,no $t,only name portion,unapproved $0 or $1,,,,,http://rdaregistry.info/Elements/a/P50006,has identifier for corporate body,structured description,,"<corporateIRI> rdawd:P50006 ""$0 or $1 value"". // has identifier for corporate body",,
+7,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, g, q, u",,,,no $t,only name portion,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table.,Agent Relator Table,no $1 or $0 that can be converted into a rwo uri,$2,,RDA URI in table,RDA element in table,structured ,,"<entity> RDA property <corpBodyIRI> 
 <corpBodyIRI> nomen property <nomenIRI>
 <nomenIRI> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has authorized access point for corporate body
 <nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
@@ -49,11 +49,11 @@ If $2 is approved source, use rdaao:P50407 .// has authorized access point for c
 - CP 2024-12-13
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-8,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, g, q, u",,,,no $t,only name portion,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table.,Agent Relator Table,no $1 or $0 that can be converted into a rwo uri,no $2,,RDA URI in table,RDA element in table,structured ,,"<entity> RDA property <corpBodyIRI>
+8,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, g, q, u",,,,no $t,only name portion,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table.,Agent Relator Table,no $1 or $0 that can be converted into a rwo uri,no $2,,RDA URI in table,RDA element in table,structured ,,"<entity> RDA property <corpBodyIRI>
 <corpBodyIRI> rdaad:P50375 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has access point for corporate body
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-9,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, g, q, u",,,,no $t,only name portion,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,no $1 or $0 that can be converted into a rwo uri,2,no $5,https://www.rdaregistry.info/Elements/m/object/#P30270,has related corporate body of manifestation,structured , ,"<manIRI> related corporate body of manifestation <corpBodyIRI> 
+9,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, g, q, u",,,,no $t,only name portion,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,no $1 or $0 that can be converted into a rwo uri,2,no $5,https://www.rdaregistry.info/Elements/m/object/#P30270,has related corporate body of manifestation,structured , ,"<manIRI> related corporate body of manifestation <corpBodyIRI> 
 <corpBodyIRI> nomen property <nomenIRI>
 <nomenIRI> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has authorized access point for corporate body
 <nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
@@ -63,11 +63,11 @@ If $2 is approved source, use rdaao:P50407 .// has authorized access point for c
 - CP 2024-12-13
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-10,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, g, q, u",,,,no $t,only name portion,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,no $1 or $0 that can be converted into a rwo uri,no $2,no $5,https://www.rdaregistry.info/Elements/m/object/#P30270,has related corporate body of manifestation,structured , ,"<manIRI> related corporate body of manifestation <corpBodyIRI>
+10,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, g, q, u",,,,no $t,only name portion,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,no $1 or $0 that can be converted into a rwo uri,no $2,no $5,https://www.rdaregistry.info/Elements/m/object/#P30270,has related corporate body of manifestation,structured , ,"<manIRI> related corporate body of manifestation <corpBodyIRI>
 <corpBodyIRI> rdaad:P50375 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has access point for corporate body
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-11,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, g, q, u",,,,no $t,only name portion,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,no $1 or $0 that can be converted into a rwo uri,2,5,https://www.rdaregistry.info/Elements/i/object/#P40075,has related corporate body of item,structured ,,"<itemIRI> related corporate body of item <corpBodyIRI> 
+11,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, g, q, u",,,,no $t,only name portion,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,no $1 or $0 that can be converted into a rwo uri,2,5,https://www.rdaregistry.info/Elements/i/object/#P40075,has related corporate body of item,structured ,,"<itemIRI> related corporate body of item <corpBodyIRI> 
 <corpBodyIRI> nomen property <nomenIRI>
 <nomenIRI> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has authorized access point for corporate body
 <nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
@@ -77,11 +77,11 @@ If $2 is approved source, use rdaao:P50407 .// has authorized access point for c
 - CP 2024-12-13
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-12,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, g, q, u",,,,no $t,only name portion,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,no $1 or $0 that can be converted into a rwo uri,no $2,5,https://www.rdaregistry.info/Elements/i/object/#P40075,has related corporate body of item,structured ,,"<itemIRI> related corporate body of item <corpBodyIRI>
+12,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, g, q, u",,,,no $t,only name portion,$e or $4 is not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,no $1 or $0 that can be converted into a rwo uri,no $2,5,https://www.rdaregistry.info/Elements/i/object/#P40075,has related corporate body of item,structured ,,"<itemIRI> related corporate body of item <corpBodyIRI>
 <corpBodyIRI> rdaad:P50375 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has access point for corporate body
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-13,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$1,,,,$t,name and title portions,approved $1,,$2,,, https://www.rdaregistry.info/Elements/m/object/#P30265,has related work of manifestation,IRI,"Since transformation coding cannot tell whether a heading in an Associated added entry field is for a work vs an expression, or an aggregating work, a multi-part work, or a single-part work, we must use ‘has related work of manifestation’ as our default relationship between a described WEMI and an associated WEMI. We do this even if we have a Relator value that maps to an RDA URI.","<manIRI> has related work of manifestation <$1>
+13,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$1,,,,$t,name and title portions,approved $1,,$2,,, https://www.rdaregistry.info/Elements/m/object/#P30265,has related work of manifestation,IRI,"Since transformation coding cannot tell whether a heading in an Associated added entry field is for a work vs an expression, or an aggregating work, a multi-part work, or a single-part work, we must use ‘has related work of manifestation’ as our default relationship between a described WEMI and an associated WEMI. We do this even if we have a Relator value that maps to an RDA URI.","<manIRI> has related work of manifestation <$1>
 <$1> nomen property <nomenW> 
 <nomenW> rdand:P80068 """"""""stripEndStop(concatenateOA(value of a, b, c, d, f, g, k, l, m, n, o, p, r, s, t, u)"""""""" . // has nomen string; OA = in order of appearance
 <nomenW> rdano:P80069 <tScheme(2nd indicator or $2)> . // has scheme of nomen
@@ -91,12 +91,12 @@ If $2 is approved source, use rdawo:P10331 .// has authorized access point for w
 - CP 2024-12-13
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-14,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$1,,,,$t,name and title portions,approved $1,,no $2,,, https://www.rdaregistry.info/Elements/m/object/#P30265,has related work of manifestation,IRI,"Since transformation coding cannot tell whether a heading in an Associated added entry field is for a work vs an expression, or an aggregating work, a multi-part work, or a single-part work, we must use ‘has related work of manifestation’ as our default relationship between a described WEMI and an associated WEMI. We do this even if we have a Relator value that maps to an RDA URI.","<manIRI> has related work of manifestation <$1>
+14,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$1,,,,$t,name and title portions,approved $1,,no $2,,, https://www.rdaregistry.info/Elements/m/object/#P30265,has related work of manifestation,IRI,"Since transformation coding cannot tell whether a heading in an Associated added entry field is for a work vs an expression, or an aggregating work, a multi-part work, or a single-part work, we must use ‘has related work of manifestation’ as our default relationship between a described WEMI and an associated WEMI. We do this even if we have a Relator value that maps to an RDA URI.","<manIRI> has related work of manifestation <$1>
 <$1> rdawd:P10328  """"stripEndStop(concatenateOA(value of a, b, c, d, f, g, k, l, m, n, o, p, r, s, t, u) . // has access point for work
 - CP 2024-12-13
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-15,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$0,,,,$t,name and title portions,$0 type is right and no $1,,$2,,, https://www.rdaregistry.info/Elements/m/object/#P30265,has related work of manifestation,IRI,"Since transformation coding cannot tell whether a heading in an Associated added entry field is for a work vs an expression, or an aggregating work, a multi-part work, or a single-part work, we must use ‘has related work of manifestation’ as our default relationship between a described WEMI and an associated WEMI. We do this even if we have a Relator value that maps to an RDA URI.","<manIRI> has related work of manifestation <$0>
+15,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$0,,,,$t,name and title portions,$0 type is right and no $1,,$2,,, https://www.rdaregistry.info/Elements/m/object/#P30265,has related work of manifestation,IRI,"Since transformation coding cannot tell whether a heading in an Associated added entry field is for a work vs an expression, or an aggregating work, a multi-part work, or a single-part work, we must use ‘has related work of manifestation’ as our default relationship between a described WEMI and an associated WEMI. We do this even if we have a Relator value that maps to an RDA URI.","<manIRI> has related work of manifestation <$0>
 <$0> nomen property <nomenW> 
 <nomenW> rdand:P80068 """"""""stripEndStop(concatenateOA(value of a, b, c, d, f, g, k, l, m, n, o, p, r, s, t, u)"""""""" . // has nomen string; OA = in order of appearance
 <nomenW> rdano:P80069 <tScheme(2nd indicator or $2)> . // has scheme of nomen
@@ -107,13 +107,13 @@ If $2 is approved source, use rdawo:P10331 .// has authorized access point for w
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",," mappings for added entries (when ind2 != 2)
 -- CP 2025-01-06"
-16,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$0,,,,$t,name and title portions,$0 type is right and no $1,,no $2,,, https://www.rdaregistry.info/Elements/m/object/#P30265,has related work of manifestation,IRI,"Since transformation coding cannot tell whether a heading in an Associated added entry field is for a work vs an expression, or an aggregating work, a multi-part work, or a single-part work, we must use ‘has related work of manifestation’ as our default relationship between a described WEMI and an associated WEMI. We do this even if we have a Relator value that maps to an RDA URI.","<manIRI> has related work of manifestation <$0>
+16,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$0,,,,$t,name and title portions,$0 type is right and no $1,,no $2,,, https://www.rdaregistry.info/Elements/m/object/#P30265,has related work of manifestation,IRI,"Since transformation coding cannot tell whether a heading in an Associated added entry field is for a work vs an expression, or an aggregating work, a multi-part work, or a single-part work, we must use ‘has related work of manifestation’ as our default relationship between a described WEMI and an associated WEMI. We do this even if we have a Relator value that maps to an RDA URI.","<manIRI> has related work of manifestation <$0>
 <$0> rdawd:P10328  """"stripEndStop(concatenateOA(value of a, b, c, d, f, g, k, l, m, n, o, p, r, s, t, u) . // has access point for work
 - CP 2024-12-13
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-17,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),,,,,not(2),,,,$0|$1,,,,$t,name and title portions,$0 or $1 is unapproved,,,,,http://rdaregistry.info/Elements/w/P10002,has identifier for work,structured description,,"<relWorkIRI> rdawd:P10002 ""$0 or $1 value"". // has identifier for work",,
-18,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, f, g, h, k, l, m, n, o, p, r, s, t, u",,,,$t,name and title portions,no $1 or $0 that can be converted into a rwo uri,,$2,,, https://www.rdaregistry.info/Elements/m/object/#P30265,has related work of manifestation,structured , ,"<manIRI> has related work of manifestation <relWorIRI>
+17,done,710,ADDED ENTRY--CORPORATE NAME (R),,,,,not(2),,,,$0|$1,,,,$t,name and title portions,$0 or $1 is unapproved,,,,,http://rdaregistry.info/Elements/w/P10002,has identifier for work,structured description,,"<relWorkIRI> rdawd:P10002 ""$0 or $1 value"". // has identifier for work",,
+18,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, f, g, h, k, l, m, n, o, p, r, s, t, u",,,,$t,name and title portions,no $1 or $0 that can be converted into a rwo uri,,$2,,, https://www.rdaregistry.info/Elements/m/object/#P30265,has related work of manifestation,structured , ,"<manIRI> has related work of manifestation <relWorIRI>
 <relWorIRI> nomen property <nomenW> 
 <nomenW> rdand:P80068 """"""""stripEndStop(concatenateOA(value of a, b, c, d, f, g, k, l, m, n, o, p, r, s, t, u)"""""""" . // has nomen string; OA = in order of appearance
 <nomenW> rdano:P80069 <tScheme(2nd indicator or $2)> . // has scheme of nomen
@@ -123,14 +123,14 @@ If $2 is approved source, use rdawo:P10331 .// has authorized access point for w
 - CP 2024-12-13""
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-19,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, f, g, h, k, l, m, n, o, p, r, s, t, u",,,,$t,name and title portions,no $1 or $0 that can be converted into a rwo uri,,no $2,,, https://www.rdaregistry.info/Elements/m/object/#P30265,has related work of manifestation,structured , ,"<manIRI> has related work of manifestation <relWorIRI>
+19,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, f, g, h, k, l, m, n, o, p, r, s, t, u",,,,$t,name and title portions,no $1 or $0 that can be converted into a rwo uri,,no $2,,, https://www.rdaregistry.info/Elements/m/object/#P30265,has related work of manifestation,structured , ,"<manIRI> has related work of manifestation <relWorIRI>
 <relWorIRI> rdawd:P10328  """"stripEndStop(concatenateOA(value of a, b, c, d, f, g, k, l, m, n, o, p, r, s, t, u) . // has access point for work
 - CP 2024-12-13
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-20,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, f, g, h, k, l, m, n, o, p, r, s, t, u",,,,$t,name and title portions,,,,,,https://www.rdaregistry.info/Elements/w/object/#P10314,has related corporate body of work,structured , ,<Associated Work IRI> has related corporate body of work <CorporateBodyIRI>,,
-21,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),,,,,not(2),,,,"a, b, c, d, f, g, h, k, l, m, n, o, p, r, s, t, u",,,,,,,,,,,,,,,follow Headings Mapping table for relationships to corporate body and subject work - CP 2024-12-13,,
-22,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$1,,,,no $t,only name portion,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table.,Agent Relator Table,approved $1,$2,,RDA URI in table,RDA element in table,IRI,,"<entity> RDA property <$1> 
+20,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,"a, b, c, d, f, g, h, k, l, m, n, o, p, r, s, t, u",,,,$t,name and title portions,,,,,,https://www.rdaregistry.info/Elements/w/object/#P10314,has related corporate body of work,structured , ,<Associated Work IRI> has related corporate body of work <CorporateBodyIRI>,,
+21,done,710,ADDED ENTRY--CORPORATE NAME (R),,,,,not(2),,,,"a, b, c, d, f, g, h, k, l, m, n, o, p, r, s, t, u",,,,,,,,,,,,,,,follow Headings Mapping table for relationships to corporate body and subject work - CP 2024-12-13,,
+22,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$1,,,,no $t,only name portion,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table.,Agent Relator Table,approved $1,$2,,RDA URI in table,RDA element in table,IRI,,"<entity> RDA property <$1> 
 <$1> nomen property <nomenIRI>
 <nomenIRI> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has authorized access point for corporate body
 <nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
@@ -140,11 +140,11 @@ If $2 is approved source, use rdaao:P50407 .// has authorized access point for c
 - CP 2024-12-13
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-23,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$1,,,,no $t,only name portion,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table.,Agent Relator Table,approved $1,no $2,,RDA URI in table,RDA element in table,IRI,,"<entity> RDA property <$1>
+23,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$1,,,,no $t,only name portion,$e or $4 is provided and maps to any RDA URI from the Agent Relator Transformation Table.,Agent Relator Table,approved $1,no $2,,RDA URI in table,RDA element in table,IRI,,"<entity> RDA property <$1>
 <$1> rdaad:P50375 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has access point for corporate body
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-24,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$1,,,,no $t,only name portion,$e and $4 are not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,approved $1,2,no $5,https://www.rdaregistry.info/Elements/m/object/#P30270,has related corporate body of manifestation,IRI, ,"<manIRI> related corporate body of manifestation <$1> 
+24,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$1,,,,no $t,only name portion,$e and $4 are not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,approved $1,2,no $5,https://www.rdaregistry.info/Elements/m/object/#P30270,has related corporate body of manifestation,IRI, ,"<manIRI> related corporate body of manifestation <$1> 
 <$1> nomen property <nomenIRI>
 <nomenIRI> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has authorized access point for corporate body 
 <nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
@@ -154,11 +154,11 @@ If $2 is approved source, use rdaao:P50407 .// has authorized access point for c
 - CP 2024-12-13
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-25,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$1,,,,no $t,only name portion,$e and $4 are not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,approved $1,no $2,no $5,https://www.rdaregistry.info/Elements/m/object/#P30270,has related corporate body of manifestation,IRI, ,"<manIRI> related corporate body of manifestation <$1>
+25,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$1,,,,no $t,only name portion,$e and $4 are not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,approved $1,no $2,no $5,https://www.rdaregistry.info/Elements/m/object/#P30270,has related corporate body of manifestation,IRI, ,"<manIRI> related corporate body of manifestation <$1>
 <$1> rdaad:P50375 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has access point for corporate body
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-26,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$1,,,,no $t,only name portion,$e and $4 are not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,approved $1,2,5,https://www.rdaregistry.info/Elements/i/object/#P40075,has related corporate body of item,IRI,,"<itemIRI> related corporate body of item <$1> 
+26,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$1,,,,no $t,only name portion,$e and $4 are not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,approved $1,2,5,https://www.rdaregistry.info/Elements/i/object/#P40075,has related corporate body of item,IRI,,"<itemIRI> related corporate body of item <$1> 
 <$1> nomen property <nomenIRI>
 <nomenIRI> rdand:P80068 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has authorized access point for corporate body
 <nomenIRI> rdan:P80069 <scheme> .// has scheme of nomen
@@ -167,7 +167,7 @@ If $2 is approved source, use rdaao:P50407 .// has authorized access point for c
 - CP 2024-12-13
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,
-27,reviewed,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$1,,,,no $t,only name portion,$e and $4 are not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,approved $1,no $2,5,https://www.rdaregistry.info/Elements/i/object/#P40075,has related corporate body of item,IRI,,"<itemIRI> related corporate body of item <$1>
+27,done,710,ADDED ENTRY--CORPORATE NAME (R),Type of corporate name entry element,*,,Type of added entry,not(2),,,,$1,,,,no $t,only name portion,$e and $4 are not provided or is provided with a value that does not map to any RDA URI from the Agent Relator Transformation Table,,approved $1,no $2,5,https://www.rdaregistry.info/Elements/i/object/#P40075,has related corporate body of item,IRI,,"<itemIRI> related corporate body of item <$1>
 <$1> rdaad:P50375 “stripEndStop(concatenateOA($a, $b, $c, $d, $g, $n, $u))” . // has access point for corporate body
 
 Follow Headings Mapping Table to create access points and authorized access points. --CEY, 2025-06-12",,

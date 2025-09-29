@@ -1,5 +1,6 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,reviewed,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,a,Time period code (R),,,"NOT (Leader 6 =  c, j,  OR i)",,,,"http://rdaregistry.info/Elements/w/P10216
+0,done,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,6,Linkage,,,,,,,,,,,https://github.com/crystalyragui/MARC2RDA/wiki/Decisions-Index#iig-6,,
+1,phase II,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,a,Time period code (R),,,"NOT (Leader 6 =  c, j,  OR i)",,,,"http://rdaregistry.info/Elements/w/P10216
 http://rdaregistry.info/Elements/t/P70015
 http://rdaregistry.info/Elements/n/P80026
 http://rdaregistry.info/Elements/n/P80069
@@ -16,7 +17,7 @@ give scheme of nomen (string)","Phase I - MARC table code as identifier of times
 [nomen]-->rdanP80069-->""MARC 045 Time Period Code"" 
 
  --LNA 2025-03-10",,
-1,reviewed,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,a,Time period code (R),,,"Leader 6 = c, j, or i ",,,,"http://rdaregistry.info/Elements/w/P10219
+2,phase II,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,a,Time period code (R),,,"Leader 6 = c, j, or i ",,,,"http://rdaregistry.info/Elements/w/P10219
 http://rdaregistry.info/Elements/t/P70015 
 http://rdaregistry.info/Elements/n/P80026 
 http://rdaregistry.info/Elements/n/P80069 ","has date of work [timespan]
@@ -35,13 +36,7 @@ For printed music and sound recordings, date of composition of the work is defin
 
  --LNA 2025-03-10"," Date of work would be appropriate for the date a naturally occurring object originated, but there is no MARC data to separate naturally occurring objects from artifacts, which better map to ""has coverage of content"".
  --LNA 2025-03-10",
-2,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,a,Time period code (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-3,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,a,Time period code (R),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,,,,,
-4,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,a,Time period code (R),,,,,,,http://rdaregistry.info/Elements/w/P10322,has subject timespan,,,,,
-5,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,a,Time period code (R),,,,,,,http://rdaregistry.info/Elements/w/P10602,is description of timespan,,,,,
-6,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,a,Time period code (R),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,,,,,
-7,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,a,Time period code (R),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,,,,,
-8,reviewed,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,0 OR 1,Single date/time OR Multiple single dates/times,Undefined,*,,,,"b, c","b: Formatted 9999 B.C. through C.E. time period (R)
+3,phase II,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,0 OR 1,Single date/time OR Multiple single dates/times,Undefined,*,,,,"b, c","b: Formatted 9999 B.C. through C.E. time period (R)
 c: Formatted pre-9999 B.C. time period",,,"NOT (Leader 6 =  c, j,  OR i)",,,,"http://rdaregistry.info/Elements/w/P10216 , 
 http://rdaregistry.info/Elements/t/P70015 ,
 http://rdaregistry.info/Elements/n/P80068 , 
@@ -60,8 +55,8 @@ Indicator 0 or 1 indicates that one or more subfields b (B.C. 9999 through C.E) 
  --LNA 2025-03-10. 
 ","Coders - please fill in the path based on recording method - read the LC documentation and note that subfield b begins with a code.  ""d"" means Common Era and should just be discarded, taking the date/time string following it as the nomen string.  ""c"" means B.C. and should become a minus before the date/time string.  Other than that, hopefully you can format the dates in EDTF without any trouble.  
 
- --LNA 2025-03-10",,
-9,reviewed,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,2,Range of dates/times,Undefined,*,,,,"b, c","b: Formatted 9999 B.C. through C.E. time period (R)
+ --LNA 2025-03-10",Not currently implementing EDTF in transform - CP 2025-09-25,"currently not converting to edtf. do not have source of timespan. Do not mint a nomen, only a timespan with an access point. - CP 2025-09-24"
+4,phase II,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,2,Range of dates/times,Undefined,*,,,,"b, c","b: Formatted 9999 B.C. through C.E. time period (R)
 c: Formatted pre-9999 B.C. time period",,,"NOT (Leader 6 =  c, j,  OR i)",,,,"http://rdaregistry.info/Elements/w/P10216 , 
 http://rdaregistry.info/Elements/t/P70015 ,
 http://rdaregistry.info/Elements/n/P80068 , 
@@ -79,8 +74,8 @@ Indicator 2 indicates there should be two subfields (b, c, or possibly a combina
 
  --LNA 2025-03-10","Coders, you will need to examine both subfields (2 b, 2c, or possibly a c and a b) and determine which date is earliest, then construct a date range in EDTF as the nomen string for the timespan.  There should only be two for this tag!
 
- --LNA 2025-03-10",,
-10,reviewed,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,0 OR 1,Single date/time OR Multiple single dates/times,Undefined,*,,,,"b, c","b: Formatted 9999 B.C. through C.E. time period (R)
+ --LNA 2025-03-10",,"currently not converting to edtf. do not have source of timespan. Do not mint a nomen, only a timespan with an access point. - CP 2025-09-24"
+5,phase II,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,0 OR 1,Single date/time OR Multiple single dates/times,Undefined,*,,,,"b, c","b: Formatted 9999 B.C. through C.E. time period (R)
 c: Formatted pre-9999 B.C. time period",,,"Leader 6 = c, j, or i ",,,,"http://rdaregistry.info/Elements/w/P10219 , 
 http://rdaregistry.info/Elements/t/P70015 ,
 http://rdaregistry.info/Elements/n/P80068 , 
@@ -101,8 +96,8 @@ Indicator 0 or 1 indicates that one or more subfields b (B.C. 9999 through C.E) 
 
  --LNA 2025-03-10","Date of work would be appropriate for the date a naturally occurring object originated, but there is no MARC data to separate naturally occurring objects from artifacts, which better map to ""has coverage of content"", so we have not attempted to map them to date of work.
 
- --LNA 2025-03-10",
-11,reviewed,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,2,Range of dates/times,Undefined,*,,,,"b, c","b: Formatted 9999 B.C. through C.E. time period (R)
+ --LNA 2025-03-10","currently not converting to edtf. do not have source of timespan. Do not mint a nomen, only a timespan with an access point. - CP 2025-09-24"
+6,phase II,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,2,Range of dates/times,Undefined,*,,,,"b, c","b: Formatted 9999 B.C. through C.E. time period (R)
 c: Formatted pre-9999 B.C. time period",,,"Leader 6 = c, j, or i ",,,,"http://rdaregistry.info/Elements/w/P10219 , 
 http://rdaregistry.info/Elements/t/P70015 ,
 http://rdaregistry.info/Elements/n/P80068 , 
@@ -120,20 +115,4 @@ Indicator 2 indicates there should be two subfields (b, c, or possibly a combina
 
  --LNA 2025-03-10","Coders, you will need to examine both subfields (2 b, 2c, or possibly a c and a b) and determine which date is earliest, then construct a date range in EDTF as the nomen string for the timespan.  There should only be two for this tag!
 
- --LNA 2025-03-10",,
-12,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,b,Formatted 9999 B.C. through C.E. time period (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-13,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,b,Formatted 9999 B.C. through C.E. time period (R),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,,,,,
-14,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,b,Formatted 9999 B.C. through C.E. time period (R),,,,,,,http://rdaregistry.info/Elements/w/P10322,has subject timespan,,,,,
-15,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,b,Formatted 9999 B.C. through C.E. time period (R),,,,,,,http://rdaregistry.info/Elements/w/P10602,is description of timespan,,,,,
-16,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,b,Formatted 9999 B.C. through C.E. time period (R),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,,,,,
-17,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,b,Formatted 9999 B.C. through C.E. time period (R),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,,,,,
-18,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,c,Formatted pre-9999 B.C. time period (R),,,,,,,http://rdaregistry.info/Elements/w/P10216,has coverage of content,,,,,
-19,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,c,Formatted pre-9999 B.C. time period (R),,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,,,,,
-20,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,c,Formatted pre-9999 B.C. time period (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,,,,,
-21,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,c,Formatted pre-9999 B.C. time period (R),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,,,,,
-22,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,c,Formatted pre-9999 B.C. time period (R),,,,,,,http://rdaregistry.info/Elements/w/P10322,has subject timespan,,,,,
-23,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,c,Formatted pre-9999 B.C. time period (R),,,,,,,http://rdaregistry.info/Elements/w/P10602,is description of timespan,,,,,
-24,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,c,Formatted pre-9999 B.C. time period (R),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,,,,,
-25,delete,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,c,Formatted pre-9999 B.C. time period (R),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,,,,,
-26,Not mapped,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,6,Linkage,,,,,,,,,,,,,"While $6 plays an important role in linking vernacular and romanized fields, the contents of the subfield are not useful in an RDA context.  --LNA 2025-03-10"
-27,Not mapped,45,TIME PERIOD OF CONTENT (NR),Type of time period in subfield $b or $c,*,,Undefined,*,,,,8,Field link and sequence number,,,,,,,,,,,,,See Decision  https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#id3-8-field-link-and-sequence-number    --LNA 2025-03-10
+ --LNA 2025-03-10",,"currently not converting to edtf. do not have source of timespan. Do not mint a nomen, only a timespan with an access point. - CP 2025-09-24"

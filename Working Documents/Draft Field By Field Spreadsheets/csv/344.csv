@@ -184,3 +184,4 @@ If no $2
 If $3
 [Manifestation] rdamd:P30137 [""Sound content ("" + {value of $i} + "") applies to "" + {value of $3} + "".""]
 PS 7/8/2024",,
+11,done,344,SOUND CHARACTERISTICS (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-6,,

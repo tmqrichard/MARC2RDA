@@ -13,4 +13,3 @@ output the statement (domain entity) objectified($4) (minted range entity) or (d
 Ignore $i   EK 2025-03-18 (from Gordon's analysis)"
 7,reviewed,758,RESOURCE IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,5,Institution to which field applies (NR),,,,,,,,,,,if present do not transform field  EK 2025-03-02,,
 8,reviewed,758,RESOURCE IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,See decision: https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-6,,
-9,not mapped,758,RESOURCE IDENTIFIER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,See decision: https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#id3-8-field-link-and-sequence-number,,,

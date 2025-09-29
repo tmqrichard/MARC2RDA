@@ -23,5 +23,3 @@ LA 10/11/2024",,
 [Nomen]--rdan:P80069-->($2)
 [Nomen]--rdan:p80069-->""[textual citation of bibliography]""
 LA 12/30/2024",,
-4,not mapped,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,"subfield contains linkage code which is not mappable, but mapping of linked 880 tag may occur and may utilize contents of the $6.  LA 12/30/24"
-5,not mapped,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,Decision:  https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#id3-8-field-link-and-sequence-number 

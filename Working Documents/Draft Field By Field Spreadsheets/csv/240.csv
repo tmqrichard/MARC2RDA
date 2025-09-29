@@ -1,117 +1,18 @@
 ,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,,,,,,,,,,,,,,,,,,,,,,,,,,
-1,,,,,,,,,,,,,,,,,,,,,,,,,,
-2,,,,,,,,,,,,,,,,,,,,,,,,,,
-3,,,,,,,,,,,,,,,,,,,,,,,,,,
-4,in progress,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,," a, d, f, g, k, m, n, o, p, r, s, 2","Uniform title 
-Date of treaty signing
-Date of a work
-Miscellaneous information
-Form subheading
-Medium of performance for music
-Number of part/section of a work
-Arranged statement for music
-Name of part/section of a work
-Key for music
-Version 
-",,,$2 or $0 or $1 with URI,,,,"http://rdaregistry.info/Elements/w/P10331
-http://rdaregistry.info/Elements/n/P80068
-
-http://rdaregistry.info/Elements/n/P80069","has authorized access point for work
-has nomen string
-has scheme of normen","IRI, structured, IRI or code","mint nomen, concatenate into nomen string all subfields omitting h (Medium, obsolete for RDA) and l (Language, which should be an expression property).  Category of nomen added from tag label since we can't identify scheme of nomen","[this work URI] -->rdawoP10331-->[minted nomen]-->rdanP80068 "" (a+d+f+g+k+m+n+o+p+r+s+ as they occur in order in MARC,separate by 1 space)""
-
-[nomen]-->rdanP80069-->(derive from source code in $2 or domain of IRI in $0 or $1 if domain is an approved one.  If it isn't use ""has access point for work"" mapping)",,
-5,in progress,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,"a, d, f, g, k, m, n, o, p, r, s","Uniform title 
-Date of treaty signing
-Date of a work
-Miscellaneous information
-Form subheading
-Medium of performance for music
-Number of part/section of a work
-Arranged statement for music
-Name of part/section of a work
-Key for music
-Version 
-",,,NOT($2 or $0 or $1 with URI),,,,"http://rdaregistry.info/Elements/w/P10328
-http://rdaregistry.info/Elements/n/P80068 
-http://rdaregistry.info/Elements/n/P80078 ","has access point for work
-has nomen string
-has category of nomen ""uniform title""","IRI, structured, unstructured","mint nomen, concatenate into nomen string all subfields omitting h (Medium, obsolete for RDA) and l (Language, which should be an expression property).  Category of nomen added from tag label since we can't identify scheme of nomen","[this work URI] -->rdawoP10331-->[minted nomen]-->rdanP80068 "" (a+d+f+g+k+m+n+o+p+r+s+ separate by 1 space)""
-
-[nomen]-->rdanP80078-->""Uniform title""",,
-6,delete ,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,a,Uniform title (NR),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,"combine with $g,$k",,
-7,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,a,Uniform title (NR),,,,,,,http://rdaregistry.info/Elements/w/P10223,has preferred title of work,unstructured,,"combine with $g,$k",,
-8,in progress,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,"a, d, f, g, k, l, m, n, o, p, r, s",Uniform title (NR),,,$2 or $0 with IRI,,$l,,"http://rdaregistry.info/Elements/e/P20313
-http://rdaregistry.info/Elements/n/P80068 
-
-http://rdaregistry.info/Elements/n/P80069 ","has authorized access point for expression
-has nomen string
-has scheme of normen","IRI, structured, IRI or code","Include $l language in an expression access point.  mint nomen, concatenate into nomen string all subfields omitting h (Medium, obsolete for RDA), include scheme if source data or approved IRI is there. ","[this work URI] -->rdawoP10331-->[minted nomen]-->rdanP80068 "" (a+d+f+g+k+l+m+n+o+p+r+s+ as they occur in order in MARC, separate by 1 space)""
-
-[nomen]-->rdanP80069-->(derive from source code in $2 or domain of IRI in $0 or $1 if domain is an approved one.  If it isn't use ""has access point for work"" mapping)",,
-9,in progress,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,"a, d, f, g, k, m, n, o, p, r, s",Uniform title (NR),,,NOT($2 or $0 with IRI),,$l,,"http://rdaregistry.info/Elements/e/P20310
-http://rdaregistry.info/Elements/n/P80068 
-http://rdaregistry.info/Elements/n/P80078 ","has access point for expression
-has nomen string
-has category of nomen ""uniform title""","IRI, structured, unstructured
-","Include $l language in an expression access point.  Mint nomen, concatenate into nomen string all subfields omitting h (Medium, obsolete for RDA). Category of nomen added from tag label since we can't identify scheme of nomen","[this work URI] -->rdawoP10331-->[minted nomen]-->rdanP80068 "" (a+d+f+g+k+m+n+o+p+r+s+ separate by 1 space)""
-
-[nomen]-->rdanP80078-->""Uniform title""",,with $o also
-10,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,d,Date of treaty signing (R),,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,structured,"has category of nomen ""uniform title""",,,
-11,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,d,Date of treaty signing (R),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,structured,,,,
-12,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,f,Date of a work (NR),,,,,,,http://rdaregistry.info/Elements/w/P10219,has date of work,structured,,,,
-13,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,f,Date of a work (NR),,,,,,,http://rdaregistry.info/Elements/w/P10317,has related timespan of work,structured,,,,
-14,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,f,Date of a work (NR),,,,,,,http://rdaregistry.info/Elements/e/P20214,has date of expression,structured,,,,
-15,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,f,Date of a work (NR),,,,,,,http://rdaregistry.info/Elements/e/P20307,has related timespan of expression,structured,,,,
-16,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,g,Miscellaneous information (R),,,,,,,http://rdaregistry.info/Elements/w/P10292,has participant in treaty,unstructured,,,,Only when the value is a Corporate body
-17,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,g,Miscellaneous information (R),,,,,,,http://rdaregistry.info/Elements/w/P10330,has note on work,unstructured,,,,
-18,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,0,Not printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,h,Medium (NR),,,,,,,http://rdaregistry.info/Elements/m/P30002,has media type,structured/iri,,,,See also TAG 007 and 337
-19,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,1,Printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,h,Medium (NR),,,,,,,http://rdaregistry.info/Elements/m/P30002,has media type,structured/iri,,,,See also TAG 007 and 337
-20,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,2,"Not printed on card, title added entry (MU) [OBSOLETE]",Nonfiling characters,0-9,Number of nonfiling characters,,,h,Medium (NR),,,,,,,,,,,,,
-21,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,3,"Printed on card, title added entry (MU) [OBSOLETE]",Nonfiling characters,0-9,Number of nonfiling characters,,,h,Medium (NR),,,,,,,,,,,,,
-22,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,0,Not printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,k,Form subheading (R),,,,,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,structured,,,,
-23,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,1,Printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,k,Form subheading (R),,,,,,,http://rdaregistry.info/Elements/w/P10222,has nature of content,structured,,,,
-24,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,2,"Not printed on card, title added entry (MU) [OBSOLETE]",Nonfiling characters,0-9,Number of nonfiling characters,,,k,Form subheading (R),,,,,,,,,,,,,
-25,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,3,"Printed on card, title added entry (MU) [OBSOLETE]",Nonfiling characters,0-9,Number of nonfiling characters,,,k,Form subheading (R),,,,,,,,,,,,,
-26,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,l,Language of a work (NR),,,,,,,http://rdaregistry.info/Elements/e/P20006,has language of expression,structured,,,,
-27,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,m,Medium of performance for music (R),,,,,,,http://rdaregistry.info/Elements/e/P20215,has medium of performance of musical content,structured,,,,
-28,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,n,Number of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/w/P10012,has numbering of part,unstructured,,,,
-29,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,0,Not printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,o,Arranged statement for music (NR),,,,,,,http://rdaregistry.info/Elements/e/P20572,has designation of version,unstructured,,,,
-30,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,1,Printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,o,Arranged statement for music (NR),,,,,,,http://rdaregistry.info/Elements/e/P20572,has designation of version,unstructured,,,,
-31,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,2,"Not printed on card, title added entry (MU) [OBSOLETE]",Nonfiling characters,0-9,Number of nonfiling characters,,,o,Arranged statement for music (NR),,,,,,,,,,,,,
-32,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,3,"Printed on card, title added entry (MU) [OBSOLETE]",Nonfiling characters,0-9,Number of nonfiling characters,,,o,Arranged statement for music (NR),,,,,,,,,,,,,
-33,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,0,Not printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,p,Name of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,,,
-34,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,1,Printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,p,Name of part/section of a work (R),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,unstructured,,,,
-35,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,2,"Not printed on card, title added entry (MU) [OBSOLETE]",Nonfiling characters,0-9,Number of nonfiling characters,,,p,Name of part/section of a work (R),,,,,,,,,,,,,
-36,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,3,"Printed on card, title added entry (MU) [OBSOLETE]",Nonfiling characters,0-9,Number of nonfiling characters,,,p,Name of part/section of a work (R),,,,,,,,,,,,,
-37,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,r,Key for music (NR),,,,,,,http://rdaregistry.info/Elements/e/P20326,has key of expression,structured,,,,
-38,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,0,Not printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (R),,,,,,,http://rdaregistry.info/Elements/e/P20572,has designation of version,unstructured,,,,
-39,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,1,Printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (R),,,,,,,http://rdaregistry.info/Elements/e/P20572,has designation of version,unstructured,,,,
-40,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,2,"Not printed on card, title added entry (MU) [OBSOLETE]",Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (R),,,,,,,,,,,,,
-41,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,3,"Printed on card, title added entry (MU) [OBSOLETE]",Nonfiling characters,0-9,Number of nonfiling characters,,,s,Version (R),,,,,,,,,,,,,
-42,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,0,Not printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,2,Source of heading or term (NR),,,,,,,,,,,See ,,which VES
-43,not mapped,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,Not printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,6,Linkage (NR),,,,,,,,,,,,,?
-44,not mapped,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,Not printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,8,Field link and sequence number (R),,,,,,,,,,,,,?
-45,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,1,Printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,2,Source of heading or term (NR),,,,,,,,,,,,,which VES
-46,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,1,Printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,6,Linkage (NR),,,,,,,,,,,,,
-47,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,1,Printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-48,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,2,"Not printed on card, title added entry (MU) [OBSOLETE]",Nonfiling characters,0-9,Number of nonfiling characters,,,2,Source of heading or term (NR),,,,,,,,,,,,,
-49,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,2,"Not printed on card, title added entry (MU) [OBSOLETE]",Nonfiling characters,0-9,Number of nonfiling characters,,,6,Linkage (NR),,,,,,,,,,,,,
-50,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,2,"Not printed on card, title added entry (MU) [OBSOLETE]",Nonfiling characters,0-9,Number of nonfiling characters,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-51,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,3,"Printed on card, title added entry (MU) [OBSOLETE]",Nonfiling characters,0-9,Number of nonfiling characters,,,2,Source of heading or term (NR),,,,,,,,,,,,,
-52,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,3,"Printed on card, title added entry (MU) [OBSOLETE]",Nonfiling characters,0-9,Number of nonfiling characters,,,6,Linkage (NR),,,,,,,,,,,,,
-53,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,3,"Printed on card, title added entry (MU) [OBSOLETE]",Nonfiling characters,0-9,Number of nonfiling characters,,,8,Field link and sequence number (R),,,,,,,,,,,,,
-54,first pass,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,0,Authority record control number or standard number (R),,,contains an IRI,,,,http://rdaregistry.info/Elements/n/P80178,is nomen described by ,IRI,"if a link to an authority record is in $0, it describes the nomen we are creating for the Work property, unless a $l (language) is present - if $l is present, it describes the nomen for the expression property.  ","if a link to an authority record is in $0, it describes the nomen we are creating for the Work property, unless a $l (language) is present - if $l is present, it describes the nomen for the expression property.   Just map this normen property to contents of $0",,
-55,first pass,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,0,Authority record control number or standard number (R),,,$0 contains an identifier that isn't an IRI,, ,,http://rdaregistry.info/Elements/n/P80071,has note on nomen,IRI,"If an identifier not an IRI is in $0, we can associate it with the nomen in some way and simplest way is ""note on nomen""","If an identifier not IRI is in $0, and field doesn't contain $l it describes the nomen we create for the Work property, 
-[minted nomen for aap or ap of Work] -- ""Authority record control number or standard number:  [contents of $0]""
-
-If field contains $l, map this to the nomen for expression.",,
-56,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/w/P10223,has preferred title of work,,,,,
-57,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/e/P20002,has identifier for expression,identifier,,,,
-58,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,0,Authority record control number or standard number (R),,,,,,,http://rdaregistry.info/Elements/e/P20312,has title of expression,,,,,
-59,first pass,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10002,has identifier for work,IRI,,,,
-60,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10088,has title of work,,,,,
-61,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/w/P10223,has preferred title of work,,,,,
-62,delete,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/e/P20002,has identifier for expression,IRI,,,,
-63,delete?,240.0,UNIFORM TITLE (NR),Uniform title printed or displayed,*,,Nonfiling characters,*,,,,1,Real World Object URI (R),,,,,,,http://rdaregistry.info/Elements/e/P20312,has title of expression,,,,,
+0,done,240,UNIFORM TITLE (NR),,,,,,,,,d,Date of treaty signing,,,,,,,https://www.rdaregistry.info/Elements/w/datatype/#P10219,has date of work,unstructured,,"See Headings Mapping Table, WEM tab",,
+1,done,240,UNIFORM TITLE (NR),,,,,,,,,n,Number of a part/section of a work,,,If $n = '\([1-2][0-9][0-9][0-9]\)',,,,https://www.rdaregistry.info/Elements/w/datatype/#P10219,has date of work,unstructured,,"See Headings Mapping Table, WEM tab",,
+2,done,240,UNIFORM TITLE (NR),,,,,,,,,n,Number of a part/section of a work,,,IF 'op.' or 'opp.',,,,https://www.rdaregistry.info/Elements/w/datatype/#P10333,has opus number,unstructured,,"See Headings Mapping Table, WEM tab",,
+3,done,240,UNIFORM TITLE (NR),,,,,,,,,l,Language of a work,,,,,,,https://www.rdaregistry.info/Elements/w/datatype/#P10353,has language of representative expression,unstructured,,"See Headings Mapping Table, WEM tab",,
+4,done,240,UNIFORM TITLE (NR),,,,,,,,,l,Language of a work,,,,,,,https://www.rdaregistry.info/Elements/e/datatype/#P20006,has language of expression,unstructured,,"See Headings Mapping Table, WEM tab",,
+5,done,240,UNIFORM TITLE (NR),,,,,,,,,m,Medium of performance for music,,,,,,,https://www.rdaregistry.info/Elements/w/datatype/#P10220,has medium of performance of musical content of representative expression,unstructured,,"See Headings Mapping Table, WEM tab",,
+6,done,240,UNIFORM TITLE (NR),,,,,,,,,m,Medium of performance for music,,,,,,,https://www.rdaregistry.info/Elements/e/datatype/#P20215,has medium of performance of musical content,unstructured,,"See Headings Mapping Table, WEM tab",,
+7,done,240,UNIFORM TITLE (NR),,,,,,,,,r,Key for music,,,,,,,https://www.rdaregistry.info/Elements/w/datatype/#P10221,has key of representative expression,unstructured,,"See Headings Mapping Table, WEM tab",,
+8,done,240,UNIFORM TITLE (NR),,,,,,,,,r,Key for music,,,,,,,https://www.rdaregistry.info/Elements/e/datatype/#P20326,has key of expression,unstructured,,"See Headings Mapping Table, WEM tab",,
+9,done,240,UNIFORM TITLE (NR),,,,,,,,,"a, d, k, n, p, t, g",,,,,,,,http://rdaregistry.info/Elements/w/datatype/P10328,has access point for work,structured,,"See Headings Mapping Table, WEM tab",,
+10,done,240,UNIFORM TITLE (NR),,,,,,,,,$adknpt + g (if before 'flmors'),,,,,,,,http://rdaregistry.info/Elements/w/datatype/#P10088,has title of work,unstructured,,"See Headings Mapping Table, WEM tab",,
+11,done,240,UNIFORM TITLE (NR),,,,,,,,,f,Date of work,,,If NOT $f = '\([1-2][0-9][0-9][0-9]\)',,,,https://www.rdaregistry.info/Elements/e/datatype/#P20214,has date of expression,unstructured,,"See Headings Mapping Table, WEM tab",,"Condition is to exclude dates in parenthesis. --CEY, 2025-09-08"
+12,done,240,UNIFORM TITLE (NR),,,,,,,,,o,Arranged statement for music,,,"IF $o ='arr.' OR 'arranged', then map as 'Arrangement'",,,,https://www.rdaregistry.info/Elements/w/datatype/#P20331,has category of expression,unstructured,,"See Headings Mapping Table, WEM tab",,
+13,done,240,UNIFORM TITLE (NR),,,,,,,,,s,Version,,,,,,,https://www.rdaregistry.info/Elements/e/datatype/#P20572,has designation of version,unstructured,,"See Headings Mapping Table, WEM tab",,
+14,done,240,UNIFORM TITLE (NR),,,,,,,,,"a, d, k, n, p, t, g, f, l, m, o, r, s",,,,,,,,http://rdaregistry.info/Elements/e/datatype/P20310,has access point for expression,structured,,"See Headings Mapping Table, WEM tab",,
+15,done,240,UNIFORM TITLE (NR),,,,,,,,,"a, d, k, n, p, t, f, l, m, o, r, s + g (if after adknpt)",,,,,,,,https://www.rdaregistry.info/Elements/e/datatype/#P20312,has title of expression,,,"See Headings Mapping Table, WEM tab",,
+16,done,240,UNIFORM TITLE (NR),Uniform title printed or displayed,*,Not printed or displayed,Nonfiling characters,0-9,Number of nonfiling characters,,,6,Linkage (NR),,,,,,,,,,,https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-6,,

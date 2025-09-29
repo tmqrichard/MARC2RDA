@@ -3,3 +3,4 @@
 <Concept""value of $2""(value of $a)> skos:notation “value of $a”^^<SchemeNotation""value of $2""> .
 <Concept""value of $2""(value of $a))> skos:altLabel “value of $a” .
 <Concept""value of $2""(value of $a)> skos:inScheme http://id.loc.gov/vocabulary/classSchemes/""value of $2"" .",,
+1,done,84,OTHER CLASSIFICATION NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-6,,

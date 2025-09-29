@@ -24,9 +24,4 @@ has category of nomen",,,"Mint a new nomen for each $d
 [metadataIRI] rdf:object ['Taxonomic identification note: ' + value of $x]
 [metadataIRI] has category of work 'private'",,
 3,reviewed,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,z,Public note (R),,,,,,,http://rdaregistry.info/Elements/i/P40028,has note on item,unstructured description,, 'Taxonomic identification note: ' + [value of $z],,
-4,not mapped,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,c,Taxonomic category (R),,,,,,,,,,,,,
-5,not mapped,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,0,Authority record control number or standard number (R),,,,,,,,,,,,,
-6,not mapped,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,1,Real World Object URI (R),,,,,,,,,,,,,
-7,not mapped,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source of taxonomic identification (NR),,,,,,,,,,,,,
-8,not mapped,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,,,
-9,not mapped,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,8,Field link and sequence number (R),,,,,,,,,,,,,
+4,reviewed,754,ADDED ENTRY--TAXONOMIC IDENTIFICATION (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,See decision: https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iig-6,,
