@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://www.loc.gov/MARC21/slim http://www.loc.gov/standards/marcxml/schema/MARC21slim.xsd">
+    <marc:record>
+        <marc:leader>11111nam a2200553ui 4500</marc:leader>
+        <marc:controlfield tag="001">030-test1</marc:controlfield>
+        <marc:datafield tag="034" ind1=" " ind2=" ">
+            <marc:subfield code="a">a</marc:subfield>
+            <marc:subfield code="b">100000</marc:subfield>
+            <marc:subfield code="b">100000</marc:subfield>
+            <marc:subfield code="c">96000</marc:subfield>
+            <marc:subfield code="c">1000</marc:subfield>
+            <marc:subfield code="d">W1800000</marc:subfield>
+            <marc:subfield code="d">E0790000</marc:subfield>
+            <marc:subfield code="e">E1800000</marc:subfield>
+            <marc:subfield code="e">E0860000</marc:subfield>
+            <marc:subfield code="f">N0840000</marc:subfield>
+            <marc:subfield code="f">N0200000</marc:subfield>
+            <marc:subfield code="g">S0700000</marc:subfield>
+            <marc:subfield code="g">N0120000</marc:subfield>
+            <marc:subfield code="h">60 mm = 1°</marc:subfield>
+            <marc:subfield code="h">30 mm = 1°</marc:subfield>
+            <marc:subfield code="j">N0490000</marc:subfield>
+            <marc:subfield code="j">N0300000</marc:subfield>
+            <marc:subfield code="k">N0120000</marc:subfield>
+            <marc:subfield code="k">N0300000</marc:subfield>
+            <marc:subfield code="m">030000</marc:subfield>
+            <marc:subfield code="m">021800</marc:subfield>
+            <marc:subfield code="n">090000</marc:subfield>
+            <marc:subfield code="n">021800</marc:subfield>
+            <marc:subfield code="p">1950</marc:subfield>
+            <marc:subfield code="p">1957</marc:subfield>
+            <marc:subfield code="r">TestR</marc:subfield>
+            <marc:subfield code="r">TestR2</marc:subfield>
+            <marc:subfield code="s">testS</marc:subfield>
+            <marc:subfield code="s">testS2</marc:subfield>
+            <marc:subfield code="t">testT</marc:subfield>
+            <marc:subfield code="t">testT2</marc:subfield>
+            <marc:subfield code="x">17210000</marc:subfield>
+            <marc:subfield code="x">19171200</marc:subfield>
+            <marc:subfield code="y">19171200</marc:subfield>
+            <marc:subfield code="y">19410000</marc:subfield>
+            <marc:subfield code="z">Mars</marc:subfield>
+            <marc:subfield code="z">Mercury</marc:subfield>
+            <marc:subfield code="3">333</marc:subfield>    
+        </marc:datafield>
+        <marc:datafield tag="034" ind1=" " ind2=" ">
+            <marc:subfield code="a">c</marc:subfield>
+            <marc:subfield code="b">100000</marc:subfield>
+            <marc:subfield code="b">100000</marc:subfield>
+            <marc:subfield code="c">96000</marc:subfield>
+            <marc:subfield code="d">W1800000</marc:subfield>
+            <marc:subfield code="e">E1800000</marc:subfield>
+            <marc:subfield code="f">N0840000</marc:subfield>
+            <marc:subfield code="g">S0700000</marc:subfield>
+            <marc:subfield code="h">60 mm = 1°</marc:subfield>
+            <marc:subfield code="j">N0490000</marc:subfield>
+            <marc:subfield code="k">N0120000</marc:subfield>
+            <marc:subfield code="m">030000</marc:subfield>
+            <marc:subfield code="n">090000</marc:subfield>
+            <marc:subfield code="p">1950</marc:subfield>
+            <marc:subfield code="r">TestR</marc:subfield>
+            <marc:subfield code="s">testS</marc:subfield>
+            <marc:subfield code="t">testT</marc:subfield>
+            <marc:subfield code="x">17210000</marc:subfield>
+            <marc:subfield code="z">Mars</marc:subfield>
+            <marc:subfield code="y">19171200</marc:subfield>
+        </marc:datafield>
+    </marc:record>
+</marc:collection>
