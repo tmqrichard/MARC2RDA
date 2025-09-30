@@ -1,0 +1,442 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc99108496980001452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>99108496980001452</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc99108496980001452</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc99108496980001452"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#kaufmanperryjnewtradingsystemsandmethods"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#kaufmanperryjnewtradingsystemsandmethodstextenglish4thed"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#newtradingsystemsandmethods2005johnwiley%26sons4thedvolume"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc99108496980001452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99108496980001452"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc99108496980001452</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 04194cam a22006134a 4500
+F001 99108496980001452
+F005 20240128213016.0
+F006 m        m        
+F006 p     s           
+F007 ta
+F008 050110s2005    njua     b    001 0 eng  
+F010 ## $a   2005041705
+F015 ## $a GBA514343 $2 bnb
+F016 7# $a BA76774939 $2 JP-ToKJK
+F016 7# $a 013113137 $2 Uk
+F019 ## $a 60372279 $a 988800413 $a 989435443 $a 991539515 $a 994568620 $a 1004444140 $a 1015446867 $a 1017777775 $a 1023835751 $a 1049122117 $a 1062074668 $a 1086902569 $a 1105375681 $a 1107570388 $a 1109793172 $a 1111395831 $a 1111709409 $a 1111953726 $a 1118295721
+F020 ## $a 047126847X $q (CLOTH/CD-ROM)
+F020 ## $a 9780471268475 $q (CLOTH/CD-ROM)
+F024 3# $a 9780471268475
+F035 ## $a (OCoLC)57434146 $z (OCoLC)60372279 $z (OCoLC)988800413 $z (OCoLC)989435443 $z (OCoLC)991539515 $z (OCoLC)994568620 $z (OCoLC)1004444140 $z (OCoLC)1015446867 $z (OCoLC)1017777775 $z (OCoLC)1023835751 $z (OCoLC)1049122117 $z (OCoLC)1062074668 $z (OCoLC)1086902569 $z (OCoLC)1105375681 $z (OCoLC)1107570388 $z (OCoLC)1109793172 $z (OCoLC)1111395831 $z (OCoLC)1111709409 $z (OCoLC)1111953726 $z (OCoLC)1118295721
+F035 ## $a (OCoLC)ocm57434146 
+F035 ## $a (EXLNZ-01ALLIANCE_NETWORK)99150027050001451
+F035 ## $a (01ALLIANCE_UW)99108496980001452
+F040 ## $a DLC $b eng $c DLC $d BAKER $d BTCTA $d PAU $d VP@ $d YDXCP $d IG# $d TEU $d HEBIS $d DEBSZ $d ILU $d BDX $d OCLCF $d OCLCQ $d OCLCO $d FC@ $d I8M $d OCLCO $d Z5A $d OCLCQ $d DHA $d OCLCQ $d UKMGB $d OCLCQ $d OCLCO $d EUM $d NLW $d OCLCO $d OCLCL
+F042 ## $a pcc
+F049 ## $a MAIN
+F050 00 $a HG6046 $b .K34 2005
+F082 00 $a 332.64/4 $2 22
+F100 1# $a Kaufman, Perry J.
+F245 10 $a New trading systems and methods / $c Perry J. Kaufman.
+F250 ## $a 4th ed.
+F260 ## $a Hoboken, N.J. : $b John Wiley &amp; Sons, $c ©2005.
+F300 ## $a xxi, 1174 pages : $b illustrations ; $c 26 cm + $e 1 CD-ROM (4 3/4 in.)
+F336 ## $a text $b txt $2 rdacontent
+F337 ## $a unmediated $b n $2 rdamedia
+F338 ## $a volume $b nc $2 rdacarrier
+F490 1# $a The Wiley trading series
+F520 ## $a Accompanying CD-ROM contains ... "TradeStation code and Excel spreadsheets."--Jacket.
+F500 ## $a Revised edition of: Trading systems and methods, c1998.
+F504 ## $a Includes bibliographical references (pages 1137-1152) and index.
+F505 00 $g Ch. 1. $t Introduction -- $g Ch. 2. $t Basic concepts -- $g Ch. 3. $t Charting -- $g Ch. 4. $t Charting systems and techniques -- $g Ch. 5. $t Event-driven trends -- $g Ch. 6. $t Regression analysis -- $g Ch. 7. $t Time-based trend calculations -- $g Ch. 8. $t Time-based trend systems -- $g Ch. 9. $t Momentum and oscillators -- $g Ch. 10. $t Seasonality -- $g Ch. 11. $t Cycle analysis -- $g Ch. 12. $t Volume, open interest, and breadth -- $g Ch. 13. $t Spreads and arbitrage -- $g Ch. 14. $t Behavioral techniques -- $g Ch. 15. $t Pattern recognition -- $g Ch. 16. $t Day trading -- $g Ch. 17. $t Adaptive techniques -- $g Ch. 18. $t Price distribution systems -- $g Ch. 19. $t Multiple time frames -- $g Ch. 20. $t Advanced techniques -- $g Ch. 21. $t System testing -- $g Ch. 22. $t Practical considerations.
+F506 ## $a Accompanying disc is available for use on a standalone workstation within the library for single users. Disc will require installation. $5 StEdNL
+F650 #0 $a Commodity exchanges $x Statistical methods.
+F650 #6 $a Bourses de marchandises $x Méthodes statistiques.
+F650 #7 $a Commodity exchanges $x Statistical methods. $2 fast $0 (OCoLC)fst00869736
+F650 #7 $a Wertpapierhandel $2 gnd
+F650 #7 $a Börsenhandel $2 gnd
+F758 ## $i has work: $a New trading systems and methods (Text) $1 https://id.oclc.org/worldcat/entity/E39PCGfWXd4KPfJt6hxpJgDmFq $4 https://id.oclc.org/worldcat/ontology/hasWork
+F700 1# $a Kaufman, Perry J. $t Trading systems and methods.
+F830 #0 $a Wiley trading series.
+F856 41 $3 Table of contents $u http://catdir.loc.gov/catdir/enhancements/fy0623/2005041705-t.html
+F856 41 $3 Table of contents $u http://digitool.hbz-nrw.de:1801/webclient/DeliveryManager?application=DIGITOOL-3&amp;owner=resourcediscovery&amp;custom_att_2=simple_viewer&amp;user=GUEST&amp;pid=1618198
+F856 42 $3 Contributor biographical information $u http://catdir.loc.gov/catdir/enhancements/fy0623/2005041705-b.html
+F856 42 $3 Publisher description $u http://catdir.loc.gov/catdir/enhancements/fy0623/2005041705-d.html
+F856 4# $3 Cover $q image/jpeg $u http://swbplus.bsz-bw.de/bsz117524565cov.htm $v 20090323062133
+F973 ## $a pbooks
+F977 ## $a PromptCat $9 LOCAL
+F978 ## $a .b53119083 $9 LOCAL
+F980 ## $a 050406 $b 12500 $d 815 $e 11128 $f 574192 $g 1 $9 LOCAL
+F994 ## $a 92 $b OCACL
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#kaufmanperryjnewtradingsystemsandmethods">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99108496980001452"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#kaufmanperryjnewtradingsystemsandmethodstextenglish4thed"/>
+      <rdawd:P10328>Kaufman, Perry J. New trading systems and methods</rdawd:P10328>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#hg6046"/>
+      <rdawo:P10256 rdf:resource="http://marc2rda.edu/fake/ddc22/con#332644"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#kaufmanperryj-->
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#kaufmanperryj"/>
+      <rdawd:P10088>New trading systems and methods</rdawd:P10088>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#commodityexchangesstatisticalmethods"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#boursesdemarchandisesme%CC%81thodesstatistiques"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00869736"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/gnd/con#wertpapierhandel"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/gnd/con#bo%CC%88rsenhandel"/>
+      <rdawo:P10102 rdf:resource="http://marc2rda.edu/fake/wor#wileytradingseries"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#kaufmanperryjnewtradingsystemsandmethodstextenglish4thed">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99108496980001452"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#newtradingsystemsandmethods2005johnwiley%26sons4thedvolume"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#kaufmanperryjnewtradingsystemsandmethods"/>
+      <rdaed:P20310>Kaufman, Perry J. New trading systems and methods (Text : English : 4th ed.)</rdaed:P20310>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      <rdaed:P20312>New trading systems and methods</rdaed:P20312>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+      <rdaed:P20069>Accompanying CD-ROM contains ... "TradeStation code and Excel spreadsheets."--Jacket.</rdaed:P20069>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#newtradingsystemsandmethods2005johnwiley%26sons4thedvolume">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99108496980001452"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#kaufmanperryjnewtradingsystemsandmethodstextenglish4thed"/>
+      <rdamd:P30276>New trading systems and methods (2005 : John Wiley &amp; Sons : 4th ed. : Volume)</rdamd:P30276>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#m"/>
+      <rdam:P30018 rdf:resource="https://doi.org/10.6069/uwlswd.mkjn-bp10#m"/>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#p"/>
+      <rdam:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1003"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.h5tb-zk94#t"/>
+      <rdamo:P30199 rdf:resource="https://doi.org/10.6069/uwlswd.eqmf-h666#a"/>
+      <rdamd:P30011>2005</rdamd:P30011>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nju"/>
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/>
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137>
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/>
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e16"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/bnb/nom#gba514343"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e24"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e29"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#047126847x"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#9780471268475"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e85"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e88"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e90"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e92"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e94"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e96"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e98"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e100"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e102"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e104"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e106"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e108"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e111"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e113"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e115"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e117"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e119"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e121"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e123"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e125"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e127"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e130"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e133"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e136"/>
+      <rdamd:P30156>New trading systems and methods</rdamd:P30156>
+      <rdamd:P30105>Perry J. Kaufman</rdamd:P30105>
+      <rdamd:P30107>4th ed.</rdamd:P30107>
+      <rdamd:P30133>4th ed.</rdamd:P30133>
+      <rdamd:P30111>Hoboken, N.J. : John Wiley &amp; Sons, ©2005.</rdamd:P30111>
+      <rdamd:P30088>Hoboken, N.J.</rdamd:P30088>
+      <rdamd:P30176>John Wiley &amp; Sons</rdamd:P30176>
+      <rdamd:P30280>©2005</rdamd:P30280>
+      <rdamd:P30182>xxi, 1174 pages : illustrations ; 26 cm + 1 CD-ROM (4 3/4 in.)</rdamd:P30182>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <rdamd:P30106>The Wiley trading series</rdamd:P30106>
+      <rdamd:P30137>Revised edition of: Trading systems and methods, c1998.</rdamd:P30137>
+      <rdamd:P30455>Includes bibliographical references (pages 1137-1152) and index.</rdamd:P30455>
+      <rdamd:P30137>Contents: Ch. 1. Introduction -- Ch. 2. Basic concepts -- Ch. 3. Charting -- Ch. 4. Charting systems and techniques -- Ch. 5. Event-driven trends -- Ch. 6. Regression analysis -- Ch. 7. Time-based trend calculations -- Ch. 8. Time-based trend systems -- Ch. 9. Momentum and oscillators -- Ch. 10. Seasonality -- Ch. 11. Cycle analysis -- Ch. 12. Volume, open interest, and breadth -- Ch. 13. Spreads and arbitrage -- Ch. 14. Behavioral techniques -- Ch. 15. Pattern recognition -- Ch. 16. Day trading -- Ch. 17. Adaptive techniques -- Ch. 18. Price distribution systems -- Ch. 19. Multiple time frames -- Ch. 20. Advanced techniques -- Ch. 21. System testing -- Ch. 22. Practical considerations.</rdamd:P30137>
+      <rdamo:P30103 rdf:resource="http://marc2rda.edu/fake/transform/ite#2025-09-29t185544010829-0700d51e373"/>
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#kaufmanperryjtradingsystemsandmethods"/>
+      <rdamd:P30137>Version of resource at: http://catdir.loc.gov/catdir/enhancements/fy0623/2005041705-t.html</rdamd:P30137>
+      <rdamd:P30137>Version of resource at: http://digitool.hbz-nrw.de:1801/webclient/DeliveryManager?application=DIGITOOL-3&amp;owner=resourcediscovery&amp;custom_att_2=simple_viewer&amp;user=GUEST&amp;pid=1618198</rdamd:P30137>
+      <rdamd:P30137>Related resource at: http://catdir.loc.gov/catdir/enhancements/fy0623/2005041705-b.html</rdamd:P30137>
+      <rdamd:P30137>Related resource at: http://catdir.loc.gov/catdir/enhancements/fy0623/2005041705-d.html</rdamd:P30137>
+      <rdamd:P30137>Related resource at: http://swbplus.bsz-bw.de/bsz117524565cov.htm</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/ite#2025-09-29t185544010829-0700d51e373">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
+      <rdaid:P40001>ite#2025-09-29t185544010829-0700d51e373</rdaid:P40001>
+      <rdaio:P40049 rdf:resource="http://marc2rda.edu/fake/transform/man#newtradingsystemsandmethods2005johnwiley%26sons4thedvolume"/>
+      <!--Unable to match StEdNL with Cultural Heritage Organization-->
+      <rdaid:P40047>Terms governing access: Accompanying disc is available for use on a standalone workstation within the library for single users. Disc will require installation.</rdaid:P40047>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e16">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>  2005041705</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/lccn"/>
+      <rdand:P80071>Library of Congress control number:  2005041705</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/bnb/nom#gba514343">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>GBA514343</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/nationalbibschemes/bnb"/>
+      <rdan:P80069>"British national bibliography"</rdan:P80069>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e24">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>BA76774939</rdand:P80068>
+      <rdan:P80071>Identifier derived from a National Bibliographic agency control number for a description of this manifestation</rdan:P80071>
+      <rdano:P80075>JP-ToKJK</rdano:P80075>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e29">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>013113137</rdand:P80068>
+      <rdan:P80071>Identifier derived from a National Bibliographic agency control number for a description of this manifestation</rdan:P80071>
+      <rdano:P80075>Uk</rdano:P80075>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#047126847x">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>047126847X</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+      <rdand:P80071>CLOTH/CD-ROM</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#9780471268475">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9780471268475</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+      <rdand:P80071>CLOTH/CD-ROM</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e85">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9780471268475</rdand:P80068>
+      <rdan:P80069 rdf:resource="https://id.loc.gov/vocabulary/identifiers/ean"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e88">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)57434146</rdand:P80068>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e90">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)60372279</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e92">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)988800413</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e94">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)989435443</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e96">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)991539515</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e98">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)994568620</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e100">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1004444140</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e102">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1015446867</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e104">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1017777775</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e106">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1023835751</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e108">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1049122117</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e111">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1062074668</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e113">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1086902569</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e115">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1105375681</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e117">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1107570388</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e119">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1109793172</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e121">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1111395831</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e123">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1111709409</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e125">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1111953726</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e127">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1118295721</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e130">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)ocm57434146 </rdand:P80068>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e133">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(EXLNZ-01ALLIANCE_NETWORK)99150027050001451</rdand:P80068>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185544010829-0700d51e136">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(01ALLIANCE_UW)99108496980001452</rdand:P80068>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#kaufmanperryj">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Kaufman, Perry J.</rdaad:P50377>
+      <rdaad:P50111>Kaufman, Perry J.</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#kaufmanperryj">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Kaufman, Perry J.</rdaad:P50377>
+      <rdaad:P50111>Kaufman, Perry J.</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#kaufmanperryjtradingsystemsandmethods">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d51e417wor</rdawd:P10002>
+      <rdawd:P10328>Kaufman, Perry J. Trading systems and methods</rdawd:P10328>
+      <rdawo:P10312 rdf:resource="http://marc2rda.edu/fake/age#kaufmanperryj"/>
+      <rdawd:P10088>Trading systems and methods</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#wileytradingseries">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10328>Wiley trading series</rdawd:P10328>
+      <rdawd:P10088>Wiley trading series</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#hg6046">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">HG6046</skos:notation>
+      <skos:altLabel>HG6046</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ddc22/con#332644">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130325044">332.644</skos:notation>
+      <skos:altLabel>332.644</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/ddc22"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#commodityexchangesstatisticalmethods">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Commodity exchanges--Statistical methods</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#boursesdemarchandisesme%CC%81thodesstatistiques">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Bourses de marchandises--Méthodes statistiques</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/gnd/con#wertpapierhandel">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Wertpapierhandel</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/gnd/con#bo%CC%88rsenhandel">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Börsenhandel</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/gnd"/>
+   </rdf:Description>
+</rdf:RDF>

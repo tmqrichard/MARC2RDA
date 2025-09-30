@@ -1,0 +1,1451 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc99152167410001452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>99152167410001452</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc99152167410001452</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc99152167410001452"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#favoritepoemprojectuspinskyrobertdietzmaggieellisrosemarieinvitationtopoetry"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#invitationtopoetrynotatedmusicspokenwordtextenglish1sted"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#invitationtopoetry2004wwnortonelectronic"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc99152167410001452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99152167410001452"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc99152167410001452</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 13618cam a2200841 a 4500
+F001 99152167410001452
+F005 20240128213016.0
+F006 g141            vl
+F006 innnn        z| | 
+F007 vd |v||z|
+F008 040318s2004    nyu    j b    001 0 eng  
+F010 ## $a   2004006210
+F019 ## $a 333392921 $a 779974474 $a 911096639 $a 974763710 $a 982576258 $a 988517910 $a 995189555 $a 1000123819 $a 1001873660 $a 1003646619 $a 1005949124 $a 1011617220 $a 1014264262 $a 1015711873 $a 1018162100 $a 1020453464 $a 1020524800 $a 1023750929 $a 1038151629 $a 1038654368 $a 1039363767 $a 1039825571 $a 1041027851 $a 1043480434 $a 1048036191 $a 1049775695 $a 1049800880 $a 1050281937 $a 1052686236 $a 1060701520 $a 1060728444 $a 1089157937 $a 1089784085 $a 1101036048 $a 1102262937 $a 1104081245 $a 1104810425 $a 1104889720 $a 1105249085 $a 1105738632 $a 1112999455 $a 1141629753 $a 1142675794 $a 1144685314 $a 1151717108 $a 1152996120 $a 1162917740 $a 1175931508 $a 1190766532 $a 1193582979 $a 1196091802 $a 1198398820 $a 1200168154 $a 1200756322 $a 1201023275 $a 1201546293 $a 1201890069 $a 1201894325 $a 1201985919 $a 1201987779 $a 1201999850 $a 1202020111 $a 1202620332 $a 1204220119 $a 1220927844 $a 1224084853 $a 1224948658 $a 1225929268 $a 1227046432 $a 1228817775 $a 1230159017 $a 1230161031 $a 1231990211 $a 1232476879 $a 1235882589 $a 1236887873 $a 1237647331 $a 1238123421 $a 1240250357 $a 1240822363 $a 1241971742 $a 1242939317 $a 1243895754 $a 1245235492 $a 1245939908 $a 1249553812 $a 1250322111 $a 1253422941 $a 1257318653 $a 1260156957 $a 1260696742 $a 1261757137 $a 1262659695 $a 1263279940 $a 1264156919 $a 1264765931 $a 1266203342 $a 1267412947 $a 1268143847 $a 1268531078 $a 1269443711 $a 1273420500 $a 1274238916 $a 1280424397 $a 1281896079 $a 1284928596 $a 1285008351 $a 1285381495 $a 1286082762 $a 1286695516 $a 1287889088 $a 1288624655 $a 1289636269 $a 1290179350 $a 1290186195 $a 1291208181 $a 1291721651 $a 1292701812 $a 1293227479 $a 1293758070 $a 1294528581 $a 1294534307 $a 1294685440 $a 1295473058 $a 1295633689 $a 1296030328 $a 1296050508 $a 1296080847 $a 1296153690 $a 1298135616 $a 1298720765 $a 1298727415 $a 1299331619 $a 1300429318 $a 1300785005 $a 1300809226 $a 1300844454 $a 1301367090 $a 1301421998 $a 1302348010 $a 1302474860 $a 1302701110 $a 1303621702 $a 1303721164 $a 1304912291 $a 1305064982 $a 1374222566 $a 1374270639 $a 1375497691 $a 1395392341 $a 1396162908 $a 1396764432
+F020 ## $a 039305876X $q (hardcover)
+F020 ## $a 9780393058765 $q (hardcover)
+F020 ## $a 9780393928396 $q (guide ; $q pbk.)
+F020 ## $a 039392839X $q (guide ; $q pbk.)
+F020 ## $a 0000000000000
+F020 ## $a 9780000000002
+F020 ## $a 0000000000
+F035 ## $a (OCoLC)54817179 $z (OCoLC)333392921 $z (OCoLC)779974474 $z (OCoLC)911096639 $z (OCoLC)974763710 $z (OCoLC)982576258 $z (OCoLC)988517910 $z (OCoLC)995189555 $z (OCoLC)1000123819 $z (OCoLC)1001873660 $z (OCoLC)1003646619 $z (OCoLC)1005949124 $z (OCoLC)1011617220 $z (OCoLC)1014264262 $z (OCoLC)1015711873 $z (OCoLC)1018162100 $z (OCoLC)1020453464 $z (OCoLC)1020524800 $z (OCoLC)1023750929 $z (OCoLC)1038151629 $z (OCoLC)1038654368 $z (OCoLC)1039363767 $z (OCoLC)1039825571 $z (OCoLC)1041027851 $z (OCoLC)1043480434 $z (OCoLC)1048036191 $z (OCoLC)1049775695 $z (OCoLC)1049800880 $z (OCoLC)1050281937 $z (OCoLC)1052686236 $z (OCoLC)1060701520 $z (OCoLC)1060728444 $z (OCoLC)1089157937 $z (OCoLC)1089784085 $z (OCoLC)1101036048 $z (OCoLC)1102262937 $z (OCoLC)1104081245 $z (OCoLC)1104810425 $z (OCoLC)1104889720 $z (OCoLC)1105249085 $z (OCoLC)1105738632 $z (OCoLC)1112999455 $z (OCoLC)1141629753 $z (OCoLC)1142675794 $z (OCoLC)1144685314 $z (OCoLC)1151717108 $z (OCoLC)1152996120 $z (OCoLC)1162917740 $z (OCoLC)1175931508 $z (OCoLC)1190766532 $z (OCoLC)1193582979 $z (OCoLC)1196091802 $z (OCoLC)1198398820 $z (OCoLC)1200168154 $z (OCoLC)1200756322 $z (OCoLC)1201023275 $z (OCoLC)1201546293 $z (OCoLC)1201890069 $z (OCoLC)1201894325 $z (OCoLC)1201985919 $z (OCoLC)1201987779 $z (OCoLC)1201999850 $z (OCoLC)1202020111 $z (OCoLC)1202620332 $z (OCoLC)1204220119 $z (OCoLC)1220927844 $z (OCoLC)1224084853 $z (OCoLC)1224948658 $z (OCoLC)1225929268 $z (OCoLC)1227046432 $z (OCoLC)1228817775 $z (OCoLC)1230159017 $z (OCoLC)1230161031 $z (OCoLC)1231990211 $z (OCoLC)1232476879 $z (OCoLC)1235882589 $z (OCoLC)1236887873 $z (OCoLC)1237647331 $z (OCoLC)1238123421 $z (OCoLC)1240250357 $z (OCoLC)1240822363 $z (OCoLC)1241971742 $z (OCoLC)1242939317 $z (OCoLC)1243895754 $z (OCoLC)1245235492 $z (OCoLC)1245939908 $z (OCoLC)1249553812 $z (OCoLC)1250322111 $z (OCoLC)1253422941 $z (OCoLC)1257318653 $z (OCoLC)1260156957 $z (OCoLC)1260696742 $z (OCoLC)1261757137 $z (OCoLC)1262659695 $z (OCoLC)1263279940 $z (OCoLC)1264156919 $z (OCoLC)1264765931 $z (OCoLC)1266203342 $z (OCoLC)1267412947 $z (OCoLC)1268143847 $z (OCoLC)1268531078 $z (OCoLC)1269443711 $z (OCoLC)1273420500 $z (OCoLC)1274238916 $z (OCoLC)1280424397 $z (OCoLC)1281896079 $z (OCoLC)1284928596 $z (OCoLC)1285008351 $z (OCoLC)1285381495 $z (OCoLC)1286082762 $z (OCoLC)1286695516 $z (OCoLC)1287889088 $z (OCoLC)1288624655 $z (OCoLC)1289636269 $z (OCoLC)1290179350 $z (OCoLC)1290186195 $z (OCoLC)1291208181 $z (OCoLC)1291721651 $z (OCoLC)1292701812 $z (OCoLC)1293227479 $z (OCoLC)1293758070 $z (OCoLC)1294528581 $z (OCoLC)1294534307 $z (OCoLC)1294685440 $z (OCoLC)1295473058 $z (OCoLC)1295633689 $z (OCoLC)1296030328 $z (OCoLC)1296050508 $z (OCoLC)1296080847 $z (OCoLC)1296153690 $z (OCoLC)1298135616 $z (OCoLC)1298720765 $z (OCoLC)1298727415 $z (OCoLC)1299331619 $z (OCoLC)1300429318 $z (OCoLC)1300785005 $z (OCoLC)1300809226 $z (OCoLC)1300844454 $z (OCoLC)1301367090 $z (OCoLC)1301421998 $z (OCoLC)1302348010 $z (OCoLC)1302474860 $z (OCoLC)1302701110 $z (OCoLC)1303621702 $z (OCoLC)1303721164 $z (OCoLC)1304912291 $z (OCoLC)1305064982 $z (OCoLC)1374222566 $z (OCoLC)1374270639 $z (OCoLC)1375497691 $z (OCoLC)1395392341 $z (OCoLC)1396162908 $z (OCoLC)1396764432
+F035 ## $a (OCoLC)ocm54817179 
+F035 ## $a (EXLNZ-01ALLIANCE_NETWORK)99124070760001451
+F035 ## $a (01ALLIANCE_UW)99152167410001452
+F037 ## $b W W Norton &amp; Co Inc, Keystone Industrial Park Attn Mike Charnogursky 800 Keystone Industrial Park, Scranton, PA, USA, 18512 $n SAN 202-5795
+F040 ## $a DLC $b eng $c DLC $d YDX $d CRH $d BAKER $d NPL $d XY4 $d YDXCP $d BTCTA $d OCLCQ $d CCE $d OCLCF $d OCLCQ $d OCLCO $d IG# $d OCLCQ $d TDS $d I8M $d OCLCQ $d LKC $d NMC $d VBO $d GILDS $d OCLCQ $d OCLCA $d PAU $d OCLCQ $d ZQP $d TUL $d HEE $d OCLCO $d OCLCL
+F049 ## $a MAIN
+F050 00 $a PN6101 $b .I56 2004
+F082 00 $a 808.81 $2 22
+F245 03 $a An invitation to poetry : $b a new Favorite Poem Project anthology / $c edited by Robert Pinsky and Maggie Dietz with the editorial assistance of Rosemarie Ellis.
+F250 ## $a 1st ed.
+F260 ## $a New York : $b W.W. Norton, $c ©2004.
+F300 ## $a xxiv, 308 pages ; $c 25 cm + $e 1 videodisc (DVD : sound, color ; 4 3/4 in.)
+F336 ## $a text $b txt $2 rdacontent
+F337 ## $a unmediated $b n $2 rdamedia
+F338 ## $a volume $b nc $2 rdacarrier
+F340 ## $b 25 cm.
+F538 ## $a No information to include.
+F520 ## $a An anthology of classical and contemporary poems are introduced by everyday people from across the United States, including pieces by such masters as Shakespeare, Keats, and Dickinson and featuring an accompanying video introduction by one of the editors.
+F500 ## $a "Includes a DVD featuring project participants."
+F500 ## $a Accompanied by Classroom guide (xvii, 123 p. ; 24 cm.), c2006.
+F504 ## $a Includes bibliographical references (page 283) and index.
+F505 0# $a from "Discordants" (1) / Conrad Aiken (1889-1973) -- The sentence / Anna Akhmatov (1899-1966) -- The great Canzon / Dante Alighieri (1265-1321) -- Inside the apple / Yehuda Amichai (1924-2000) -- In memoriam Mae Noblitt / A.R. Ammons (1926-2001) -- A blessing in disguise ; This room / John Ashbery (b. 1927) -- It is dangerous to read newspapers / Margaret Atwood (b. 1939) -- Lullaby ; The more loving one / W.H. Auden (1907-1973) -- L'Invitation au voyage / Charles Baudelaire (1821-1867) -- Enueg 1 ; Enueg 2 / Samuel Becket (1906-1989) -- from "Eleven addresses to Our Lord" / John Berryman (1914-1972) -- At the fishhouses ; A cold spring ; Some dreams they forgot / Elizabeth Bishop (1911-1979) -- The chimney sweeper (from Songs of innocence) ; The garden of love (from Songs of experience) / William Blake (1757-1827) -- The crows ; Dark summer / Louise Bogan (1897-1970) -- The blossom / Eavan Boland (b. 1944) -- We real cool ; When you have forgotten Sunday : the love story / Gwendolyn Brooks (1917-2000) -- Strong men / Sterling A. Brown (1901-1989) -- Two in the Campagna / Robert Browning (1812-1889) -- Ay, ay, ay de la Grifa Negra / Julia de Burgos (1914-1953).
+F505 0# $a Is there for honest poverty ; John Anderson my jo / Robert Burns (1759-1796) -- Deathfugue / Paul Celan (1920-1970) -- The Negro's complaint / William Cowper (1731-1800) -- Sunday morning apples / Hart Crane (1899-1933) -- For a poet ; Song in spite of myself / Countee Cullen (1903-1946) -- I carry your heart with me ... / E.E. Cummings (1894-1962) -- Ample make this bed ; The grass so little has to do ; I'm nobody! Who are you? ; One need not be a chamber, to be haunted ; Surgeons must be very careful ; To fight aloud, is very brave / Emily Dickinson (1830-1886) -- An epithalamion ; The good-morrow / John Donne (1572-1631) -- The elephant / Carlos Drummond de Andrade (1902-1987) -- With no experience in such matters / Stephen Dunn (b. 1939) -- Journey of the Magi / T.S. Eliot (1888-1965) -- Seen through a window / David Ferry (b. 1924) -- After apple-picking ; Directive ; An old man's winter night ; "Out, out" ; The oven bird ; The pasture / Robert Frost (1874-1963) -- Transcription of organ music / Allen Ginsberg (1926-1997) -- The school children / Louise Glück (b. 1943) -- The holy longing / Johann Wolfgang von Goethe (1749-1842) -- Ode on the death of a favorite cat / Thomas Gray (1916-1771) -- The idea of trust / Thom Gunn (b. 1929) -- Woolworth's / Donald Hall (b. 1928) -- Population / Mark Halliday (b. 1949) -- Afterwards ; The man he killed / Thomas Hardy (1840-1928) -- Privilege of being / Robert Hass (b. 1941).
+F505 0# $a The night-blooming cereus / Robert Hayden (1913-1980) -- from "Clearances" / Seamus Heaney (b. 1939) -- Prospects / Anthony Hecht (b. 1923) -- The collar / George Herbert (1593-1633) -- The envoy of Mr. Cogito / Zbigniew Herbert (1924-1998) -- Upon Julia's clothes / Robert Herrick (1591-1674) -- Carrion comfort ; God's grandeur ; To seem the stranger lies my lot ... / Gerard Manley Hopkins (1844-1889) -- When I was one-and-twenty (A Shropshire lad 13) / A.E. Housman (1859-1936) -- The dream keeper ; Minstrel man ; Motto / Langston Hughes (1902-1967) -- Degrees of gray in Philipsburg / Richard Hugo (1923-1982) -- My real dwelling / Ikkyu (1394-1481) -- The islands ; The woman at the Washington Zoo / Randall Jarrell (1914-1965) -- The eye / Robinson Jeffers (1887-1962) -- The song of the Banana Man / Evan Jones (b. 1927) -- Inviting a friend to supper ; Lovel's song / Ben Jonson (1573-1637) -- Men at forty / Donald Justice (b. 1925) -- from Endymion ; On a Leander which Miss Reynolds, my kind friend, gave me ; To sleep / John Keats (1795-1821) -- Finding a long gray hair / Jane Kenyon (1947-1995) -- The boiling water / Kenneth Koch (1925-2002) -- Facing it / Yusef Komunyakaa (b. 1947) -- Thinking of death and dogfood / Maxine Kumin (b. 1925) -- Hornworm : autumn lamentation ; The layers / Stanley Kunitz (b. 1905) -- An Arundel tomb ; The explosion / Philip Larkin (1922-1985) -- Caedmon / Denise Levertov (1923-1997).
+F505 0# $a They feed they lion ; What work is / Philip Levine (b. 1928) -- The flower-fed buffaloes / Vachel Lindsay (1879-1931) -- Still night thoughts / Li Po (701-762) -- River-snow / Liu Zongyuan (773-819) -- A psalm of life / Henry Wadsworth Longfellow (1807-1882) -- To Althea, from prison / Richard Lovelace (1618-1657) -- Memories of West Street and Lepke ; The old flame / Robert Lowell (1917-1977) -- Portrait / Antonio Machado (1875-1939) -- Ars poetica / Archibald MacLeish (1892-1982) -- Language lesson / Heather McHugh (b. 1948) -- The mad scene / James Merrill (1926-1995) -- The shore / W.S. Merwin (b. 1927) -- On hearing a symphony of Beethoven ; Recuerdo / Edna St. Vincent Millay (1892-1950) -- You who wronged / Czeslaw Milosz (b. 1911) -- When I consider how my light is spent / John Milton (1608-1674) -- Piececitos / Gabriela Mistral (1889-1857) -- A jellyfish ; What are years? / Marianne Moore (1887-1972) -- The meeting of the waters / Thomas Moore (1779-1852) -- The snow globe / Howard Nemerov (1920-1991) -- Absence of Joaquín / Pablo Neruda (1904-1973) -- He lived, childhood summers / Lorine Niedecker (1903-1970) -- The day Lady died ; Poem (Lana Turner has collapsed!) ; Poem (And tomorrow morning at 8 o'clock in Springfield, Massachusetts) / Frank O'Hara (1926-1966) -- The forms of love ; Psalm / George Oppen (1908-1984) -- Dulce et decorum est / Wilfred Owen (1893-1918) -- At the New Year / Kenneth Patchen (1911-1972).
+F650 #0 $a Poetry $v Translations into English.
+F650 #0 $a American poetry.
+F650 #0 $a English poetry.
+F650 #1 $a DVDs.
+F650 #6 $a Poésie américaine.
+F650 #6 $a Poésie anglaise.
+F650 #7 $a American poetry. $2 fast $0 (OCoLC)fst00807348
+F650 #7 $a English poetry. $2 fast $0 (OCoLC)fst00912278
+F650 #7 $a Poetry. $2 fast $0 (OCoLC)fst01067691
+F650 #7 $a Poetry. $2 sears
+F650 #7 $a English poetry. $2 sears
+F650 #7 $a American poetry. $2 sears
+F655 #4 $a Translations into English.
+F655 #7 $a Translations. $2 fast $0 (OCoLC)fst01423791
+F655 #7 $a DVD-Video discs. $2 lcgft
+F655 #7 $a Videodiscs. $2 lcgft
+F655 #7 $a DVDs. $2 lcgft
+F710 2# $a Favorite Poem Project (U.S.)
+F758 ## $i has work: $a An invitation to poetry (Text) $1 https://id.oclc.org/worldcat/entity/E39PCXGY7Yh6TQ49MGmByCFJV3 $4 https://id.oclc.org/worldcat/ontology/hasWork
+F700 1# $a Pinsky, Robert.
+F700 1# $a Dietz, Maggie.
+F700 1# $a Ellis, Rosemarie.
+F973 ## $a pbooks
+F977 ## $a PromptCat $9 LOCAL
+F978 ## $a .b52967670 $9 LOCAL
+F980 ## $a 050309 $b 2995 $d 195 $e 2666 $f 556074 $g 1 $9 LOCAL
+F994 ## $a 92 $b OCACL
+F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1060
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1013
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1010
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#favoritepoemprojectuspinskyrobertdietzmaggieellisrosemarieinvitationtopoetry">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99152167410001452"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#invitationtopoetrynotatedmusicspokenwordtextenglish1sted"/>
+      <rdawd:P10328>Favorite Poem Project (U.S.) Pinsky, Robert. Dietz, Maggie. Ellis, Rosemarie. Invitation to poetry</rdawd:P10328>
+      <rdaw:P10222 rdf:resource="https://doi.org/10.6069/uwlswd.eje7-jq11#l"/>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.62zz-1534#n"/>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#pn6101"/>
+      <rdawo:P10256 rdf:resource="http://marc2rda.edu/fake/ddc22/con#80881"/>
+      <rdawd:P10088>An invitation to poetry</rdawd:P10088>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#poetrytranslationsintoenglish"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcsh/con#translationsintoenglish"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#americanpoetry"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#englishpoetry"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/cyac/con#dvds"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#poe%CC%81sieame%CC%81ricaine"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#poe%CC%81sieanglaise"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00807348"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/00912278"/>
+      <rdaw:P10256 rdf:resource="https://id.worldcat.org/fast/01067691"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/sears/con#poetry"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/sears/con#englishpoetry"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/sears/con#americanpoetry"/>
+      <rdawd:P10004>Translations into English</rdawd:P10004>
+      <rdaw:P10004 rdf:resource="https://id.worldcat.org/fast/01423791"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#dvd-videodiscs"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#videodiscs"/>
+      <rdaw:P10004 rdf:resource="http://marc2rda.edu/fake/lcgft/con#dvds"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#invitationtopoetrynotatedmusicspokenwordtextenglish1sted">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99152167410001452"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#invitationtopoetry2004wwnortonelectronic"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#favoritepoemprojectuspinskyrobertdietzmaggieellisrosemarieinvitationtopoetry"/>
+      <rdaed:P20310>Invitation to poetry (Notated music : Spoken word : Text : English : 1st ed.)</rdaed:P20310>
+      <rdaed:P20219>Duration: 141 minutes.</rdaed:P20219>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      <rdae:P20322 rdf:resource="https://doi.org/10.6069/uwlswd.aec4-nv40#j"/>
+      <rdaed:P20312>An invitation to poetry</rdaed:P20312>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+      <rdaed:P20069>An anthology of classical and contemporary poems are introduced by everyday people from across the United States, including pieces by such masters as Shakespeare, Keats, and Dickinson and featuring an accompanying video introduction by one of the editors.</rdaed:P20069>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1013"/>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1010"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#invitationtopoetry2004wwnortonelectronic">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99152167410001452"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#invitationtopoetrynotatedmusicspokenwordtextenglish1sted"/>
+      <rdamd:P30276>Invitation to poetry (2004 : W.W. Norton : Electronic)</rdamd:P30276>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#g"/>
+      <rdam:P30001 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.qgc0-9r48#v"/>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#i"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.h5tb-zk94#v"/>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1008"/>
+      <rdamo:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.n7sa-ny50#d"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1060"/>
+      <rdamo:P30104 rdf:resource="https://doi.org/10.6069/uwlswd.b441-n943#v"/>
+      <rdamd:P30011>2004</rdamd:P30011>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/nyu"/>
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137>
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/>
+      <rdam:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e16"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#039305876x"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#9780393058765"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#9780393928396"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#039392839x"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#0000000000000"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#9780000000002"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/isbn/nom#0000000000"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e371"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e373"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e375"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e377"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e379"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e381"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e383"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e385"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e387"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e389"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e391"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e394"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e396"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e398"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e400"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e402"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e404"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e406"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e408"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e410"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e412"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e414"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e417"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e419"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e421"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e423"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e425"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e427"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e429"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e431"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e433"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e435"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e437"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e440"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e442"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e444"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e446"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e448"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e450"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e452"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e454"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e456"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e458"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e460"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e463"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e465"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e467"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e469"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e471"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e473"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e475"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e477"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e479"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e481"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e483"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e486"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e488"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e490"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e492"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e494"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e496"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e498"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e500"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e502"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e504"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e506"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e509"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e511"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e513"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e515"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e517"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e519"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e521"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e523"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e525"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e527"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e529"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e532"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e534"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e536"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e538"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e540"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e542"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e544"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e546"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e548"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e550"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e552"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e555"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e557"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e559"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e561"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e563"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e565"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e567"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e569"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e571"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e573"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e575"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e578"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e580"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e582"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e584"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e586"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e588"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e590"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e592"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e594"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e596"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e598"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e601"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e603"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e605"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e607"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e609"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e611"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e613"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e615"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e617"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e619"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e621"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e624"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e626"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e628"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e630"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e632"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e634"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e636"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e638"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e640"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e642"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e644"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e647"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e649"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e651"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e653"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e655"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e657"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e659"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e661"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e663"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e665"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e667"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e670"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e672"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e674"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e676"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e678"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e680"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e682"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e684"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e686"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e688"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e691"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e694"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e697"/>
+      <rdamd:P30156>An invitation to poetry</rdamd:P30156>
+      <rdamd:P30142>a new Favorite Poem Project anthology</rdamd:P30142>
+      <rdamd:P30105>edited by Robert Pinsky and Maggie Dietz with the editorial assistance of Rosemarie Ellis</rdamd:P30105>
+      <rdamd:P30107>1st ed.</rdamd:P30107>
+      <rdamd:P30133>1st ed.</rdamd:P30133>
+      <rdamd:P30111>New York : W.W. Norton, ©2004.</rdamd:P30111>
+      <rdamd:P30088>New York</rdamd:P30088>
+      <rdamd:P30176>W.W. Norton</rdamd:P30176>
+      <rdamd:P30280>©2004</rdamd:P30280>
+      <rdamd:P30182>xxiv, 308 pages ; 25 cm + 1 videodisc (DVD : sound, color ; 4 3/4 in.)</rdamd:P30182>
+      <rdamd:P30169>25 cm.</rdamd:P30169>
+      <rdamd:P30162>No information to include.</rdamd:P30162>
+      <rdamd:P30137>"Includes a DVD featuring project participants."</rdamd:P30137>
+      <rdamd:P30137>Accompanied by Classroom guide (xvii, 123 p. ; 24 cm.), c2006.</rdamd:P30137>
+      <rdamd:P30455>Includes bibliographical references (page 283) and index.</rdamd:P30455>
+      <rdamd:P30137>Contents: from "Discordants" (1) / Conrad Aiken (1889-1973) -- The sentence / Anna Akhmatov (1899-1966) -- The great Canzon / Dante Alighieri (1265-1321) -- Inside the apple / Yehuda Amichai (1924-2000) -- In memoriam Mae Noblitt / A.R. Ammons (1926-2001) -- A blessing in disguise ; This room / John Ashbery (b. 1927) -- It is dangerous to read newspapers / Margaret Atwood (b. 1939) -- Lullaby ; The more loving one / W.H. Auden (1907-1973) -- L'Invitation au voyage / Charles Baudelaire (1821-1867) -- Enueg 1 ; Enueg 2 / Samuel Becket (1906-1989) -- from "Eleven addresses to Our Lord" / John Berryman (1914-1972) -- At the fishhouses ; A cold spring ; Some dreams they forgot / Elizabeth Bishop (1911-1979) -- The chimney sweeper (from Songs of innocence) ; The garden of love (from Songs of experience) / William Blake (1757-1827) -- The crows ; Dark summer / Louise Bogan (1897-1970) -- The blossom / Eavan Boland (b. 1944) -- We real cool ; When you have forgotten Sunday : the love story / Gwendolyn Brooks (1917-2000) -- Strong men / Sterling A. Brown (1901-1989) -- Two in the Campagna / Robert Browning (1812-1889) -- Ay, ay, ay de la Grifa Negra / Julia de Burgos (1914-1953).</rdamd:P30137>
+      <rdamd:P30137>Contents: Is there for honest poverty ; John Anderson my jo / Robert Burns (1759-1796) -- Deathfugue / Paul Celan (1920-1970) -- The Negro's complaint / William Cowper (1731-1800) -- Sunday morning apples / Hart Crane (1899-1933) -- For a poet ; Song in spite of myself / Countee Cullen (1903-1946) -- I carry your heart with me ... / E.E. Cummings (1894-1962) -- Ample make this bed ; The grass so little has to do ; I'm nobody! Who are you? ; One need not be a chamber, to be haunted ; Surgeons must be very careful ; To fight aloud, is very brave / Emily Dickinson (1830-1886) -- An epithalamion ; The good-morrow / John Donne (1572-1631) -- The elephant / Carlos Drummond de Andrade (1902-1987) -- With no experience in such matters / Stephen Dunn (b. 1939) -- Journey of the Magi / T.S. Eliot (1888-1965) -- Seen through a window / David Ferry (b. 1924) -- After apple-picking ; Directive ; An old man's winter night ; "Out, out" ; The oven bird ; The pasture / Robert Frost (1874-1963) -- Transcription of organ music / Allen Ginsberg (1926-1997) -- The school children / Louise Glück (b. 1943) -- The holy longing / Johann Wolfgang von Goethe (1749-1842) -- Ode on the death of a favorite cat / Thomas Gray (1916-1771) -- The idea of trust / Thom Gunn (b. 1929) -- Woolworth's / Donald Hall (b. 1928) -- Population / Mark Halliday (b. 1949) -- Afterwards ; The man he killed / Thomas Hardy (1840-1928) -- Privilege of being / Robert Hass (b. 1941).</rdamd:P30137>
+      <rdamd:P30137>Contents: The night-blooming cereus / Robert Hayden (1913-1980) -- from "Clearances" / Seamus Heaney (b. 1939) -- Prospects / Anthony Hecht (b. 1923) -- The collar / George Herbert (1593-1633) -- The envoy of Mr. Cogito / Zbigniew Herbert (1924-1998) -- Upon Julia's clothes / Robert Herrick (1591-1674) -- Carrion comfort ; God's grandeur ; To seem the stranger lies my lot ... / Gerard Manley Hopkins (1844-1889) -- When I was one-and-twenty (A Shropshire lad 13) / A.E. Housman (1859-1936) -- The dream keeper ; Minstrel man ; Motto / Langston Hughes (1902-1967) -- Degrees of gray in Philipsburg / Richard Hugo (1923-1982) -- My real dwelling / Ikkyu (1394-1481) -- The islands ; The woman at the Washington Zoo / Randall Jarrell (1914-1965) -- The eye / Robinson Jeffers (1887-1962) -- The song of the Banana Man / Evan Jones (b. 1927) -- Inviting a friend to supper ; Lovel's song / Ben Jonson (1573-1637) -- Men at forty / Donald Justice (b. 1925) -- from Endymion ; On a Leander which Miss Reynolds, my kind friend, gave me ; To sleep / John Keats (1795-1821) -- Finding a long gray hair / Jane Kenyon (1947-1995) -- The boiling water / Kenneth Koch (1925-2002) -- Facing it / Yusef Komunyakaa (b. 1947) -- Thinking of death and dogfood / Maxine Kumin (b. 1925) -- Hornworm : autumn lamentation ; The layers / Stanley Kunitz (b. 1905) -- An Arundel tomb ; The explosion / Philip Larkin (1922-1985) -- Caedmon / Denise Levertov (1923-1997).</rdamd:P30137>
+      <rdamd:P30137>Contents: They feed they lion ; What work is / Philip Levine (b. 1928) -- The flower-fed buffaloes / Vachel Lindsay (1879-1931) -- Still night thoughts / Li Po (701-762) -- River-snow / Liu Zongyuan (773-819) -- A psalm of life / Henry Wadsworth Longfellow (1807-1882) -- To Althea, from prison / Richard Lovelace (1618-1657) -- Memories of West Street and Lepke ; The old flame / Robert Lowell (1917-1977) -- Portrait / Antonio Machado (1875-1939) -- Ars poetica / Archibald MacLeish (1892-1982) -- Language lesson / Heather McHugh (b. 1948) -- The mad scene / James Merrill (1926-1995) -- The shore / W.S. Merwin (b. 1927) -- On hearing a symphony of Beethoven ; Recuerdo / Edna St. Vincent Millay (1892-1950) -- You who wronged / Czeslaw Milosz (b. 1911) -- When I consider how my light is spent / John Milton (1608-1674) -- Piececitos / Gabriela Mistral (1889-1857) -- A jellyfish ; What are years? / Marianne Moore (1887-1972) -- The meeting of the waters / Thomas Moore (1779-1852) -- The snow globe / Howard Nemerov (1920-1991) -- Absence of Joaquín / Pablo Neruda (1904-1973) -- He lived, childhood summers / Lorine Niedecker (1903-1970) -- The day Lady died ; Poem (Lana Turner has collapsed!) ; Poem (And tomorrow morning at 8 o'clock in Springfield, Massachusetts) / Frank O'Hara (1926-1966) -- The forms of love ; Psalm / George Oppen (1908-1984) -- Dulce et decorum est / Wilfred Owen (1893-1918) -- At the New Year / Kenneth Patchen (1911-1972).</rdamd:P30137>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#favoritepoemprojectus-->
+      <rdamo:P30270 rdf:resource="http://marc2rda.edu/fake/age#favoritepoemprojectus"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#pinskyrobert-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#pinskyrobert"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#dietzmaggie-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#dietzmaggie"/>
+      <!--Default relationship property used for http://marc2rda.edu/fake/age#ellisrosemarie-->
+      <rdamo:P30268 rdf:resource="http://marc2rda.edu/fake/age#ellisrosemarie"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e16">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>  2004006210</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/lccn"/>
+      <rdand:P80071>Library of Congress control number:  2004006210</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#039305876x">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>039305876X</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+      <rdand:P80071>hardcover</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#9780393058765">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9780393058765</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+      <rdand:P80071>hardcover</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#9780393928396">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9780393928396</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+      <rdand:P80071>guide; pbk.</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#039392839x">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>039392839X</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+      <rdand:P80071>guide; pbk.</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#0000000000000">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>0000000000000</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#9780000000002">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>9780000000002</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/isbn/nom#0000000000">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>0000000000</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/identifiers/isbn"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e371">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)54817179</rdand:P80068>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e373">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)333392921</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e375">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)779974474</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e377">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)911096639</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e379">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)974763710</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e381">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)982576258</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e383">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)988517910</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e385">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)995189555</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e387">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1000123819</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e389">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1001873660</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e391">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1003646619</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e394">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1005949124</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e396">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1011617220</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e398">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1014264262</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e400">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1015711873</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e402">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1018162100</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e404">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1020453464</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e406">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1020524800</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e408">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1023750929</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e410">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1038151629</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e412">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1038654368</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e414">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1039363767</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e417">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1039825571</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e419">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1041027851</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e421">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1043480434</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e423">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1048036191</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e425">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1049775695</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e427">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1049800880</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e429">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1050281937</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e431">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1052686236</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e433">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1060701520</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e435">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1060728444</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e437">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1089157937</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e440">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1089784085</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e442">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1101036048</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e444">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1102262937</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e446">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1104081245</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e448">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1104810425</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e450">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1104889720</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1105249085</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e454">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1105738632</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e456">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1112999455</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e458">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1141629753</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e460">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1142675794</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e463">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1144685314</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e465">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1151717108</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e467">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1152996120</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e469">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1162917740</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e471">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1175931508</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e473">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1190766532</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e475">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1193582979</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e477">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1196091802</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e479">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1198398820</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e481">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1200168154</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e483">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1200756322</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e486">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1201023275</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e488">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1201546293</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e490">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1201890069</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e492">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1201894325</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e494">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1201985919</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e496">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1201987779</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e498">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1201999850</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e500">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1202020111</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e502">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1202620332</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e504">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1204220119</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e506">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1220927844</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e509">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1224084853</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e511">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1224948658</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e513">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1225929268</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e515">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1227046432</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e517">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1228817775</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e519">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1230159017</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e521">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1230161031</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e523">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1231990211</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e525">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1232476879</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e527">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1235882589</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e529">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1236887873</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e532">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1237647331</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e534">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1238123421</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e536">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1240250357</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e538">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1240822363</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e540">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1241971742</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e542">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1242939317</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e544">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1243895754</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e546">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1245235492</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e548">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1245939908</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e550">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1249553812</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e552">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1250322111</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e555">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1253422941</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e557">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1257318653</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e559">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1260156957</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e561">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1260696742</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e563">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1261757137</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e565">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1262659695</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e567">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1263279940</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e569">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1264156919</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e571">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1264765931</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e573">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1266203342</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e575">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1267412947</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e578">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1268143847</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e580">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1268531078</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e582">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1269443711</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e584">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1273420500</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e586">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1274238916</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e588">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1280424397</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e590">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1281896079</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e592">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1284928596</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e594">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1285008351</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e596">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1285381495</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e598">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1286082762</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e601">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1286695516</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e603">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1287889088</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e605">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1288624655</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e607">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1289636269</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e609">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1290179350</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e611">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1290186195</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e613">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1291208181</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e615">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1291721651</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e617">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1292701812</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e619">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1293227479</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e621">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1293758070</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e624">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1294528581</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e626">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1294534307</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e628">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1294685440</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e630">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1295473058</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e632">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1295633689</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e634">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1296030328</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e636">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1296050508</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e638">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1296080847</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e640">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1296153690</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e642">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1298135616</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e644">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1298720765</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e647">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1298727415</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e649">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1299331619</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e651">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1300429318</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e653">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1300785005</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e655">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1300809226</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e657">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1300844454</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e659">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1301367090</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e661">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1301421998</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e663">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1302348010</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e665">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1302474860</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e667">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1302701110</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e670">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1303621702</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e672">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1303721164</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e674">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1304912291</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e676">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1305064982</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e678">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1374222566</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e680">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1374270639</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e682">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1375497691</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e684">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1395392341</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e686">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1396162908</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e688">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)1396764432</rdand:P80068>
+      <rdano:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e691">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)ocm54817179 </rdand:P80068>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e694">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(EXLNZ-01ALLIANCE_NETWORK)99124070760001451</rdand:P80068>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185637766383-0700d51e697">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(01ALLIANCE_UW)99152167410001452</rdand:P80068>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#favoritepoemprojectus">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Favorite Poem Project (U.S.)</rdaad:P50375>
+      <rdaad:P50032>Favorite Poem Project (U.S.)</rdaad:P50032>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#pinskyrobert">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Pinsky, Robert</rdaad:P50377>
+      <rdaad:P50111>Pinsky, Robert</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#dietzmaggie">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Dietz, Maggie</rdaad:P50377>
+      <rdaad:P50111>Dietz, Maggie</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#ellisrosemarie">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Ellis, Rosemarie</rdaad:P50377>
+      <rdaad:P50111>Ellis, Rosemarie</rdaad:P50111>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#pn6101">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">PN6101</skos:notation>
+      <skos:altLabel>PN6101</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/ddc22/con#80881">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130325044">808.81</skos:notation>
+      <skos:altLabel>808.81</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/ddc22"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#poetrytranslationsintoenglish">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Poetry--Translations into English</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#translationsintoenglish">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Translations into English</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#americanpoetry">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>American poetry</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#englishpoetry">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>English poetry</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/cyac/con#dvds">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>DVDs</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/cyac"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#poe%CC%81sieame%CC%81ricaine">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Poésie américaine</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#poe%CC%81sieanglaise">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Poésie anglaise</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sears/con#poetry">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Poetry</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/sears"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sears/con#englishpoetry">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>English poetry</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/sears"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/sears/con#americanpoetry">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>American poetry</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/sears"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#dvd-videodiscs">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>DVD-Video discs</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#videodiscs">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Videodiscs</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcgft/con#dvds">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>DVDs</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/genreFormSchemes/lcgft"/>
+   </rdf:Description>
+</rdf:RDF>

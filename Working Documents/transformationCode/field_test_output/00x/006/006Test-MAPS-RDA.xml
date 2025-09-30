@@ -1,0 +1,730 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc99161955228601452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>99161955228601452</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc99161955228601452</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc99161955228601452"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#walcottcharlesdcharlesdoolittle1850-1927crosswhitman1854-1949spencerarthurcarthurcoe1871-1964matthesfranc%CC%A7ois1874-1948turnerhwhenryward1857-weedwalterharvey1862-1944taffjosephajosephalexander1862-1944adamsgeorgeigeorgeirving1870-1932brooksalfredhalfredhulse1871-1924rohnoscarschraderfrankcfrankcharles1860-1944bakermarcus1849-1903hobbswilliamherbert1864-1952jaggarthomasaugustus1871-1953howeernest1875-1932hayescwcharleswillard1859-1916beckergeorgefgeorgeferdinand1847-1919martinkarl1851-1942newellfrederickhaynes1862-1932dartonnelsonhoratio1865-1948johnsonwillarddgannetthenry1846-1914ayreshbhoracebeemer1856-rixontheodorefleibergjohnbjohnbernhard1853-1913sudworthgeorgebgeorgebishop1864-1927fitchchcharleshall1854-1930twenty-firstannualreportoftheunitedstatesgeologicalsurveytothesecretaryoftheinterior1899-1900"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#twenty-firstannualreportoftheunitedstatesgeologicalsurveytothesecretaryoftheinterior1899-1900cartographicimagetextenglish"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#twenty-firstannualreportoftheunitedstatesgeologicalsurveytothesecretaryoftheinterior1899-1900unitedstatesgovernmentprintingofficesheetvolume"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc99161955228601452">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161955228601452"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc99161955228601452</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 17280cam a2201225 i 4500
+F001 99161955228601452
+F005 20240813213015.0
+F006 ea      a  f  0   
+F008 050628m19001901dcuab    b   f001 0 eng d
+F035 ## $a (OCoLC)60761971
+F035 ## $a (OCoLC)ocm60761971 
+F035 ## $a (EXLNZ-01ALLIANCE_NETWORK)99322195927401451
+F035 ## $a (01ALLIANCE_UW)99161955228601452
+F040 ## $a UNL $b eng $e rda $c UNL $d MTG $d OCLCQ $d OCLCF $d OCLCO $d OCLCQ $d WAU $d OCLCA $d OCLCO $d OCLCQ $d OCLCL $d MTG $d OCLCO $d MTG
+F041 ## $a eng
+F043 ## $a n-us--- $a n-us-ak $a n-us-tx $a a-ph---
+F049 ## $a MAIN
+F050 14 $a QE75 $b .G46 1900
+F086 0# $a I 19.1:900/1-7
+F086 0# $a I 19.1:900/5/maps
+F086 0# $a I 19.1:900/6 continued
+F245 00 $a Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900 / $c by Charles D. Walcott.
+F246 33 $a 21st annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900.
+F246 15 $a Twenty-first annual report of the director of the United States Geological Survey
+F246 33 $a Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900 $n Part I $p Director's report, including triangulation, primary traverse, and spirit leveling.
+F246 33 $a Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900 $n Part II $p General geology, economic geology, Alaska.
+F246 33 $a Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900 $n Part III $p General geology, ore and phosphate deposits Philippines.
+F246 33 $a Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900 $n Part IV $p Hydrography.
+F246 33 $a Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900 $n Part V $p Forest Reserves.
+F246 33 $a Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900 $n Part V (maps) $p Forest Reserves.
+F246 33 $a Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900 $n Part VI $p Mineral resources of the United States, 1899, metallic products, coal and coke.
+F246 33 $a Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900 $n Part VI (continued) $p Mineral resources of the United States, 1899, Nonmetallic products, except coal and coke.
+F246 33 $a Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900 $n Part VII $p Texas.
+F264 #1 $a Washington D.C. : $b United States Government Printing Office, $c 1900-1901.
+F300 ## $a 7 in 9 volumes : $b illustrations (some color, some folded), maps ; $c 30 cm + $e 11 maps (chiefly color, 26 x 18 cm folded) in pockets
+F336 ## $a text $b txt $2 rdacontent
+F336 ## $a cartographic image $b cri $2 rdacontent
+F337 ## $a unmediated $b n $2 rdamedia
+F338 ## $a volume $b nc $2 rdacarrier
+F338 ## $a sheet $b nb $2 rdacarrier
+F500 ## $a Added title page: Twenty-first annual report of the director of the United States Geological Survey.
+F500 ## $a Parts 1 and 2 have 3 maps in back pockets, parts 3 and 4 have 1 map in back pockets. Part 5 (continued) is a slipcase with 39 maps, consisting mostly of quadrangles showing classification of lands, Part 7 has 7 maps.
+F500 ## $a "Washington, Government Printing Office, 1900" -- bottom of title page, Parts I, II,and V ; "Washington, Government Printing Office, 1901" -- bottom of title page, Parts III,IV,VII, VII continued, and VII.
+F500 ## $a Title from title page
+F504 ## $a Includes bibliographical references and index.
+F505 2# $a Part 1. Director's report, including triangulation, primary traverse, and spirit leveling. -- Part 2. General geology, economic geology, Alaska: Geology of the Rico Mountains, Colorado / W. Cross and A.C. Spencer. Glacial sculpture of the Bighorn Mountains, Wyoming / F.E. Matthes. The Esmeralda formation, a fresh-water lake deposit; accompanied by a report on the fossil plants of the formation and by a report on a fossil fish / H.W. Turner, F.H. Knowlton and F.A. Lucas. Mineral vein formation at Boulder Hot Springs, Montana / W.H. Weed. Geology of the eastern Choctaw coal field, Indian Territory / J.A. Taff and G.I. Adams. Preliminary report on the Camden coal field of southwestern Arkansas / Taff, J. A. A reconnaissance from Pyramid Harbor to Eagle City, Alaska, including a description of the copper deposits of the Upper White and Tanana Rivers / A. H. Brooks.Preliminary report on the Camden River and the Skolai Mountains, Alaska / O. Rohn -- Preliminary report on a reconnaissance along the Chandlar and Koyukuk rivers, Alaska, in 1899 / F.C. Schrader. Alaskan geographic names / M. Baker. -- Part 3. General geology, ore and phosphate deposits, Philippines: The Newark system of the Pomperaug Valley, Connecticut; with a report on fossil wood from the Newark formation of South Britain, Connecticut / W.H. Hobbs and F.H. Knowlton. The laccoliths of the Black Hills, with a chapter on experiments illustrating intrusion and erosion / T.A. Jaggar, Jr. and E. Howe. The Arkansas bauxite deposits / C.W. Hayes. Tennessee white phosphate / C.W. Hayes. Report on the geology of the Philippine Islands; followed by a version of Ueber Tertiäre fossilien von den Philippinen / G.F. Becker and K. Martin. -- Part 4. Hydrography: Report on the progress of stream measurements for the calendar year 1899 / F.H. Newell. Preliminary description of the geology and water resources of the southern half of the Black Hills and adjoining regions in South Dakota and Wyoming / N.H. Darton. The high plains and their utilization / W.D. Johnson. -- Part 5. Forest reserves: Summary of forestry work in 1899-1900 / Henry Gannett. Lewis and Clarke [sic] forest reserve, Montana / H.B. Ayers. Olympic forest reserve, Washington / Arthur Dodwell, from notes by Theodore F. Rixon. Cascade Range forest reserve from township 28 south to township 37 south, inclusive, together with the Ashland forest reserve and forest regions from township 28 south to township 14 south, inclusive, and from range 2 west to range 14 east, Willamette meridian, inclusive / John B. Leiberg. Stanislaus and Lake Tahoe forest reserves and adjacent territory / George B. Sudworth. Classification of lands / Henry Gannett [and others]. Woodland of Indian Territory / C.H. Fitch. Timber conditions of the pine region of Minnesota / H.B. Ayres. -- Part 5 (continued). Forest reserves maps. -- Part 6. Mineral resources of the United States, 1899 metallic products, coal and coke. -- Part 6 (continued). Mineral resources of the United States, 1899 nonmetallic products, except coal and coke. -- Part 7. Texas: Geography and geology of the Black and Grand Prairies, Texas with detailed descriptions of the cretaceous formations and special reference to artesian waters / by Robert T. Hill.
+F505 2# $a Part I, Plate I, "Map showing condition and progress of topographic surveys and location of gaging stations for the fiscal year 1899-1900"; Plate II, "Map showing condition and progress of astronomic location, primary triangulation, primary traverse, and spirit leveling for the fiscal year 1899-1900" ; Plate III, "Progress map of topographic and geologic surveys" -- Part III, Plate XXII, "Geologic map of the Rico Mountains, Colorado" ; Plate XXXVII, "Geological map of part of the eastern Choctaw Coal Field" ; Plate XLIII, "Explorations in Alaska 1899 route from Lynn Canal via headwaters of White and Tanana Rivers to Eagle City" --   Part III, Plate LI, "Geological map of a part of the Mesabi District, Minnesota" Part IV, Plate LXV, "Geologic map of the southern half of the Black Hills region in South Dakota and Wyoming"  -- Part VII, Plate LXV, "Map of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers" ; Plate LXVI, "Geology of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers" ; Plate LXVII, "Cross sections on the lines A-A. B-B etc. PL. LXVI showing geological structure of the Black and Grand Prairies" ; Plate LXVIII, "Location and depths of the artesian wells of the Black and Grand Prairies of Texas" ; Plate LXIX, "Map of the Trinity Reservoirs of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers" ; Plate LXX, "Map of the Paluxy artesian reservoirs of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers" ; Plate XI, "Map of the Woodbine artesian reservoirs of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers."
+F505 2# $a Part V Maps, Plate I, "Forest reserves and national parks" ; Plate III, "Lewis and Clarke Forest Reserve, showing classification of lands" ; Plate XXXIII, "Mount Rainier Forest Reserve, showing classification of lands" ; Plate LI, "Olympic Forest Reserve, showing classification of lands" ; Plate LII, "Olympic Forest Reserve, showing distribution of red fir" ; Plate LVI, "Olympic Forest Reserve, showing distribution of hemlock" ; Plate LIX, "Olympic Forest Reserve, showing distribution of cedar" ; Plate LXI, "Olympic Forest Reserve, showing distribution of spruce" ; Plate LXIII, "Olympic Forest Reserve, showing distribution of silver fir" ; Plate LXXI, "Ashland quadrangle, Oregon, showing classification of lands" ; Plate LXXII, "Klamath quadrangle, Oregon showing classification of lands" ; Plate LXXXV, "Placerville quadrangle, California, showing classification of lands" ; Plate LXXXVI, "Pyramid Peak quadrangle, California, showing classification of lands" ; Plate LXXXVII, "Jackson quadrangle, California, showing classification of lands" ; Plate LXXXVIII, "Big Trees quadrangle, California, showing classification of lands" ; Plate LXXXIX, Markleeville quadrangle, California-Nevada, showing classification of lands" ; Plate XC, "Dardanelles quadrangle, California, showing classification of lands" ; Plate CXV, "Sonora quadrangle, California, showing classification of lands" ; Plate CXVI, "Yosemite quadrangle, California, showing classification of lands" ; Plate CXVII, "Mount Lyell quadrangle, California, showing classification of lands" ; Plate CXXV, "San Jacinto quadrangle, California, showing classification of lands" ; Plate CXXVI, "Port Orford quadrangle, California, showing classification of lands" ; Plate CXXVII, "Coos Bay quadrangle, Oregon, showing classification of lands" ; Plate CXXVIII, "Roseburg quadrangle, Oregon, showing classification of lands" ; Plate CXXIX, "Tacoma quadrangle, Washington, showing classification of lands" ; Plate CXXX, "Seattle quadrangle, Washington, showing classification of lands" ; Plate CXXXI, "Mount Stuart quadrangle, Washington, showing classification of lands" ; Plate CXXXII, "Ellensburg quadrangle, Washington, showing classification of lands" ; Plate CXXXIII, "Chelan quadrangle, Washington, showing classification of lands" ; Plate CXXXIV, "Spokane quadrangle, Washington, showing classification of lands" ; Plate CXXXV, "Sandpoint quadrangle, Idaho, showing classification of lands" ; Plate CXXXVI, "Hamilton quadrangle, Montana-Idaho, showing classification of lands" ; Plate CXXXVII, "Fortymile quadrangle, Alaska, showing classification of lands" ; Plate CXXXVIII, "Dayton quadrangle, Wyoming, showing classification of lands" ; Plate CXXXIX, "Bald Mountain quadrangle, Wyoming, showing classification of lands" ; Plate CXL, "Cloud Peak quadrangle, Wyoming, showing classification of lands" ; Plate CXLL, "Newcastle quadrangle, Wyoming-South Dakota, showing classification of lands" ; Plate CXLII, "Indian Territory, showing extent and distribution of woodland" ; Plate CXLIII, "Pine region of Minnesota, showing classification of lands."
+F590 ## $a UW Libraries has part 5. From the collection of Edward W. Allen. $9 local
+F650 #0 $a Geology $x Research $z United States.
+F650 #0 $a Geology $z Alaska.
+F650 #0 $a Geology $z Philippines.
+F650 #0 $a Stream measurements $z United States.
+F650 #0 $a Forest reserves $z United States.
+F650 #0 $a Mines and mineral resources $z United States.
+F650 #0 $a Nonmetallic minerals industry $z United States.
+F650 #0 $a Geology $z Texas.
+F650 #0 $a Artesian wells $z Texas.
+F650 #6 $a Géologie $x Recherche $z États-Unis.
+F650 #6 $a Géologie $z Philippines.
+F650 #6 $a Cours d'eau $x Jaugeage $z États-Unis.
+F650 #6 $a Minéraux non métalliques $x Industrie $z États-Unis.
+F650 #6 $a Géologie $z Texas.
+F650 #6 $a Puits artésiens $z Texas.
+F650 #7 $a Artesian wells $2 fast
+F650 #7 $a Forest reserves $2 fast
+F650 #7 $a Geology $2 fast
+F650 #7 $a Geology $x Research $2 fast
+F650 #7 $a Mines and mineral resources $2 fast
+F650 #7 $a Nonmetallic minerals industry $2 fast
+F650 #7 $a Stream measurements $2 fast
+F651 #7 $a Alaska $2 fast $1 https://id.oclc.org/worldcat/entity/E39QbtfRq9rTfb3H89Vvrr9x9c
+F651 #7 $a Philippines $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJgMFhdtFKxYyQvHvCFkDq
+F651 #7 $a Texas $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJj8XjVR9hP7dPxwVtRqcP
+F651 #7 $a United States $2 fast $1 https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq
+F610 20 $a Geological Survey (U.S.)
+F610 27 $a Geological Survey (U.S.) $2 fast
+F710 2# $a Geological Survey (U.S.), $e issuing body. $t Annual report.
+F758 ## $i has work: $a Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900 (Text) $1 https://id.oclc.org/worldcat/entity/E39PCFRtv6hXdd3kCHxBbrWGgX $4 https://id.oclc.org/worldcat/ontology/hasWork
+F700 1# $a Walcott, Charles D. $q (Charles Doolittle), $d 1850-1927, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJhH6WVrhm78RWh9YjD6rq
+F700 12 $i Container of (work): $a Hill, Robert Thomas, $d 1858-1941. $t Geography and geology of the Black and Grand Prairies, Texas with detailed descriptions of the cretaceous formations and special reference to artesian waters.
+F700 1# $a Cross, Whitman, $d 1854-1949, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJdRCyKyp9T6KCrBttv4MP
+F700 1# $a Spencer, Arthur C. $q (Arthur Coe), $d 1871-1964, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJkxJYFkhbJmq6km9DKmVC
+F700 1# $a Matthes, François, $d 1874-1948, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJxd3mchWxDBwtHp4D7JXd
+F700 1# $a Turner, H. W. $q (Henry Ward), $d 1857- $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjHG6j6ht3KdVtRykwRDjd
+F700 1# $a Weed, Walter Harvey, $d 1862-1944, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJrrrtPPYPtTCMBPxqkxDq
+F700 1# $a Taff, Joseph A. $q (Joseph Alexander), $d 1862-1944, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJkHmwBqmVGX9JYCP79FKd
+F700 1# $a Adams, George I. $q (George Irving), $d 1870-1932, $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjBqbmXjp6QKDKGkDqVWtC
+F700 1# $a Brooks, Alfred H. $q (Alfred Hulse), $d 1871-1924, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJpJgR678YrjpBF4RrfTHC
+F700 1# $a Rohn, Oscar, $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjwDCW9tGftRMGbggC9cHd
+F700 1# $a Schrader, Frank C. $q (Frank Charles), $d 1860-1944, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJg8JyBpBtxXj39rRV7yh3
+F700 1# $a Baker, Marcus, $d 1849-1903, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJB4fXCf89wpFyFxbCmyBP
+F700 1# $a Hobbs, William Herbert, $d 1864-1952, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJfcT7X4CWfMkQQ7GCfXh3
+F700 1# $a Jaggar, Thomas Augustus, $d 1871-1953, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJrGwcxYDdkhdfJbgVhJXd
+F700 1# $a Howe, Ernest, $d 1875-1932, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJd3Mfy7QX447CyctbcwYP
+F700 1# $a Hayes, C. W. $q (Charles Willard), $d 1859-1916, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJhXdC3BFVk346vCBv78md
+F700 1# $a Becker, George F. $q (George Ferdinand), $d 1847-1919, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJjMyQTKPp3rw3kwQmkFKd
+F700 1# $a Martin, Karl, $d 1851-1942, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJy8rG37bBBX6pTJp3frMP
+F700 1# $a Newell, Frederick Haynes, $d 1862-1932, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJjdfHjw3F7BVgq3FMMwYP
+F700 1# $a Darton, Nelson Horatio, $d 1865-1948, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJkCXG9kJPQxpWwx7983cP
+F700 1# $a Johnson, Willard D., $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJvt8FmKBYywBHMdP8MdcP
+F700 1# $a Gannett, Henry, $d 1846-1914, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJtX3GyT9Qfb7gKrPwfH4q
+F700 1# $a Ayres, H. B. $q (Horace Beemer), $d 1856- $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjFYRR7DhmkwDBbMcvVJMq
+F700 1# $a Rixon, Theodore F., $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjtTKTqBGyMGmhtcFXTm3P
+F700 1# $a Leiberg, John B. $q (John Bernhard), $d 1853-1913, $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjrbqHB8jvHhkd6P97XMHd
+F700 1# $a Sudworth, George B. $q (George Bishop), $d 1864-1927, $e author. $1 https://id.oclc.org/worldcat/entity/E39PBJkMJgtBBTbvcgxR3rgVG3
+F700 1# $a Fitch, C. H. $q (Charles Hall), $d 1854-1930, $e author. $1 https://id.oclc.org/worldcat/entity/E39PCjJp9GjxkXBHMGTxRB3tPP
+F973 ## $a pbooks
+F994 ## $a 92 $b OCACL
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#walcottcharlesdcharlesdoolittle1850-1927crosswhitman1854-1949spencerarthurcarthurcoe1871-1964matthesfranc%CC%A7ois1874-1948turnerhwhenryward1857-weedwalterharvey1862-1944taffjosephajosephalexander1862-1944adamsgeorgeigeorgeirving1870-1932brooksalfredhalfredhulse1871-1924rohnoscarschraderfrankcfrankcharles1860-1944bakermarcus1849-1903hobbswilliamherbert1864-1952jaggarthomasaugustus1871-1953howeernest1875-1932hayescwcharleswillard1859-1916beckergeorgefgeorgeferdinand1847-1919martinkarl1851-1942newellfrederickhaynes1862-1932dartonnelsonhoratio1865-1948johnsonwillarddgannetthenry1846-1914ayreshbhoracebeemer1856-rixontheodorefleibergjohnbjohnbernhard1853-1913sudworthgeorgebgeorgebishop1864-1927fitchchcharleshall1854-1930twenty-firstannualreportoftheunitedstatesgeologicalsurveytothesecretaryoftheinterior1899-1900">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161955228601452"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#twenty-firstannualreportoftheunitedstatesgeologicalsurveytothesecretaryoftheinterior1899-1900cartographicimagetextenglish"/>
+      <rdawd:P10328>Walcott, Charles D. (Charles Doolittle), 1850-1927, Cross, Whitman, 1854-1949, Spencer, Arthur C. (Arthur Coe), 1871-1964, Matthes, François, 1874-1948, Turner, H. W. (Henry Ward), 1857- Weed, Walter Harvey, 1862-1944, Taff, Joseph A. (Joseph Alexander), 1862-1944, Adams, George I. (George Irving), 1870-1932, Brooks, Alfred H. (Alfred Hulse), 1871-1924, Rohn, Oscar, Schrader, Frank C. (Frank Charles), 1860-1944, Baker, Marcus, 1849-1903, Hobbs, William Herbert, 1864-1952, Jaggar, Thomas Augustus, 1871-1953, Howe, Ernest, 1875-1932, Hayes, C. W. (Charles Willard), 1859-1916, Becker, George F. (George Ferdinand), 1847-1919, Martin, Karl, 1851-1942, Newell, Frederick Haynes, 1862-1932, Darton, Nelson Horatio, 1865-1948, Johnson, Willard D., Gannett, Henry, 1846-1914, Ayres, H. B. (Horace Beemer), 1856- Rixon, Theodore F., Leiberg, John B. (John Bernhard), 1853-1913, Sudworth, George B. (George Bishop), 1864-1927, Fitch, C. H. (Charles Hall), 1854-1930. Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900</rdawd:P10328>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.vw5v-gh79#a"/>
+      <rdaw:P10004 rdf:resource="https://doi.org/10.6069/uwlswd.f447-ax91#0"/>
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us"/>
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us-ak"/>
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/n-us-tx"/>
+      <rdawo:P10321 rdf:resource="http://id.loc.gov/vocabulary/geographicAreas/a-ph"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcc/con#qe75"/>
+      <rdawd:P10088>Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900</rdawd:P10088>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#geologyresearchunitedstates"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#geologyalaska"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#geologyphilippines"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#streammeasurementsunitedstates"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#forestreservesunitedstates"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#minesandmineralresourcesunitedstates"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#nonmetallicmineralsindustryunitedstates"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#geologytexas"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/lcsh/con#artesianwellstexas"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#ge%CC%81ologierecherchee%CC%81tats-unis"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#ge%CC%81ologiephilippines"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#coursd%27eaujaugeagee%CC%81tats-unis"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#mine%CC%81rauxnonme%CC%81talliquesindustriee%CC%81tats-unis"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#ge%CC%81ologietexas"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/rvm/con#puitsarte%CC%81sienstexas"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#artesianwells"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#forestreserves"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#geology"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#geologyresearch"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#minesandmineralresources"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#nonmetallicmineralsindustry"/>
+      <rdaw:P10256 rdf:resource="http://marc2rda.edu/fake/fast/con#streammeasurements"/>
+      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39QbtfRq9rTfb3H89Vvrr9x9c"/>
+      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJgMFhdtFKxYyQvHvCFkDq"/>
+      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJj8XjVR9hP7dPxwVtRqcP"/>
+      <rdawo:P10321 rdf:resource="https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq"/>
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/age#geologicalsurveyus"/>
+      <rdawo:P10263 rdf:resource="http://marc2rda.edu/fake/fast/age#geologicalsurveyus"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#walcottcharlesdcharlesdoolittle1850-1927"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#crosswhitman1854-1949"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#spencerarthurcarthurcoe1871-1964"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#matthesfranc%CC%A7ois1874-1948"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#turnerhwhenryward1857-"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#weedwalterharvey1862-1944"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#taffjosephajosephalexander1862-1944"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#adamsgeorgeigeorgeirving1870-1932"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#brooksalfredhalfredhulse1871-1924"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#rohnoscar"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#schraderfrankcfrankcharles1860-1944"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#bakermarcus1849-1903"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#hobbswilliamherbert1864-1952"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#jaggarthomasaugustus1871-1953"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#howeernest1875-1932"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#hayescwcharleswillard1859-1916"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#beckergeorgefgeorgeferdinand1847-1919"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#martinkarl1851-1942"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#newellfrederickhaynes1862-1932"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#dartonnelsonhoratio1865-1948"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#johnsonwillardd"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#gannetthenry1846-1914"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#ayreshbhoracebeemer1856-"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#rixontheodoref"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#leibergjohnbjohnbernhard1853-1913"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#sudworthgeorgebgeorgebishop1864-1927"/>
+      <rdawo:P10436 rdf:resource="http://marc2rda.edu/fake/age#fitchchcharleshall1854-1930"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#twenty-firstannualreportoftheunitedstatesgeologicalsurveytothesecretaryoftheinterior1899-1900cartographicimagetextenglish">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161955228601452"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#twenty-firstannualreportoftheunitedstatesgeologicalsurveytothesecretaryoftheinterior1899-1900unitedstatesgovernmentprintingofficesheetvolume"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#walcottcharlesdcharlesdoolittle1850-1927crosswhitman1854-1949spencerarthurcarthurcoe1871-1964matthesfranc%CC%A7ois1874-1948turnerhwhenryward1857-weedwalterharvey1862-1944taffjosephajosephalexander1862-1944adamsgeorgeigeorgeirving1870-1932brooksalfredhalfredhulse1871-1924rohnoscarschraderfrankcfrankcharles1860-1944bakermarcus1849-1903hobbswilliamherbert1864-1952jaggarthomasaugustus1871-1953howeernest1875-1932hayescwcharleswillard1859-1916beckergeorgefgeorgeferdinand1847-1919martinkarl1851-1942newellfrederickhaynes1862-1932dartonnelsonhoratio1865-1948johnsonwillarddgannetthenry1846-1914ayreshbhoracebeemer1856-rixontheodorefleibergjohnbjohnbernhard1853-1913sudworthgeorgebgeorgebishop1864-1927fitchchcharleshall1854-1930twenty-firstannualreportoftheunitedstatesgeologicalsurveytothesecretaryoftheinterior1899-1900"/>
+      <rdaed:P20310>Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900 (Cartographic image : Text : English)</rdaed:P20310>
+      <rdae:P20318 rdf:resource="https://doi.org/10.6069/uwlswd.1c2x-cj09#a"/>
+      <rdae:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      <rdaeo:P20006 rdf:resource="http://id.loc.gov/vocabulary/languages/eng"/>
+      <rdaed:P20071>Language of text/sound track or separate title: http://id.loc.gov/vocabulary/languages/eng</rdaed:P20071>
+      <rdaed:P20312>Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900</rdaed:P20312>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1002"/>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1002"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#twenty-firstannualreportoftheunitedstatesgeologicalsurveytothesecretaryoftheinterior1899-1900unitedstatesgovernmentprintingofficesheetvolume">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc99161955228601452"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#twenty-firstannualreportoftheunitedstatesgeologicalsurveytothesecretaryoftheinterior1899-1900cartographicimagetextenglish"/>
+      <rdamd:P30276>Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900 (United States Government Printing Office : Sheet : Volume)</rdamd:P30276>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.25z4-e963#e"/>
+      <rdam:P30003 rdf:resource="http://rdaregistry.info/termList/ModeIssue/1001"/>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#f"/>
+      <rdamd:P30278>1900/1901</rdamd:P30278>
+      <rdamo:P30279 rdf:resource="http://id.loc.gov/vocabulary/countries/dcu"/>
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1014"/>
+      <rdam:P30453 rdf:resource="http://rdaregistry.info/termList/IllusContent/1008"/>
+      <rdamd:P30137>Includes bibliographies.</rdamd:P30137>
+      <rdam:P30335 rdf:resource="https://doi.org/10.6069/uwlswd.2eg3-1x53#f"/>
+      <rdam:P30455 rdf:resource="https://doi.org/10.6069/uwlswd.m0xp-h565#1"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185516372615-0700d61e12"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185516372615-0700d61e15"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185516372615-0700d61e18"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185516372615-0700d61e21"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185516372615-0700d61e81"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185516372615-0700d61e84"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t185516372615-0700d61e87"/>
+      <rdamd:P30156>Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900</rdamd:P30156>
+      <rdamd:P30105>by Charles D. Walcott</rdamd:P30105>
+      <rdamd:P30128>21st annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900.</rdamd:P30128>
+      <rdamd:P30137>Note on variant title: Twenty-first annual report of the director of the United States Geological Survey</rdamd:P30137>
+      <rdamd:P30128>Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900, Part IDirector's report, including triangulation, primary traverse, and spirit leveling.</rdamd:P30128>
+      <rdamd:P30128>Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900, Part IIGeneral geology, economic geology, Alaska.</rdamd:P30128>
+      <rdamd:P30128>Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900, Part IIIGeneral geology, ore and phosphate deposits Philippines.</rdamd:P30128>
+      <rdamd:P30128>Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900, Part IVHydrography.</rdamd:P30128>
+      <rdamd:P30128>Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900, Part VForest Reserves.</rdamd:P30128>
+      <rdamd:P30128>Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900, Part V (maps)Forest Reserves.</rdamd:P30128>
+      <rdamd:P30128>Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900, Part VIMineral resources of the United States, 1899, metallic products, coal and coke.</rdamd:P30128>
+      <rdamd:P30128>Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900, Part VI (continued)Mineral resources of the United States, 1899, Nonmetallic products, except coal and coke.</rdamd:P30128>
+      <rdamd:P30128>Twenty-first annual report of the United States Geological Survey to the Secretary of the Interior 1899-1900, Part VIITexas.</rdamd:P30128>
+      <rdamd:P30111>Washington D.C. : United States Government Printing Office, 1900-1901.</rdamd:P30111>
+      <rdamd:P30088>Washington D.C.</rdamd:P30088>
+      <rdamd:P30176>United States Government Printing Office</rdamd:P30176>
+      <rdamd:P30011>1900</rdamd:P30011>
+      <rdamd:P30182>7 in 9 volumes : illustrations (some color, some folded), maps ; 30 cm + 11 maps (chiefly color, 26 x 18 cm folded) in pockets</rdamd:P30182>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+      <rdamo:P30002 rdf:resource="http://rdaregistry.info/termList/RDAMediaType/1007"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1049"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1048"/>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1048"/>
+      <rdamd:P30137>Added title page: Twenty-first annual report of the director of the United States Geological Survey.</rdamd:P30137>
+      <rdamd:P30137>Parts 1 and 2 have 3 maps in back pockets, parts 3 and 4 have 1 map in back pockets. Part 5 (continued) is a slipcase with 39 maps, consisting mostly of quadrangles showing classification of lands, Part 7 has 7 maps.</rdamd:P30137>
+      <rdamd:P30137>"Washington, Government Printing Office, 1900" -- bottom of title page, Parts I, II,and V ; "Washington, Government Printing Office, 1901" -- bottom of title page, Parts III,IV,VII, VII continued, and VII.</rdamd:P30137>
+      <rdamd:P30137>Title from title page</rdamd:P30137>
+      <rdamd:P30455>Includes bibliographical references and index.</rdamd:P30455>
+      <rdamd:P30137>Partial contents: Part 1. Director's report, including triangulation, primary traverse, and spirit leveling. -- Part 2. General geology, economic geology, Alaska: Geology of the Rico Mountains, Colorado / W. Cross and A.C. Spencer. Glacial sculpture of the Bighorn Mountains, Wyoming / F.E. Matthes. The Esmeralda formation, a fresh-water lake deposit; accompanied by a report on the fossil plants of the formation and by a report on a fossil fish / H.W. Turner, F.H. Knowlton and F.A. Lucas. Mineral vein formation at Boulder Hot Springs, Montana / W.H. Weed. Geology of the eastern Choctaw coal field, Indian Territory / J.A. Taff and G.I. Adams. Preliminary report on the Camden coal field of southwestern Arkansas / Taff, J. A. A reconnaissance from Pyramid Harbor to Eagle City, Alaska, including a description of the copper deposits of the Upper White and Tanana Rivers / A. H. Brooks.Preliminary report on the Camden River and the Skolai Mountains, Alaska / O. Rohn -- Preliminary report on a reconnaissance along the Chandlar and Koyukuk rivers, Alaska, in 1899 / F.C. Schrader. Alaskan geographic names / M. Baker. -- Part 3. General geology, ore and phosphate deposits, Philippines: The Newark system of the Pomperaug Valley, Connecticut; with a report on fossil wood from the Newark formation of South Britain, Connecticut / W.H. Hobbs and F.H. Knowlton. The laccoliths of the Black Hills, with a chapter on experiments illustrating intrusion and erosion / T.A. Jaggar, Jr. and E. Howe. The Arkansas bauxite deposits / C.W. Hayes. Tennessee white phosphate / C.W. Hayes. Report on the geology of the Philippine Islands; followed by a version of Ueber Tertiäre fossilien von den Philippinen / G.F. Becker and K. Martin. -- Part 4. Hydrography: Report on the progress of stream measurements for the calendar year 1899 / F.H. Newell. Preliminary description of the geology and water resources of the southern half of the Black Hills and adjoining regions in South Dakota and Wyoming / N.H. Darton. The high plains and their utilization / W.D. Johnson. -- Part 5. Forest reserves: Summary of forestry work in 1899-1900 / Henry Gannett. Lewis and Clarke [sic] forest reserve, Montana / H.B. Ayers. Olympic forest reserve, Washington / Arthur Dodwell, from notes by Theodore F. Rixon. Cascade Range forest reserve from township 28 south to township 37 south, inclusive, together with the Ashland forest reserve and forest regions from township 28 south to township 14 south, inclusive, and from range 2 west to range 14 east, Willamette meridian, inclusive / John B. Leiberg. Stanislaus and Lake Tahoe forest reserves and adjacent territory / George B. Sudworth. Classification of lands / Henry Gannett [and others]. Woodland of Indian Territory / C.H. Fitch. Timber conditions of the pine region of Minnesota / H.B. Ayres. -- Part 5 (continued). Forest reserves maps. -- Part 6. Mineral resources of the United States, 1899 metallic products, coal and coke. -- Part 6 (continued). Mineral resources of the United States, 1899 nonmetallic products, except coal and coke. -- Part 7. Texas: Geography and geology of the Black and Grand Prairies, Texas with detailed descriptions of the cretaceous formations and special reference to artesian waters / by Robert T. Hill.</rdamd:P30137>
+      <rdamd:P30137>Partial contents: Part I, Plate I, "Map showing condition and progress of topographic surveys and location of gaging stations for the fiscal year 1899-1900"; Plate II, "Map showing condition and progress of astronomic location, primary triangulation, primary traverse, and spirit leveling for the fiscal year 1899-1900" ; Plate III, "Progress map of topographic and geologic surveys" -- Part III, Plate XXII, "Geologic map of the Rico Mountains, Colorado" ; Plate XXXVII, "Geological map of part of the eastern Choctaw Coal Field" ; Plate XLIII, "Explorations in Alaska 1899 route from Lynn Canal via headwaters of White and Tanana Rivers to Eagle City" --   Part III, Plate LI, "Geological map of a part of the Mesabi District, Minnesota" Part IV, Plate LXV, "Geologic map of the southern half of the Black Hills region in South Dakota and Wyoming"  -- Part VII, Plate LXV, "Map of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers" ; Plate LXVI, "Geology of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers" ; Plate LXVII, "Cross sections on the lines A-A. B-B etc. PL. LXVI showing geological structure of the Black and Grand Prairies" ; Plate LXVIII, "Location and depths of the artesian wells of the Black and Grand Prairies of Texas" ; Plate LXIX, "Map of the Trinity Reservoirs of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers" ; Plate LXX, "Map of the Paluxy artesian reservoirs of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers" ; Plate XI, "Map of the Woodbine artesian reservoirs of the Black and Grand Prairies of Texas including the Eastern and Western Cross Timbers."</rdamd:P30137>
+      <rdamd:P30137>Partial contents: Part V Maps, Plate I, "Forest reserves and national parks" ; Plate III, "Lewis and Clarke Forest Reserve, showing classification of lands" ; Plate XXXIII, "Mount Rainier Forest Reserve, showing classification of lands" ; Plate LI, "Olympic Forest Reserve, showing classification of lands" ; Plate LII, "Olympic Forest Reserve, showing distribution of red fir" ; Plate LVI, "Olympic Forest Reserve, showing distribution of hemlock" ; Plate LIX, "Olympic Forest Reserve, showing distribution of cedar" ; Plate LXI, "Olympic Forest Reserve, showing distribution of spruce" ; Plate LXIII, "Olympic Forest Reserve, showing distribution of silver fir" ; Plate LXXI, "Ashland quadrangle, Oregon, showing classification of lands" ; Plate LXXII, "Klamath quadrangle, Oregon showing classification of lands" ; Plate LXXXV, "Placerville quadrangle, California, showing classification of lands" ; Plate LXXXVI, "Pyramid Peak quadrangle, California, showing classification of lands" ; Plate LXXXVII, "Jackson quadrangle, California, showing classification of lands" ; Plate LXXXVIII, "Big Trees quadrangle, California, showing classification of lands" ; Plate LXXXIX, Markleeville quadrangle, California-Nevada, showing classification of lands" ; Plate XC, "Dardanelles quadrangle, California, showing classification of lands" ; Plate CXV, "Sonora quadrangle, California, showing classification of lands" ; Plate CXVI, "Yosemite quadrangle, California, showing classification of lands" ; Plate CXVII, "Mount Lyell quadrangle, California, showing classification of lands" ; Plate CXXV, "San Jacinto quadrangle, California, showing classification of lands" ; Plate CXXVI, "Port Orford quadrangle, California, showing classification of lands" ; Plate CXXVII, "Coos Bay quadrangle, Oregon, showing classification of lands" ; Plate CXXVIII, "Roseburg quadrangle, Oregon, showing classification of lands" ; Plate CXXIX, "Tacoma quadrangle, Washington, showing classification of lands" ; Plate CXXX, "Seattle quadrangle, Washington, showing classification of lands" ; Plate CXXXI, "Mount Stuart quadrangle, Washington, showing classification of lands" ; Plate CXXXII, "Ellensburg quadrangle, Washington, showing classification of lands" ; Plate CXXXIII, "Chelan quadrangle, Washington, showing classification of lands" ; Plate CXXXIV, "Spokane quadrangle, Washington, showing classification of lands" ; Plate CXXXV, "Sandpoint quadrangle, Idaho, showing classification of lands" ; Plate CXXXVI, "Hamilton quadrangle, Montana-Idaho, showing classification of lands" ; Plate CXXXVII, "Fortymile quadrangle, Alaska, showing classification of lands" ; Plate CXXXVIII, "Dayton quadrangle, Wyoming, showing classification of lands" ; Plate CXXXIX, "Bald Mountain quadrangle, Wyoming, showing classification of lands" ; Plate CXL, "Cloud Peak quadrangle, Wyoming, showing classification of lands" ; Plate CXLL, "Newcastle quadrangle, Wyoming-South Dakota, showing classification of lands" ; Plate CXLII, "Indian Territory, showing extent and distribution of woodland" ; Plate CXLIII, "Pine region of Minnesota, showing classification of lands."</rdamd:P30137>
+      <rdamo:P30265 rdf:resource="http://marc2rda.edu/fake/wor#geologicalsurveyusannualreport"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185516372615-0700d61e12">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)60761971</rdand:P80068>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185516372615-0700d61e15">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(OCoLC)ocm60761971 </rdand:P80068>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185516372615-0700d61e18">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(EXLNZ-01ALLIANCE_NETWORK)99322195927401451</rdand:P80068>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185516372615-0700d61e21">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>(01ALLIANCE_UW)99161955228601452</rdand:P80068>
+      <rdan:P80071>System control number</rdan:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185516372615-0700d61e81">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>I 19.1:900/1-7</rdand:P80068>
+      <rdand:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/sudocs"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185516372615-0700d61e84">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>I 19.1:900/5/maps</rdand:P80068>
+      <rdand:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/sudocs"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t185516372615-0700d61e87">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>I 19.1:900/6 continued</rdand:P80068>
+      <rdand:P80069 rdf:resource="http://id.loc.gov/vocabulary/classSchemes/sudocs"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-09-29t185516372615-0700d61e368">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Alaska</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-09-29t185516372615-0700d61e375">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Philippines</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-09-29t185516372615-0700d61e382">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Texas</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/plaNom#2025-09-29t185516372615-0700d61e389">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>United States</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/ageNom#geologicalsurveyus">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>Geological Survey (U.S.)</rdand:P80068>
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#geologicalsurveyus">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Geological Survey (U.S.)</rdaad:P50375>
+      <rdaad:P50032>Geological Survey (U.S.)</rdaad:P50032>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/age#geologicalsurveyus">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaao:P50407 rdf:resource="http://marc2rda.edu/fake/fast/ageNom#geologicalsurveyus"/>
+      <rdaad:P50032>Geological Survey (U.S.)</rdaad:P50032>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#geologicalsurveyus">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10005"/>
+      <rdaad:P50375>Geological Survey (U.S.)</rdaad:P50375>
+      <rdaad:P50032>Geological Survey (U.S.)</rdaad:P50032>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#walcottcharlesdcharlesdoolittle1850-1927">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Walcott, Charles D. (Charles Doolittle), 1850-1927</rdaad:P50377>
+      <rdaad:P50111>Walcott, Charles D.</rdaad:P50111>
+      <rdaad:P50121>1850</rdaad:P50121>
+      <rdaad:P50120>1927</rdaad:P50120>
+      <rdaad:P50115>Charles Doolittle</rdaad:P50115>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJhH6WVrhm78RWh9YjD6rq</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#crosswhitman1854-1949">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Cross, Whitman, 1854-1949</rdaad:P50377>
+      <rdaad:P50111>Cross, Whitman</rdaad:P50111>
+      <rdaad:P50121>1854</rdaad:P50121>
+      <rdaad:P50120>1949</rdaad:P50120>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJdRCyKyp9T6KCrBttv4MP</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#spencerarthurcarthurcoe1871-1964">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Spencer, Arthur C. (Arthur Coe), 1871-1964</rdaad:P50377>
+      <rdaad:P50111>Spencer, Arthur C.</rdaad:P50111>
+      <rdaad:P50121>1871</rdaad:P50121>
+      <rdaad:P50120>1964</rdaad:P50120>
+      <rdaad:P50115>Arthur Coe</rdaad:P50115>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJkxJYFkhbJmq6km9DKmVC</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#matthesfranc%CC%A7ois1874-1948">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Matthes, François, 1874-1948</rdaad:P50377>
+      <rdaad:P50111>Matthes, François</rdaad:P50111>
+      <rdaad:P50121>1874</rdaad:P50121>
+      <rdaad:P50120>1948</rdaad:P50120>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJxd3mchWxDBwtHp4D7JXd</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#turnerhwhenryward1857-">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Turner, H. W. (Henry Ward), 1857-</rdaad:P50377>
+      <rdaad:P50111>Turner, H. W.</rdaad:P50111>
+      <rdaad:P50121>1857</rdaad:P50121>
+      <rdaad:P50115>Henry Ward</rdaad:P50115>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PCjHG6j6ht3KdVtRykwRDjd</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#weedwalterharvey1862-1944">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Weed, Walter Harvey, 1862-1944</rdaad:P50377>
+      <rdaad:P50111>Weed, Walter Harvey</rdaad:P50111>
+      <rdaad:P50121>1862</rdaad:P50121>
+      <rdaad:P50120>1944</rdaad:P50120>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJrrrtPPYPtTCMBPxqkxDq</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#taffjosephajosephalexander1862-1944">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Taff, Joseph A. (Joseph Alexander), 1862-1944</rdaad:P50377>
+      <rdaad:P50111>Taff, Joseph A.</rdaad:P50111>
+      <rdaad:P50121>1862</rdaad:P50121>
+      <rdaad:P50120>1944</rdaad:P50120>
+      <rdaad:P50115>Joseph Alexander</rdaad:P50115>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJkHmwBqmVGX9JYCP79FKd</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#adamsgeorgeigeorgeirving1870-1932">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Adams, George I. (George Irving), 1870-1932</rdaad:P50377>
+      <rdaad:P50111>Adams, George I.</rdaad:P50111>
+      <rdaad:P50121>1870</rdaad:P50121>
+      <rdaad:P50120>1932</rdaad:P50120>
+      <rdaad:P50115>George Irving</rdaad:P50115>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PCjBqbmXjp6QKDKGkDqVWtC</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#brooksalfredhalfredhulse1871-1924">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Brooks, Alfred H. (Alfred Hulse), 1871-1924</rdaad:P50377>
+      <rdaad:P50111>Brooks, Alfred H.</rdaad:P50111>
+      <rdaad:P50121>1871</rdaad:P50121>
+      <rdaad:P50120>1924</rdaad:P50120>
+      <rdaad:P50115>Alfred Hulse</rdaad:P50115>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJpJgR678YrjpBF4RrfTHC</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#rohnoscar">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Rohn, Oscar</rdaad:P50377>
+      <rdaad:P50111>Rohn, Oscar</rdaad:P50111>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PCjwDCW9tGftRMGbggC9cHd</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#schraderfrankcfrankcharles1860-1944">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Schrader, Frank C. (Frank Charles), 1860-1944</rdaad:P50377>
+      <rdaad:P50111>Schrader, Frank C.</rdaad:P50111>
+      <rdaad:P50121>1860</rdaad:P50121>
+      <rdaad:P50120>1944</rdaad:P50120>
+      <rdaad:P50115>Frank Charles</rdaad:P50115>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJg8JyBpBtxXj39rRV7yh3</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#bakermarcus1849-1903">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Baker, Marcus, 1849-1903</rdaad:P50377>
+      <rdaad:P50111>Baker, Marcus</rdaad:P50111>
+      <rdaad:P50121>1849</rdaad:P50121>
+      <rdaad:P50120>1903</rdaad:P50120>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJB4fXCf89wpFyFxbCmyBP</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#hobbswilliamherbert1864-1952">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Hobbs, William Herbert, 1864-1952</rdaad:P50377>
+      <rdaad:P50111>Hobbs, William Herbert</rdaad:P50111>
+      <rdaad:P50121>1864</rdaad:P50121>
+      <rdaad:P50120>1952</rdaad:P50120>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJfcT7X4CWfMkQQ7GCfXh3</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#jaggarthomasaugustus1871-1953">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Jaggar, Thomas Augustus, 1871-1953</rdaad:P50377>
+      <rdaad:P50111>Jaggar, Thomas Augustus</rdaad:P50111>
+      <rdaad:P50121>1871</rdaad:P50121>
+      <rdaad:P50120>1953</rdaad:P50120>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJrGwcxYDdkhdfJbgVhJXd</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#howeernest1875-1932">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Howe, Ernest, 1875-1932</rdaad:P50377>
+      <rdaad:P50111>Howe, Ernest</rdaad:P50111>
+      <rdaad:P50121>1875</rdaad:P50121>
+      <rdaad:P50120>1932</rdaad:P50120>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJd3Mfy7QX447CyctbcwYP</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#hayescwcharleswillard1859-1916">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Hayes, C. W. (Charles Willard), 1859-1916</rdaad:P50377>
+      <rdaad:P50111>Hayes, C. W.</rdaad:P50111>
+      <rdaad:P50121>1859</rdaad:P50121>
+      <rdaad:P50120>1916</rdaad:P50120>
+      <rdaad:P50115>Charles Willard</rdaad:P50115>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJhXdC3BFVk346vCBv78md</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#beckergeorgefgeorgeferdinand1847-1919">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Becker, George F. (George Ferdinand), 1847-1919</rdaad:P50377>
+      <rdaad:P50111>Becker, George F.</rdaad:P50111>
+      <rdaad:P50121>1847</rdaad:P50121>
+      <rdaad:P50120>1919</rdaad:P50120>
+      <rdaad:P50115>George Ferdinand</rdaad:P50115>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJjMyQTKPp3rw3kwQmkFKd</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#martinkarl1851-1942">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Martin, Karl, 1851-1942</rdaad:P50377>
+      <rdaad:P50111>Martin, Karl</rdaad:P50111>
+      <rdaad:P50121>1851</rdaad:P50121>
+      <rdaad:P50120>1942</rdaad:P50120>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJy8rG37bBBX6pTJp3frMP</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#newellfrederickhaynes1862-1932">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Newell, Frederick Haynes, 1862-1932</rdaad:P50377>
+      <rdaad:P50111>Newell, Frederick Haynes</rdaad:P50111>
+      <rdaad:P50121>1862</rdaad:P50121>
+      <rdaad:P50120>1932</rdaad:P50120>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJjdfHjw3F7BVgq3FMMwYP</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#dartonnelsonhoratio1865-1948">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Darton, Nelson Horatio, 1865-1948</rdaad:P50377>
+      <rdaad:P50111>Darton, Nelson Horatio</rdaad:P50111>
+      <rdaad:P50121>1865</rdaad:P50121>
+      <rdaad:P50120>1948</rdaad:P50120>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJkCXG9kJPQxpWwx7983cP</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#johnsonwillardd">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Johnson, Willard D.</rdaad:P50377>
+      <rdaad:P50111>Johnson, Willard D.</rdaad:P50111>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJvt8FmKBYywBHMdP8MdcP</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#gannetthenry1846-1914">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Gannett, Henry, 1846-1914</rdaad:P50377>
+      <rdaad:P50111>Gannett, Henry</rdaad:P50111>
+      <rdaad:P50121>1846</rdaad:P50121>
+      <rdaad:P50120>1914</rdaad:P50120>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJtX3GyT9Qfb7gKrPwfH4q</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#ayreshbhoracebeemer1856-">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Ayres, H. B. (Horace Beemer), 1856-</rdaad:P50377>
+      <rdaad:P50111>Ayres, H. B.</rdaad:P50111>
+      <rdaad:P50121>1856</rdaad:P50121>
+      <rdaad:P50115>Horace Beemer</rdaad:P50115>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PCjFYRR7DhmkwDBbMcvVJMq</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#rixontheodoref">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Rixon, Theodore F.</rdaad:P50377>
+      <rdaad:P50111>Rixon, Theodore F.</rdaad:P50111>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PCjtTKTqBGyMGmhtcFXTm3P</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#leibergjohnbjohnbernhard1853-1913">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Leiberg, John B. (John Bernhard), 1853-1913</rdaad:P50377>
+      <rdaad:P50111>Leiberg, John B.</rdaad:P50111>
+      <rdaad:P50121>1853</rdaad:P50121>
+      <rdaad:P50120>1913</rdaad:P50120>
+      <rdaad:P50115>John Bernhard</rdaad:P50115>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PCjrbqHB8jvHhkd6P97XMHd</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#sudworthgeorgebgeorgebishop1864-1927">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Sudworth, George B. (George Bishop), 1864-1927</rdaad:P50377>
+      <rdaad:P50111>Sudworth, George B.</rdaad:P50111>
+      <rdaad:P50121>1864</rdaad:P50121>
+      <rdaad:P50120>1927</rdaad:P50120>
+      <rdaad:P50115>George Bishop</rdaad:P50115>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PBJkMJgtBBTbvcgxR3rgVG3</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/age#fitchchcharleshall1854-1930">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10004"/>
+      <rdaad:P50377>Fitch, C. H. (Charles Hall), 1854-1930</rdaad:P50377>
+      <rdaad:P50111>Fitch, C. H.</rdaad:P50111>
+      <rdaad:P50121>1854</rdaad:P50121>
+      <rdaad:P50120>1930</rdaad:P50120>
+      <rdaad:P50115>Charles Hall</rdaad:P50115>
+      <rdaad:P50094>https://id.oclc.org/worldcat/entity/E39PCjJp9GjxkXBHMGTxRB3tPP</rdaad:P50094>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/wor#geologicalsurveyusannualreport">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10002>d61e404wor</rdawd:P10002>
+      <rdawd:P10328>Geological Survey (U.S.), Annual report</rdawd:P10328>
+      <rdawo:P10314 rdf:resource="http://marc2rda.edu/fake/age#geologicalsurveyus"/>
+      <rdawd:P10088>Annual report</rdawd:P10088>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcc/con#qe75">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:notation rdf:datatype="http://www.wikidata.org/entity/Q130324983">QE75</skos:notation>
+      <skos:altLabel>QE75</skos:altLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/classSchemes/lcc"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#geologyresearchunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Geology--Research--United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#geologyalaska">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Geology--Alaska</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#geologyphilippines">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Geology--Philippines</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#streammeasurementsunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Stream measurements--United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#forestreservesunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Forest reserves--United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#minesandmineralresourcesunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Mines and mineral resources--United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#nonmetallicmineralsindustryunitedstates">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Nonmetallic minerals industry--United States</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#geologytexas">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Geology--Texas</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcsh/con#artesianwellstexas">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Artesian wells--Texas</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/lcsh"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#ge%CC%81ologierecherchee%CC%81tats-unis">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Géologie--Recherche--États-Unis</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#ge%CC%81ologiephilippines">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Géologie--Philippines</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#coursd%27eaujaugeagee%CC%81tats-unis">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Cours d'eau--Jaugeage--États-Unis</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#mine%CC%81rauxnonme%CC%81talliquesindustriee%CC%81tats-unis">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Minéraux non métalliques--Industrie--États-Unis</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#ge%CC%81ologietexas">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Géologie--Texas</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/rvm/con#puitsarte%CC%81sienstexas">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Puits artésiens--Texas</skos:prefLabel>
+      <skos:inScheme rdf:resource="https://id.loc.gov/vocabulary/subjectSchemes/rvm"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#artesianwells">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Artesian wells</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#forestreserves">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Forest reserves</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#geology">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Geology</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#geologyresearch">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Geology--Research</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#minesandmineralresources">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Mines and mineral resources</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#nonmetallicmineralsindustry">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Nonmetallic minerals industry</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/fast/con#streammeasurements">
+      <rdf:type rdf:resource="http://www.w3.org/2004/02/skos/core#Concept"/>
+      <skos:prefLabel>Stream measurements</skos:prefLabel>
+      <skos:inScheme rdf:resource="http://id.loc.gov/vocabulary/subjectSchemes/fast"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39QbtfRq9rTfb3H89Vvrr9x9c">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70018 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-09-29t185516372615-0700d61e368"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJgMFhdtFKxYyQvHvCFkDq">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70018 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-09-29t185516372615-0700d61e375"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJj8XjVR9hP7dPxwVtRqcP">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70018 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-09-29t185516372615-0700d61e382"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="https://id.oclc.org/worldcat/entity/E39PBJtxgQXMWqmjMjjwXRHgrq">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
+      <rdapo:P70018 rdf:resource="http://marc2rda.edu/fake/plaNom#2025-09-29t185516372615-0700d61e389"/>
+   </rdf:Description>
+</rdf:RDF>
