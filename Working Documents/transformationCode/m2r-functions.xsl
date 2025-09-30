@@ -64,7 +64,7 @@
     <!-- returns "is holding of" the minted IRI for the organization's collection if found, otherwise outputs comment -->
     <xsl:function name="m2r:s5Lookup" expand-text="yes">
         <xsl:param name="code5"/>
-        <xsl:variable name="lowerCode5" select="lower-case($code5)"/>
+        <xsl:variable name="lowerCode5" select="lower-case($code5)[1]"/>
         <xsl:variable name="lookup5" select="$lookup5Doc/key('normCode',$lowerCode5)/rdaad:P50006[@rdf:datatype='http://id.loc.gov/datatypes/orgs/normalized']"/>
         <xsl:choose>
             <xsl:when test="$lookup5">
