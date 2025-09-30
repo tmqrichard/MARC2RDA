@@ -32,7 +32,7 @@
     xmlns:m2r="http://marc2rda.info/functions#"
     exclude-result-prefixes="marc m2r" version="3.0">
     
-    <!-- 006 -->
+       <!-- 006 -->
     <xsl:template name="F006-c1-4-BK">
         <xsl:param name="char1-4"/>
         <xsl:call-template name="F008-c18-21-BK">
@@ -354,6 +354,13 @@
     <xsl:template name="F006-c16-BK">
         <xsl:param name="char16"/>
         <xsl:call-template name="F008-c33-BK">
+            <xsl:with-param name="char33" select="$char16"/>
+        </xsl:call-template>
+    </xsl:template>
+    
+    <xsl:template name="F006-c16-CR">
+        <xsl:param name="char16"/>
+        <xsl:call-template name="F008-c33-CR">
             <xsl:with-param name="char33" select="$char16"/>
         </xsl:call-template>
     </xsl:template>
