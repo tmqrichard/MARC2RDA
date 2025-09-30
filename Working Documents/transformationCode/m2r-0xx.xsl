@@ -199,7 +199,7 @@
         </xsl:for-each>
     </xsl:template>
 
-    <!-- 017 Copyright or Legal Deposit Number -->
+        <!-- 017 Copyright or Legal Deposit Number -->
     <xsl:template match="marc:datafield[@tag = '017'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '017']" 
         mode="man">
         <xsl:param name="baseID"/>
@@ -212,7 +212,7 @@
     <xsl:template match="marc:datafield[@tag = '017'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '017']" 
         mode="nom">
         <xsl:param name="baseID"/>
-        <xsl:variable name="source" select="marc:subfield[@code = '2']"/>
+        <xsl:variable name="source" select="marc:subfield[@code = '2'][1]"/>
         
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
             <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., ., '', 'nomen')}">
@@ -229,10 +229,10 @@
                     </rdan:P80073>
                 </xsl:if>
                 <xsl:if test="../marc:subfield[@code = 'd']"><!-- Date formatted as yyyymmdd -->
-                    <rdan:P80066>
-                        <xsl:variable name="rawDate" select="string(../marc:subfield[@code = 'd'])"/>
+                    <rdan:P80166>
+                        <xsl:variable name="rawDate" select="string(../marc:subfield[@code = 'd'][1])"/>
                         <xsl:value-of select="concat(substring($rawDate, 1, 4), '-', substring($rawDate, 5, 2), '-', substring($rawDate, 7, 2))"/>
-                    </rdan:P80066>
+                    </rdan:P80166>
                 </xsl:if>
                 <xsl:if test="../marc:subfield[@code = 'i']">
                     <rdan:P80071>
@@ -2860,7 +2860,7 @@
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., ., 'MARC 045 Time Period Code', 'timNom')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10014"/> <!-- Nomen -->
-                <rdand:P80068><xsl:value-of select="normalize-space(.)"/></rdand:P80068> <!-- String value -->
+                <rdand:P80026><xsl:value-of select="normalize-space(.)"/></rdand:P80026> <!-- String value -->
                 <rdand:P80069>MARC 045 Time Period Code</rdand:P80069>
             </rdf:Description>
         </xsl:for-each>
