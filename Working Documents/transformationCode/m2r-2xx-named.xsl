@@ -649,49 +649,59 @@
     <xsl:template name="F246-xx-ind" expand-text="yes">
         <xsl:text>Note on variant title: </xsl:text>
         <xsl:choose>
-            <xsl:when
-                test="marc:subfield[@code = 'i' or @code = 'a' or @code = 'b' or @code = 'f' or @code = 'n' or @code = 'p' or @code = 'g' or @code = 'h']">
-                <xsl:for-each select="marc:subfield[@code = 'i']">
+            <xsl:when test="marc:subfield[@code='i']">
+                <xsl:for-each select="marc:subfield[@code='i']">
                     <xsl:value-of select="."/>
-                    <xsl:if test="position() != last()">
-                    <xsl:text>: </xsl:text>
-                    </xsl:if>
-                </xsl:for-each>
-                <xsl:for-each select="marc:subfield[@code = 'a' or @code = 'b' or @code = 'f' or @code = 'n' or @code = 'p']">
-                    <xsl:value-of select="."/>
-                    <xsl:if test="position() != last()">
-                        <xsl:text>: </xsl:text>
-                    </xsl:if>
-                </xsl:for-each>
-                <xsl:for-each select="marc:subfield[@code = 'g' or @code = 'h']">
-                    <xsl:if test="position() = 1">
-                        <xsl:text>;</xsl:text>
-                    </xsl:if>
-                    <xsl:value-of select="."/>
-                    <xsl:if test="position() != last()">
-                        <xsl:text>: </xsl:text>
-                    </xsl:if>
+                    <xsl:value-of select="' '"/>
                 </xsl:for-each>
             </xsl:when>
-            <xsl:otherwise>
-                <xsl:text>[</xsl:text>
-                <xsl:value-of select="@ind2"/>
-                <xsl:text>]</xsl:text>
-            </xsl:otherwise>
+            <xsl:when test="@ind2='0'">
+                <xsl:text>Portion of title: </xsl:text>
+            </xsl:when>
+            <xsl:when test="@ind2='1'">
+                <xsl:text>Parallel title: </xsl:text>
+            </xsl:when>
+            <xsl:when test="@ind2='2'">
+                <xsl:text>Distinctive title: </xsl:text>
+            </xsl:when>
+            <xsl:when test="@ind2='3'">
+                <xsl:text>Other title: </xsl:text>
+            </xsl:when>
+            <xsl:when test="@ind2='4'">
+                <xsl:text>Cover title: </xsl:text>
+            </xsl:when>
+            <xsl:when test="@ind2='5'">
+                <xsl:text>Added title page title: </xsl:text>
+            </xsl:when>
+            <xsl:when test="@ind2='6'">
+                <xsl:text>Caption title: </xsl:text>
+            </xsl:when>
+            <xsl:when test="@ind2='7'">
+                <xsl:text>Running title: </xsl:text>
+            </xsl:when>
+            <xsl:when test="@ind2='0'">
+                <xsl:text>Spine title: </xsl:text>
+            </xsl:when>
         </xsl:choose>
+        <xsl:for-each select="marc:subfield[@code = 'a' or @code = 'b' or @code = 'f' or @code = 'n' or @code = 'p']">
+            <xsl:value-of select="."/>
+        </xsl:for-each>
+        <xsl:for-each select="marc:subfield[@code = 'g' or @code = 'h']">
+            <xsl:if test="position() = 1">
+                <xsl:text>; </xsl:text>
+            </xsl:if>
+            <xsl:value-of select="."/>
+        </xsl:for-each>
     </xsl:template>
     
     <xsl:template name="F246-xx-noind" expand-text="yes">
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <xsl:value-of select="."/>
             <xsl:if test="position() != last()">
-                <xsl:text>: </xsl:text>
+                <xsl:text> : </xsl:text>
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'b' or @code = 'f' or @code = 'n' or @code = 'p']">
-            <xsl:if test="position() != last()">
-                <xsl:text>, </xsl:text>
-            </xsl:if>
             <xsl:value-of select="."/>
         </xsl:for-each>
     </xsl:template>

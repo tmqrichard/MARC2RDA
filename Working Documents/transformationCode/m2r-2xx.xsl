@@ -435,7 +435,9 @@
                     <xsl:value-of select="normalize-space(concat('ite#', $baseID, $genID))"/>
                 </rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{$manIRI}"/>
-                <xsl:copy-of select="m2r:s5Lookup(marc:subfield[@code = '5'])"/>
+                <xsl:for-each select="marc:subfield[@code='5']">
+                    <xsl:copy-of select="m2r:s5Lookup(.)"/>
+                </xsl:for-each>
                 <xsl:choose>
                     <!--has variant title of item-->
                     <xsl:when test="@ind2 = '0' or @ind2 = '1' or @ind2 = '2' or @ind2 = '4' or @ind2 = '5' or @ind2 = '6' or @ind2 = '7' or @ind2 = '8' or marc:subfield[@code = 'i'] or marc:subfield[@code = 'g'] or marc:subfield[@code = 'h']">
@@ -545,72 +547,78 @@
         mode="wor" expand-text="yes">
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:if test="marc:subfield[@code = 'c']">
-            <rdawd:P10081>
-                <xsl:value-of 
-                    select="normalize-space(marc:subfield[@code = 'c']) => replace('^\(|\)$|\).$|\.$', '') => normalize-space()"
-                />
-            </rdawd:P10081>
+            <xsl:for-each select="marc:subfield[@code = 'c']">
+                <rdawd:P10081>
+                    <xsl:value-of 
+                        select="normalize-space(.) => replace('^\(|\)$|\).$|\.$', '') => normalize-space()"
+                    />
+                </rdawd:P10081>
+            </xsl:for-each>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = 'd']">
-            <rdawd:P10082>
-                <xsl:value-of select="
-                    marc:subfield[@code='d']
-                      => replace('^\(+', '')           
-                      => replace('\)\.\s*$', '')          
-                      => replace('\)+$', '')
-                      => replace('[.;]+$', '')
-                      => normalize-space()
-                "/>
-            </rdawd:P10082>
+            <xsl:for-each select="marc:subfield[@code='d']">
+                <rdawd:P10082>
+                    <xsl:value-of select="replace(., '^\(+', '')           
+                        => replace('\)\.\s*$', '')          
+                        => replace('\)+$', '')
+                        => replace('[.;]+$', '')
+                        => normalize-space()
+                        "/>
+                </rdawd:P10082>
+            </xsl:for-each>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = 'e']">
-            <rdawd:P10214>
-                <xsl:value-of select="
-                    marc:subfield[@code='e']
-                      => replace('^\(+', '')           
-                      => replace('\)\.\s*$', '')          
-                      => replace('\)+$', '')
-                      => replace('[.;]+$', '')
-                      => normalize-space()
-                "/>
-            </rdawd:P10214>
+            <xsl:for-each select="marc:subfield[@code='e']">
+                <rdawd:P10214>
+                    <xsl:value-of select="replace(., '^\(+', '')           
+                        => replace('\)\.\s*$', '')          
+                        => replace('\)+$', '')
+                        => replace('[.;]+$', '')
+                        => normalize-space()
+                        "/>
+                </rdawd:P10214>
+            </xsl:for-each>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = 'f']">
-            <rdawd:P10024>
-                <xsl:value-of select="concat('Outer G-ring coordinate pairs: ', marc:subfield[@code = 'f'])"/>
-            </rdawd:P10024>
+            <xsl:for-each select="marc:subfield[@code='f']">
+                <rdawd:P10024>
+                    <xsl:value-of select="concat('Outer G-ring coordinate pairs: ', .)"/>
+                </rdawd:P10024>
+            </xsl:for-each>
         </xsl:if>
         <xsl:if test="marc:subfield[@code = 'g']">
-            <rdawd:P10024>
-                <xsl:value-of select="concat('Exclusion G-ring coordinate pairs: ', marc:subfield[@code = 'g'])"/>
-            </rdawd:P10024>
+            <xsl:for-each select="marc:subfield[@code='g']">
+                <rdawd:P10024>
+                    <xsl:value-of select="concat('Exclusion G-ring coordinate pairs: ', .)"/>
+                </rdawd:P10024>
+            </xsl:for-each>
         </xsl:if>   
     </xsl:template>
     <!-- Aggregating work -->
     <xsl:template match="marc:datafield[@tag = '255'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '255']"
         mode="aggWor" expand-text="yes">
         <!--<xsl:call-template name="getmarc"/>-->
-        <!-- Remove trailing punctuation from subfield a -->
-        <xsl:variable name="cleanA" select="
-            normalize-space(
-                replace(marc:subfield[@code = 'a'], '(\p{P})+$', '')
-            )
-        "/>
-        <xsl:if test="marc:subfield[@code = 'a'][matches(., '[0-9]')]">
-            <rdawd:P10356>
-                <xsl:value-of select="$cleanA"/>
-            </rdawd:P10356>
-        </xsl:if>
-        <xsl:if test="marc:subfield[@code = 'a'][not(matches(., '[0-9]'))]">
-            <rdawd:P10330>
-                <xsl:text>Scale designation: </xsl:text>
-                <xsl:value-of select="$cleanA"/>
-            </rdawd:P10330>
-        </xsl:if>
+        <xsl:for-each select="marc:subfield[@code='a']">
+            <!-- Remove trailing punctuation from subfield a -->
+            <xsl:variable name="cleanA" select="normalize-space(replace(., '(\p{P})+$', ''))"/>
+            <xsl:if test="matches($cleanA, '[0-9]')">
+                <rdawd:P10356>
+                    <xsl:value-of select="$cleanA"/>
+                </rdawd:P10356>
+            </xsl:if>
+            <xsl:if test="not(matches($cleanA, '[0-9]'))">
+                <rdawd:P10330>
+                    <xsl:text>Scale designation: </xsl:text>
+                    <xsl:value-of select="$cleanA"/>
+                </rdawd:P10330>
+            </xsl:if>
+        </xsl:for-each>
         <xsl:if test="marc:subfield[@code = 'b']">
-            <rdawd:P10355>
-                <xsl:value-of select="marc:subfield[@code = 'b']"/>
-            </rdawd:P10355>
+            <xsl:for-each select="marc:subfield[@code='b']">
+                <rdawd:P10355>
+                    <xsl:value-of select="."/>
+                </rdawd:P10355>
+            </xsl:for-each>
         </xsl:if>
     </xsl:template>
     <!-- Expression -->
@@ -618,25 +626,25 @@
         mode="exp" expand-text="yes">
         <!--<xsl:call-template name="getmarc"/>-->
         <!-- Remove trailing punctuation from subfield a -->
-        <xsl:variable name="cleanA" select="
-            normalize-space(
-                replace(marc:subfield[@code = 'a'], '(\p{P})+$', '')
-            )
-        "/>
-        <xsl:if test="marc:subfield[@code = 'a'][matches(., '[0-9]')]">
-            <rdaed:P20228>
-                <xsl:value-of select="$cleanA"/>
-            </rdaed:P20228>
-        </xsl:if>
-        <xsl:if test="marc:subfield[@code = 'a'][not(matches(., '[0-9]'))]">
-            <rdaed:P20291>
-                <xsl:value-of select="$cleanA"/>
-            </rdaed:P20291>
-        </xsl:if>
+        <xsl:for-each select="marc:subfield[@code='a']">
+            <xsl:variable name="cleanA" select="normalize-space(replace(., '(\p{P})+$', ''))"/>
+            <xsl:if test="matches($cleanA, '[0-9]')">
+                <rdaed:P20228>
+                    <xsl:value-of select="$cleanA"/>
+                </rdaed:P20228>
+            </xsl:if>
+            <xsl:if test="not(matches($cleanA, '[0-9]'))">
+                <rdaed:P20291>
+                    <xsl:value-of select="$cleanA"/>
+                </rdaed:P20291>
+            </xsl:if>
+        </xsl:for-each>
         <xsl:if test="marc:subfield[@code = 'b']">
-            <rdaed:P20216>
-                <xsl:value-of select="marc:subfield[@code = 'b']"/>
-            </rdaed:P20216>
+            <xsl:for-each select="marc:subfield[@code='b']">
+                <rdaed:P20216>
+                    <xsl:value-of select="."/>
+                </rdaed:P20216>
+            </xsl:for-each>
         </xsl:if>
     </xsl:template>
  
@@ -946,9 +954,11 @@
     <xsl:template match="marc:datafield[@tag = '263'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '263']"
         mode="man" expand-text="yes">
         <!--<xsl:call-template name="getmarc"/>-->
-        <rdamd:P30137>
-            <xsl:value-of select="concat('Projected date of publication: ', marc:subfield[@code = 'a'])"/>
-        </rdamd:P30137>
+        <xsl:for-each select="marc:subfield[@code='a']">
+            <rdamd:P30137>
+                <xsl:value-of select="concat('Projected date of publication: ', .)"/>
+            </rdamd:P30137>
+        </xsl:for-each>
     </xsl:template>
     
     <!-- template immediately below, MARC 264:
