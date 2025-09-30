@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rdf:RDF xmlns:fake="http://fakePropertiesForDemo"
+         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
+         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
+         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
+         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
+         xmlns:rdae="http://rdaregistry.info/Elements/e/"
+         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
+         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
+         xmlns:rdai="http://rdaregistry.info/Elements/i/"
+         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
+         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
+         xmlns:rdam="http://rdaregistry.info/Elements/m/"
+         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
+         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
+         xmlns:rdan="http://rdaregistry.info/Elements/n/"
+         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
+         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
+         xmlns:rdap="http://rdaregistry.info/Elements/p/"
+         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
+         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
+         xmlns:rdat="http://rdaregistry.info/Elements/t/"
+         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
+         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
+         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
+         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
+         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
+         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc020-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawd:P10400>020-test1</rdawd:P10400>
+      <rdawd:P10004>Metadata work</rdawd:P10004>
+      <rdawd:P10002>transform/wor#marc020-test1</rdawd:P10002>
+      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc020-test1"/>
+      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc020-test1">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc020-test1"/>
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
+      <rdamd:P30004>transform/man#marc020-test1</rdamd:P30004>
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamd:P30137>F 11111nam a2200553ui 4500
+F001 020-test1
+F027 ## $a FWS/OBS-84/15 $a FOA--89-40265/C--SE $q qualifying info.
+F027 ## $a METPRO/CB/TR--74/216+PR.ENVR.WI $q (qualifying info 1 ;  $q qualifying info 2)
+F027 ## $z 1234567 $z FTA/MA-06/0197/01/03 $q qualifying info for z
+F880 ## $z 0716305119 (pbk.)  $6 027-00
+F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
+</rdamd:P30137>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc020-test1"/>
+      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc020-test1"/>
+      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc020-test1"/>
+      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdamd:P30276/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t221526041917-0700d31e6"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t221526041917-0700d31e8"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t221526041917-0700d31e13"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t221526041917-0700d31e20"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t221526041917-0700d31e22"/>
+      <rdamo:P30004 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-29t221526041917-0700d31e27"/>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t221526041917-0700d31e6">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>FWS/OBS-84/15</rdand:P80068>
+      <rdand:P80069>STRN</rdand:P80069>
+      <rdand:P80078>Standard Technical Report Number</rdand:P80078>
+      <rdand:P80071>qualifying info.</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t221526041917-0700d31e8">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>FOA--89-40265/C--SE</rdand:P80068>
+      <rdand:P80069>ISRN</rdand:P80069>
+      <rdand:P80078>Standard Technical Report Number</rdand:P80078>
+      <rdand:P80071>qualifying info.</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t221526041917-0700d31e13">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>METPRO/CB/TR--74/216+PR.ENVR.WI</rdand:P80068>
+      <rdand:P80069>ISRN</rdand:P80069>
+      <rdand:P80078>Standard Technical Report Number</rdand:P80078>
+      <rdand:P80071>qualifying info 1</rdand:P80071>
+      <rdand:P80071>qualifying info 2</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t221526041917-0700d31e20">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>1234567</rdand:P80068>
+      <rdand:P80069>STRN</rdand:P80069>
+      <rdand:P80078>Standard Technical Report Number</rdand:P80078>
+      <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdand:P80071>qualifying info for z</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t221526041917-0700d31e22">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>FTA/MA-06/0197/01/03</rdand:P80068>
+      <rdand:P80069>STRN</rdand:P80069>
+      <rdand:P80078>Standard Technical Report Number</rdand:P80078>
+      <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+      <rdand:P80071>qualifying info for z</rdand:P80071>
+   </rdf:Description>
+   <rdf:Description rdf:about="http://marc2rda.edu/fake/nom#2025-09-29t221526041917-0700d31e27">
+      <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
+      <rdand:P80068>0716305119 (pbk.) </rdand:P80068>
+      <rdand:P80069>STRN</rdand:P80069>
+      <rdand:P80078>Standard Technical Report Number</rdand:P80078>
+      <rdan:P80168 rdf:resource="http://id.loc.gov/vocabulary/mstatus/cancinv"/>
+   </rdf:Description>
+</rdf:RDF>
