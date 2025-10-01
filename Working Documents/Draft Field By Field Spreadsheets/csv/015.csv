@@ -19,7 +19,7 @@ NOTE:  both $a and $z may appear in same tag.  If this is the case, only map a $
 
 [Nomen]--rdan:P80168--><http://id.loc.gov/vocabulary/mstatus/cancinv> 
 LA 10/11/2024",,
-3,done,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,,https://www.rdaregistry.info/Elements/n/#P80069,has scheme of nomen ,structured,Appliy to minted nomen from $a or $z using data from LC Source Codes table,"Lookup code in LC table https://www.loc.gov/standards/sourcelist/national-bibliography.html; and create two properties, one with the code and one with the citation.
+3,done,15,NATIONAL BIBLIOGRAPHY NUMBER (R),Undefined,#,Undefined,Undefined,#,Undefined,,,2,Source (NR),,,,,,,https://www.rdaregistry.info/Elements/n/#P80069,has scheme of nomen ,structured,Appliy to minted nomen from $a or $z using data from LC Source Codes table,"Lookup code in LC table https://www.loc.gov/standards/sourcelist/national-bibliography.html, and create two properties, one with the code and one with the citation.
 [Nomen]--rdan:P80069-->($2)
 [Nomen]--rdan:p80069-->""[textual citation of bibliography]""
 LA 12/30/2024",,
