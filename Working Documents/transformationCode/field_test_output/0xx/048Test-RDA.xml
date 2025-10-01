@@ -1,49 +1,20 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<rdf:RDF xmlns:fake="http://fakePropertiesForDemo"
-         xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#"
-         xmlns:rdaa="http://rdaregistry.info/Elements/a/"
-         xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/"
-         xmlns:rdaao="http://rdaregistry.info/Elements/a/object/"
-         xmlns:rdae="http://rdaregistry.info/Elements/e/"
-         xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/"
-         xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/"
-         xmlns:rdai="http://rdaregistry.info/Elements/i/"
-         xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/"
-         xmlns:rdaio="http://rdaregistry.info/Elements/i/object/"
-         xmlns:rdam="http://rdaregistry.info/Elements/m/"
-         xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/"
-         xmlns:rdamo="http://rdaregistry.info/Elements/m/object/"
-         xmlns:rdan="http://rdaregistry.info/Elements/n/"
-         xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/"
-         xmlns:rdano="http://rdaregistry.info/Elements/n/object/"
-         xmlns:rdap="http://rdaregistry.info/Elements/p/"
-         xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/"
-         xmlns:rdapo="http://rdaregistry.info/Elements/p/object/"
-         xmlns:rdat="http://rdaregistry.info/Elements/t/"
-         xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/"
-         xmlns:rdato="http://rdaregistry.info/Elements/t/object/"
-         xmlns:rdaw="http://rdaregistry.info/Elements/w/"
-         xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/"
-         xmlns:rdawo="http://rdaregistry.info/Elements/w/object/"
-         xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-         xmlns:skos="http://www.w3.org/2004/02/skos/core#">
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#marc048-test1">
+<?xml version="1.0" encoding="UTF-8"?><rdf:RDF xmlns:fake="http://fakePropertiesForDemo" xmlns:madsrdf="http://www.loc.gov/mads/rdf/v1#" xmlns:rdaa="http://rdaregistry.info/Elements/a/" xmlns:rdaad="http://rdaregistry.info/Elements/a/datatype/" xmlns:rdaao="http://rdaregistry.info/Elements/a/object/" xmlns:rdae="http://rdaregistry.info/Elements/e/" xmlns:rdaed="http://rdaregistry.info/Elements/e/datatype/" xmlns:rdaeo="http://rdaregistry.info/Elements/e/object/" xmlns:rdai="http://rdaregistry.info/Elements/i/" xmlns:rdaid="http://rdaregistry.info/Elements/i/datatype/" xmlns:rdaio="http://rdaregistry.info/Elements/i/object/" xmlns:rdam="http://rdaregistry.info/Elements/m/" xmlns:rdamd="http://rdaregistry.info/Elements/m/datatype/" xmlns:rdamo="http://rdaregistry.info/Elements/m/object/" xmlns:rdan="http://rdaregistry.info/Elements/n/" xmlns:rdand="http://rdaregistry.info/Elements/n/datatype/" xmlns:rdano="http://rdaregistry.info/Elements/n/object/" xmlns:rdap="http://rdaregistry.info/Elements/p/" xmlns:rdapd="http://rdaregistry.info/Elements/p/datatype/" xmlns:rdapo="http://rdaregistry.info/Elements/p/object/" xmlns:rdat="http://rdaregistry.info/Elements/t/" xmlns:rdatd="http://rdaregistry.info/Elements/t/datatype/" xmlns:rdato="http://rdaregistry.info/Elements/t/object/" xmlns:rdaw="http://rdaregistry.info/Elements/w/" xmlns:rdawd="http://rdaregistry.info/Elements/w/datatype/" xmlns:rdawo="http://rdaregistry.info/Elements/w/object/" xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:skos="http://www.w3.org/2004/02/skos/core#">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#marc048-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawd:P10400>048-test1</rdawd:P10400>
-      <rdawd:P10004>Metadata work</rdawd:P10004>
-      <rdawd:P10002>transform/wor#marc048-test1</rdawd:P10002>
-      <rdawo:P10072 rdf:resource="http://marc2rda.edu/fake/transform/man#marc048-test1"/>
-      <rdawo:P10621 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
-      <rdawo:P10615 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
-      <rdawo:P10617 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
+      <rdawd:P10400>048-test1</rdawd:P10400><!--rdawd:P10400 = has identifier for work group-->
+      <rdawd:P10004>Metadata work</rdawd:P10004><!--rdawd:P10004 = has category of work-->
+      <rdawd:P10002>wor#marc048-test1</rdawd:P10002><!--rdawd:P10002 = has identifier for work-->
+      <rdawo:P10072 rdf:resource="http://marc2rda.info/testing/man#marc048-test1"/><!--rdawo:P10072 = has manifestation of work-->
+      <rdawo:P10621 rdf:resource="http://marc2rda.info/testing/wor#"/><!--rdawo:P10621 = is metadata description of work-->
+      <rdawo:P10615 rdf:resource="http://marc2rda.info/testing/exp#"/><!--rdawo:P10615 = is metadata description of expression-->
+      <rdawo:P10617 rdf:resource="http://marc2rda.info/testing/man#"/><!--rdawo:P10617 = is metadata description of manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#marc048-test1">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc048-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30135 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc048-test1"/>
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335>
-      <rdamd:P30004>transform/man#marc048-test1</rdamd:P30004>
-      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/>
+      <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc048-test1"/><!--rdamo:P30135 = has work manifested-->
+      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30004>man#marc048-test1</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
+      <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
 F001 048-test1
 F048 ## $a sa01 $a ka01
@@ -51,66 +22,66 @@ F048 #7 $a vso01 $a pcg01 $2 lcmpt
 F048 ## $b va02 $b vc01
 F048 ## $a test880
 F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
-</rdamd:P30137>
+</rdamd:P30137><!--rdamd:P30137 = has note on manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/wor#">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/wor#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10001"/>
-      <rdawo:P10623 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc048-test1"/>
-      <rdawo:P10078 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
+      <rdawo:P10623 rdf:resource="http://marc2rda.info/testing/wor#marc048-test1"/><!--rdawo:P10623 = is work described with metadata by-->
+      <rdawo:P10078 rdf:resource="http://marc2rda.info/testing/exp#"/><!--rdawo:P10078 = has expression of work-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/exp#">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/exp#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10006"/>
-      <rdaeo:P20576 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc048-test1"/>
-      <rdaeo:P20059 rdf:resource="http://marc2rda.edu/fake/transform/man#"/>
-      <rdaeo:P20231 rdf:resource="http://marc2rda.edu/fake/transform/wor#"/>
-      <rdaeo:P20215 rdf:resource="http://marc2rda.edu/fake/ka01/nom#sa01"/>
-      <rdaeo:P20215 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-30t020401964289-0700d31e8"/>
-      <rdaeo:P20215 rdf:resource="http://marc2rda.edu/fake/pcg01/nom#vso01"/>
-      <rdaeo:P20215 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-30t020401964289-0700d31e13"/>
-      <rdaeo:P20215 rdf:resource="http://marc2rda.edu/fake/vc01/nom#va02"/>
-      <rdaeo:P20215 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-30t020401964289-0700d31e20"/>
-      <rdaeo:P20215 rdf:resource="http://marc2rda.edu/fake/nom#2025-09-30t020401964289-0700d31e23"/>
-      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/>
+      <rdaeo:P20576 rdf:resource="http://marc2rda.info/testing/wor#marc048-test1"/><!--rdaeo:P20576 = is expression described with metadata by-->
+      <rdaeo:P20059 rdf:resource="http://marc2rda.info/testing/man#"/><!--rdaeo:P20059 = has manifestation of expression-->
+      <rdaeo:P20231 rdf:resource="http://marc2rda.info/testing/wor#"/><!--rdaeo:P20231 = has work expressed-->
+      <rdaeo:P20215 rdf:resource="http://marc2rda.info/testing/marcmusperf/nom#sa01"/><!--rdaeo:P20215 = has medium of performance of musical content-->
+      <rdaeo:P20215 rdf:resource="http://marc2rda.info/testing/marcmusperf/nom#ka01"/><!--rdaeo:P20215 = has medium of performance of musical content-->
+      <rdaeo:P20215 rdf:resource="http://marc2rda.info/testing/lcmpt/nom#vso01"/><!--rdaeo:P20215 = has medium of performance of musical content-->
+      <rdaeo:P20215 rdf:resource="http://marc2rda.info/testing/lcmpt/nom#pcg01"/><!--rdaeo:P20215 = has medium of performance of musical content-->
+      <rdaeo:P20215 rdf:resource="http://marc2rda.info/testing/marcmusperf/nom#va02"/><!--rdaeo:P20215 = has medium of performance of musical content-->
+      <rdaeo:P20215 rdf:resource="http://marc2rda.info/testing/marcmusperf/nom#vc01"/><!--rdaeo:P20215 = has medium of performance of musical content-->
+      <rdaeo:P20215 rdf:resource="http://marc2rda.info/testing/marcmusperf/nom#test880"/><!--rdaeo:P20215 = has medium of performance of musical content-->
+      <rdaeo:P20001 rdf:resource="http://rdaregistry.info/termList/RDAContentType/1020"/><!--rdaeo:P20001 = has content type-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/transform/man#">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/man#">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
-      <rdamo:P30462 rdf:resource="http://marc2rda.edu/fake/transform/wor#marc048-test1"/>
-      <rdamo:P30139 rdf:resource="http://marc2rda.edu/fake/transform/exp#"/>
-      <rdamd:P30276/>
+      <rdamo:P30462 rdf:resource="http://marc2rda.info/testing/wor#marc048-test1"/><!--rdamo:P30462 = is manifestation described with metadata by-->
+      <rdamo:P30139 rdf:resource="http://marc2rda.info/testing/exp#"/><!--rdamo:P30139 = has expression manifested-->
+      <rdamd:P30276/><!--rdamd:P30276 = has access point for manifestation-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/marcmusperf/nom#sa01">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/marcmusperf/nom#sa01">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Performer or ensemble: sa01</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/musiccodeschemes/marcmusperf"/>
+      <rdand:P80068>Performer or ensemble: sa01</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/musiccodeschemes/marcmusperf"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/marcmusperf/nom#ka01">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/marcmusperf/nom#ka01">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Performer or ensemble: ka01</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/musiccodeschemes/marcmusperf"/>
+      <rdand:P80068>Performer or ensemble: ka01</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/musiccodeschemes/marcmusperf"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcmpt/nom#vso01">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/lcmpt/nom#vso01">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Performer or ensemble: vso01</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/musiccodeschemes/lcmpt"/>
+      <rdand:P80068>Performer or ensemble: vso01</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/musiccodeschemes/lcmpt"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/lcmpt/nom#pcg01">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/lcmpt/nom#pcg01">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Performer or ensemble: pcg01</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/musiccodeschemes/lcmpt"/>
+      <rdand:P80068>Performer or ensemble: pcg01</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/musiccodeschemes/lcmpt"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/marcmusperf/nom#va02">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/marcmusperf/nom#va02">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Soloist: va02</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/musiccodeschemes/marcmusperf"/>
+      <rdand:P80068>Soloist: va02</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/musiccodeschemes/marcmusperf"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/marcmusperf/nom#vc01">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/marcmusperf/nom#vc01">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Soloist: vc01</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/musiccodeschemes/marcmusperf"/>
+      <rdand:P80068>Soloist: vc01</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/musiccodeschemes/marcmusperf"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
-   <rdf:Description rdf:about="http://marc2rda.edu/fake/marcmusperf/nom#test880">
+   <rdf:Description rdf:about="http://marc2rda.info/testing/marcmusperf/nom#test880">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-      <rdand:P80068>Performer or ensemble: test880</rdand:P80068>
-      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/musiccodeschemes/marcmusperf"/>
+      <rdand:P80068>Performer or ensemble: test880</rdand:P80068><!--rdand:P80068 = has nomen string-->
+      <rdan:P80069 rdf:resource="http://id.loc.gov/vocabulary/musiccodeschemes/marcmusperf"/><!--rdan:P80069 = has scheme of nomen-->
    </rdf:Description>
 </rdf:RDF>

@@ -15,7 +15,7 @@
             <marc:subfield code="a">eng</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="979" ind1=" " ind2=" ">
-            <marc:subfield code="a">swe</marc:subfield>
+            <marc:subfield code="a">sem</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -36,7 +36,7 @@
             <marc:subfield code="a">Translated from the French.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="979" ind1=" " ind2=" ">
-            <marc:subfield code="a">swe</marc:subfield>
+            <marc:subfield code="a">sem</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -57,7 +57,7 @@
             <marc:subfield code="a">Translated from the French.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="979" ind1=" " ind2=" ">
-            <marc:subfield code="a">swe</marc:subfield>
+            <marc:subfield code="a">sem</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -77,7 +77,7 @@
             <marc:subfield code="a">In English and French.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="979" ind1=" " ind2=" ">
-            <marc:subfield code="a">swe</marc:subfield>
+            <marc:subfield code="a">sem</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -121,7 +121,7 @@
             <marc:subfield code="2">iso639-3</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="979" ind1=" " ind2=" ">
-            <marc:subfield code="a">swe</marc:subfield>
+            <marc:subfield code="a">sem</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -142,7 +142,7 @@
             <marc:subfield code="2">austlang</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="979" ind1=" " ind2=" ">
-            <marc:subfield code="a">swe</marc:subfield>
+            <marc:subfield code="a">sem</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -197,7 +197,7 @@
             <marc:subfield code="a">Text primarily in Ukrainian with one article in English.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="979" ind1=" " ind2=" ">
-            <marc:subfield code="a">swe</marc:subfield>
+            <marc:subfield code="a">sem</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -217,7 +217,7 @@
             <marc:subfield code="a">In Uzbek, Russian and Hindi.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="979" ind1=" " ind2=" ">
-            <marc:subfield code="a">swe</marc:subfield>
+            <marc:subfield code="a">sem</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -301,7 +301,7 @@
             <marc:subfield code="h">ara</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="979" ind1=" " ind2=" ">
-            <marc:subfield code="a">swe</marc:subfield>
+            <marc:subfield code="a">sem</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -319,7 +319,7 @@
             <marc:subfield code="h">fro</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="979" ind1=" " ind2=" ">
-            <marc:subfield code="a">swe</marc:subfield>
+            <marc:subfield code="a">sem</marc:subfield>
         </marc:datafield>
     </marc:record>
     
@@ -341,7 +341,7 @@
             <marc:subfield code="a">Text in English, German, and French.</marc:subfield>
         </marc:datafield>
         <marc:datafield tag="979" ind1=" " ind2=" ">
-            <marc:subfield code="a">swe</marc:subfield>
+            <marc:subfield code="a">sem</marc:subfield>
         </marc:datafield>
     </marc:record>
     

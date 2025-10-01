@@ -167,7 +167,7 @@
         mode="nom">
         <xsl:param name="baseID"/>
         <xsl:variable name="ind1" select="@ind1"/>
-        <xsl:variable name="source" select="marc:subfield[@code = '2']"/>
+        <xsl:variable name="source" select="marc:subfield[@code = '2'][1]"/>
         
         <xsl:for-each select="marc:subfield[@code = 'a'] | marc:subfield[@code = 'z']">
             <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., ., '', 'nomen')}">
@@ -527,7 +527,9 @@
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10003"/>
                 <rdaid:P40001>{concat($controlNumber, 'ite#', $genID)}</rdaid:P40001>
                 <rdaio:P40049 rdf:resource="{concat($baseIRI,'man')}"/>
-                <xsl:copy-of select="m2r:s5Lookup(marc:subfield[@code = '5'])"/>
+                <xsl:for-each select="marc:subfield[@code='5']">
+                    <xsl:copy-of select="m2r:s5Lookup(marc:subfield[@code = '5'])"/>
+                </xsl:for-each>
             </rdf:Description>
         </xsl:if>
     </xsl:template>
@@ -1127,8 +1129,8 @@
         </xsl:if>
 
         <!-- Row 40: Map each language code in $a as separate element value when $2=iso (aggWor) -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
-            <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
+            <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'a']">
                 <!-- Check if the value length is divisible by 3 -->
                 <xsl:choose>
@@ -1152,7 +1154,7 @@
         </xsl:if>
 
         <!-- Row 41: Map each language code in $a as separate element value when $2 is present but NOT iso -->
-        <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'][1], 'iso'))">
             <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'a']">
                 <rdawo:P10353 rdf:resource="{m2r:conceptIRI($sub2, normalize-space(.))}"/>
@@ -1206,8 +1208,8 @@
         </xsl:if>
 
         <!-- Row 45: Map each language code in $d as separate element value when $2=iso -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
-            <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
+            <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'd']">
                 <!-- Check if the value length is divisible by 3 -->
                 <xsl:choose>
@@ -1231,7 +1233,7 @@
         </xsl:if>        
 
         <!-- Row 46: Map each language code in $d as separate element value when $2 is present but NOT iso -->
-        <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'][1], 'iso'))">
             <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'd']">
                 <rdawo:P10353 rdf:resource="{m2r:conceptIRI($sub2, normalize-space(.))}"/>
@@ -1295,9 +1297,9 @@
         </xsl:if>
 
         <!-- Row 52: Note for subfield $a - Language of text/sound track or separate title with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 'a']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdawd:P10330>
                     <xsl:text>Language of text/sound track or separate title: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'a']">
@@ -1365,9 +1367,9 @@
         </xsl:if>
 
         <!-- Row 54: Note for subfield $d - Language code of sung or spoken text with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 'd']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdawd:P10330>
                     <xsl:text>Language code of sung or spoken text: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'd']">
@@ -1435,9 +1437,9 @@
         </xsl:if>
 
         <!-- Row 57: Note for subfield $b - Language of summary or abstract with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 'b']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdawd:P10330>
                     <xsl:text>Language of summary or abstract: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'b']">
@@ -1493,9 +1495,9 @@
         </xsl:if>
 
         <!-- Row 59: Note for subfield $e - Language of librettos with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 'e']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdawd:P10330>
                     <xsl:text>Language of librettos: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'e']">
@@ -1563,9 +1565,9 @@
         </xsl:if>
 
         <!-- Row 61: Note for subfield $f - Language of table of contents with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 'f']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdawd:P10330>
                     <xsl:text>Language of table of contents: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'f']">
@@ -1633,9 +1635,9 @@
         </xsl:if>
 
         <!-- Row 63: Note for subfield $g - Language of accompanying material other than librettos and transcripts with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 'g']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdawd:P10330>
                     <xsl:text>Language of accompanying material other than librettos and transcripts: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'g']">
@@ -1703,9 +1705,9 @@
         </xsl:if>
 
         <!-- Row 65: Note for subfield $i - Language of intertitles with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 'i']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdawd:P10330>
                     <xsl:text>Language of intertitles: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'i']">
@@ -1773,9 +1775,9 @@
         </xsl:if>
 
         <!-- Row 67: Note for subfield $j - Language of subtitles with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 'j']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdawd:P10330>
                     <xsl:text>Language of subtitles: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'j']">
@@ -1843,9 +1845,9 @@
         </xsl:if>
 
         <!-- Row 69: Note for subfield $p - Language of captions with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 'p']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdawd:P10330>
                     <xsl:text>Language of captions: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'p']">
@@ -1913,9 +1915,9 @@
         </xsl:if>
 
         <!-- Row 71: Note for subfield $q - Language of accessible audio with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 'q']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdawd:P10330>
                     <xsl:text>Language of accessible audio: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'q']">
@@ -1983,9 +1985,9 @@
         </xsl:if>
 
         <!-- Row 73: Note for subfield $r - Language of accessible visual language (non-textual) with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 'r']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdawd:P10330>
                     <xsl:text>Language of subtitles: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'r']">
@@ -2053,9 +2055,9 @@
         </xsl:if>
 
         <!-- Row 75: Note for subfield $t - Language of accompanying transcripts for audiovisual materials with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 't']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdawd:P10330>
                     <xsl:text>Language of accompanying transcripts for audiovisual materials: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 't']">
@@ -2135,8 +2137,8 @@
         </xsl:if>
         
         <!-- Row 9: Map each language code in $a as separate element value when $2=iso (seWor/augWor) -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
-            <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
+            <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'a']">
                 <!-- Check if the value length is divisible by 3 -->
                 <xsl:choose>
@@ -2160,7 +2162,7 @@
         </xsl:if>
 
         <!-- Row 10: Map each language code in $a as separate element value when $2 is present but NOT iso -->
-        <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'][1], 'iso'))">
             <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'a']">
                 <rdaeo:P20006 rdf:resource="{m2r:conceptIRI($sub2, normalize-space(.))}"/>
@@ -2214,8 +2216,8 @@
         </xsl:if>
 
         <!-- Row 14: Map each language code in $d as separate element value when $2=iso (seWor/augWor) -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
-            <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
+            <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'd']">
                 <!-- Check if the value length is divisible by 3 -->
                 <xsl:choose>
@@ -2239,7 +2241,7 @@
         </xsl:if>        
 
         <!-- Row 15: Map each language code in $d as separate element value when $2 is present but NOT iso -->
-        <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'][1], 'iso'))">
             <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'd']">
                 <rdaeo:P20006 rdf:resource="{m2r:conceptIRI($sub2, normalize-space(.))}"/>
@@ -2272,7 +2274,7 @@
         <xsl:if test="(@ind2 = ' ' and not(marc:subfield[@code = '2']))">
             <xsl:if test="marc:subfield[@code = 'a']">
                 <rdaed:P20071>
-                    <xsl:text>Language of text/sound track or separate title: </xsl:text>
+                    <xsl:text>Language code of text/sound track or separate title: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'a']">
                         <!-- Check if the value length is divisible by 3 -->
                         <xsl:choose>
@@ -2304,9 +2306,9 @@
         </xsl:if>
 
         <!-- Row 20: Note for subfield $a - Language of text/sound track or separate title with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 'a']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdaed:P20071>
                     <xsl:text>Language of text/sound track or separate title: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'a']">
@@ -2375,9 +2377,9 @@
         </xsl:if>
 
         <!-- Row 22: Note for subfield $d - Language code of sung or spoken text with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 'd']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdaed:P20071>
                     <xsl:text>Language code of sung or spoken text: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'd']">
@@ -2446,9 +2448,9 @@
         </xsl:if>
 
         <!-- Row 25: Note for subfield $h - Language of original with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 'h']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdaed:P20071>
                     <xsl:text>Language of original: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'h']">
@@ -2517,9 +2519,9 @@
         </xsl:if>
 
         <!-- Row 27: Note for subfield $n - Language of original libretto with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 'n']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdaed:P20071>
                     <xsl:text>Language of original libretto: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'n']">
@@ -2588,9 +2590,9 @@
         </xsl:if>
 
         <!-- Row 29: Note for subfield $k - Language of intermediate translations with $2 -->
-        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'], 'iso')">
+        <xsl:if test="marc:subfield[@code = '2'] and starts-with(marc:subfield[@code = '2'][1], 'iso')">
             <xsl:if test="marc:subfield[@code = 'k']">
-                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2']"/>
+                <xsl:variable name="subfield2Value" select="marc:subfield[@code = '2'][1]"/>
                 <rdaed:P20071>
                     <xsl:text>Language of intermediate translations: </xsl:text>
                     <xsl:for-each select="marc:subfield[@code = 'k']">
@@ -2662,7 +2664,7 @@
                     
                     <!-- Collect all IRIs for this subfield type -->
                     <xsl:variable name="iris">
-                        <xsl:variable name="subfield2Value" select="$parentContext/marc:subfield[@code = '2']"/>
+                        <xsl:variable name="subfield2Value" select="$parentContext/marc:subfield[@code = '2'][1]"/>
                         <xsl:variable name="allIris">
                             <xsl:for-each select="$subfieldValues">
                                 <xsl:variable name="codes" select="replace(., '([a-z]{3})', '$1 ')"/>
@@ -2699,7 +2701,7 @@
     <!-- Rows 10, 15, 41, 46 -->
     <xsl:template match="marc:datafield[@tag = '041'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '041']" 
         mode="con" expand-text="yes">
-        <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'], 'iso'))">
+        <xsl:if test="marc:subfield[@code = '2'] and not(starts-with(marc:subfield[@code = '2'][1], 'iso'))">
             <xsl:variable name="sub2" select="marc:subfield[@code = '2'][1]"/>
             <xsl:for-each select="marc:subfield[@code = 'a']">
                 <rdf:Description rdf:about="{m2r:conceptIRI($sub2, .)}">
@@ -2858,7 +2860,7 @@
         
         <!-- One Nomen per $a (Time period code) -->
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., ., 'MARC 045 Time Period Code', 'timNom')}">
+            <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., ., 'MARC 045 Time Period Code', 'timespan')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10014"/> <!-- Nomen -->
                 <rdand:P80026><xsl:value-of select="normalize-space(.)"/></rdand:P80026> <!-- String value -->
                 <rdand:P80069>MARC 045 Time Period Code</rdand:P80069>
@@ -2874,24 +2876,24 @@
         
         <!-- Row 32: When indicator 1 = 1 (Work) and subfield $j is present (date of last update) -->
         <xsl:if test="@ind1 = '1' and marc:subfield[@code = 'j']">
-            <rdawo:P10219 rdf:resource="{m2r:timespanIRI($baseID, ., marc:subfield[@code = 'j'])}"/>
+            <rdawo:P10219 rdf:resource="{m2r:timespanIRI($baseID, ., marc:subfield[@code = 'j'][1])}"/>
         </xsl:if>
         
         <!-- Row 35: When subfields $k and $l are present (range of creation dates) -->
         <xsl:if test="marc:subfield[@code = 'k'] and marc:subfield[@code = 'l']">
-            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'k'], ' - ', marc:subfield[@code = 'l'])"/>
+            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'k'][1], ' - ', marc:subfield[@code = 'l'][1])"/>
             <rdawo:P10317 rdf:resource="{m2r:timespanIRI($baseID, ., $dateSuffix)}"/>
         </xsl:if>
         
         <!-- Row 37: When indicator 1 = 1 (Work) and subfields $m and $n are present -->
         <xsl:if test="@ind1 = '1' and marc:subfield[@code = 'm'] and marc:subfield[@code = 'n']">
-            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
+            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'm'][1], ' - ', marc:subfield[@code = 'n'][1])"/>
             <rdawo:P10317 rdf:resource="{m2r:timespanIRI($baseID, ., $dateSuffix)}"/>
         </xsl:if>
 
         <!-- Row 40: When $o and $p are present -->
         <xsl:if test="marc:subfield[@code = 'o'] and marc:subfield[@code = 'p']">
-            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'o'], ' - ', marc:subfield[@code = 'p'])"/>
+            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'o'][1], ' - ', marc:subfield[@code = 'p'][1])"/>
             <rdawo:P10317 rdf:resource="{m2r:timespanIRI($baseID, ., $dateSuffix)}"/>
         </xsl:if>
 
@@ -2903,30 +2905,30 @@
                     <!-- b|c and d|e combination -->
                     <xsl:when test="(marc:subfield[@code = 'b'] or marc:subfield[@code = 'c']) and (marc:subfield[@code = 'd'] or marc:subfield[@code = 'e'])">
                         <xsl:value-of select="concat(
-                            if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], 'B.C.E.')
-                            else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c']
+                            if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'][1], 'B.C.E.')
+                            else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c'][1]
                             else '',
                             '-',
-                            if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], 'B.C.E.')
-                            else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e']
+                            if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'][1], 'B.C.E.')
+                            else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e'][1]
                             else ''
                         )"/>
                     </xsl:when>
                     <!-- j alone -->
                     <xsl:when test="marc:subfield[@code = 'j']">
-                        <xsl:value-of select="marc:subfield[@code = 'j']"/>
+                        <xsl:value-of select="marc:subfield[@code = 'j'][1]"/>
                     </xsl:when>
                     <!-- k and l combination -->
                     <xsl:when test="marc:subfield[@code = 'k'] and marc:subfield[@code = 'l']">
-                        <xsl:value-of select="concat(marc:subfield[@code = 'k'], ' - ', marc:subfield[@code = 'l'])"/>
+                        <xsl:value-of select="concat(marc:subfield[@code = 'k'][1], ' - ', marc:subfield[@code = 'l'][1])"/>
                     </xsl:when>
                     <!-- m and n combination -->
                     <xsl:when test="marc:subfield[@code = 'm'] and marc:subfield[@code = 'n']">
-                        <xsl:value-of select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
+                        <xsl:value-of select="concat(marc:subfield[@code = 'm'][1], ' - ', marc:subfield[@code = 'n'][1])"/>
                     </xsl:when>
                     <!-- o and p combination -->
                     <xsl:when test="marc:subfield[@code = 'o'] and marc:subfield[@code = 'p']">
-                        <xsl:value-of select="concat(marc:subfield[@code = 'o'], ' - ', marc:subfield[@code = 'p'])"/>
+                        <xsl:value-of select="concat(marc:subfield[@code = 'o'][1], ' - ', marc:subfield[@code = 'p'][1])"/>
                     </xsl:when>
                     <!-- fallback for any other combination -->
                     <xsl:otherwise>
@@ -2941,7 +2943,7 @@
         <xsl:if test="marc:subfield[@code = 'k']">
             <rdawd:P10330>
                 <xsl:text>Beginning or single date created: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'k']"/>
+                <xsl:value-of select="marc:subfield[@code = 'k'][1]"/>
             </rdawd:P10330>
         </xsl:if>
 
@@ -2949,7 +2951,7 @@
         <xsl:if test="marc:subfield[@code = 'l']">
             <rdawd:P10330>
                 <xsl:text>Ending date created: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'l']"/>
+                <xsl:value-of select="marc:subfield[@code = 'l'][1]"/>
             </rdawd:P10330>
         </xsl:if>
 
@@ -2957,7 +2959,7 @@
         <xsl:if test="@ind1 = '1' and marc:subfield[@code = 'm']">
             <rdawd:P10330>
                 <xsl:text>Beginning of date valid: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'm']"/>
+                <xsl:value-of select="marc:subfield[@code = 'm'][1]"/>
             </rdawd:P10330>
         </xsl:if>
 
@@ -2965,7 +2967,7 @@
         <xsl:if test="@ind1 = '1' and marc:subfield[@code = 'n']">
             <rdawd:P10330>
                 <xsl:text>End of date valid: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'n']"/>
+                <xsl:value-of select="marc:subfield[@code = 'n'][1]"/>
             </rdawd:P10330>
         </xsl:if>
 
@@ -2973,7 +2975,7 @@
         <xsl:if test="marc:subfield[@code = 'o']">
             <rdawd:P10330>
                 <xsl:text>Single or starting date for aggregated content: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'o']"/>
+                <xsl:value-of select="marc:subfield[@code = 'o'][1]"/>
             </rdawd:P10330>
         </xsl:if>
 
@@ -2981,16 +2983,18 @@
         <xsl:if test="marc:subfield[@code = 'p']">
             <rdawd:P10330>
                 <xsl:text>Ending date for aggregated content: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'p']"/>
+                <xsl:value-of select="marc:subfield[@code = 'p'][1]"/>
             </rdawd:P10330>
         </xsl:if>
 
         <!-- Row 78 -->
         <xsl:if test="@ind1 = '1' and marc:subfield[@code = '3']">
-            <rdawd:P10403>
-                <xsl:text>Applies to: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = '3']"/>
-            </rdawd:P10403>
+            <xsl:for-each select="marc:subfield[@code='3']">
+                <rdawd:P10403>
+                    <xsl:text>Applies to: </xsl:text>
+                    <xsl:value-of select="marc:subfield[@code = '3']"/>
+                </rdawd:P10403>
+            </xsl:for-each>
         </xsl:if>
 
     </xsl:template>
@@ -3002,12 +3006,12 @@
         
         <!-- Row 33: When indicator 1 = 2 (Expression) and subfield $j is present (date of last update) -->
         <xsl:if test="@ind1 = '2' and marc:subfield[@code = 'j']">
-            <rdaeo:P20214 rdf:resource="{m2r:timespanIRI($baseID, ., marc:subfield[@code = 'j'])}"/>
+            <rdaeo:P20214 rdf:resource="{m2r:timespanIRI($baseID, ., marc:subfield[@code = 'j'][1])}"/>
         </xsl:if>
         
         <!-- Row 38: When indicator 1 = 2 (Expression) and subfields $m and $n are present -->
         <xsl:if test="@ind1 = '2' and marc:subfield[@code = 'm'] and marc:subfield[@code = 'n']">
-            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
+            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'm'][1], ' - ', marc:subfield[@code = 'n'][1])"/>
             <rdaeo:P20307 rdf:resource="{m2r:timespanIRI($baseID, ., $dateSuffix)}"/>
         </xsl:if>
 
@@ -3019,30 +3023,30 @@
                     <!-- b|c and d|e combination -->
                     <xsl:when test="(marc:subfield[@code = 'b'] or marc:subfield[@code = 'c']) and (marc:subfield[@code = 'd'] or marc:subfield[@code = 'e'])">
                         <xsl:value-of select="concat(
-                            if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], 'B.C.E.')
-                            else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c']
+                            if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'][1], 'B.C.E.')
+                            else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c'][1]
                             else '',
                             '-',
-                            if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], 'B.C.E.')
-                            else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e']
+                            if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'][1], 'B.C.E.')
+                            else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e'][1]
                             else ''
                         )"/>
                     </xsl:when>
                     <!-- j alone -->
                     <xsl:when test="marc:subfield[@code = 'j']">
-                        <xsl:value-of select="marc:subfield[@code = 'j']"/>
+                        <xsl:value-of select="marc:subfield[@code = 'j'][1]"/>
                     </xsl:when>
                     <!-- k and l combination -->
                     <xsl:when test="marc:subfield[@code = 'k'] and marc:subfield[@code = 'l']">
-                        <xsl:value-of select="concat(marc:subfield[@code = 'k'], ' - ', marc:subfield[@code = 'l'])"/>
+                        <xsl:value-of select="concat(marc:subfield[@code = 'k'][1], ' - ', marc:subfield[@code = 'l'][1])"/>
                     </xsl:when>
                     <!-- m and n combination -->
                     <xsl:when test="marc:subfield[@code = 'm'] and marc:subfield[@code = 'n']">
-                        <xsl:value-of select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
+                        <xsl:value-of select="concat(marc:subfield[@code = 'm'][1], ' - ', marc:subfield[@code = 'n'][1])"/>
                     </xsl:when>
                     <!-- o and p combination -->
                     <xsl:when test="marc:subfield[@code = 'o'] and marc:subfield[@code = 'p']">
-                        <xsl:value-of select="concat(marc:subfield[@code = 'o'], ' - ', marc:subfield[@code = 'p'])"/>
+                        <xsl:value-of select="concat(marc:subfield[@code = 'o'][1], ' - ', marc:subfield[@code = 'p'][1])"/>
                     </xsl:when>
                     <!-- fallback for any other combination -->
                     <xsl:otherwise>
@@ -3057,7 +3061,7 @@
         <xsl:if test="@ind1 = '2' and marc:subfield[@code = 'm']">
             <rdaed:P20071>
                 <xsl:text>Beginning of date valid: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'm']"/>
+                <xsl:value-of select="marc:subfield[@code = 'm'][1]"/>
             </rdaed:P20071>
         </xsl:if>
 
@@ -3065,7 +3069,7 @@
         <xsl:if test="@ind1 = '2' and marc:subfield[@code = 'n']">
             <rdaed:P20071>
                 <xsl:text>End of date valid: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'n']"/>
+                <xsl:value-of select="marc:subfield[@code = 'n'][1]"/>
             </rdaed:P20071>
         </xsl:if>
     
@@ -3080,12 +3084,12 @@
         <xsl:if test="marc:subfield[@code = 'a'] = 'q' and (marc:subfield[@code = 'b' or @code = 'c'] or marc:subfield[@code = 'd' or @code = 'e'])">
             <!-- Create dynamic suffix based on date values -->
             <xsl:variable name="dateSuffix" select="concat(
-                if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], 'B.C.E.')
-                else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c']
+                if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'][1], 'B.C.E.')
+                else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c'][1]
                 else '',
                 '-',
-                if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], 'B.C.E.')
-                else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e']
+                if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'][1], 'B.C.E.')
+                else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e'][1]
                 else ''
             )"/>
             <rdamo:P30273 rdf:resource="{m2r:timespanIRI($baseID, ., $dateSuffix)}"/>
@@ -3095,12 +3099,12 @@
         <xsl:if test="marc:subfield[@code = 'a'] = 'i' and (marc:subfield[@code = 'b' or @code = 'c'] or marc:subfield[@code = 'd' or @code = 'e'])">
             <!-- Create dynamic suffix based on date values -->
             <xsl:variable name="dateSuffix" select="concat(
-                if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], 'B.C.E.')
-                else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c']
+                if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'][1], 'B.C.E.')
+                else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c'][1]
                 else '',
                 '-',
-                if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], 'B.C.E.')
-                else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e']
+                if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'][1], 'B.C.E.')
+                else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e'][1]
                 else ''
             )"/>
             <rdamo:P30273 rdf:resource="{m2r:timespanIRI($baseID, ., $dateSuffix)}"/>
@@ -3110,12 +3114,12 @@
         <xsl:if test="marc:subfield[@code = 'a'] = 'k' and (marc:subfield[@code = 'b' or @code = 'c'] or marc:subfield[@code = 'd' or @code = 'e'])">
             <!-- Create dynamic suffix based on date values -->
             <xsl:variable name="dateSuffix" select="concat(
-                if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], 'B.C.E.')
-                else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c']
+                if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'][1], 'B.C.E.')
+                else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c'][1]
                 else '',
                 '-',
-                if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], 'B.C.E.')
-                else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e']
+                if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'][1], 'B.C.E.')
+                else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e'][1]
                 else ''
             )"/>
             <rdamo:P30273 rdf:resource="{m2r:timespanIRI($baseID, ., $dateSuffix)}"/>
@@ -3125,12 +3129,12 @@
         <xsl:if test="marc:subfield[@code = 'a'] = 'm' and (marc:subfield[@code = 'b' or @code = 'c'] or marc:subfield[@code = 'd' or @code = 'e'])">
             <!-- Create dynamic suffix based on date values -->
             <xsl:variable name="dateSuffix" select="concat(
-                if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], 'B.C.E.')
-                else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c']
+                if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'][1], 'B.C.E.')
+                else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c'][1]
                 else '',
                 '-',
-                if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], 'B.C.E.')
-                else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e']
+                if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'][1], 'B.C.E.')
+                else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e'][1]
                 else ''
             )"/>
             <rdamo:P30273 rdf:resource="{m2r:timespanIRI($baseID, ., $dateSuffix)}"/>
@@ -3138,23 +3142,23 @@
         
         <!-- Row 31: When indicator 1 = # (blank) and subfield $j is present (date of last update) -->
         <xsl:if test="@ind1 = ' ' and marc:subfield[@code = 'j']">
-            <rdamo:P30278 rdf:resource="{m2r:timespanIRI($baseID, ., marc:subfield[@code = 'j'])}"/>
+            <rdamo:P30278 rdf:resource="{m2r:timespanIRI($baseID, ., marc:subfield[@code = 'j'][1])}"/>
         </xsl:if>
         
         <!-- Row 34: When indicator 1 = 3 (Manifestation) and subfield $j is present (date of last update) -->
         <xsl:if test="@ind1 = '3' and marc:subfield[@code = 'j']">
-            <rdamo:P30278 rdf:resource="{m2r:timespanIRI($baseID, ., marc:subfield[@code = 'j'])}"/>
+            <rdamo:P30278 rdf:resource="{m2r:timespanIRI($baseID, ., marc:subfield[@code = 'j'][1])}"/>
         </xsl:if>
         
         <!-- Row 36: When indicator 1 = # (blank) and subfields $m and $n are present (date span for validity) -->
         <xsl:if test="@ind1 = ' ' and marc:subfield[@code = 'm'] and marc:subfield[@code = 'n']">
-            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
+            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'm'][1], ' - ', marc:subfield[@code = 'n'][1])"/>
             <rdamo:P30273 rdf:resource="{m2r:timespanIRI($baseID, ., $dateSuffix)}"/>
         </xsl:if>
         
         <!-- Row 39: When indicator 1 = 3 (Manifestation) and subfields $m and $n are present -->
         <xsl:if test="@ind1 = '3' and marc:subfield[@code = 'm'] and marc:subfield[@code = 'n']">
-            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
+            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'm'][1], ' - ', marc:subfield[@code = 'n'][1])"/>
             <rdamo:P30273 rdf:resource="{m2r:timespanIRI($baseID, ., $dateSuffix)}"/>
         </xsl:if>
 
@@ -3166,30 +3170,30 @@
                     <!-- b|c and d|e combination -->
                     <xsl:when test="(marc:subfield[@code = 'b'] or marc:subfield[@code = 'c']) and (marc:subfield[@code = 'd'] or marc:subfield[@code = 'e'])">
                         <xsl:value-of select="concat(
-                            if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], 'B.C.E.')
-                            else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c']
+                            if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'][1], 'B.C.E.')
+                            else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c'][1]
                             else '',
                             '-',
-                            if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], 'B.C.E.')
-                            else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e']
+                            if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'][1], 'B.C.E.')
+                            else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e'][1]
                             else ''
                         )"/>
                     </xsl:when>
                     <!-- j alone -->
                     <xsl:when test="marc:subfield[@code = 'j']">
-                        <xsl:value-of select="marc:subfield[@code = 'j']"/>
+                        <xsl:value-of select="marc:subfield[@code = 'j'][1]"/>
                     </xsl:when>
                     <!-- k and l combination -->
                     <xsl:when test="marc:subfield[@code = 'k'] and marc:subfield[@code = 'l']">
-                        <xsl:value-of select="concat(marc:subfield[@code = 'k'], ' - ', marc:subfield[@code = 'l'])"/>
+                        <xsl:value-of select="concat(marc:subfield[@code = 'k'][1], ' - ', marc:subfield[@code = 'l'][1])"/>
                     </xsl:when>
                     <!-- m and n combination -->
                     <xsl:when test="marc:subfield[@code = 'm'] and marc:subfield[@code = 'n']">
-                        <xsl:value-of select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
+                        <xsl:value-of select="concat(marc:subfield[@code = 'm'][1], ' - ', marc:subfield[@code = 'n'][1])"/>
                     </xsl:when>
                     <!-- o and p combination -->
                     <xsl:when test="marc:subfield[@code = 'o'] and marc:subfield[@code = 'p']">
-                        <xsl:value-of select="concat(marc:subfield[@code = 'o'], ' - ', marc:subfield[@code = 'p'])"/>
+                        <xsl:value-of select="concat(marc:subfield[@code = 'o'][1], ' - ', marc:subfield[@code = 'p'][1])"/>
                     </xsl:when>
                     <!-- fallback for any other combination -->
                     <xsl:otherwise>
@@ -3204,38 +3208,13 @@
         <xsl:if test="marc:subfield[@code = 'a'] = 't' and marc:subfield[@code = ('d','e')]">
             <xsl:if test="marc:subfield[@code = 'd']">
                 <rdamd:P30007>
-                    <xsl:value-of select="marc:subfield[@code = 'd']"/>
+                    <xsl:value-of select="marc:subfield[@code = 'd'][1]"/>
                 </rdamd:P30007>
             </xsl:if>
             <xsl:if test="marc:subfield[@code = 'e']">
                 <rdamd:P30007>
-                    <xsl:value-of select="marc:subfield[@code = 'e']"/>
+                    <xsl:value-of select="marc:subfield[@code = 'e'][1]"/>
                 </rdamd:P30007>
-            </xsl:if>
-        </xsl:if>
-
-        <!-- Row 45, 68-71, 72-75 -->
-        <xsl:if test="not(marc:subfield[@code = ('b','c','d','e','j','k','l','m','n','o','p')]) and marc:subfield[@code = ('x','z')]">
-            <xsl:if test="marc:subfield[@code = 'x'] and marc:subfield[@code = 'z']">
-                <xsl:variable name="xValue" select="number(marc:subfield[@code = 'x'])"/>
-                <xsl:variable name="zValue" select="number(marc:subfield[@code = 'z'])"/>
-                <xsl:if test="string($xValue) != 'NaN' and string($zValue) != 'NaN'">
-                    <rdatd:P70045>
-                        <xsl:value-of select="$xValue + $zValue"/>
-                    </rdatd:P70045>
-                </xsl:if>
-            </xsl:if>
-            <!-- Rows 68-71: emit $x as note when present -->
-            <xsl:if test="marc:subfield[@code = 'x']">
-                <rdatd:P70045>
-                    <xsl:value-of select="marc:subfield[@code = 'x']"/>
-                </rdatd:P70045>
-            </xsl:if>
-            <!-- Rows 72-75: emit $z as note when present -->
-            <xsl:if test="marc:subfield[@code = 'z']">
-                <rdatd:P70045>
-                    <xsl:value-of select="marc:subfield[@code = 'z']"/>
-                </rdatd:P70045>
             </xsl:if>
         </xsl:if>
 
@@ -3245,11 +3224,11 @@
                 <xsl:text>Reprint/reissue date: </xsl:text>
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = 'b']">
-                        <xsl:value-of select="marc:subfield[@code = 'b']"/>
+                        <xsl:value-of select="marc:subfield[@code = 'b'][1]"/>
                         <xsl:text> B.C.E.</xsl:text>
                     </xsl:when>
                     <xsl:when test="marc:subfield[@code = 'c']">
-                        <xsl:value-of select="marc:subfield[@code = 'c']"/>
+                        <xsl:value-of select="marc:subfield[@code = 'c'][1]"/>
                     </xsl:when>
                 </xsl:choose>
                 <xsl:if test="marc:subfield[@code = '3']">
@@ -3266,11 +3245,11 @@
                 <xsl:text>Original date: </xsl:text>
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = 'd']">
-                        <xsl:value-of select="marc:subfield[@code = 'd']"/>
+                        <xsl:value-of select="marc:subfield[@code = 'd'][1]"/>
                         <xsl:text> B.C.E.</xsl:text>
                     </xsl:when>
                     <xsl:when test="marc:subfield[@code = 'e']">
-                        <xsl:value-of select="marc:subfield[@code = 'e']"/>
+                        <xsl:value-of select="marc:subfield[@code = 'e'][1]"/>
                     </xsl:when>
                 </xsl:choose>
                 <xsl:if test="marc:subfield[@code = '3']">
@@ -3287,11 +3266,11 @@
                 <xsl:text>Single date of distribution, publication, release, production, execution, writing, or a probable date: </xsl:text>
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = 'b']">
-                        <xsl:value-of select="marc:subfield[@code = 'b']"/>
+                        <xsl:value-of select="marc:subfield[@code = 'b'][1]"/>
                         <xsl:text> B.C.E.</xsl:text>
                     </xsl:when>
                     <xsl:when test="marc:subfield[@code = 'c']">
-                        <xsl:value-of select="marc:subfield[@code = 'c']"/>
+                        <xsl:value-of select="marc:subfield[@code = 'c'][1]"/>
                     </xsl:when>
                 </xsl:choose>
                 <xsl:if test="marc:subfield[@code = '3']">
@@ -3308,11 +3287,11 @@
                 <xsl:text>Date of distribution/release/issue: </xsl:text>
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = 'b']">
-                        <xsl:value-of select="marc:subfield[@code = 'b']"/>
+                        <xsl:value-of select="marc:subfield[@code = 'b'][1]"/>
                         <xsl:text> B.C.E.</xsl:text>
                     </xsl:when>
                     <xsl:when test="marc:subfield[@code = 'c']">
-                        <xsl:value-of select="marc:subfield[@code = 'c']"/>
+                        <xsl:value-of select="marc:subfield[@code = 'c'][1]"/>
                     </xsl:when>
                 </xsl:choose>
                 <xsl:if test="marc:subfield[@code = '3']">
@@ -3328,11 +3307,11 @@
             <rdamd:P30009>
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = 'd']">
-                        <xsl:value-of select="marc:subfield[@code = 'd']"/>
+                        <xsl:value-of select="marc:subfield[@code = 'd'][1]"/>
                         <xsl:text> B.C.E.</xsl:text>
                     </xsl:when>
                     <xsl:when test="marc:subfield[@code = 'e']">
-                        <xsl:value-of select="marc:subfield[@code = 'e']"/>
+                        <xsl:value-of select="marc:subfield[@code = 'e'][1]"/>
                     </xsl:when>
                 </xsl:choose>
             </rdamd:P30009>
@@ -3344,11 +3323,11 @@
                 <xsl:text>Date of publication/release/production/execution: </xsl:text>
                 <xsl:choose>
                     <xsl:when test="marc:subfield[@code = 'b']">
-                        <xsl:value-of select="marc:subfield[@code = 'b']"/>
+                        <xsl:value-of select="marc:subfield[@code = 'b'][1]"/>
                         <xsl:text> B.C.E.</xsl:text>
                     </xsl:when>
                     <xsl:when test="marc:subfield[@code = 'c']">
-                        <xsl:value-of select="marc:subfield[@code = 'c']"/>
+                        <xsl:value-of select="marc:subfield[@code = 'c'][1]"/>
                     </xsl:when>
                 </xsl:choose>
                 <xsl:if test="marc:subfield[@code = '3']">
@@ -3363,7 +3342,7 @@
         <xsl:if test="marc:subfield[@code = 'a'] = 'x' and marc:subfield[@code = 'c']">
             <rdamd:P30137>
                 <xsl:text>Incorrect date 1: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'c']"/>
+                <xsl:value-of select="marc:subfield[@code = 'c'][1]"/>
                 <xsl:if test="marc:subfield[@code = '3']">
                     <xsl:text> (Applies to: </xsl:text>
                     <xsl:value-of select="marc:subfield[@code = '3']"/>
@@ -3376,7 +3355,7 @@
         <xsl:if test="marc:subfield[@code = 'a'] = 'x' and marc:subfield[@code = 'e']">
             <rdamd:P30137>
                 <xsl:text>Incorrect date 2: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'e']"/>
+                <xsl:value-of select="marc:subfield[@code = 'e'][1]"/>
                 <xsl:if test="marc:subfield[@code = '3']">
                     <xsl:text> (Applies to: </xsl:text>
                     <xsl:value-of select="marc:subfield[@code = '3']"/>
@@ -3401,7 +3380,7 @@
         <xsl:if test="not(@ind1 = '1' or @ind1 = '2' or @ind1 = '3') and marc:subfield[@code = 'm']">
             <rdamd:P30137>
                 <xsl:text>Beginning of date valid: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'm']"/>
+                <xsl:value-of select="marc:subfield[@code = 'm'][1]"/>
                 <xsl:if test="marc:subfield[@code = '3']">
                     <xsl:text> (Applies to: </xsl:text>
                     <xsl:value-of select="marc:subfield[@code = '3']"/>
@@ -3414,7 +3393,7 @@
         <xsl:if test="@ind1 = '3' and marc:subfield[@code = 'm']">
             <rdamd:P30137>
                 <xsl:text>Beginning of date valid: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'm']"/>
+                <xsl:value-of select="marc:subfield[@code = 'm'][1]"/>
                 <xsl:if test="marc:subfield[@code = '3']">
                     <xsl:text> (Applies to: </xsl:text>
                     <xsl:value-of select="marc:subfield[@code = '3']"/>
@@ -3427,7 +3406,7 @@
         <xsl:if test="not(@ind1 = '1' or @ind1 = '2' or @ind1 = '3') and marc:subfield[@code = 'n']">
             <rdamd:P30137>
                 <xsl:text>End of date valid: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'n']"/>
+                <xsl:value-of select="marc:subfield[@code = 'n'][1]"/>
                 <xsl:if test="marc:subfield[@code = '3']">
                     <xsl:text> (Applies to: </xsl:text>
                     <xsl:value-of select="marc:subfield[@code = '3']"/>
@@ -3440,7 +3419,7 @@
         <xsl:if test="@ind1 = '3' and marc:subfield[@code = 'n']">
             <rdamd:P30137>
                 <xsl:text>End of date valid: </xsl:text>
-                <xsl:value-of select="marc:subfield[@code = 'n']"/>
+                <xsl:value-of select="marc:subfield[@code = 'n'][1]"/>
                 <xsl:if test="marc:subfield[@code = '3']">
                     <xsl:text> (Applies to: </xsl:text>
                     <xsl:value-of select="marc:subfield[@code = '3']"/>
@@ -3460,12 +3439,12 @@
         <xsl:if test="marc:subfield[@code = 'a'] = ('q', 'i', 'k', 'm') and (marc:subfield[@code = 'b' or @code = 'c'] or marc:subfield[@code = 'd' or @code = 'e'])">
             <!-- Create dynamic suffix based on date values -->
             <xsl:variable name="dateSuffix" select="concat(
-                if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'], 'B.C.E.')
-                else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c']
+                if (marc:subfield[@code = 'b']) then concat(marc:subfield[@code = 'b'][1], 'B.C.E.')
+                else if (marc:subfield[@code = 'c']) then marc:subfield[@code = 'c'][1]
                 else '',
                 '-',
-                if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'], 'B.C.E.')
-                else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e']
+                if (marc:subfield[@code = 'd']) then concat(marc:subfield[@code = 'd'][1], 'B.C.E.')
+                else if (marc:subfield[@code = 'e']) then marc:subfield[@code = 'e'][1]
                 else ''
             )"/>
             
@@ -3490,14 +3469,14 @@
         <xsl:if test="marc:subfield[@code = 'j']">
             <xsl:call-template name="F046-timespan">
                 <xsl:with-param name="baseID" select="$baseID"/>
-                <xsl:with-param name="suffix" select="marc:subfield[@code = 'j']"/>
+                <xsl:with-param name="suffix" select="marc:subfield[@code = 'j'][1]"/>
                 <xsl:with-param name="note" select="''"/>
             </xsl:call-template>
         </xsl:if>
         
         <!-- Row 35: Work creation range timespan (subfields $k and $l) -->
         <xsl:if test="marc:subfield[@code = 'k'] and marc:subfield[@code = 'l']">
-            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'k'], ' - ', marc:subfield[@code = 'l'])"/>
+            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'k'][1], ' - ', marc:subfield[@code = 'l'][1])"/>
             <xsl:call-template name="F046-timespan">
                 <xsl:with-param name="baseID" select="$baseID"/>
                 <xsl:with-param name="suffix" select="$dateSuffix"/>
@@ -3507,7 +3486,7 @@
         
         <!-- Consolidated timespan creation for $m and $n subfields (Rows 36, 37, 38, 39) -->
         <xsl:if test="marc:subfield[@code = 'm'] and marc:subfield[@code = 'n']">
-            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'm'], ' - ', marc:subfield[@code = 'n'])"/>
+            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'm'][1], ' - ', marc:subfield[@code = 'n'][1])"/>
             <xsl:call-template name="F046-timespan">
                 <xsl:with-param name="baseID" select="$baseID"/>
                 <xsl:with-param name="suffix" select="$dateSuffix"/>
@@ -3517,7 +3496,7 @@
 
         <!-- Row 40: Work creation range timespan (subfields $o and $p) -->
         <xsl:if test="marc:subfield[@code = 'o'] and marc:subfield[@code = 'p']">
-            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'o'], ' - ', marc:subfield[@code = 'p'])"/>
+            <xsl:variable name="dateSuffix" select="concat(marc:subfield[@code = 'o'][1], ' - ', marc:subfield[@code = 'p'][1])"/>
             <xsl:call-template name="F046-timespan">
                 <xsl:with-param name="baseID" select="$baseID"/>
                 <xsl:with-param name="suffix" select="$dateSuffix"/>
@@ -3534,13 +3513,13 @@
         
         <!-- Create nomen for $j and $2 subfields (Rows 31, 32, 33, 34) -->
         <xsl:if test="marc:subfield[@code = 'j']">
-            <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., marc:subfield[@code = 'j'], marc:subfield[@code = '2'], 'timespan')}">
+            <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., marc:subfield[@code = 'j'][1], marc:subfield[@code = '2'][1], 'timespan')}">
                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-                <rdand:P80068><xsl:value-of select="marc:subfield[@code = 'j']"/></rdand:P80068>
+                <rdand:P80068><xsl:value-of select="marc:subfield[@code = 'j'][1]"/></rdand:P80068>
                 <rdand:P80069>
                     <xsl:choose>
                         <xsl:when test="marc:subfield[@code = '2']">
-                            <xsl:value-of select="marc:subfield[@code = '2']"/>
+                            <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
                         </xsl:when>
                         <xsl:otherwise>Representations of Dates and Times (ISO 8601)</xsl:otherwise>
                     </xsl:choose>
@@ -3555,11 +3534,11 @@
         mode="wor" expand-text="yes">
 
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <rdaw:P10004><xsl:value-of select="."/></rdaw:P10004>            
+            <rdawd:P10004><xsl:value-of select="."/></rdawd:P10004>            
         </xsl:for-each>
 
         <xsl:if test="@ind2 = '7' and marc:subfield[@code = '2']">
-            <rdaw:P10406><xsl:value-of select="marc:subfield[@code = '2']"/></rdaw:P10406>
+            <rdawd:P10406><xsl:value-of select="marc:subfield[@code = '2'][1]"/></rdawd:P10406>
         </xsl:if>
     </xsl:template>
     
@@ -3568,12 +3547,20 @@
     <xsl:template match="marc:datafield[@tag = '048'] | marc:datafield[@tag = '880'][substring(marc:subfield[@code = '6'], 1, 3) = '048']" 
         mode="exp" expand-text="yes">
         <xsl:param name="baseID"/>
+        <xsl:variable name="source">
+            <xsl:choose>
+                <xsl:when test="@ind2 = '7'">
+                    <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
+                </xsl:when>
+                <xsl:otherwise>
+                    <xsl:value-of select="'marcmusperf'"/>
+                </xsl:otherwise>
+            </xsl:choose>
+        </xsl:variable>
         <xsl:for-each select="marc:subfield[@code = 'a']">
-            <xsl:variable name="source" select="following-sibling::marc:subfield[@code = 'a'][1]"/>
             <rdaeo:P20215 rdf:resource="{m2r:nomenIRI($baseID, ., ., $source, 'nomen')}"/>
         </xsl:for-each>
         <xsl:for-each select=" marc:subfield[@code = 'b']">
-            <xsl:variable name="source" select="following-sibling::marc:subfield[@code = 'b'][1]"/>
             <rdaeo:P20215 rdf:resource="{m2r:nomenIRI($baseID, ., ., $source, 'nomen')}"/>
         </xsl:for-each>
     </xsl:template> 
@@ -3585,9 +3572,11 @@
             <xsl:variable name="source">
                 <xsl:choose>
                     <xsl:when test="../@ind2 = '7'">
-                        <xsl:value-of select="following-sibling::marc:subfield[@code = '2'][1]"/>
+                        <xsl:value-of select="../marc:subfield[@code = '2'][1]"/>
                     </xsl:when>
-                    <xsl:otherwise>marcmusperf</xsl:otherwise>
+                    <xsl:otherwise>
+                        <xsl:value-of select="'marcmusperf'"/>
+                    </xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
             <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., ., $source, 'nomen')}">
@@ -3605,9 +3594,11 @@
             <xsl:variable name="source">
                 <xsl:choose>
                     <xsl:when test="../@ind2 = '7'">
-                        <xsl:value-of select="following-sibling::marc:subfield[@code = '2'][1]"/>
+                        <xsl:value-of select="../marc:subfield[@code = '2'][1]"/>
                     </xsl:when>
-                    <xsl:otherwise>marcmusperf</xsl:otherwise>
+                    <xsl:otherwise>
+                        <xsl:value-of select="'marcmusperf'"/>
+                    </xsl:otherwise>
                 </xsl:choose>
             </xsl:variable>
             <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., ., $source, 'nomen')}">
@@ -3689,11 +3680,11 @@
                     <xsl:variable name="ap">
                         <xsl:value-of select="concat(../marc:subfield[@code = 'a'][1], .)"/>
                     </xsl:variable>
-                    <rdaw:P10321 rdf:resource="{m2r:placeIRI($baseID, ., $ap, $source)}"/>
+                    <rdawo:P10321 rdf:resource="{m2r:placeIRI($baseID, ., $ap, $source)}"/>
                 </xsl:for-each>
             </xsl:when>
             <xsl:otherwise>
-                <rdaw:P10321 rdf:resource="{m2r:placeIRI($baseID, ., marc:subfield[@code = 'a'], $source)}"/>
+                <rdawo:P10321 rdf:resource="{m2r:placeIRI($baseID, ., marc:subfield[@code = 'a'][1], $source)}"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
@@ -3725,7 +3716,7 @@
             <xsl:when test="marc:subfield[@code = 'b']">
                 <xsl:for-each select="marc:subfield[@code = 'b']">
                     <xsl:variable name="ap">
-                        <xsl:value-of select="concat(../marc:subfield[@code = 'a'], .)"/>
+                        <xsl:value-of select="concat(../marc:subfield[@code = 'a'][1], .)"/>
                     </xsl:variable>
                     <rdf:Description rdf:about="{m2r:placeIRI($baseID, ., $ap, $source)}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
@@ -3739,9 +3730,9 @@
                 </xsl:for-each>
             </xsl:when>
             <xsl:otherwise>
-                <rdf:Description rdf:about="{m2r:placeIRI($baseID, ., marc:subfield[@code = 'a'], $source)}">
+                <rdf:Description rdf:about="{m2r:placeIRI($baseID, ., marc:subfield[@code = 'a'][1], $source)}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10009"/>
-                    <rdapo:P70020 rdf:resource="{m2r:nomenIRI($baseID, ., marc:subfield[@code = 'a'], $source, 'place')}"/>
+                    <rdapo:P70020 rdf:resource="{m2r:nomenIRI($baseID, ., marc:subfield[@code = 'a'][1], $source, 'place')}"/>
                     <xsl:for-each select="marc:subfield[@code = 'd']">
                         <rdapo:P70018 rdf:resource="{m2r:nomenIRI($baseID, ., ., $source, 'place')}"/>
                     </xsl:for-each>
@@ -3777,18 +3768,22 @@
             <xsl:when test="marc:subfield[@code = 'b']">
                 <xsl:for-each select="marc:subfield[@code = 'b']">
                     <xsl:variable name="ap">
-                        <xsl:value-of select="concat(../marc:subfield[@code = 'a'], .)"/>
+                        <xsl:value-of select="concat(../marc:subfield[@code = 'a'][1], .)"/>
                     </xsl:variable>
                     <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., $ap, $source, 'place')}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-                        <rdand:P80068>{$ap}</rdand:P80068>
+                        <rdand:P80068>
+                            <xsl:value-of select="$ap"/>
+                        </rdand:P80068>
                         <xsl:copy-of select="m2r:s2NomenClassSchemes($source)"/>
                     </rdf:Description>
                     <xsl:if test="../marc:subfield[@code = 'd'] and count(../marc:subfield[@code = 'b']) = 1">
                         <xsl:for-each select="marc:subfield[@code = 'd']">
                             <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., ., $source, 'place')}">
                                 <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-                                <rdand:P80068>{.}</rdand:P80068>
+                                <rdand:P80068>
+                                    <xsl:value-of select="."/>
+                                </rdand:P80068>
                                 <xsl:copy-of select="m2r:s2NomenClassSchemes($source)"/>
                             </rdf:Description>
                         </xsl:for-each>
@@ -3796,15 +3791,19 @@
                 </xsl:for-each>
             </xsl:when>
             <xsl:otherwise>
-                <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., marc:subfield[@code = 'a'], $source, 'place')}">
+                <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., marc:subfield[@code = 'a'][1], $source, 'place')}">
                     <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-                    <rdand:P80068>{marc:subfield[@code = 'a']}</rdand:P80068>
+                    <rdand:P80068>
+                        <xsl:value-of select="marc:subfield[@code = 'a'][1]"/>
+                    </rdand:P80068>
                     <xsl:copy-of select="m2r:s2NomenClassSchemes($source)"/>
                 </rdf:Description>
                 <xsl:for-each select="marc:subfield[@code = 'd']">
                     <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., ., $source, 'place')}">
                         <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
-                        <rdand:P80068>{.}</rdand:P80068>
+                        <rdand:P80068>
+                            <xsl:value-of select="."/>
+                        </rdand:P80068>
                         <xsl:copy-of select="m2r:s2NomenClassSchemes($source)"/>
                     </rdf:Description>
                 </xsl:for-each>
@@ -3894,7 +3893,7 @@
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:param name="baseID"/>
         <xsl:variable name="scheme">
-                    <xsl:text>lcc</xsl:text>
+                    <xsl:text>usda</xsl:text>
         </xsl:variable>
         <xsl:variable name="ap">
             <xsl:value-of select="marc:subfield[@code = 'a']"/>
@@ -3908,7 +3907,7 @@
         <!--<call-template name="getmarc"/>-->
       <xsl:param name="baseID"/>
         <xsl:variable name="scheme">
-                    <xsl:text>lcc</xsl:text>
+                    <xsl:text>usda</xsl:text>
         </xsl:variable>
       <xsl:variable name="ap">
           <xsl:value-of select="marc:subfield[@code = 'a']"/>
@@ -4058,7 +4057,7 @@
             <xsl:variable name="normalizedA" select="replace(., '/', '')"/>
             
             <!-- Get edition code from $2 -->
-            <xsl:variable name="editionCode" select="substring(../marc:subfield[@code = '2'], 1, 2)"/>
+            <xsl:variable name="editionCode" select="substring(../marc:subfield[@code = '2'][1], 1, 2)"/>
             
             <xsl:variable name="fullCode">
                 <xsl:choose>
@@ -4086,19 +4085,19 @@
                 <xsl:when test="@ind1 = '0'">
                     <xsl:text>ddcFull</xsl:text>
                     <xsl:if test="marc:subfield[@code = '2']">
-                        <xsl:value-of select="marc:subfield[@code = '2']"/>
+                        <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
                     </xsl:if>
                 </xsl:when>
                 <xsl:when test="@ind1 = '1'">
                     <xsl:text>ddcAbridged</xsl:text>
                     <xsl:if test="marc:subfield[@code = '2']">
-                        <xsl:value-of select="marc:subfield[@code = '2']"/>
+                        <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
                     </xsl:if>
                 </xsl:when>
                 <xsl:otherwise>
                     <xsl:text>ddc</xsl:text>
                     <xsl:if test="marc:subfield[@code = '2']">
-                        <xsl:value-of select="marc:subfield[@code = '2']"/>
+                        <xsl:value-of select="marc:subfield[@code = '2'][1]"/>
                     </xsl:if>
                 </xsl:otherwise>
             </xsl:choose>
@@ -4115,7 +4114,7 @@
         <xsl:variable name="scheme">
                     <xsl:text>ddc</xsl:text>
                     <xsl:if test="marc:subfield[@code = '2']">
-                        <xsl:value-of select="substring(marc:subfield[@code = '2'], 1, 2)"/>
+                        <xsl:value-of select="substring(marc:subfield[@code = '2'][1], 1, 2)"/>
                     </xsl:if>
         </xsl:variable>
         <xsl:variable name="ap">
