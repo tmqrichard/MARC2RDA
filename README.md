@@ -12,6 +12,9 @@ Meeting minutes, guidelines for participation, and more are available [on the wi
 **-Laura Akerman, [lake44me](https://github.com/lake44me), Mapping Contributor**<br>
 _Laura Akerman is a Librarian and Product Manager at Emory University Libraries, where she leads and contributes to technology projects and oversight, including work on multiple discovery systems.  She has served as Chair and is currently a member of the IGELU-ELUNA Linked Open Data Community of Practice Working Group, working with vendor Ex Libris on its plans to incorporate linked data features into products, and has written and presented on linked data topics including BIBFRAME and RDA.  In the past, she led the ALA Catalog Form and Function Interest Group and ALA Library Linked Data Interest Group Tools and Resources Subgroup, and contributed to the SAC Subcommittee on FAST._
 <br><br>
+**-Dana Anderson [ddanderson3](https://github.com/ddanderson3), Mapping Contributor**<br>
+_Dana Anderson is a graduate student in the Master of Library and Information Science program at the University of Washington who is passionate about open linked data and supporting digital transformation initiatives within library systems, by librarians. Dana participates in the MARC2RDA project by contributing to mapping MARC21 bibliographic data into RDA-RDF formats and exploring data transformation for aggregate resources._
+<br><br>
 **-Sita Bhagwandin [SitaKB](https://github.com/SitaKB), Mapping Contributor**<br>
 _Sita Bhagwandin is a bibliographic metadata specialist at the KB, National Library of the Netherlands. She holds a master’s degree in Indology from the University of Utrecht. <br>
 Previously she has worked as a cataloguer at the Utrecht University library for 25 years.<br>
