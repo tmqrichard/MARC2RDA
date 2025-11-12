@@ -22,7 +22,7 @@ She represents the KB, National Library of the Netherlands at the EURIG. <br>
 Her interest is RDA implemented as linked data. She participates in different projects in the Netherlands and abroad concerning the mapping and conversion of legacy bibliographic and authority data into RDA-RDF._
 <br><br>
 **-Doreen Chen [dchen077](https://github.com/dchen077), Mapping Contributor, Transformation Contributor**<br>
-_Doreen Chen (she/her/hers) earned her Master of Library and Information Science degree at the University of Washington. During her time at UW, she worked as a Linked Data Metadata Student Specialist at the University of Washington Libraries and contributed to MARC2RDA among other projects. Her academic interests include open data, data curation, and metadata management. Doreen will join Yale University Libraries as a Metadata Operation Specialist in 2025._
+_Doreen Chen (she/her/hers) is a Metadata Operations Specialist at Yale University Libraries. She earned her Master of Library and Information Science degree from the University of Washington, where she worked as a Linked Data Metadata Student Specialist at the University of Washington Libraries and contributed to the MARC2RDA project._
 <br><br>
 **-Sarah Collins [Sarahanc](https://github.com/Sarahanc), Transformation Contributor**<br>
 _Sarah Collins (she/her/hers) is a graduate student pursuing a Master of Library and Information Science at the University of Washington where she works as a Linked Data Metadata Student Specialist. She has academic and professional interests in cataloging, metadata, taxonomy, and open linked data._
