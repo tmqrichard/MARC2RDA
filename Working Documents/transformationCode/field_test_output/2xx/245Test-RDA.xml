@@ -12,7 +12,7 @@
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test00">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test00"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test00</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -59,7 +59,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test0">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test0"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test0</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -104,7 +104,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test1">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test1"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test1</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -154,7 +154,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test01">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test01"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test01</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -200,7 +200,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test2">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test2"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test2</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -245,7 +245,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test3">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test3"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test3</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -290,7 +290,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test5">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test5"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test5</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -336,7 +336,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test6">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test6"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test6</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -382,7 +382,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test7">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test7"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test7</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -428,7 +428,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test8">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test8"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test8</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -474,7 +474,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test9">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test9"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test9</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -521,7 +521,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test10">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test10"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test10</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -568,7 +568,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test11">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test11"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test11</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -614,7 +614,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test12">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test12"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test12</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -661,7 +661,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test13">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test13"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test13</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -710,7 +710,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test18">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test18"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test18</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -756,7 +756,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test19">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test19"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test19</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -806,7 +806,7 @@ F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1036
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test22">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test22"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test22</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -854,7 +854,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test24">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test24"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test24</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -901,7 +901,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test25">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test25"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test25</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -949,7 +949,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test26">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test26"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test26</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -994,7 +994,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test27">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test27"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test27</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -1040,7 +1040,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test28">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test28"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test28</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -1085,7 +1085,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test29">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test29"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test29</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -1130,7 +1130,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test30">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test30"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test30</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -1177,7 +1177,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test31">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test31"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test31</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -1223,7 +1223,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test32">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test32"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test32</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -1268,7 +1268,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test33">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test33"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test33</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -1317,7 +1317,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test35">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test35"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test35</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -1363,7 +1363,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test36">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test36"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test36</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -1410,7 +1410,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test37">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test37"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test37</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -1455,7 +1455,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test38">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test38"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test38</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -1500,7 +1500,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test39">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test39"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test39</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -1548,7 +1548,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test40">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test40"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test40</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -1597,7 +1597,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test41">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test41"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test41</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -1645,7 +1645,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test42">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test42"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test42</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -1692,7 +1692,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test43">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test43"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test43</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ua 4500
@@ -1739,7 +1739,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test46">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test46"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test46</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553uu 4500
@@ -1786,7 +1786,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test47">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test47"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test47</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553un 4500
@@ -1833,7 +1833,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test48">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test48"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test48</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -1882,7 +1882,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test49">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test49"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test49</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ua 4500
@@ -1931,7 +1931,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test50">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test50"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test50</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553u  4500
@@ -1980,7 +1980,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test51">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test51"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test51</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553uc 4500
@@ -2029,7 +2029,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test52">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test52"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test52</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553uu 4500
@@ -2078,7 +2078,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test53">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test53"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test53</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553un 4500
@@ -2127,7 +2127,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test54">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test54"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test54</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -2177,7 +2177,7 @@ F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1036
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test55">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test55"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test55</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ua 4500
@@ -2227,7 +2227,7 @@ F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1036
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test56">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test56"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test56</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553u  4500
@@ -2276,7 +2276,7 @@ F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1036
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test57">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test57"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test57</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553uc 4500
@@ -2325,7 +2325,7 @@ F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1036
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test58">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test58"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test58</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553uu 4500
@@ -2374,7 +2374,7 @@ F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1036
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test59">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test59"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test59</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553un 4500
@@ -2423,7 +2423,7 @@ F338 ## $1 http://rdaregistry.info/termList/RDACarrierType/1036
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test60">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test60"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test60</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
@@ -2468,7 +2468,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test61">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test61"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test61</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ua 4500
@@ -2513,7 +2513,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test62">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test62"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test62</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553u  4500
@@ -2558,7 +2558,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test63">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test63"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test63</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553uc 4500
@@ -2603,7 +2603,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test64">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test64"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test64</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553uu 4500
@@ -2648,7 +2648,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test65">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test65"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test65</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553un 4500
@@ -2693,7 +2693,7 @@ F336 ## $1 http://rdaregistry.info/termList/RDAContentType/1020
    <rdf:Description rdf:about="http://marc2rda.info/testing/man#marc245-test66">
       <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10007"/>
       <rdamo:P30135 rdf:resource="http://marc2rda.info/testing/wor#marc245-test66"/><!--rdamo:P30135 = has work manifested-->
-      <rdamd:P30335>Metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
+      <rdamd:P30335>metadata manifestation</rdamd:P30335><!--rdamd:P30335 = has category of manifestation-->
       <rdamd:P30004>man#marc245-test66</rdamd:P30004><!--rdamd:P30004 = has identifier for manifestation-->
       <rdamo:P30001 rdf:resource="http://rdaregistry.info/termList/RDACarrierType/1018"/><!--rdamo:P30001 = has carrier type-->
       <rdamd:P30137>F 11111nam a2200553ui 4500
