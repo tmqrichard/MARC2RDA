@@ -868,7 +868,7 @@
         <!--<xsl:call-template name="getmarc"/>-->
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdamd:P30335>
-                <xsl:value-of select="replace(., '\.$', '') => normalize-space()"/>
+                <xsl:value-of select="lower-case(normalize-space(m2r:stripOuterBracketsAndParentheses(m2r:stripEndPunctuation(.))))"/>
             </rdamd:P30335>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'b']">
