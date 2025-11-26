@@ -1702,7 +1702,7 @@
                 </xsl:choose>
             </xsl:variable>
             <rdf:Description rdf:about="{$nomenIRI}">
-                <rdf:type rdf:resource="httsp://rdaregistry.info/Elements/c/C10012"/>
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/>
                 <rdand:P80068>
                     <xsl:value-of select="$prefLabel"/>
                 </rdand:P80068>
