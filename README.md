@@ -34,7 +34,7 @@ _Gordon Dunsire is an independent consultant who lives in Edinburgh, Scotland. H
 **-Deborah Fritz [tmqdeborah](https://github.com/tmqdeborah), Mapping and Transformation and Triplestore Contributor**<br>
 _Deborah Fritz is a semi-retired cataloging trainer who lives in Florida. She was formerly the president of TMQ Inc., a small company that provided training and software for catalogers. She is the co-author of "MARC21 for everyone", author of "Cataloging with AACR2 & MARC21", and co-developer of MARC Report, MARC Review, and MARC Global (quality control and global editing tools for MARC records), and RIMMF (a tool for creating and editing data compliant with RDA) all of which are now available free of charge. She was the former Chair of the RSC Aggregates Working Group and is currently a member of the RSC Technical Working Group._
 <br><br>
-**-Richard Fritz, Triplestore Contributor**<br>
+**-Richard Fritz [tmqrichard](https://github.com/tmqrichard), Triplestore Contributor**<br>
 _Richard Fritz is a retired librarian and software developer. As co-owner of TMQ Inc., he developed a number of commercial software products for quality control of MARC21 records (MARC Review, MARC Report, MARC Global, PLP-MCU). In retirement he continues to enhance RIMMF, a freely available tool for creating and editing data compliant with RDA. He has set up a GraphDB triplestore for the M2R Project and is learning about it as he goes along._
 <br><br>
 **-Dr. Jorge Gómez Briseño, [jorgegomez-bit](https://github.com/jorgegomez-bit), Mapping and Transformation Contributor, Spanish Translation**<br>
