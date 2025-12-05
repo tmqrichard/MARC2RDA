@@ -1055,7 +1055,7 @@
         <xsl:if test="$char04 = 'p'">
             <xsl:choose>
                 <xsl:when test="$char00 = 'd' or $char00 = 'a' or $char00 = 'k'">
-                    <rdamo:P30304 rdf:reosurce="{'http://rdaregistry.info/termList/RDAMaterial/1028'}"/>
+                    <rdamo:P30304 rdf:resource="{'http://rdaregistry.info/termList/RDAMaterial/1028'}"/>
                 </xsl:when>
                 <xsl:when test="$char00 = 'v'">
                     <rdamo:P30104 rdf:resource="{'http://rdaregistry.info/termList/videoFormat/1007'}"/>
@@ -1828,7 +1828,7 @@
         <xsl:variable name="char00" select="substring(., 1, 1)"/>
         <xsl:variable name="char13" select="substring(., 14, 1)"/>
         <xsl:if test="$char00 = 'm' and ($char13 = 'a' or $char13 = 'b' or $char13 = 'c' or $char13 = 'd' or $char13 = 'e' or $char13 = 'f' or $char13 = 'g' or $char13 = 'h' or $char13 = 'i' or $char13 = 'j' or $char13 = 'k' or $char13 = 'l' or $char13 = 'm' or $char13 = 'p' or $char13 = 'q' or $char13 = 'r' or $char13 = 's' or $char13 = 't' or $char13 = 'v' or $char13 = 'z')">
-            <rdamo:P30456 rdf:reosurce="{concat('https://doi.org/10.6069/uwlswd.gdvf-z086#', $char13)}"/>
+            <rdamo:P30456 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.gdvf-z086#', $char13)}"/>
         </xsl:if>
         <xsl:if test="$char00 = 's' and ($char13 = 'a' or $char13 = 'b' or $char13 = 'd' or $char13 = 'e')">
             <rdamo:P30125 rdf:resource="{concat('https://doi.org/10.6069/uwlswd.v4qn-rb56#', $char13)}"/>
