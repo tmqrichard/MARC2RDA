@@ -1468,7 +1468,7 @@
                 </xsl:if>
             </xsl:when>
             <xsl:otherwise>
-                <rdaw:P10004 rdf:resource="{m2r:subjectIRI(., m2r:getSubjectSchemeCode(.), $prefLabel)}"/>
+                <rdawo:P10004 rdf:resource="{m2r:subjectIRI(., m2r:getSubjectSchemeCode(.), $prefLabel)}"/>
             </xsl:otherwise>
         </xsl:choose>
     </xsl:template>
