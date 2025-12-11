@@ -1,4 +1,64 @@
-# Spreadsheet Instructions
+# Phase II Mapping Instructions for Mapping Expression Categories Table
+_Last updated: December 11, 2025_
+
+## Table of Contents
+
+## Table Description
+* [Mapping expression categories.20251121 table](https://docs.google.com/spreadsheets/d/1KACL_nBqdzq60k-kJIDi5DzYhHHAo6Mw/edit?usp=sharing&ouid=106066247188335830400&rtpof=true&sd=true)
+* This table represents a prototype workflow for beginning Phase II mapping work for the M2R project. Major tabs are broken down into a comprehensive list of all RDA Expression elements followed by tabs for several element categories, including appellations, expression-place relationships, expression-timespan relationships, expression-agent relationships, expression-expression relationships, primary (WEMI stack) relationships, special relationships, and high-level relationships. By methodically filling out the element category tabs in this spreadsheet, it is hoped that a coordinated mapping to revise Phase I mappings with the full scope of complexity added by aggregate and diachronic works will be possible. Once expression elements have been completed, a similar approach may be taken with properties for other RDA entities present in MARC21 records for aggregates and diachronic works. 
+### Tabs
+* **Notes:** Includes lists of actions to be taken, a brief explanation of what is included in the overall spreadsheet, and definitions for expression category acronyms used throughout the document
+* **Sources:** Quotes and notes from the RDA Toolkit and other authoritative sources regarding the rest of the spreadsheet
+* **All expr. elements:** A list of all elements in the RDA registry with a domain of rda:Expression. Columns include status, label, curie, datatype, object, domain, range, definition, full URI, RDA Toolkit ID
+* **Expr Attributes:** All attribute properties with domain of expression. Columns include "Expression Attribute elements"/label, RDA curie, Datatype/object, MRC Field, TK R2M, NLNZ R2M, M2R mapping, M2R coding, RDA Vocab, F&M table, Example files, Format, SEM, AMLM, MPW, AUGM only, AUGM + AW, PARM only, PARM + AW, COLM only, COLM + AW, AMAW/RDA Label, RDA curie, Datatype/object, DW, CW, Mapping Approach, Mapping Spreadsheet Link, GitHub Issue Link, Notes
+* **Expr-Nomen (apellations):** Expression properties with the range of Nomen used as appellation of expression. Includes columns Expression-Nomen (apellations), RDA Curie, Datatype/Object, MRC Field, TK R2M, NLNZ R2M, M2R Mapping, M2R coding, RDA Vocab, F&M table, Example files, Format, SEM, AMLM, MPW, AUGM only, AUGM + AW, PARM only, PARM + AW, COLM only, COLM + AW, AMAW/RDA Label, RDA curie, Datatype/object, DW, CW, Mapping Approach, Mapping Spreadsheet Link, GitHub Issue Link, Notes
+* **Expr-Place:** Expression properties with range of RDA:Place. Includes columns Special relationships/label, RDA curie, Datatype/object, MRC Field, TK R2M, NLNZ R2M, M2R Mapping, M2R coding, RDA Vocab, F&M table, Example files, Format, SEM, AMLM, MPW, AUGM only, AUGM + AW, PARM only, PARM + AW, COLM only, COLM + AW, AMAW/RDA Label, RDA curie, Datatype/object, DW, CW, Mapping Approach, Mapping Spreadsheet Link, GitHub Issue Link, Notes
+* **Expr-Timespan:** Expression properties with range of RDA Timespan. Includes columns Special relationships/label, RDA curie, Datatype/object, MRC Field, TK R2M, NLNZ R2M, M2R Mapping, M2R coding, RDA Vocab, F&M table, Example files, Format, SEM, AMLM, MPW, AUGM only, AUGM + AW, PARM only, PARM + AW, COLM only, COLM + AW, AMAW/RDA Label, RDA curie, Datatype/object, DW, CW, Mapping Approach, Mapping Spreadsheet Link, GitHub Issue Link, Notes
+*  **Expr-Agent:** Expression properties with range of RDA Agent. Includes columns Expression-Agent relationship elements, RDA curie, Datatype/object, MRC Field, TK R2M, NLNZ R2M, M2R Mapping, M2R coding, RDA Vocab, F&M table, Example files, Format, SEM, AMLM, MPW, AUGM only, AUGM + AW, PARM only, PARM + AW, COLM only, COLM + AW, AMAW/RDA Label, RDA curie, Datatype/object, DW, CW, Mapping Approach, Mapping Spreadsheet Link, GitHub Issue Link, Notes
+*  **Expr-Expr:** Expression properties with range of RDA:Expression. Includes columns Expression-Expression relationship elements, RDA curie, Datatype/object, MRC Field, TK R2M, NLNZ R2M, M2R Mapping, M2R coding, RDA Vocab, F&M table, Example files, Format, SEM, AMLM, MPW, AUGM only, AUGM + AW, PARM only, PARM + AW, COLM only, COLM + AW, AMAW/RDA Label, RDA curie, Datatype/object, DW, CW, Mapping Approach, Mapping Spreadsheet Link, GitHub Issue Link, Notes
+*  **Primary relationships:** Includes expression elements linking entities from a WEMI stack together. Includes columns Primary relationship elements, RDA curie, Datatype/object, MRC Field, TK R2M, NLNZ R2M, M2R Mapping, M2R coding, RDA Vocab, F&M table, Example files, Format, SEM, AMLM, MPW, AUGM only, AUGM + AW, PARM only, PARM + AW, COLM only, COLM + AW, AMAW/RDA Label, RDA curie, Datatype/object, DW, CW, Mapping Approach, Mapping Spreadsheet Link, GitHub Issue Link, Notes
+*  **Special relationships:** Relationships linking to related works, aside from primary relationships. Includes columns Special relationships, RDA curie, Datatype/object, MRC Field, TK R2M, NLNZ R2M, M2R Mapping, M2R coding, RDA Vocab, F&M table, Example files, Format, SEM, AMLM, MPW, AUGM only, AUGM + AW, PARM only, PARM + AW, COLM only, COLM + AW, AMAW/RDA Label, RDA curie, Datatype/object, DW, CW, Mapping Approach, Mapping Spreadsheet Link, GitHub Issue Link, Notes
+*  **Expr-High Level Relationships:** Related ___ of expression relationships. Includes columns High level Expression relationship elements, RDA curie, Datatype/object, MRC Field, TK R2M, NLNZ R2M, M2R Mapping, M2R coding, RDA Vocab, F&M table, Example files, Format, SEM, AMLM, MPW, AUGM only, AUGM + AW, PARM only, PARM + AW, COLM only, COLM + AW, AMAW/RDA Label, RDA curie, Datatype/object, DW, CW, Mapping Approach, Mapping Spreadsheet Link, GitHub Issue Link, Notes
+
+### Abbreviations and Acronyms Glossary
+*  SEM: Single Expression Manifestation
+*  AMLM: Amalgamation expression. A [single work is realized as an amalgamation](https://access.rdatoolkit.org/en-US_ala-4d4d3f5b-8d94-3ee5-89d8-241a98366db4/div_sql_2zm_2fb)
+*  MPW: Whole work, i.e., a work that has parts that can be described separately, but are integral to the completeness of the whole
+*  AUGM only: Only the Augmented (primary) work and expression are mapped
+*  AUGM + AW: Both the augmented (primary) work and expression and the Aggregating work are mapped
+*  PARM only: Only the parallel work and expressions are mapped
+*  PARM + AW: Both the parallel work and expressions and the aggregating work are mapped
+*  COLM only: Only the collected work(s) and expressions are mapped
+*  COLM + AW: Both the collected work(s) and expressions(s) and the aggregating work are mapped
+*  AMAW/RDA Label: The aggregating work is mapped, and the RDA label is for the property used with the aggregating work (not the expression property at the beginning of the row). 
+*  DW: Diachronic work
+*  CW: Collection work
+
+## Expression Table Workflow (In Stages)
+### Stage 1: Table design review and workflow development: December 2025
+* Review structure, purpose, and contents of table in a group meeting, reviewing the table's purpose and functionality
+* Make adjustments based on group feedback
+* Develop work plan and procedures for completing mapping work. Review in a group meeting and implement feedback from mapping team
+* Practice one element from each tab as a group before splitting into chunks and working individually (new mapping team members will have 1-3 sessions with Crystal to begin)
+### Stage 2: Columns A-E (Up to MARC Field): January 2025
+* Ensure completeness of columns A-D of each tab (are all relevant elements accounted for? Check against tab 1 to make sure all excluded elements are intentional)
+#### Stage 3: Fill out M2R Mapping column: January-February 2025
+* Copy RDA Curie "P number". Example: rdae:P20005 = P20005
+* Navigate to the [M2R Google Drive](https://drive.google.com/drive/folders/0AADaSAA_Nl-vUk9PVA)
+    * Limit search to Type:Spreadsheets
+    * Paste the P number into the search box
+    * Click on any result that gives a MARC field tag (e.g., "586")
+    * Use <Ctrl+F> to find all instances of the P number in the spreadsheet
+    * Highlight row or range of consecutive rows for the subfield or range of subfields corresponding to the RDA element you are searching for
+    * Right-click >> choose View more row actions >> choose Get link to this range
+    * Enter the field and subfield labels into the MARC field tag column, and hyperlink with link to range from mapping spreadsheets
+    * When an element is present in more than one M2R mapping, create a new row for each M2R mapping link
+ #### Stage 4: Complete up to "SEM": February-March 2025
+ * [Instructions TBD]
+ #### Stage 5: Remaining Columns
+ * [Instructions TBD]
+
+# Field-Specific Mapping Spreadsheet Instructions
 _Last updated 27 November 2024_
 
 ## Table of Contents
