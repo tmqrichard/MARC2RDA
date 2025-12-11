@@ -2,6 +2,13 @@
 _Last updated: December 11, 2025_
 
 ## Table of Contents
+* [Table Description]([https://drive.google.com/drive/folders/0AADaSAA_Nl-vUk9PVA](https://github.com/crystalyragui/MARC2RDA/blob/main/Instructions/README.md#table-description))
+    * [Tabs](https://github.com/crystalyragui/MARC2RDA/blob/main/Instructions/README.md#tabs)
+    * [Abbreviations and Acronyms Glossary](https://github.com/crystalyragui/MARC2RDA/blob/main/Instructions/README.md#abbreviations-and-acronyms-glossary)
+ * [Expression Table Workflow (In Stages)](https://github.com/crystalyragui/MARC2RDA/blob/main/Instructions/README.md#expression-table-workflow-in-stages)
+    * [Stage 1: Table design review and workflow development](https://github.com/crystalyragui/MARC2RDA/blob/main/Instructions/README.md#stage-1-table-design-review-and-workflow-development-december-2025)
+    * [Stage 2: Columns A-E](https://github.com/crystalyragui/MARC2RDA/blob/main/Instructions/README.md#stage-2-columns-a-e-up-to-marc-field-january-2025)
+    * [Stage 3: Fill out M2R Mapping column](https://github.com/crystalyragui/MARC2RDA/blob/main/Instructions/README.md#stage-3-fill-out-m2r-mapping-column-january-february-2025)   
 
 ## Table Description
 * [Mapping expression categories.20251121 table](https://docs.google.com/spreadsheets/d/1KACL_nBqdzq60k-kJIDi5DzYhHHAo6Mw/edit?usp=sharing&ouid=106066247188335830400&rtpof=true&sd=true)
