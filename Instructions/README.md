@@ -2,8 +2,9 @@
 _Last updated: January 15, 2026_
 
 ## Table of Contents
-* [Table Description]([https://drive.google.com/drive/folders/0AADaSAA_Nl-vUk9PVA](https://github.com/crystalyragui/MARC2RDA/blob/main/Instructions/README.md#table-description))
+* [Table Description](https://github.com/crystalyragui/MARC2RDA/blob/main/Instructions/README.md#table-description)
     * [Tabs](https://github.com/crystalyragui/MARC2RDA/blob/main/Instructions/README.md#tabs)
+    * [Columns for Working Tabs](https://github.com/crystalyragui/MARC2RDA/tree/main/Instructions#columns-for-working-tabs)
     * [Abbreviations and Acronyms Glossary](https://github.com/crystalyragui/MARC2RDA/blob/main/Instructions/README.md#abbreviations-and-acronyms-glossary)
  * [Expression Table Workflow (In Stages)](https://github.com/crystalyragui/MARC2RDA/blob/main/Instructions/README.md#expression-table-workflow-in-stages)
     * [Stage 1: Table design review and workflow development](https://github.com/crystalyragui/MARC2RDA/blob/main/Instructions/README.md#stage-1-table-design-review-and-workflow-development-december-2025)
