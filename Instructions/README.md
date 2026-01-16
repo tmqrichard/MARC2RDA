@@ -92,11 +92,19 @@ _Last updated: January 15, 2026_
     * Highlight row or range of consecutive rows for the subfield or range of subfields corresponding to the RDA element you are searching for
     * Right-click >> View more row actions >> Get link to this range
     * Enter the field, indicators, character positions, subfields, and values as needed to make conditions of a mapping clear into the MARC field tag column, and hyperlink with link to range from mapping spreadsheets
+        * If a spreadsheet is provided:
+            * but not 'done', add "(not done)" after linked fields/subfield/position
+            * but not mapped to entity in focus (e.g., Expr or Work), add "(not mapped)" after linked field/subfield/position
+            * and has a Condition, add it after linked field/subfield/position; or say "(see Note)" and add it as a note   
     * When an element is present in more than one M2R mapping, create a new row for each M2R mapping link
-    * As relevant, also complete the RDA Vocab, MARC Record Format, GitHub Issue or Discussion Links, and Notes columns as progress is made.
+    * As relevant, also complete GitHub Issue or Discussion Links and Notes columns as progress is made.
+        * GitHub Issue or Discussion Links: This is intended for issues or discussions related only to the RDA element or MARC field in a row. A link is also included for the general spreadsheet workflow Q&A for ease of access.
+* Sometimes you will run into spreadsheets which need to be amended for reasons outside the expansion into aggregates and diachronic works. When that happens, create an issue about it in GitHub (one issue per MARC tag). If you can fix it yourself you may self-assign and fix. Other members of the mapping team may also fix such issues. If a field has already been coded, it is necessary to add the "code re-check" label once a spreadsheet has been changed. Then, coders will make any needed adjustments to the transformation code. Do not close the issue until changes have been coded and tested.
  #### Stage 4: Complete up to "SEM": February-March 2025
  * Transformation team to fill out the "M2R Coding Status" column. Work coordinated by Cypress.
  * Small task committee led by Deborah to fill out "F&M table (needed; not needed; link to table) column.
+     * Decide if F&M tables are needed for each element, locating tables already in existence and adding them to the spreadsheet
+     * Create F&M tables
  #### Stage 5: Phase II Columns (SEM-DW)
  * [Instructions TBD]
 
