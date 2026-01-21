@@ -2724,11 +2724,11 @@
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'b']">
             <xsl:if test="following-sibling::marc:subfield[@code = '2'][1]">
-                <rdawd:P10321 rdf:resource="{m2r:placeIRI($baseID, ., ., following-sibling::marc:subfield[@code = '2'][1])}"/>
+                <rdawo:P10321 rdf:resource="{m2r:placeIRI($baseID, ., ., following-sibling::marc:subfield[@code = '2'][1])}"/>
             </xsl:if>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = 'c']">
-            <rdawd:P10321 rdf:resource="{m2r:placeIRI($baseID, ., ., 'ISO3166')}"/>
+            <rdawo:P10321 rdf:resource="{m2r:placeIRI($baseID, ., ., 'ISO3166')}"/>
         </xsl:for-each>
         <xsl:for-each select="marc:subfield[@code = '0']">
             <xsl:choose>
