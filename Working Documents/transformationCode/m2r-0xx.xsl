@@ -2861,7 +2861,7 @@
         <!-- One Nomen per $a (Time period code) -->
         <xsl:for-each select="marc:subfield[@code = 'a']">
             <rdf:Description rdf:about="{m2r:nomenIRI($baseID, ., ., 'MARC 045 Time Period Code', 'timespan')}">
-                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10014"/> <!-- Nomen -->
+                <rdf:type rdf:resource="http://rdaregistry.info/Elements/c/C10012"/> <!-- Nomen -->
                 <rdand:P80026><xsl:value-of select="normalize-space(.)"/></rdand:P80026> <!-- String value -->
                 <rdand:P80069>MARC 045 Time Period Code</rdand:P80069>
             </rdf:Description>
