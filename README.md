@@ -16,6 +16,9 @@ _Laura Akerman is a Librarian and Product Manager at Emory University Libraries,
 **-Dana Anderson [ddanderson3](https://github.com/ddanderson3), Mapping Contributor**<br>
 _Dana Anderson is a graduate student in the Master of Library and Information Science program at the University of Washington who is passionate about open linked data and supporting digital transformation initiatives within library systems, by librarians. Dana participates in the MARC2RDA project by contributing to mapping MARC21 bibliographic data into RDA-RDF formats and exploring data transformation for aggregate resources._
 <br><br>
+**-Emily Backstrom [Em](https://github.com/eeback), Transformation Contributor**<br>
+_Emily is a graduate student at the University of Washington in the MLIS program. She has prior experience with TEI from undergraduate work and is interested to get into XSLT. She is excited to learn about how all of the parts of the project connect and how transformation coding works in a practical situation. Her ongoing goals and potential futures have a wide range from working primarily in a public facing setting to working more behind the scenes with coding._
+<br><br>
 **-Sita Bhagwandin [SitaKB](https://github.com/SitaKB), Mapping Contributor**<br>
 _Sita Bhagwandin is a bibliographic metadata specialist at the KB, National Library of the Netherlands. She holds a master’s degree in Indology from the University of Utrecht. <br>
 Previously she has worked as a cataloguer at the Utrecht University library for 25 years.<br>
@@ -100,13 +103,13 @@ _Junghae Lee is an Electronic Resources Metadata Librarian and Co-Interim Head o
 **-Cate Gerhart [CatalogerCate](https://github.com/CatalogerCate), Mapping Consultant, MARC21**<br>
 _Cate Gerhart is the Head of the Monographic Service Unit in the University of Washington Libraries. In addition to supervising both classified staff and librarians, Cate is the music cataloger for the Libraries.  Presently, Cate is active in a wide range of groups outside the UW including chairing the Library of Congress MARC Advisory Committee (2020- ) and serving in a number of capacities on the Career Development Standing Committee of the Music Library Association.  In the past Cate has had a number of leadership roles in OLAC, Cataloger’s Network and in the Pacific Northwest Chapter of the Music Library Association.   Cate served for 14 years on the Editorial Board of the Journal of Map and Geography Libraries and was the editor for the Music Cataloging Bulletin (a monthly publication) for 5 years._
 <br><br>
-**-Erin Grant [ErinGrant](https://github.com/ErinMGrant), Project Supervisor**<br>
-_Erin Grant is the Head of Cataloging and Metadata Services at the University of Washington Libraries in Seattle. She acted as interim supervisor for the MARC to RDA Project in 2024._
-<br><br>
 **-Melissa Morgan [mcm104](https://github.com/mcm104), Mapping Contributor, Metadata Consultant**<br>
 _Melissa Morgan (she/her) is the Cataloging & Metadata Specialist at Pacific Lutheran University. She holds an MLIS from the University of Washington (2022), and was formerly a Linked Data Specialist and Library Technician at the University of Washington Libraries from 2019 to 2022. During her time at UW, she participated in several linked data projects, including LD4P2, an RDA-to-BIBFRAME mapping, and the creation of RDA/RDF metadata application profiles. Her current work at PLU primarily involves cataloging in MARC and metadata clean-up._ 
 <br><br>
 **-Abhignya Rajapu [arajapu](https://github.com/arajapu), Transformation Contributor**<br>
 _Abhignya Rajapu (she/her/hers) is a graduate student in the Master of Science in Information Management program at the University of Washington. She contributes to the MARC2RDA project as a Linked Metadata Student Specialist, where she works on transforming traditional bibliographic data into RDA-RDF formats. With a background in data engineering and enterprise systems, she is passionate about the intersection of data, strategy, and meaningful transformation in information systems._
+<br><br>
+**-Erin Grant [ErinGrant](https://github.com/ErinMGrant), Project Supervisor**<br>
+_Erin Grant is the Head of Cataloging and Metadata Services at the University of Washington Libraries in Seattle. She acted as interim supervisor for the MARC to RDA Project in 2024._
 <br><br>
 **-Alice Chung [cwarc](https://github.com/cwarc), Mapping Contributor**<br>
