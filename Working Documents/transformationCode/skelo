@@ -1,0 +1,1 @@
+java -cp saxon-he-12.7.jar net.sf.saxon.Transform -s:dat/ -xsl:m2r.xsl -o:.rdf BASE=http://marc2rda.info/transform/

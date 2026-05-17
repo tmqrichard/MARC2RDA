@@ -1,0 +1,4 @@
+#!/bin/sh
+cd /home/rick/MARC2RDA/Working\ Documents/transformationCode
+java -cp saxon-he-12.7.jar net.sf.saxon.Transform -s:m2r-loadLookupFiles.xsl -xsl:m2r-loadLookupFiles.xsl
+

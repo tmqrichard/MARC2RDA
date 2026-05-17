@@ -1,0 +1,6 @@
+#!/bin/sh
+
+cd /usr/home/tmq3/x-m2r/Working\ Documents/transformationCode
+
+java -Xmx4G -cp saxon-he-12.7.jar net.sf.saxon.Transform -s:dat/${1} -xsl:m2r.xsl -o:done/${1}.rdf BASE=http://marc2rda.info/transform/
+

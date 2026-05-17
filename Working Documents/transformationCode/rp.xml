@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<marc:collection xmlns:marc="http://www.loc.gov/MARC21/slim">
+<marc:record xmlns:marc="http://www.loc.gov/MARC21/slim">
+<marc:leader>02086cam a2200481 i 4500</marc:leader>
+<marc:controlfield tag="001">859028091</marc:controlfield>
+<marc:controlfield tag="005">20240202180208.2</marc:controlfield>
+<marc:controlfield tag="008">130924t20132013nfc           000 f eng  </marc:controlfield>
+<marc:datafield tag="040" ind1=" " ind2=" ">
+  <marc:subfield code="a">NLC</marc:subfield>
+  <marc:subfield code="b">eng</marc:subfield>
+  <marc:subfield code="e">rda</marc:subfield>
+  <marc:subfield code="c">NLC</marc:subfield>
+  <marc:subfield code="d">YDXCP</marc:subfield>
+  <marc:subfield code="d">CDX</marc:subfield>
+  <marc:subfield code="d">MEU</marc:subfield>
+  <marc:subfield code="d">EEM</marc:subfield>
+  <marc:subfield code="d">OCLCF</marc:subfield>
+  <marc:subfield code="d">NLC</marc:subfield>
+  <marc:subfield code="d">QE2</marc:subfield>
+  <marc:subfield code="d">STMCL</marc:subfield>
+  <marc:subfield code="d">OCLCO</marc:subfield>
+  <marc:subfield code="d">OTP</marc:subfield>
+  <marc:subfield code="d">OCL</marc:subfield>
+  <marc:subfield code="d">OCLCL</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="015" ind1=" " ind2=" ">
+  <marc:subfield code="a">20139059016</marc:subfield>
+  <marc:subfield code="2">can</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="016" ind1=" " ind2=" ">
+  <marc:subfield code="a">(AMICUS)000042039724</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="016" ind1=" " ind2=" ">
+  <marc:subfield code="a">20139059016</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="020" ind1=" " ind2=" ">
+  <marc:subfield code="a">9781550814491</marc:subfield>
+  <marc:subfield code="q">(pbk.)</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="020" ind1=" " ind2=" ">
+  <marc:subfield code="a">1550814494</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="043" ind1=" " ind2=" ">
+  <marc:subfield code="a">n-cn-nf</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="050" ind1=" " ind2="4">
+  <marc:subfield code="a">PR9199.3</marc:subfield>
+  <marc:subfield code="b">.M639 2013</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="055" ind1="0" ind2="2">
+  <marc:subfield code="a">PS8576*</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="055" ind1=" " ind2="0">
+  <marc:subfield code="a">PS8576 O644</marc:subfield>
+  <marc:subfield code="b">R3 2013</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="082" ind1="0" ind2="4">
+  <marc:subfield code="a">C813/.54</marc:subfield>
+  <marc:subfield code="2">23</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="084" ind1=" " ind2=" ">
+  <marc:subfield code="a">cci1icc</marc:subfield>
+  <marc:subfield code="2">lacc</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="084" ind1=" " ind2=" ">
+  <marc:subfield code="a">coll13</marc:subfield>
+  <marc:subfield code="2">lacc</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="049" ind1=" " ind2=" ">
+  <marc:subfield code="a">WAUW</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="100" ind1="1" ind2=" ">
+  <marc:subfield code="a">Morgan, Bernice,</marc:subfield>
+  <marc:subfield code="e">author.</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="245" ind1="1" ind2="0">
+  <marc:subfield code="a">Random passage /</marc:subfield>
+  <marc:subfield code="c">Bernice Morgan.</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="264" ind1=" " ind2="1">
+  <marc:subfield code="a">St. John's, NL, Canada :</marc:subfield>
+  <marc:subfield code="b">Breakwater Mainstay,</marc:subfield>
+  <marc:subfield code="c">[2013]</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="264" ind1=" " ind2="4">
+  <marc:subfield code="c">©2013</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="300" ind1=" " ind2=" ">
+  <marc:subfield code="a">369 pages ;</marc:subfield>
+  <marc:subfield code="c">22 cm.</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="336" ind1=" " ind2=" ">
+  <marc:subfield code="a">text</marc:subfield>
+  <marc:subfield code="b">txt</marc:subfield>
+  <marc:subfield code="2">rdacontent</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="337" ind1=" " ind2=" ">
+  <marc:subfield code="a">unmediated</marc:subfield>
+  <marc:subfield code="b">n</marc:subfield>
+  <marc:subfield code="2">rdamedia</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="338" ind1=" " ind2=" ">
+  <marc:subfield code="a">volume</marc:subfield>
+  <marc:subfield code="b">nc</marc:subfield>
+  <marc:subfield code="2">rdacarrier</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="500" ind1=" " ind2=" ">
+  <marc:subfield code="a">Originally published: St. John's, Nfld. : Breakwater, ©1992.</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="500" ind1=" " ind2=" ">
+  <marc:subfield code="a">"With an introduction by Michael Crummey"--Cover.</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="546" ind1=" " ind2=" ">
+  <marc:subfield code="a">Text in English.</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="520" ind1=" " ind2=" ">
+  <marc:subfield code="a">This is the story of a small group of English immigrants and their struggle to establish a community and livelihood in the forbidding environment of Cape Random on the NE coast of Newfoundland in mid-environment of Cape Random on the NE coast of Newfoundland in the mid-1800s.</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="651" ind1=" " ind2="0">
+  <marc:subfield code="a">Newfoundland and Labrador</marc:subfield>
+  <marc:subfield code="v">Fiction.</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="651" ind1=" " ind2="7">
+  <marc:subfield code="a">Newfoundland and Labrador.</marc:subfield>
+  <marc:subfield code="2">fast</marc:subfield>
+  <marc:subfield code="0">(OCoLC)fst01296050</marc:subfield>
+  <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39QbtfRj6FK7FhT3gvdW8GRyM</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="655" ind1=" " ind2="7">
+  <marc:subfield code="a">Historical fiction.</marc:subfield>
+  <marc:subfield code="2">fast</marc:subfield>
+  <marc:subfield code="0">(OCoLC)fst01726640</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="655" ind1=" " ind2="7">
+  <marc:subfield code="a">Fiction.</marc:subfield>
+  <marc:subfield code="2">fast</marc:subfield>
+  <marc:subfield code="0">(OCoLC)fst01423787</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="655" ind1=" " ind2="7">
+  <marc:subfield code="a">Historical fiction.</marc:subfield>
+  <marc:subfield code="2">lcgft</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="758" ind1=" " ind2=" ">
+  <marc:subfield code="i">has work:</marc:subfield>
+  <marc:subfield code="a">Random passage (Text)</marc:subfield>
+  <marc:subfield code="1">https://id.oclc.org/worldcat/entity/E39PCFFkvGDrW9KMJHM8xVJPpK</marc:subfield>
+  <marc:subfield code="4">https://id.oclc.org/worldcat/ontology/hasWork</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="938" ind1=" " ind2=" ">
+  <marc:subfield code="a">YBP Library Services</marc:subfield>
+  <marc:subfield code="b">YANK</marc:subfield>
+  <marc:subfield code="n">11162920</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="938" ind1=" " ind2=" ">
+  <marc:subfield code="a">Coutts Information Services</marc:subfield>
+  <marc:subfield code="b">COUT</marc:subfield>
+  <marc:subfield code="n">26253355</marc:subfield>
+</marc:datafield>
+<marc:datafield tag="029" ind1="0" ind2=" ">
+  <marc:subfield code="a">NLC</marc:subfield>
+  <marc:subfield code="b">000042039724</marc:subfield>
+</marc:datafield>
+</marc:record>
+
+</marc:collection>
