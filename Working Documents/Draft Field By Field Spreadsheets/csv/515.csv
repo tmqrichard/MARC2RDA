@@ -1,5 +1,0 @@
-,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,done,515,NUMBERING PECULIARITIES NOTE (R),Undefined,*,,Undefined,*,,,,a,Numbering peculiarities note (NR),,,,,,,http://rdaregistry.info/Elements/m/P30137,has note on manifestation,unstructured description,,"""Numbering peculiarities note: "" + [$a value] ",,
-1,done,515,NUMBERING PECULIARITIES NOTE (R),Undefined,#,Undefined,Undefined,#,Undefined,,,6,Linkage (NR),,,,,,,,,,,"https://github.com/uwlib-cams/MARC2RDA/wiki/Decisions-Index#iih-6 
-",,
-2,phase II,515,NUMBERING PECULIARITIES NOTE (R),,,,,,,,,7,Data provenance,,,,,,,,,,,,,"$7 is a new addition in 2022, needs further discussion --SH 2025-02-04 ; data provenance, address in phase II. --CEY, 2025-08-28"

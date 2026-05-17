@@ -1,6 +1,0 @@
-,Status,MARCField,MARCFieldLabel,MARCInd1Label,MARCInd1Value,MARCInd1ValueLabel,MARCInd2Label,MARCInd2Value,MARCInd2ValueLabel,CharacterPosition,CharacterPositionLabel,MARCSubfield,MARCSubfieldLabel,CodeValue,CodeValueLabel,MARCTagCondition1,Condition1Values,MARCTagCondition2,Condition2Values,RDA Registry URI,RDA Registry Label,Recording Method,Justification for Mapping,Transformation Notes,Problems with Mapping,Notes (Uncategorized)
-0,done,70,NATIONAL AGRICULTURAL LIBRARY CALL NUMBER (R),Existence in NAL collection,*, ,Undefined,*, ,,,a,Classification number (R),,,,,,,http://rdaregistry.info/Elements/w/P10256,has subject,IRI,,"""<work> rdawo:P10256 <ConceptUSDA(value of $a)> .
-<ConceptUSDA(value of $a)> skos:notation ""value of $a""^^<SchemeNotationUSDA> .
-<ConceptUSDA(value of $a)> skos:altLabel ""value of $a"".
-<ConceptUSDA(value of $a)> skos:note ""National Agricultural Library Call Number""
--CEY, 2025-06-05",,"[For 070, assume classification number before period and call number prefix after period, so concept for USDA scheme (call number prefix=""A""); this scheme is not registered in LoC list, and there is no presence on Google.]"
